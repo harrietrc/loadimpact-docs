@@ -1,0 +1,31 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "bootstrap_functions";
+@import "bootstrap_variables";
+@import "bootstrap_mixins_breakpoints";
+@import "bootstrap_mixins_transition";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "top_menu";
+@import "footer";
+@import "sidebar";
+@import "articles";
+@import "search";
+
+body {
+    padding-top: $top-nav-height;
+}
+
+#nav-button {
+    display: none;
+}
+
+.main-body {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}

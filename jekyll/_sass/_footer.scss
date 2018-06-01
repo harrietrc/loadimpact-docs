@@ -1,0 +1,116 @@
+.footer-big-menu {
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+    background: #3e556c;
+    position: relative;
+  
+    .menu {
+        margin-top: 40px;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 60px;
+            text-align: center !important;
+        }
+
+        .col-md-3 {
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+                text-align: center !important;
+
+            }
+        }
+
+        .menu-title {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+
+            @include media-breakpoint-down(sm) {
+             text-align: center;  
+             font-size: 16px;
+            }
+        }
+
+        .menu-link {
+            color: #c4d9ea;
+            display: block;
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 2px;
+
+            @include media-breakpoint-down(sm) {
+             text-align: center;  
+              font-size: 16px;
+             line-height: 26px;      
+            }
+
+            @include transition(all .2s);
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .social-link {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            position: relative;
+            border-radius: 30px;
+            color: #dfebf5;
+            border: 2px solid #c6d8e8;
+            margin-right: 6px;
+
+            @include transition(all .2s);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: #fff;
+                border-color: #fff;
+            }
+
+            i {
+                position: absolute;
+                font-size: 16px;
+                left: 7px;
+                top: 2px;
+
+                &.ion-social-facebook {
+                    left: 11px;
+                }
+
+                &.ion-social-whatsapp {
+                    left: 7px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        color: #68849a;
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 13px;
+
+        a {
+            color: #68849a;
+            margin-left: 5px;
+            display: inline-block;
+
+            @include transition(all .2s);
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

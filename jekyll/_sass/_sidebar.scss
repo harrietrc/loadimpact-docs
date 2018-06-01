@@ -1,0 +1,23 @@
+nav.sidebar {
+	border-right: 1px solid $nav-border-color;
+	background-color: $nav-bg-color;
+	padding: 30px 20px 20px;
+    width: 25%;
+
+	a {
+		display: block;
+		padding: 5px 10px;
+		font-size: 15px;
+		position: relative;
+	}
+
+	&> ul > li > a {
+		padding: 14px 10px;
+		color: $heading-color;
+		font-size: 1.125rem;
+	}
+
+	li.active > a{
+		font-weight: bold;
+	}
+}

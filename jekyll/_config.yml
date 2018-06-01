@@ -1,0 +1,59 @@
+# Site settings
+title: "Load Impact Documentation"
+email: support@loadimpact.com
+description: > # this means to ignore newlines until "baseurl:"
+  The documentation site for Load Impact, the developer-centric load testing service.
+
+url: "http://localhost:4040" # the base hostname & protocol for your site
+baseurl: "/docs" # the subpath of your site, e.g. /docs
+gh_url: "https://github.com/loadimpact/loadimpact-docs"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+liquid:
+  error_mode: strict
+
+collections:
+  li3:
+    name: "3.0 Docs"
+    site_section: true
+    output: true
+    permalink: /3.0/:path/
+    prefix: "/3.0"
+    selectorName: "3.0"
+  li4:
+    name: "4.0 Docs"
+    site_section: true
+    output: true
+    permalink: /4.0/:path/
+    prefix: "/4.0"
+    selectorName: "4.0"
+  api:
+    name: "API Docs"
+    site_section: true
+    output: true
+    permalink: /api/:path/
+    prefix: "/api"
+    selectorName: "API"
+
+sass:
+  sass_dir: _sass
+
+twitter_username: loadimpact
+github_username: loadimpact
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      hide: false
+      search: true
+
+segment: ''
+
+analytics:
+  events:
+    go_button_clicked: go-button-clicked
