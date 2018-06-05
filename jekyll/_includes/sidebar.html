@@ -15,108 +15,61 @@
 		{% capture sidebar %}
 			<li><a href="{{ site.baseurl }}{{ section.prefix }}/"><i class="fa fa-book"></i> {{ section.name }}</a></li>
 			{% if page.collection == "li4" %}
-				<ul class="left-links main-nav" style="display: block;">
-			  		<li class="nav-item active"><a href="" class="header"><h3>Getting started</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/migration/">3.0 to 4.0 Migration</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/hello-world/">Quick start guide - "Hello World"</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/k6/">Load Impact for people who know k6</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/create-user-scenario/">Create a user scenario</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/create-test/">Create a test</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/analyze-results/">Analyze results</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/whats-next/">"What's next?"</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/performance-testing-basics/">Performance testing basic/concepts</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>How to/Tutorials</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-test-an-api/">How to load test an API</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-test-mobile-site-or-app/">How to load test a mobile site or app</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-test-site-with-login/">How to test a site where you need login</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-never-use-same-login-twice/">How to never use the same user login twice in a test</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-test-checkout/">How to test a checkout or e-commerce process</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/how-to-automate-performance-testing/">How to automate Performance Testing</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>Test &amp; Results</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/creating-tests/">Creating tests</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/running-tests/">Running tests</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/understanding-results/">Understanding results</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>Team &amp; Project Management</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/organizations/">Organizations</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/projects/">Projects</a></li>
-								<li><a href="{{ site.baseurl }}/4.0/adding-team-member/">Adding a team member</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>On Premise testing</h3></a></li>
-					<li class="nav-item active"><a href="" class="header"><h3>Integrations &amp; Plugins</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/ci-cd/">CI/CD</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>Pricing</h3></a></li>
-					<li class="nav-item active"><a href="" class="header"><h3>Troubleshooting</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/common-issues/">Common issues</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item active"><a href="" class="header"><h3>FAQ</h3></a>
-						<div class="submenu" style="margin: 10px;">
-							<ul>
-								<li><a href="{{ site.baseurl }}/4.0/faq-can-i-/">Can I...?</a></li>
-							</ul>
-						</div>
-					</li>
+				<ul class="left-links main-nav" class="d-block">
+					{% assign cats = site.data.categories | where:"section",section.label %}
+					{% for cat in cats %}
+						{% assign catPage = cat.slug %}
+						<li class="nav-item active"><a href="#" class="header"><h3>{{ cat.name }}</h3></a>
+							<div class="submenu" style="margin: 10px;">
+								<ul>
+									{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
+									{% for doc in sortedDocs %}
+										{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
+											{% if doc.short-title %}
+												{% assign title = doc.short-title %}
+											{% else %}
+												{% assign title = doc.title %}
+											{% endif %}
+											{% if doc.children %}
+												{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
+											{% endif %}
+											<li><a href="{{ site.baseurl }}{{ doc.url }}" class="{% if page.url == doc.url %}active{% endif %}">{{ title }}</a></li>
+										{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+						</li>
+					{% endfor %}
 				</ul>
 			{% endif %}
 			{% if page.collection == "li3" %}
-			<p><a style="display: inline" id="expandAll" href="#">Expand All</a> / <a style="display: inline" id="collapseAll" href="#">Collapse All</a></p>
-						{% assign cats = site.data.categories | where:"section",section.label %}
-						{% for cat in cats %}
-							{% if cat.index %}
-								{% assign catPage = cat.index %}
-							{% else %}
-								{% assign catPage = cat.slug %}
-							{% endif %}
-							<ul>
-								<li><a href="#">{{ cat.name }}</a>
-									<ul>
-										{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
-											{% for doc in sortedDocs %}
-												{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
-													{% if doc.short-title %}
-														{% assign title = doc.short-title %}
-													{% else %}
-														{% assign title = doc.title %}
-													{% endif %}
-
-													{% if doc.children %}
-														{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
-													{% endif %}
-													<li  style="margin: 10px;" class="{% if page.url == doc.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ doc.url }}">{{ title }}</a></li>
-												{% endif %}
-											{% endfor %}
-									</ul>
-								</li>
-							</ul>
-						{% endfor %}
-				{% endif %}		
+				<ul class="left-links main-nav" class="d-block">
+					{% assign cats = site.data.categories | where:"section",section.label %}
+					{% for cat in cats %}
+						{% assign catPage = cat.slug %}
+						<li class="nav-item active"><a href="#" class="header"><h3>{{ cat.name }}</h3></a>
+							<div class="submenu" style="margin: 10px;">
+								<ul>
+									{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
+									{% for doc in sortedDocs %}
+										{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
+											{% if doc.short-title %}
+												{% assign title = doc.short-title %}
+											{% else %}
+												{% assign title = doc.title %}
+											{% endif %}
+											{% if doc.children %}
+												{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
+											{% endif %}
+											<li><a href="{{ site.baseurl }}{{ doc.url }}" class="{% if page.url == doc.url %}active{% endif %}">{{ title }}</a></li>
+										{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}		
 		{% endcapture %}
 		{{ sidebar | strip_newlines }}
 		</ul>
