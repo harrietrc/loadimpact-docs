@@ -2,7 +2,9 @@
 layout: classic-docs
 title: Load Impact 3.0 - Before You Begin
 description: "Quick Start Guide - Load Test Preperations"
-permalink: /3.0/Load_Test_Preperations
+permalink: /3.0/load-test-preperations
+categories: [quick-start-guide]
+order: 1
 ---
 
 # Intro

@@ -1,15 +1,27 @@
 # Load Impact Legacy Docs
 
 # REQUIRED
+# Load Impact Version 3 docs
 # corresponds to Jekyll collection
-- section: li3
+#- section: li3
   # REQUIRED
   # filename of category's page: "_collection/<slug>.md"
   # lowercase, no spaces, unique within section
-  slug: getting-started
+#  slug: getting-started
   # REQUIRED
   # human-readable slug / display name for website
-  name: "Getting Started"
+#  name: "Getting Started"
+
+- section: li3
+  slug: quick-start-guide
+  name: "Quick Start Guide"
+
+- section: li3
+  slug: user-scenarios
+  name: User Scenarios
+
+
+
 
 # Load Impact Next Gen Docs
 - section: li4

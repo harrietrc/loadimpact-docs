@@ -2,11 +2,13 @@
 layout: classic-docs
 title: Load Impact 3.0 - Next Steps
 description: "Quick Start Guide - Next Steps"
-permalink: /3.0/Next_Steps
+permalink: /3.0/next-steps
+categories: [quick-start-guide]
+order: 5
 ---
 
 
-Congratulations! By now you have likely finished running and analyzing your first set of tests. You probably have some interesting, actionable results. However, it's also possible that you've only scratched the surface of performance testing with Load Impact.  
+Congratulations! By now you have likely finished running and analyzing your first set of tests. You probably have some interesting, actionable results. However, it's also possible that you've only scratched the surface of performance testing with Load Impact.
 
 Our most successful clients often take their performance testing to the next level by taking advantage of the following:
 

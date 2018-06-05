@@ -2,7 +2,10 @@
 layout: classic-docs
 title: Load Impact 3.0 - Creating a Test
 description: "Quick Start Guide - Creating a Test"
-permalink: /3.0/Create_a_Test
+permalink: /3.0/create-a-test
+categories: [quick-start-guide]
+order: 3
+redirect_from: /knowledgebase/articles/836124-create-a-test
 ---
 
 

@@ -2,7 +2,9 @@
 layout: classic-docs
 title: Load Impact 3.0 - Creating a User Scenario
 description: "Quick Start Guide - Creating User Scenarios"
-permalink: /3.0/Create_User_Scenario
+permalink: /3.0/create-user-scenario
+categories: [quick-start-guide]
+order: 2
 ---
 
 

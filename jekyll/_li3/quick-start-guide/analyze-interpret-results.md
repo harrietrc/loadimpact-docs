@@ -2,7 +2,9 @@
 layout: classic-docs
 title: Load Impact 3.0 - Analyze and Interpreting your results
 description: "Quick Start Guide - Analyze and Interpreting your results with Load Impact version 3"
-permalink: /3.0/Analyze_and_Interpreting_results
+permalink: /3.0/analyze-and-interpreting-results
+categories: [quick-start-guide]
+order: 4
 ---
 
 
