@@ -57,3 +57,6 @@ segment: ''
 analytics:
   events:
     go_button_clicked: go-button-clicked
+
+plugins:
+  - jekyll-redirect-from
