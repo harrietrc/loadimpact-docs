@@ -14,11 +14,11 @@ How many simulated users the test should load and at what ramp-up speed
 How those users should behave (i.e. select the user scenario(s) created in step 1 that you want to test or select an auto-generated user scenario)
 Extra settings, such as our Server Monitoring Agent which measures backend resource utilization during testing, extra IP addresses, network and client emulation.
 
-First, Click "Create New Test"
+First, Click **"Create New Test"**
 
 Image: https://loadimpact.uservoice.com/assets/120012970/Image%202017-04-18%20at%2011.20.39%20AM.png
 
-Then, "Add User Scenario"
+Then, **"Add User Scenario"**
 
 Image: https://loadimpact.uservoice.com/assets/120012997/Image%202017-04-18%20at%2011.21.50%20AM_1.png
 
