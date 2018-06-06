@@ -5,7 +5,9 @@ description: "What is a User Scenario?"
 permalink: /3.0/what-is-a-user-scenario
 categories: [user-scenario]
 order: 1
-redirect_from: /knowledgebase/articles/174287-what-is-a-user-scenario
+redirect_from:
+  - /knowledgebase/articles/174287-what-is-a-user-scenario
+  - /knowledgebase/topics/118845-user-scenario
 ---
 
 -YOU TUBE VIDEO-
