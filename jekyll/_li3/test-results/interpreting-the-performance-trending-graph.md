@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Load Impact 3.0 - How to interpret the performance trending graph
-description: How to: Interpreting the performance trending graph for your load tests
+description: How to Interpret the performance trending graph for your load tests
 permalink: /3.0/interpreting-the-performance-trending-graph
 categories: [test-results]
 order: 5
