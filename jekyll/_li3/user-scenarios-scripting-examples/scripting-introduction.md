@@ -8,6 +8,7 @@ order: 1
 redirect_from:
   - /knowledgebase/topics/117699-user-scenario-scripting
   - /knowledgebase/articles/835701-scripting-introduction
+  - /knowledgebase/topics/23898-scripting-examples
 ---
 
 This section needs an update - plan to combine user scenario scripting and scripting examples into one larger section
