@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - What are RPS (Requests per second)?
+title: What are RPS (Requests per second)?
 description: Explanation of requests per second, as it relates to Load Impact.
 permalink: /3.0/what-are-requests-per-second-rps
 categories: [test-configuration]
 order: 3
 redirect_from: /knowledgebase/articles/1148857-what-are-requests-per-second-rps
 ---
+
+***
 
 Requests Per Second, RPS, is a scalability measure characterizing the throughput handled by a system.
 

@@ -1,12 +1,15 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Using the Load Impact Chrome Extension
+title: Using the Load Impact Chrome Extension
 description: "How do I use the Load Impact Chrome Extension to record user scenarios?"
 permalink: /3.0/load-impact-chrome-extension
 categories: [user-scenarios]
 order: 3
 redirect_from: /knowledgebase/articles/174664-how-do-i-use-the-chrome-extension-to-record-user-s
 ---
+
+***
+
 <\video needed>
 
 Create a complex User Scenario with just a few clicks. Record all HTTP traffic and use those recordings to simulate real user traffic under realistic load.

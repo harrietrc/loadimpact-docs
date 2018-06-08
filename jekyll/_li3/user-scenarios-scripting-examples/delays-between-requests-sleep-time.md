@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Using client.sleep() to add delays between requests
+title: Using client.sleep() to add delays between requests
 description: Explanation of client.sleep() and why it's important to include in your load scripts
 permalink: /3.0/delays-between-requests-sleep-time
 categories: [user-scenario-scripting-examples]
@@ -9,6 +9,8 @@ redirect_from:
   - /knowledgebase/articles/835716-delay-between-requests
   - /knowledgebase/articles/174292-what-is-load-impact-s-default-sleep-time
 ---
+
+***
 
 It is uncommon for a visitor to load one single page and then leave your site, it is probably very uncommon that a user loads one page and then immediately loads another page, with no time to read the content on the first page. Humans need a little while to process information on a page before moving on. It is often called “think time” or “page view time”. To simulate this behavor of real, human visitors, we have to add delays to our load script:
 ```

@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - How to Interpret Results
+title: How to Interpret Results
 description: Introduction on understanding and interpreting your Load Impact load and performance test results
 permalink: /3.0/how-to-interpret-load-test-results
 categories: [test-results]
 order: 2
 redirect_from: /knowledgebase/articles/174121-how-do-i-interpret-test-results
 ---
+
+***
 
 Likely needs a rewrite.  Make use of blog: http://blog.loadimpact.com/how-to-interpret-your-load-test-results
 

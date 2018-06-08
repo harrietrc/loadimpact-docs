@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Test Configuration
+title: Test Configuration
 description: In depth guide on what a test configuation is and how to use it in Load Impact 3.0
 permalink: /3.0/what-is-a-test-configuration
 categories: [test-configuration]
@@ -10,6 +10,7 @@ redirect_from:
   - /knowledgebase/topics/118842-test-configuration
 ---
 
+***
 
 A test configuration describes the load test you want to run – how many simulated virtual users the test should load your site, what those users should do on your site (what pages they should load on the site) and from which load zones (which geographic region to run each scenario from, allowing you to distribute the simulated load across different types of users coming from different geographic locations).
 

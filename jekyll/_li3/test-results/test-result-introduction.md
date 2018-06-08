@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Test Results
+title: Test Results
 description: Introduction on understanding and interpreting your Load Impact load and performance test results
 permalink: /3.0/test-result-introduction
 categories: [test-results]
@@ -9,6 +9,9 @@ redirect_from:
   - /knowledgebase/articles/173368-test-result-introduction
   - /knowledgebase/topics/118848-test-results
 ---
+
+***
+
 NEEDS REVIEW.
 
 

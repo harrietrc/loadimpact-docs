@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Configuring the Load Impact Proxy Recorder
+title: Configuring the Load Impact Proxy Recorder
 description: "How to: Congfiguring the Load Impact Proxy Recorder"
 permalink: /3.0/how-to-configure-the-load-impact-proxy-recorder
 categories: [user-scenarios]
@@ -8,7 +8,7 @@ order: 4
 redirect_from: /knowledgebase/articles/175465-how-do-i-configure-my-proxy-settings-for-the-proxy
 ---
 
-
+***
 
 In order to use our Proxy Recorder, you will need to configure your browser settings. You also need to make sure you do not have any cached files for the site you are about to record.
 When clearing your cache, though, make sure that you keep Load Impact’s cookies. Otherwise, you will be logged out of your session. Learn more about caching and cookie clearing here.

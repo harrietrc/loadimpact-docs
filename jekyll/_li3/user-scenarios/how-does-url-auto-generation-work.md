@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Auto Generated URL scenarios
+title: Auto Generated URL scenarios
 description: "How does the URL auto-generation feature work?"
 permalink: /3.0/how-does-the-url-auto-generation-feature-work
 categories: [user-scenarios]
-order: 4
+order: 3
 redirect_from: /knowledgebase/articles/174237-how-does-the-auto-generate-feature-work
 ---
+
+***
 
 Load Impact provides three tools for you to get a basic script quickly; the “Auto-generate” feature, the [Chrome Extension](load-impact-chrome-extension) and the Proxy Recorder.
 

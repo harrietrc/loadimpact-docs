@@ -1,14 +1,16 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - What is a User Scenario?
+title: What is a User Scenario?
 description: "What is a User Scenario?"
 permalink: /3.0/what-is-a-user-scenario
-categories: [user-scenario]
+categories: [user-scenarios]
 order: 1
 redirect_from:
   - /knowledgebase/articles/174287-what-is-a-user-scenario
   - /knowledgebase/topics/118845-user-scenario
 ---
+
+***
 
 -YOU TUBE VIDEO-
 

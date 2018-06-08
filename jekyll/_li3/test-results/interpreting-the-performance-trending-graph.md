@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - How to interpret the performance trending graph
+title: How to interpret the performance trending graph
 description: How to Interpret the performance trending graph for your load tests
 permalink: /3.0/interpreting-the-performance-trending-graph
 categories: [test-results]
@@ -8,6 +8,7 @@ order: 5
 redirect_from: /knowledgebase/articles/617088-how-do-i-interpret-the-performance-trend-analysis
 ---
 
+***
 
 The performance trending graph allows you to plot runs of the same test over time in order to locate patterns of performance degradation or improvement and more easily validate the performance impact of code and infrastructure changes.
 

@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Testing a site with file uploads
+title: Testing a site with file uploads
 description: One example on how to script your User Scenario to upload files during a test.
 permalink: /3.0/testing-a-file-upload
 categories: [user-scenario-scripting-examples]
 order: 21
 redirect_from: /knowledgebase/articles/814794-testing-a-system-that-requires-uploading-a-file
 ---
+
+***
 
 In Load Impact's Lua scripted product(version 3), there is no way to upload a file and make it available in a user scenario for testing file uploads. However, there are a few methods for testing systems where file uploads is a requirement.Before we go deeper, k6 supports file uploads, so we suggest using that for testing this type of scenario.  The following article and code sample is provided for posterity and gives options when using the Lua based product.
 

@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Lua Gotchas
+title: Lua Gotchas
 description: Lua is a simple and lightweight programming language, which makes it perfect for load testing.  However, it has some unique attributes that you should be aware of
 permalink: /3.0/lua-gotchas
 categories: [user-scenario-scripting-examples]
 order: 9
 redirect_from: /knowledgebase/articles/835737-lua-gotchas
 ---
+
+***
 
 The programming language Lua is widely accepted as simple, elegant and easy to learn. It is also light-weight and very suitable for resource-intensive applications such as load testing. But, as with any other language, it has its own pitfalls. Here is a short list of gotchas that are most often encountered by people coming to Lua from other languages. (Note that in several code examples we use the function log.log() to print out text. This is the API function provided by the Load Impact API to log text messages during execution of a load script)
 

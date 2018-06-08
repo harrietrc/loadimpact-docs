@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Using Data Stores (Parameterized Data)
+title: Using Data Stores (Parameterized Data)
 description: Data stores allow you to parameterize data in your script.  User Logins, URLs and form data are just some examples.
 permalink: /3.0/data-stores
 categories: [user-scenario-scripting-examples]
@@ -8,6 +8,7 @@ order: 13
 redirect_from: /knowledgebase/articles/174258-how-do-i-use-parameterized-data-data-stores
 ---
 
+***
 
 Data stores are used to parameterize data in load scripts. You create a data store from a CSV file containing the data you want to use in your load scripts. The CSV file should contain rows with one or more column fields in each row. The column fields should be separated by some separator character or string. You upload your CSV file(s) in the user scenario configuration interface, associating the data store(s) with that user scenario. In this process you also give the data store(s) a name.
 

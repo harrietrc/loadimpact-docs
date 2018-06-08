@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Testing HTTP requests with Authentication tokens
+title: Testing HTTP requests with Authentication tokens
 description: In this article we provide a method to test a site with an CSRF token.  The same principle applies for VIEWSTATE or other authentication tokens.
 permalink: /3.0/http-requests-with-csrf-viewstate-authenticaion-tokens
 categories: [user-scenario-scripting-examples]
@@ -9,6 +9,8 @@ redirect_from:
   - /knowledgebase/articles/174607-testing-a-site-with-csrf-token-or-viewstate
   - /knowledgebase/articles/389413-advanced-login-w-dynamic-data-extraction-correlati
 ---
+
+***
 
 If your site is using some kind of CSRF token and you do a recording using our session recorder, the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a VIEWSTATE.
 

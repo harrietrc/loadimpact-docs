@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Emulating Browser Behavior
+title: Emulating Browser Behavior
 description: When running load tests it important to consider how a real user would make requests in the browser. Real browsers open multiple connections in parallel. The request_batch() allows you to emulate this behavior.
 permalink: /3.0/emulating-browser-behavior
 categories: [user-scenario-scripting-examples]
@@ -9,6 +9,8 @@ redirect_from:
   - /knowledgebase/articles/835728-simulating-browser-behavior
   - /knowledgebase/articles/174622-emulating-a-specific-browser
 ---
+
+***
 
 When a browser loads a HTML page it usually requests a whole series of resources/files – it loads first the main HTMLcode, then CSS files, images, Javascript files, and so on. It can even load other HTML files in iframe tags or via AJAXcalls.
 

@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Browser Emulation
+title: Browser Emulation
 description: Using browser emulation you are able to change the user agent, max connections and max connections per host that the Virtual Users use during a test.  This allows you to emulate specific user behavior for your use case.
 permalink: /3.0/browser-emulation
 categories: [test-configuration]
@@ -8,6 +8,7 @@ order: 10
 redirect_from: /knowledgebase/articles/1113808-browser-emulation
 ---
 
+***
 
 Load Impact has the ability to emulate different browsers.  This can be changed directly per user scenario using **http.set_user_agent_string()** and **http.set_max_connections()** from our [Load Script API](https://loadimpact.com/load-script-api).  Alternatively, you can change the emulation for the entire test using the preconfigured options within Test Configuration:
 

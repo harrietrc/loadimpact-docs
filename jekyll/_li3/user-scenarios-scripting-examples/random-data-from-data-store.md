@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Random data from Data Store
+title: Random data from Data Store
 description: In this article we provide a method to get random data from a Data Store for use in a test.  Data stores can be used to parameterize a variety of information in your Load Test.
 permalink: /3.0/random-data-from-data-store
 categories: [user-scenario-scripting-examples]
 order: 16
 redirect_from: /knowledgebase/articles/174987-random-url-from-a-data-store
 ---
+
+***
 
 #### Example data store content
 In this example we will be getting random URLs from our Data Store.  You may have another use case, the same principle applies.

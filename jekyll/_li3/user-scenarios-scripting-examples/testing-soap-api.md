@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Testing a SOAP API
+title: Testing a SOAP API
 description: Basic example on load testing a SOAP API endpoint and handling the response.
 permalink: /3.0/testing-SOAP-api
 categories: [user-scenario-scripting-examples]
 order: 22
 redirect_from: /knowledgebase/articles/828378-testing-a-soap-api
 ---
+
+***
 
 This is a basic SOAP example which uses the http and xml load script APIs to test a SOAP server. Since testing API endpoints typically has slightly different requirements than testing an app or website. We also suggest our article on [How to load test an API](how-to-load-test-an-api)
 

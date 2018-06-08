@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Verifying resource contents
+title: Verifying resource contents
 description: How to verify resource contents in a response, these can be used in combination with custom metrics to make your tests more meaningful or just as a way to deal with errors from performance problems
 permalink: /3.0/verifying-resource-contents
 categories: [user-scenario-scripting-examples]
 order: 5
 redirect_from: /knowledgebase/articles/835722-verifying-resource-contents
 ---
+
+***
 
 #### Verifying resource contents
 When your website gets stressed it may at some point start to return errors instead of expected page content. Sometimes these errors can be in the form of HTTP error codes (500-codes), which are easy to detect on our side. 500-errors constitute “unsuccessful” HTTP transactions where the server returned no useful content and for those transactions you get separate statistics in our user interface (you can plot separate graphs for them etc).

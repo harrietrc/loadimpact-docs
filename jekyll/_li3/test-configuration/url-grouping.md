@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - URL Grouping
+title: URL Grouping
 description: How to use Load Impact's URL Grouping feature
 permalink: /3.0/url-grouping
 categories: [test-configuration]
@@ -8,6 +8,7 @@ order: 8
 redirect_from: /knowledgebase/articles/942696-url-grouping
 ---
 
+***
 
 What is URL grouping?
 URL grouping allows you to group several URLs into one. The main reason to introduce this feature is that one data endpoint can be touched by thousands of similar, slightly varying, URLs and on their own these unique URLs are not valuable for test results analysis. We can instead group these URLs to make the test results more valuable.

@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Calculating the number of Virtual Users needed
+title: Calculating the number of Virtual Users needed
 description: How to calculate the number of Virtual Users required for your Load or Performance test.
 permalink: /3.0/calculating-the-number-of-virtual-users-to-test
 categories: [test-configuration]
 order: 7
 redirect_from: /knowledgebase/articles/265461-calculating-the-number-of-virtual-users-concurren
 ---
+
+***
 
 How do I determine the number of concurrent virtual users to test if I only know daily visits to my site?
 

@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Login Code Examples
+title: Login Code Examples
 description: Variety of code samples on how to instruct Virtual Users to login during a performance test
 permalink: /3.0/login-examples
 categories: [user-scenario]
@@ -10,6 +10,8 @@ redirect_from:
   - /knowledgebase/articles/174604-simple-login-using-http-post
   - /knowledgebase/articles/174601-random-user-login-using-http-post
 ---
+
+***
 
 Below we provide a variety of code samples regarding virtual users logging into a system during a test.
 

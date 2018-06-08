@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Conditional Logic
+title: Conditional Logic
 description: Some test cases require behavior to be dependent on previous requests.  You can build conditional logic directly into our scripts in Load Impact
 permalink: /3.0/conditional-logic
 categories: [user-scenario-scripting-examples]
 order: 6
 redirect_from: /knowledgebase/articles/835725-conditional-logic
 ---
+
+***
 
 What if your client behaviour depends on the results of previous requests?
 

@@ -1,13 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Simulating realistic Load with Load Impact
+title: Simulating realistic Load with Load Impact
 description: "Simulating realistic load with Load Impact"
 permalink: /3.0/simulating-realistic-load-using-load-impact
-categories: [user-scenario]
+categories: [user-scenarios]
 order: 2
 redirect_from: /knowledgebase/articles/265464-simulating-realistic-load-using-load-impact
 ---
 
+***
 
 If you're new to load testing and would like to understand the basics on how you can create relatively complex scripts that simulate realistic user behavior on your website, this is a great place to start.
 

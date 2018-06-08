@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - What does the validation function do?
+title: What does the validation function do?
 description: User Scenario Validation allows you to send a single Virtual User through your user scenario to test for for any errors. During validation, sleep times are ignored.
 permalink: /3.0/validation-function
-categories: [user-scenario]
+categories: [user-scenarios]
 order: 6
 redirect_from: /knowledgebase/articles/174261-what-does-the-validation-function-do
 ---
+
+***
 
 The validation function runs a **single VU** through the user scenario using our Load Generators.  If the single VU is able to complete the scenario without errors then the script is validated.  If the VU encounters any errors those are logged in the status window on the right of the page.  Every time you validate a script, the scenario is **automatically saved.**
 

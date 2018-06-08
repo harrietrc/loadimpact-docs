@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Emulating User Behavior
+title: Emulating User Behavior
 description: Example script on how to weight users behavior within a user scenario
 permalink: /3.0/emulating-user-behavior
 categories: [user-scenario-scripting-examples]
 order: 19
 redirect_from: /knowledgebase/articles/174619-emulating-user-behaviour
 ---
+
+***
 
 If we have 3 pages on our site that users can visit, and we know how many times each page is visited by the users, we can calculate the “weight” of each page, and create a user scenario that simulates the same kind of visitor pattern on our site that real users exhibit. This is an example of how to do that.
 

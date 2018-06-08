@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Printing debug messages
+title: Printing debug messages
 description: How to utilize the log console to print debug messages in Load Impact. Helpful for debugging or catching specific pieces of data where a custom metric doesn't make sense.
 permalink: /3.0/printing-debug-messages
 categories: [user-scenario-scripting-examples]
 order: 12
 redirect_from: /knowledgebase/articles/174227-how-can-i-set-cookies-in-load-impact
 ---
+
+***
 
 The Log module provides you with functionality to log and display arbitrary (small) text messages during script execution. This is useful while debugging a load script, but also if you want to e.g. verify content that is returned from a server and get an alert if some content is not what you expected. All log messages are displayed on the log tab of the test result page. Of course, if you use the “validate” functionality to validate a user scenario, you never visit the test result page and in that case your log messages will be displayed in the right part of the editor window instead. It's generally a best practice to limit logging during a test.  If you are keeping track of something of interest, i.e. a failed response. It is better to create a custom metric.
 

@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Simple Crawl of a Website
+title: Simple Crawl of a Website
 description: Example script on how to script Virtual users to "crawl" a website
 permalink: /3.0/simple-crawl-of-website
 categories: [user-scenario-scripting-examples]
 order: 20
 redirect_from: /knowledgebase/articles/265432-simple-crawl-of-website
 ---
+
+***
 
 It is possible to simulate loading a random next URL from the current pages. If done enough times in a row it would basically be a simple "spider" crawl of the site. This could perhaps be useful in conjunction with custom metrics to record the average load time of random pages. Here is an example which loads the Load Impact front page and then picks a random link and loads that:
 ```

@@ -1,12 +1,13 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Analyze and Interpreting your results
-description: "Quick Start Guide - Analyze and Interpreting your results with Load Impact version 3"
+title: Analyze and Interpreting your results
+description: Brief guide on interpreting your load or performance test results in Load Impact.
 permalink: /3.0/analyze-and-interpreting-results
 categories: [quick-start-guide]
 order: 4
 ---
 
+***
 
 Interpreting test results can be tricky, but there are some general rules that can help you determine how a test went.
 

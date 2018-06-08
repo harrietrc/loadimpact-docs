@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Ramping configurations
+title: Ramping configurations
 description: Common load test ramping configuration examples and what you can learn from using them
 permalink: /3.0/load-test-ramping-configurations
 categories: [test-configuration]
 order: 9
 redirect_from: /knowledgebase/articles/945337-different-types-of-ramping-configurations
 ---
+
+***
 
 There are many different ways to configure tests in Load Impact. You can even control how VUs ramp up and down during a test.  Depending on how you configure your ramping, it will provide different test profiles that can help you learn different things. Running different types of ramp up profile will provide different types of results.
 

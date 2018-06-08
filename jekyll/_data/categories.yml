@@ -44,6 +44,14 @@
   slug: integrations
   name: Integrations
 
+- section: li3
+  slug: how-to-tutorials
+  name: How to/Tutorials
+
+- section: li3
+  slug: troubleshooting
+  name: Troubleshooting your Load Test
+
 
 # Load Impact Next Gen Docs
 - section: li4

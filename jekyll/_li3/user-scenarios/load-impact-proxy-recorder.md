@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Load Impact Proxy Recorder
+title: Load Impact Proxy Recorder
 description: "The Load Impact Proxy Recorder"
 permalink: /3.0/load-impact-proxy-recorder
 categories: [user-scenarios]
 order: 5
 redirect_from: /knowledgebase/articles/175462-what-is-the-proxy-recorder-and-how-does-it-work
 ---
+
+***
 
 A Google Chrome extension makes recording a user scenario easier! Read more about it here: [Load Impact Chrome Extension](load-impact-chrome-extension)
 

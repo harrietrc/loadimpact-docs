@@ -1,11 +1,13 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Before You Begin
-description: "Quick Start Guide - Load Test Preperations"
+title: Before You Begin
+description: Guide to help you prepare for your first load or performance test.  Things to think about and have in mind before you start hammering your site with traffic.
 permalink: /3.0/load-test-preperations
 categories: [quick-start-guide]
 order: 1
 ---
+
+***
 
 # Intro
 In this guide, we will walk through the suggested steps to run a Load/Performance test. The best tests are the ones that simulate real user behavior. Before you move on to creating user scenarios, think about what your users are doing.  Realistically simulating how these users navigate your site, use your app or hit your API endpoints will give you the most actionable results.

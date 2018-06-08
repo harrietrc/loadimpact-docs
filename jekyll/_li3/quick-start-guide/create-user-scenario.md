@@ -1,12 +1,13 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - Creating a User Scenario
-description: "Quick Start Guide - Creating User Scenarios"
+title: Creating a User Scenario
+description: User scenarios are the journeys Virtual Users will take during a load test.  They are limited programming environments which allow you to do programmatic things.  They are expressed in Lua code.
 permalink: /3.0/create-user-scenario
 categories: [quick-start-guide]
 order: 2
 ---
 
+***
 
 A user scenario is a script, defining the requests performed by the simulated users during a load test. A good user scenario will be based on the credible story of an user or system performing a realistic task.
 

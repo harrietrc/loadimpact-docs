@@ -1,12 +1,14 @@
 ---
 layout: classic-docs
-title: Load Impact 3.0 - String handling
+title: String handling
 description: Example code to take a string and return it as a Lua table
 permalink: /3.0/string-handling
 categories: [user-scenario-scripting-examples]
 order: 18
 redirect_from: /knowledgebase/articles/174607-testing-a-site-with-csrf-token-or-viewstate
 ---
+
+***
 
 #### Splitting string on specified delimiter
 The following function will take as parameters a string and a delimiter and will split the string on the delimiter and return all parts as a Lua table.
