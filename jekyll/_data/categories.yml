@@ -26,13 +26,23 @@
 
 - section: li3
   slug: test-results
-  name: Test Results 
+  name: Test Results
 
 - section: li3
   slug: user-scenario-scripting-examples
   name: User Scenario Scripting Examples
 
+- section: li3
+  slug: organizations-projects
+  name: Organization, Projects, and Team Members
 
+- section: li3
+  slug: monitoring-agents
+  name: Server Monitoring Agents
+
+- section: li3
+  slug: integrations
+  name: Integrations
 
 
 # Load Impact Next Gen Docs
