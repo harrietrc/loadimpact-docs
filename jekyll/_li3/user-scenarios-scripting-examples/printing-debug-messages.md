@@ -4,7 +4,7 @@ title: Load Impact 3.0 - Printing debug messages
 description: How to utilize the log console to print debug messages in Load Impact. Helpful for debugging or catching specific pieces of data where a custom metric doesn't make sense.
 permalink: /3.0/printing-debug-messages
 categories: [user-scenario-scripting-examples]
-order: 13
+order: 12
 redirect_from: /knowledgebase/articles/174227-how-can-i-set-cookies-in-load-impact
 ---
 

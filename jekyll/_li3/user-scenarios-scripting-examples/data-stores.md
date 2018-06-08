@@ -4,7 +4,7 @@ title: Load Impact 3.0 - Using Data Stores (Parameterized Data)
 description: Data stores allow you to parameterize data in your script.  User Logins, URLs and form data are just some examples.
 permalink: /3.0/data-stores
 categories: [user-scenario-scripting-examples]
-order: 14
+order: 13
 redirect_from: /knowledgebase/articles/174258-how-do-i-use-parameterized-data-data-stores
 ---
 

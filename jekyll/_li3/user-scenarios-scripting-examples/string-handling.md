@@ -4,7 +4,7 @@ title: Load Impact 3.0 - String handling
 description: Example code to take a string and return it as a Lua table
 permalink: /3.0/string-handling
 categories: [user-scenario-scripting-examples]
-order: 19
+order: 18
 redirect_from: /knowledgebase/articles/174607-testing-a-site-with-csrf-token-or-viewstate
 ---
 
