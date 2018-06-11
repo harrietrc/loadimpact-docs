@@ -29,3 +29,7 @@ If you have a firewall running, do make sure that these IP addresses (especially
 
 Port limitations
 Check if your system/network administrators limit the ports accessible on your site. Load Impact randomly uses ports between 20000 and 21000 to record sessions, and it is necessary to open the entire range of ports for the recording duration.
+
+Why do I get logged out of my account when I start a recording?
+
+If you cleared your cache prior to starting your Session Recorder and got logged out after, is likely that you cleared all the cookies when clearing the cache. Load Impact uses cookies to keep you logged into your site, just as many websites do, so when you clear the cache, make sure that you do not clear the cookies. If, however, cookies are important to the website that you’re testing (i.e. your site uses login or similar, which requires the use of cookies in the transaction process), try clearing all the cookies except for the loadimpact.com ones. The other alternative would be to clear all the cookies related to the site which you want to test, which would have the same effect.

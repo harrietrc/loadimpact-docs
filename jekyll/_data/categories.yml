@@ -52,6 +52,13 @@
   slug: troubleshooting
   name: Troubleshooting your Load Test
 
+- section: li3
+  slug: frequently-asked-questions
+  name: Frequently Asked Questions
+
+- section: li3
+  slug: pricing
+  name: Pricing
 
 # Load Impact Next Gen Docs
 - section: li4
