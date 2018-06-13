@@ -63,27 +63,27 @@
 # Load Impact Next Gen Docs
 - section: li4
   slug: getting-started
-  name: "Getting Started"
+  name: Getting Started
 
 - section: li4
-  slug: howtos-tutorials
-  name: "How tos/Tutorials"
+  slug: how-to-tutorials
+  name: How tos/Tutorials
 
 - section: li4
   slug: test-results
-  name: "Test and Results"
+  name: Test and Results
 
 - section: li4
   slug: team-project-management
-  name: "Team and Project Management"
+  name: Team and Project Management
 
 - section: li4
-  slug: onpremise-testing
-  name: "Onpremise testing"
+  slug: on-premise-testing
+  name: Onpremise testing
 
 - section: li4
   slug: integrations
-  name: "Integrations"
+  name: Integrations
 
 - section: li4
   slug: pricing
@@ -91,9 +91,9 @@
 
 - section: li4
   slug: faq
-  name: "FAQ"
+  name: FAQ
 
 # Load Impact API Docs
 - section: api
   slug: reference
-  name: "API Reference"
+  name: API Reference
