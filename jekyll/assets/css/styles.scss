@@ -10,6 +10,7 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
+@import "embed";
 @import "top_menu";
 @import "footer";
 @import "sidebar";
@@ -18,6 +19,11 @@
 
 body {
     padding-top: $top-nav-height;
+
+    &.embedded {
+        background: #F7F7F7;
+        padding-top: 0px;
+    }
 }
 
 #nav-button {

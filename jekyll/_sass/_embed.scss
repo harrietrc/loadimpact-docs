@@ -1,0 +1,38 @@
+#embed-nav-trigger-container {
+    background: #fff;
+    padding: 15px 43px;
+
+    .title {
+        font-weight: bold;
+        text-align: center;
+        line-height: 2;
+    }
+
+    a {
+        color: $heading-color;
+        font-size: 1.5rem !important;
+        text-decoration: none;
+    }
+}
+
+#embed-navigation {
+    background-color: rgba($nav-bg-color, 0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+	padding: 30px 20px 20px;
+}
+
+#embed-nav-close {
+    color: $heading-color;
+    font-size: 20px !important;
+    text-decoration: none;
+    padding: 0 !important;
+
+    i::before {
+        content: '\00D7'!important;
+    }
+}

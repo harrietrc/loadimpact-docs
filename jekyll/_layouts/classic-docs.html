@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{{ "/assets/css/jquery.navgoco.css" | prepend: site.baseurl }}" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.1.2/collection/icon/icon.css" />
+	<link rel="stylesheet" href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
 	<title>{% if page.title %}{{ page.title | escape }} - Load Impact{% else %}{{ site.title | escape }} - Load Impact{% endif %}</title>
@@ -20,6 +20,7 @@
 <body class="{% if page.page-type == "index" or page.page-type == "homepage" %}homepage{% endif %}">
 <div class="outer">
 	{% include global-nav.html %}
+	{% include embed-nav.html %}
 	<div class="main-body">
 		{% unless page.url == "/" %}{% include sidebar.html %}{% endunless %}
 		<div class="article-container docs">
@@ -44,8 +45,8 @@
   <script src="{{ "/assets/js/site.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   <script src="{{ "/assets/js/jquery.cookie.min.js" | prepend: site.baseurl }}" type="text/javascript" ></script>-->
   <script src="{{ "/assets/js/jquery.navgoco.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-	<!--<script src="{{ site.baseurl }}/assets/js/main.js" type="text/javascript"></script>
-	<script src="{{ site.baseurl }}/assets/js/nav.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/assets/js/main.js" type="text/javascript"></script>
+	<!--<script src="{{ site.baseurl }}/assets/js/nav.js" type="text/javascript"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
 	<script type="text/javascript">
 	docsearch({
