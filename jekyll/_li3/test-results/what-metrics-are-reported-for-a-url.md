@@ -49,9 +49,8 @@ Clients active                    | Number of concurrent, simulated clients acti
 Connections active                | Number of concurrent TCP connections used at the end of the 3-second sample period                               | load zone
 Load generator memory utilization | How large a percentage of system memory the load generator application uses on the load generator hosts          | load zone
 Load generator CPU utilization    | How large a percentage of system CPU is being used by the load generator application on the load generator hosts | load zone
+{: class="table table-bordered"}
 
-
-***
 
 
 2 A result metric being tagged with something means that you can easily separate data based on the tag. I.e. if “Bandwidth usage” is tagged with “load zone” and you have executed a load test using the Tokyo and the Dublin load zones, it means you can plot one bandwidth graph displaying the bandwidth usage between your web server and Tokyo, and another graph displaying the bandwidth usage between your web server and Dublin. Transaction times are tagged with several things, which enables very advanced comparisons – i.e. you can plot a graph showing the maximum response times for the URL “http://www.dom.ain/index.html” when accessed by the Tokyo load zone alongside with the average reponse times for URL “http://www.dom.ain/index2.html” when accessed by the Dublin load zone.

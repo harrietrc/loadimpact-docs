@@ -54,6 +54,6 @@ Log severity level|The severity level used when logging text messages with the l
 Log message|The text message that was logged by a simulated client. This field is only applicable to log messages (i.e. __li_log result IDs)|	Hello world
 Standard deviation|The standard deviation calculated by the server metrics agent, if used in the test.|	0
 Median|The median calculated by the server metrics agent, if used in the test.|	7.3
-
+{: class="table table-bordered"}
 
 Note some string values have comma characters in them. Like “Amazon US East (Ashburn, US)”. These strings will be enclosed in quotation marks (”“) to make the string be parsed as one single field value, despite containing the separator character (comma).

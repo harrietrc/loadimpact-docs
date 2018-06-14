@@ -62,3 +62,4 @@ ap-southeast-1 | Asia Pacific (Singapore)
 ap-southeast-2 | Asia Pacific (Sydney)
 ap-south-1     | Asia Pacific (Mumbai)
 sa-east-1      | South America (São Paulo)
+{: class="table table-bordered"}
