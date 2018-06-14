@@ -11,16 +11,16 @@
         background-position: left center;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url('/docs/assets/img/li-logo-white.svg');
+        background-image: url('{{ site.baseurl }}/assets/img/li-logo-white.svg');
     }
 
     &.bg-transparent {
         .navbar-brand {
             @include media-breakpoint-up(md) {
-                background-image: url('/docs/assets/img/li-logo-white.svg');
+                background-image: url('{{ site.baseurl }}/assets/img/li-logo-white.svg');
             }
             @include media-breakpoint-down(md) {
-                background-image: url('/docs/assets/img/li-logo-white.svg');
+                background-image: url('{{ site.baseurl }}/assets/img/li-logo-white.svg');
             }
         }
         .nav-item .nav-link {
