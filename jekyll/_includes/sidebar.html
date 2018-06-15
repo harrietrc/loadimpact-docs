@@ -15,62 +15,32 @@
 			<ul class="nav">
 			{% capture sidebar %}
 				<li><a href="{{ site.baseurl }}{{ section.prefix }}/"><i class="fa fa-book"></i> {{ section.name }}</a></li>
-				{% if page.collection == "nextgen" %}
-					<ul class="left-links main-nav" class="d-block">
-						{% assign cats = site.data.categories | where:"section",section.label %}
-						{% for cat in cats %}
-							{% assign catPage = cat.slug %}
-							<li class="nav-item active"><a href="#" class="header"><h3>{{ cat.name }}</h3></a>
-								<div class="submenu" style="margin: 10px;">
-									<ul>
-										{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
-										{% for doc in sortedDocs %}
-											{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
-												{% if doc.short-title %}
-													{% assign title = doc.short-title %}
-												{% else %}
-													{% assign title = doc.title %}
-												{% endif %}
-												{% if doc.children %}
-													{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
-												{% endif %}
-												<li><a href="{{ site.baseurl }}{{ doc.url }}" class="{% if page.url == doc.url %}active{% endif %}">{{ title }}</a></li>
+				<ul class="left-links main-nav" class="d-block">
+					{% assign cats = site.data.categories | where:"section",section.label %}
+					{% for cat in cats %}
+						{% assign catPage = cat.slug %}
+						<li class="nav-item active"><a href="{{ site.baseurl }}{{ section.prefix }}/{{ cat.slug }}/" class="header"><h3>{{ cat.name }}</h3></a>
+							<div class="submenu" style="margin: 10px;">
+								<ul>
+									{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
+									{% for doc in sortedDocs %}
+										{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
+											{% if doc.short-title %}
+												{% assign title = doc.short-title %}
+											{% else %}
+												{% assign title = doc.title %}
 											{% endif %}
-										{% endfor %}
-									</ul>
-								</div>
-							</li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-				{% if page.collection == "legacy" %}
-					<ul class="left-links main-nav" class="d-block">
-						{% assign cats = site.data.categories | where:"section",section.label %}
-						{% for cat in cats %}
-							{% assign catPage = cat.slug %}
-							<li class="nav-item active"><a href="#" class="header"><h3>{{ cat.name }}</h3></a>
-								<div class="submenu" style="margin: 10px;">
-									<ul>
-										{% assign sortedDocs = site.documents | where:"collection",section.label | sort: 'order' %}
-										{% for doc in sortedDocs %}
-											{% if doc.categories contains cat.slug and doc.slug != catPage and doc.hide != true %}
-												{% if doc.short-title %}
-													{% assign title = doc.short-title %}
-												{% else %}
-													{% assign title = doc.title %}
-												{% endif %}
-												{% if doc.children %}
-													{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
-												{% endif %}
-												<li><a href="{{ site.baseurl }}{{ doc.url }}" class="{% if page.url == doc.url %}active{% endif %}">{{ title }}</a></li>
+											{% if doc.children %}
+												{% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
 											{% endif %}
-										{% endfor %}
-									</ul>
-								</div>
-							</li>
-						{% endfor %}
-					</ul>
-				{% endif %}		
+											<li><a href="{{ site.baseurl }}{{ doc.url }}" class="{% if page.url == doc.url %}active{% endif %}">{{ title }}</a></li>
+										{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
 			{% endcapture %}
 			{{ sidebar | strip_newlines }}
 			</ul>
