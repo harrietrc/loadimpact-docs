@@ -149,3 +149,9 @@
     justify-content: flex-end !important;
     display: block;
 }
+
+body.embedded {
+  .navbar {
+      display: none;
+  }
+}
