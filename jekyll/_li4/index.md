@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: "4.0 Docs"
-description: "Landing page for Load Impact 4.0"
+title: "Next-gen Docs"
+description: "Landing page for Load Impact Next-gen"
 permalink: /next-gen/
 ---
-Welcome to Load Impact 4.0 documentation! Here you'll find information on Load Impact's next generation load testing service.
+Welcome to Load Impact Next-gen documentation! Here you'll find information on Load Impact's next generation load testing service.

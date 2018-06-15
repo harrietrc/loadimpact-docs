@@ -1,10 +1,10 @@
 ---
 layout: classic-docs
-title: "3.0 Docs"
-description: "Landing page for Load Impact 3.0"
+title: "Legacy Docs"
+description: "Landing page for Load Impact Legacy"
 permalink: /legacy/
 ---
-Welcome to Load Impact 3.0 documentation! Here you'll find information on Load Impact's legacy Lua based load testing service.
+Welcome to Load Impact Legacy documentation! Here you'll find information on Load Impact's legacy Lua based load testing service.
 
 These articles, code samples and videos will help you improve your load testing skills and understanding. You're welcome to contact us if you have other questions, comments or suggestions. If you wish to make a contribution to this documentation, it is hosted on GitHub - so feel free to open an issue or make a pull request!
 
