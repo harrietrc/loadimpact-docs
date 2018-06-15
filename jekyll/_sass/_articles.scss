@@ -1,7 +1,11 @@
 .article-container{
 	float: left;
 	padding: 30px 43px 0;
-	width: 75%;
+    width: 75%;
+
+	@include media-breakpoint-down(sm) {
+		width: auto;
+	}
 }
 
 body.embedded {
