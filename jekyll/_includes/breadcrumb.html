@@ -1,0 +1,19 @@
+{% if page.page-type != "homepage" %}
+    {% assign category = site.data.categories | where:"section",section.label | where:"slug",page.categories.first %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Docs</a></li>
+            {% if page.page-type == "index" %}
+                <li class="breadcrumb-item active" aria-current="page">{{ section.selectorName }}</li>
+            {% else %}
+                <li class="breadcrumb-item"><a href="{{ site.baseurl }}{{ section.prefix }}/">{{ section.selectorName }}</a></li>
+                {% if page.layout == "category-index" %}
+                    <li class="breadcrumb-item active" aria-current="page">{{ category.first.name }}</li>
+                {% else %}
+                    <li class="breadcrumb-item"><a href="{{ site.baseurl }}{{ section.prefix }}/{{ category.first.slug }}/">{{ category.first.name }}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                {% endif %}
+            {% endif %}
+        </ol>
+    </nav>
+{% endif %}

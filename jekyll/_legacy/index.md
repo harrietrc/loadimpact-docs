@@ -1,4 +1,5 @@
 ---
+page-type: index
 layout: classic-docs
 title: "Legacy Docs"
 description: "Landing page for Load Impact Legacy"

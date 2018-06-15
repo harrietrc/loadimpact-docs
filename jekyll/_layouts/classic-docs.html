@@ -11,7 +11,7 @@
 	<link href="https://d2o03rj8njtewz.cloudfront.net/static/images/favicon.d36181d65843.ico" rel="icon" type="image/png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{{ "/assets/css/jquery.navgoco.css" | prepend: site.baseurl }}" type="text/css" media="screen" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
@@ -24,6 +24,7 @@
 	<div class="main-body">
 		{% unless page.url == "/" %}{% include sidebar.html %}{% endunless %}
 		<div class="article-container docs">
+			{% include breadcrumb.html %}
 			<form id="site-search" class="doc-search" action="">
 				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'legacy' %}Legacy {% elsif page.collection == 'nextgen' %}Next-gen {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
 			</form>

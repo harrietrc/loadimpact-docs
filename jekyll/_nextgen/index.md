@@ -1,4 +1,5 @@
 ---
+page-type: index
 layout: classic-docs
 title: "Next-gen Docs"
 description: "Landing page for Load Impact Next-gen"
