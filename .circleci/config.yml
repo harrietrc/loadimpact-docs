@@ -66,7 +66,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: aws s3 sync jekyll/_site/docs s3://support.loadimpact.com/ --delete
+          command: aws s3 sync jekyll/_site/docs s3://support.staging.loadimpact.com/ --delete
 
 workflows:
   version: 2
