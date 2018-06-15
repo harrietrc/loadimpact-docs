@@ -17,19 +17,23 @@ liquid:
 
 collections:
   li3:
-    name: "Load Impact Legacy (Lua) Docs"
+    name: "Legacy (Lua) Docs"
     site_section: true
     output: true
     permalink: /legacy/:path/
     prefix: "/legacy"
     selectorName: "Legacy"
+    description: "Documentation for Load Impact Legacy, the Lua based product, in operation since 2011."
+    order: 1
   li4:
-    name: "Load Impact (k6/JS) Docs"
+    name: "Next-gen (k6/JS) Docs"
     site_section: true
     output: true
     permalink: /next-gen/:path/
     prefix: "/next-gen"
     selectorName: "Next-gen"
+    description: "Get started with Load Impact Next-gen, the successor of what is now referred to as Load Impact Legacy. Run tests in the cloud or on your machine."
+    order: 0
   api:
     name: "API Docs"
     site_section: true
@@ -37,6 +41,8 @@ collections:
     permalink: /api/:path/
     prefix: "/api"
     selectorName: "API"
+    description: "Reference for the Load Impact API."
+    order: 2
 
 sass:
   sass_dir: _sass

@@ -19,20 +19,13 @@ title: Load Impact Documentation
     </div>
 </div>-->
 
-<div class="category-section">
-	<h2><b><a href="/docs/next-gen/">Next-gen Documentation</a></b></h2>
-	<div class="category-section"></div>
-	<p>Get started with Load Impact Next-gen, the successor of what is now referred to as Load Impact Legacy. Run tests in the cloud or on your machine.</p>
-</div>
-<br>
-<div class="category-section">
-	<h2><b><a href="/docs/legacy/">Legacy Documentation</a></b></h2>
-	<div class="category-section"></div>
-	<p>Documentation for Load Impact Legacy, the Lua based product, in operation since 2011.</p>
-</div>
-<br>
-<div class="category-section">
-    <h2><b><a href="/docs/api/">API Documentation</a></b></h2>
-	<div class="category-section"></div>
-	<p>Reference for the Load Impact API.</p>
-</div>
+{% assign sortedCollection = site.collections | sort: 'order' %}
+{% for collection in sortedCollection %}
+    {% unless collection.site_section %}{% continue %}{% endunless %}
+    <div class="category-section">
+        <h2><b><a href="{{ site.baseurl }}{{ collection.prefix }}/">{{ collection.selectorName }} Documentation</a></b></h2>
+        <div class="category-section"></div>
+        <p>{{ collection.description }}</p>
+    </div>
+    <br>
+{% endfor %}
