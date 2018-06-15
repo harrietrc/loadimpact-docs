@@ -19,10 +19,10 @@ jobs:
 
             echo "Test Load Impact 3.0 Markdown files"
             echo "===================================================================================="
-            ./md-proofer lint jekyll/_li3/
+            ./md-proofer lint jekyll/_legacy/
             echo "\n\nTest Load Impact 4.0 Markdown files"
             echo "===================================================================================="
-            ./md-proofer lint jekyll/_li4/
+            ./md-proofer lint jekyll/_nextgen/
             echo "\n\nTest Load Impact API Markdown files"
             echo "===================================================================================="
             ./md-proofer lint jekyll/_api/

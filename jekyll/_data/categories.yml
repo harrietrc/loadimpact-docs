@@ -3,7 +3,7 @@
 # REQUIRED
 # Load Impact Version 3 docs
 # corresponds to Jekyll collection
-#- section: li3
+#- section: legacy
   # REQUIRED
   # filename of category's page: "_collection/<slug>.md"
   # lowercase, no spaces, unique within section
@@ -12,88 +12,88 @@
   # human-readable slug / display name for website
 #  name: "Getting Started"
 
-- section: li3
+- section: legacy
   slug: quick-start-guide
   name: "Quick Start Guide"
 
-- section: li3
+- section: legacy
   slug: user-scenarios
   name: User Scenarios
 
-- section: li3
+- section: legacy
   slug: test-configuration
   name: Test Configuration
 
-- section: li3
+- section: legacy
   slug: test-results
   name: Test Results
 
-- section: li3
+- section: legacy
   slug: user-scenario-scripting-examples
   name: User Scenario Scripting Examples
 
-- section: li3
+- section: legacy
   slug: organizations-projects
   name: Organization, Projects, and Team Members
 
-- section: li3
+- section: legacy
   slug: monitoring-agents
   name: Server Monitoring Agents
 
-- section: li3
+- section: legacy
   slug: integrations
   name: Integrations
 
-- section: li3
+- section: legacy
   slug: how-to-tutorials
   name: How to/Tutorials
 
-- section: li3
+- section: legacy
   slug: troubleshooting
   name: Troubleshooting your Load Test
 
-- section: li3
+- section: legacy
   slug: frequently-asked-questions
   name: Frequently Asked Questions
 
-- section: li3
+- section: legacy
   slug: pricing
   name: Pricing
 
 # Load Impact Next Gen Docs
-- section: li4
+- section: nextgen
   slug: getting-started
   name: Getting Started
 
-- section: li4
+- section: nextgen
   slug: test-scripting
   name: Test scripting
 
-- section: li4
+- section: nextgen
   slug: result-analysis
   name: Result analysis
 
-- section: li4
+- section: nextgen
   slug: how-to-tutorials
   name: How tos/Tutorials
 
-- section: li4
+- section: nextgen
   slug: team-project-management
   name: Team and Project Management
 
-- section: li4
+- section: nextgen
   slug: on-premise-testing
   name: Onpremise testing
 
-- section: li4
+- section: nextgen
   slug: integrations
   name: Integrations
 
-- section: li4
+- section: nextgen
   slug: pricing
   name: "Troubleshooting"
 
-- section: li4
+- section: nextgen
   slug: faq
   name: FAQ
 

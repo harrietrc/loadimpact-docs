@@ -16,7 +16,7 @@ liquid:
   error_mode: strict
 
 collections:
-  li3:
+  legacy:
     name: "Legacy (Lua) Docs"
     site_section: true
     output: true
@@ -25,7 +25,7 @@ collections:
     selectorName: "Legacy"
     description: "Documentation for Load Impact Legacy, the Lua based product, in operation since 2011."
     order: 1
-  li4:
+  nextgen:
     name: "Next-gen (k6/JS) Docs"
     site_section: true
     output: true

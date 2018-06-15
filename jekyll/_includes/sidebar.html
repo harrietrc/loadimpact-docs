@@ -15,7 +15,7 @@
 			<ul class="nav">
 			{% capture sidebar %}
 				<li><a href="{{ site.baseurl }}{{ section.prefix }}/"><i class="fa fa-book"></i> {{ section.name }}</a></li>
-				{% if page.collection == "li4" %}
+				{% if page.collection == "nextgen" %}
 					<ul class="left-links main-nav" class="d-block">
 						{% assign cats = site.data.categories | where:"section",section.label %}
 						{% for cat in cats %}
@@ -43,7 +43,7 @@
 						{% endfor %}
 					</ul>
 				{% endif %}
-				{% if page.collection == "li3" %}
+				{% if page.collection == "legacy" %}
 					<ul class="left-links main-nav" class="d-block">
 						{% assign cats = site.data.categories | where:"section",section.label %}
 						{% for cat in cats %}
