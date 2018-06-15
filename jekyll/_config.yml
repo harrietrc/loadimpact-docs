@@ -65,7 +65,7 @@ analytics:
     go_button_clicked: go-button-clicked
 
 algolia:
-  application_id: 'OW2UD9NPMI'
+  application_id: OW2UD9NPMI
 
 plugins:
   - jekyll-redirect-from
