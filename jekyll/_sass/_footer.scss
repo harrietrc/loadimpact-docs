@@ -79,14 +79,10 @@
                 position: absolute;
                 font-size: 16px;
                 left: 7px;
-                top: 2px;
+                top: 6px;
 
-                &.ion-social-facebook {
-                    left: 11px;
-                }
-
-                &.ion-social-whatsapp {
-                    left: 7px;
+                &.fa-facebook-f {
+                    left: 10px;
                 }
             }
         }
