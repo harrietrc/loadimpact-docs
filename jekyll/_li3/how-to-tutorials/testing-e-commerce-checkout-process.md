@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Testing e-commerce/checkout processes
 description: Things to consider when testing a site that processes payment.
-permalink: /3.0/testing-e-commerce-checkout-process
 categories: [how-to-tutorials]
 order: 4
 redirect_from: /knowledgebase/articles/747981-testing-a-checkout-or-e-commerce-process

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Why is my response body empty?
 description: Explanation on why your response body is empty during a test
-permalink: /3.0/why-is-my-response-body-empty
 categories: [frequently-asked-questions]
 order: 9
 redirect_from: /knowledgebase/articles/1166368-why-is-my-response-body-empty

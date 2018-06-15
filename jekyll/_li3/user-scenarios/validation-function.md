@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What does the validation function do?
 description: User Scenario Validation allows you to send a single Virtual User through your user scenario to test for for any errors. During validation, sleep times are ignored.
-permalink: /3.0/validation-function
 categories: [user-scenarios]
 order: 6
 redirect_from: /knowledgebase/articles/174261-what-does-the-validation-function-do

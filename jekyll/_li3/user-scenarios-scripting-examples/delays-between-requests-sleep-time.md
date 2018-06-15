@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Using client.sleep() to add delays between requests
 description: Explanation of client.sleep() and why it's important to include in your load scripts
-permalink: /3.0/delays-between-requests-sleep-time
 categories: [user-scenario-scripting-examples]
 order: 3
 redirect_from:

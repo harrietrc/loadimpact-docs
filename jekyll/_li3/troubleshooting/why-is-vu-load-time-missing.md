@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Why is VU load time missing?
 description: Description of why VU Load Time may be missing from your load test result.
-permalink: /3.0/why-is-vu-load-time-missing
 categories: [troubleshooting]
 order: 3
 redirect_from: /knowledgebase/articles/401383-why-is-vu-load-time-not-showing-in-my-results-gr

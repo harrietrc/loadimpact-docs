@@ -2,7 +2,6 @@
 layout: classic-docs
 title: URL Grouping
 description: How to use Load Impact's URL Grouping feature
-permalink: /3.0/url-grouping
 categories: [test-configuration]
 order: 8
 redirect_from: /knowledgebase/articles/942696-url-grouping

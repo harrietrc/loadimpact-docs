@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Browser Emulation
 description: Using browser emulation you are able to change the user agent, max connections and max connections per host that the Virtual Users use during a test.  This allows you to emulate specific user behavior for your use case.
-permalink: /3.0/browser-emulation
 categories: [test-configuration]
 order: 10
 redirect_from: /knowledgebase/articles/1113808-browser-emulation

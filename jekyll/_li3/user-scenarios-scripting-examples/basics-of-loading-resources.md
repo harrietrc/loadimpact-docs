@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Basics to requests in Load Impact
 description: High level overview of making HTTP(s) requests with Load Impact
-permalink: /3.0/basics-of-loading-resources
 categories: [user-scenario-scripting-examples]
 order: 2
 redirect_from: /knowledgebase/articles/835704-load-resources

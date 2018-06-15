@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Emulating User Behavior
 description: Example script on how to weight users behavior within a user scenario
-permalink: /3.0/emulating-user-behavior
 categories: [user-scenario-scripting-examples]
 order: 19
 redirect_from: /knowledgebase/articles/174619-emulating-user-behaviour

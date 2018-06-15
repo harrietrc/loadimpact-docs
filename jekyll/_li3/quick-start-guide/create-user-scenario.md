@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Creating a User Scenario
 description: User scenarios are the journeys Virtual Users will take during a load test.  They are limited programming environments which allow you to do programmatic things.  They are expressed in Lua code.
-permalink: /3.0/create-user-scenario
 categories: [quick-start-guide]
 order: 2
 ---

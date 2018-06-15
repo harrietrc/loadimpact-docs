@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Do Virtual Users cache resources?
 description: Explanation of how Load Impact's virtual users handle caching during a test.
-permalink: /3.0/do-virtual-users-cache-resources
 categories: [frequently-asked-questions]
 order: 4
 redirect_from: /knowledgebase/articles/174207-do-the-simulated-clients-in-a-test-cache-objects-t

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Before You Begin
 description: Guide to help you prepare for your first load or performance test.  Things to think about and have in mind before you start hammering your site with traffic.
-permalink: /3.0/load-test-preperations
 categories: [quick-start-guide]
 order: 1
 ---

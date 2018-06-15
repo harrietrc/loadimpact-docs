@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Considerations for tests with a large number of Virtual Users
 description: Explanation of the IP Multiplier option and how to get additional IPs in your load test.
-permalink: /3.0/considerations-for-large-tests
 categories: [test-configuration]
 order: 11
 redirect_from: /knowledgebase/articles/1181857-considerations-for-tests-with-a-large-number-of-vi

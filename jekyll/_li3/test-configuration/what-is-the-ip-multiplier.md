@@ -2,7 +2,6 @@
 layout: classic-docs
 title: IP Multiplier
 description: Explanation of the IP Multiplier option and how to get additional IPs in your load test.
-permalink: /3.0/what-is-the-ip-multiplier
 categories: [test-configuration]
 order: 6
 redirect_from: /knowledgebase/articles/174298-what-is-the-option-to-add-extra-ip-addresses-for

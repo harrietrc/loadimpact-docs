@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What are thresholds?
 description: Explanation of Load Impact's "Threshold" feature, which allows you to set binary pass/fail metrics for your load and performnace tests
-permalink: /3.0/thresholds
 categories: [test-configuration]
 order: 4
 redirect_from: /knowledgebase/articles/918699-thresholds

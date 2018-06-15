@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Test Configuration
 description: In depth guide on what a test configuation is and how to use it in Load Impact 3.0
-permalink: /3.0/what-is-a-test-configuration
 categories: [test-configuration]
 order: 1
 redirect_from:

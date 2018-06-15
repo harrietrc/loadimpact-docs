@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How does Load Impact prevent abuse of it's service?
 description: Explanation of how Load Impact prevents abuse
-permalink: /3.0/abuse-prevention
 categories: [frequently-asked-questions]
 order: 2
 redirect_from: /knowledgebase/articles/173797-how-do-you-prevent-abuse-of-the-service

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Creating custom metrics
 description: Custom metrics are used to extend the functionality of results with Load Impact. Custom metrics can be any numeric value and are able to be plotted in the main graph.
-permalink: /3.0/creating-custom-metrics
 categories: [user-scenario-scripting-examples]
 order: 10
 redirect_from: /knowledgebase/articles/174242-how-do-i-create-new-result-metrics

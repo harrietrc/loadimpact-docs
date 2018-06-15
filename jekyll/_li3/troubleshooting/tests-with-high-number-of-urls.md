@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Running tests with large numbers of unique URLs
 description: Ways to handle tests that request a large number of unique URLs.
-permalink: /3.0/tests-with-high-numbre-of-urls
 categories: [troubleshooting]
 order: 4
 redirect_from: /knowledgebase/articles/762222-running-a-test-that-requests-a-large-amount-of-url

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Scripting Introduction
 description: Introduction to scripting in Lua for Load Impact 3.0
-permalink: /3.0/scripting-introduction
 categories: [user-scenario-scripting-examples]
 order: 1
 redirect_from:

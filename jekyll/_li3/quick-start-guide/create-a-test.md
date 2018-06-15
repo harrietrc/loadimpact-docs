@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Creating a Test
 description: Your test configuration allows you to granularly control various aspects of the test including ramping and geographical distrobution. 
-permalink: /3.0/create-a-test
 categories: [quick-start-guide]
 order: 3
 redirect_from: /knowledgebase/articles/836124-create-a-test

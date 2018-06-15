@@ -25,7 +25,7 @@
 		{% unless page.url == "/" %}{% include sidebar.html %}{% endunless %}
 		<div class="article-container docs">
 			<form id="site-search" class="doc-search" action="">
-				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'li3' %}3.0 {% elsif page.collection == 'li4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
+				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'li3' %}Legacy {% elsif page.collection == 'li4' %}Next-gen {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
 			</form>
 			{% if page.page-type == "index" %}<h2>{{ page.title }}</h2>{% endif %}
 			<article>
@@ -53,7 +53,7 @@
 		apiKey: '---',
 		indexName: 'loadimpact',
 		inputSelector: '#li-search',
-		algoliaOptions: { 'facetFilters': ["version:{% if page.collection == 'li3' %}3.0{% elsif page.collection == 'li4' %}4.0{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
+		algoliaOptions: { 'facetFilters': ["version:{% if page.collection == 'li3' %}Legacy{% elsif page.collection == 'li4' %}Next-gen{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
 		debug: {% if jekyll.environment == "production" %}false{% else %}true{% endif %} // Set debug to true if you want to inspect the dropdown
 	});
 	</script>-->

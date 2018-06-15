@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What does the map show?
 description: Explanation of the map shown within the Load Impact test result dataset
-permalink: /3.0/test-result-map
 categories: [test-results]
 order: 4
 redirect_from: /knowledgebase/articles/173853-what-does-the-map-show

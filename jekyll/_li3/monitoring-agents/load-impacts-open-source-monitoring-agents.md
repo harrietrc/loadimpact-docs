@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Load Impact's Open Source Server Monitoring Agents
 description: How to install Load Impact's open source Server Monitoring Agents to add more data and context to your load tests.
-permalink: /3.0/load-impacts-open-source-monitoring-agents
 categories: [monitoring-agents]
 order: 1
 redirect_from:

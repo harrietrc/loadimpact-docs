@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How do I share results?
 description: Ways to share results with your team
-permalink: /3.0/sharing-results
 categories: [test-results]
 order: 7
 redirect_from: /knowledgebase/articles/553950-public-url-sharing-test-results

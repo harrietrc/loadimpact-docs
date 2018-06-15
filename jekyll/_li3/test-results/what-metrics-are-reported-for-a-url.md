@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What metrics are reported back for a URL?
 description: Explanation on the metrics Load Impact reports back on URLs in a load test
-permalink: /3.0/what-metrics-are-reported-for-a-url
 categories: [test-results]
 order: 3
 redirect_from: /knowledgebase/articles/174136-what-metrics-are-reported-for-a-url

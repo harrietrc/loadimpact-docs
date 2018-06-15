@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What IP Addresses are used by Load Impact to generate load?
 description: List and explanation of the IP addresses Load Impact uses to generate load during a test.
-permalink: /3.0/what-ip-addresses-are-used-by-load-impact
 categories: [frequently-asked-questions]
 order: 5
 redirect_from: /knowledgebase/articles/174262-what-load-zones-and-ip-addresses-does-load-impact

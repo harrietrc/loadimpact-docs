@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Configuring the Load Impact Proxy Recorder
 description: "How to: Congfiguring the Load Impact Proxy Recorder"
-permalink: /3.0/how-to-configure-the-load-impact-proxy-recorder
 categories: [user-scenarios]
 order: 4
 redirect_from: /knowledgebase/articles/175465-how-do-i-configure-my-proxy-settings-for-the-proxy

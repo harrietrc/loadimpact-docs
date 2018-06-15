@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How are cookies handled?
 description: Load Impact handles cookies automatically, however, you have access to set them yourself and get them from the response for use in your load test.
-permalink: /3.0/how-are-cookies-handled
 categories: [user-scenario-scripting-examples]
 order: 11
 redirect_from: /knowledgebase/articles/174227-how-can-i-set-cookies-in-load-impact

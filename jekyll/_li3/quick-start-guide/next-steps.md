@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Next Steps
 description: Suggestions on next steps to take your load or performance testing to the next level.
-permalink: /3.0/next-steps
 categories: [quick-start-guide]
 order: 5
 ---

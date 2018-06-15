@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Testing a SOAP API
 description: Basic example on load testing a SOAP API endpoint and handling the response.
-permalink: /3.0/testing-SOAP-api
 categories: [user-scenario-scripting-examples]
 order: 22
 redirect_from: /knowledgebase/articles/828378-testing-a-soap-api

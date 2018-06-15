@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Simple Crawl of a Website
 description: Example script on how to script Virtual users to "crawl" a website
-permalink: /3.0/simple-crawl-of-website
 categories: [user-scenario-scripting-examples]
 order: 20
 redirect_from: /knowledgebase/articles/265432-simple-crawl-of-website

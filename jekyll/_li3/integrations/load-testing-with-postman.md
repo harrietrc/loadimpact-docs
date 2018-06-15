@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Load Testing with Postman
 description: Guide on how to create load tests in Load Impact from your Postman collections
-permalink: /3.0/load-testing-with-postman
 categories: [integrations]
 order: 2
 redirect_from: /knowledgebase/articles/894636-load-testing-with-postman

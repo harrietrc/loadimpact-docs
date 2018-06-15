@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How to open your firewall to Load Impact only
 description: Methods to open your firewall to Load Impact traffic for testing purposes
-permalink: /3.0/how-to-open-firewall-to-load-impact-only
 categories: [how-to-tutorials]
 order: 6
 redirect_from: /knowledgebase/articles/377327-how-can-i-open-my-firewall-to-load-impact-traffic

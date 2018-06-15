@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How to test a site that requires login
 description: Example on how to structure your http requests to test a site that requires login
-permalink: /3.0/how-to-test-a-site-that-requires-login
 categories: [how-to-tutorials]
 order: 3
 redirect_from: /knowledgebase/articles/432349-how-to-never-use-the-same-user-login-twice-in-a-te

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Ramping configurations
 description: Common load test ramping configuration examples and what you can learn from using them
-permalink: /3.0/load-test-ramping-configurations
 categories: [test-configuration]
 order: 9
 redirect_from: /knowledgebase/articles/945337-different-types-of-ramping-configurations

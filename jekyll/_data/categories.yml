@@ -66,12 +66,16 @@
   name: Getting Started
 
 - section: li4
-  slug: how-to-tutorials
-  name: How tos/Tutorials
+  slug: test-scripting
+  name: Test scripting
 
 - section: li4
-  slug: test-results
-  name: Test and Results
+  slug: result-analysis
+  name: Result analysis
+
+- section: li4
+  slug: how-to-tutorials
+  name: How tos/Tutorials
 
 - section: li4
   slug: team-project-management

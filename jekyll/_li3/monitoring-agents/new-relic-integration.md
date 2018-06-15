@@ -2,7 +2,6 @@
 layout: classic-docs
 title: New Relic APM in your Load Impact Test
 description: Load Impact's integration with New Relic allows you to view data from New Relic's APM.
-permalink: /3.0/new-relic-integration
 categories: [monitoring-agents]
 order: 2
 redirect_from: /knowledgebase/articles/752553-monitoring-new-relic-metrics-while-running-a-load

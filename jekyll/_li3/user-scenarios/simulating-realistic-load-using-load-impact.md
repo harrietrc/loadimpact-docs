@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Simulating realistic Load with Load Impact
 description: "Simulating realistic load with Load Impact"
-permalink: /3.0/simulating-realistic-load-using-load-impact
 categories: [user-scenarios]
 order: 2
 redirect_from: /knowledgebase/articles/265464-simulating-realistic-load-using-load-impact

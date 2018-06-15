@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Pricing FAQ
 description: FAQ for Load Impact pricing related questions
-permalink: /3.0/pricing-faq
 categories: [pricing]
 order: 1
 redirect_from:

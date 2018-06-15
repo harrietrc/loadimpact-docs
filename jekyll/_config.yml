@@ -17,19 +17,19 @@ liquid:
 
 collections:
   li3:
-    name: "3.0 Docs"
+    name: "Load Impact Legacy (Lua) Docs"
     site_section: true
     output: true
-    permalink: /3.0/:path/
-    prefix: "/3.0"
-    selectorName: "3.0"
+    permalink: /legacy/:path/
+    prefix: "/legacy"
+    selectorName: "Legacy"
   li4:
-    name: "4.0 Docs"
+    name: "Load Impact (k6/JS) Docs"
     site_section: true
     output: true
-    permalink: /4.0/:path/
-    prefix: "/4.0"
-    selectorName: "4.0"
+    permalink: /next-gen/:path/
+    prefix: "/next-gen"
+    selectorName: "Next-gen"
   api:
     name: "API Docs"
     site_section: true

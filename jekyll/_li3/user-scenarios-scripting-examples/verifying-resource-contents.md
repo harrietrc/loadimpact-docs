@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Verifying resource contents
 description: How to verify resource contents in a response, these can be used in combination with custom metrics to make your tests more meaningful or just as a way to deal with errors from performance problems
-permalink: /3.0/verifying-resource-contents
 categories: [user-scenario-scripting-examples]
 order: 5
 redirect_from: /knowledgebase/articles/835722-verifying-resource-contents

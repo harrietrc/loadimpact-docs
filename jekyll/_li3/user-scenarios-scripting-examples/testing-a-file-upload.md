@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Testing a site with file uploads
 description: One example on how to script your User Scenario to upload files during a test.
-permalink: /3.0/testing-a-file-upload
 categories: [user-scenario-scripting-examples]
 order: 21
 redirect_from: /knowledgebase/articles/814794-testing-a-system-that-requires-uploading-a-file

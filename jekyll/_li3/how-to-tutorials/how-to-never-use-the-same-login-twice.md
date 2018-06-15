@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How to never use the same login twice in a test
 description: Methods to ensure you never use the same data from a data store more than once in a test
-permalink: /3.0/how-to-never-use-the-same-login-twice
 categories: [how-to-tutorials]
 order: 2
 redirect_from: /knowledgebase/articles/432349-how-to-never-use-the-same-user-login-twice-in-a-te

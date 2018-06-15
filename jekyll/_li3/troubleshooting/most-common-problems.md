@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Most common problems
 description: The most common problems you may run into when running load tests.
-permalink: /3.0/most-common-problems
 categories: [troubleshooting]
 order: 1
 redirect_from: /knowledgebase/articles/173855-common-problems-when-running-load-tests

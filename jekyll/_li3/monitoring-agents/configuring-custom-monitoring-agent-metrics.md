@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Creating custom metrics for Server Monitoring Agents
 description: How to create new Server Monitoring Agent metrics to send during a test.
-permalink: /3.0/configuring-custom-monitoring-agent-metrics
 categories: [monitoring-agents]
 order: 6
 redirect_from: /knowledgebase/articles/1094101-how-to-install-server-monitoring-agents-centos

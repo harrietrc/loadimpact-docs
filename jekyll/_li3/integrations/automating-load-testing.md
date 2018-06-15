@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Automating Load Tests with the Load Impact API
 description: Methods on how to automatically trigger load tests utilizing Load Impact's API or CLI
-permalink: /3.0/automating-load-testing
 categories: [integrations]
 order: 1
 redirect_from:

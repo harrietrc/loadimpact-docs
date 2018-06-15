@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Why doesn't the proxy recorder work?
 description: Reasons why the Load Impact proxy recorder may not be functioning and suggestions on how to fix it.
-permalink: /3.0/why-doesnt-the-proxy-recorder-work
 categories: [user-scenarios]
 order: 8
 redirect_from: /knowledgebase/articles/175466-why-doesn-t-the-proxy-recorder-work

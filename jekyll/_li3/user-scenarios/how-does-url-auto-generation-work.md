@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Auto Generated URL scenarios
 description: "How does the URL auto-generation feature work?"
-permalink: /3.0/how-does-the-url-auto-generation-feature-work
 categories: [user-scenarios]
 order: 3
 redirect_from: /knowledgebase/articles/174237-how-does-the-auto-generate-feature-work

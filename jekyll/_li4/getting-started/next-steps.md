@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Steps to take next
 description: Suggestions on next steps to take after your first test with k6 and Insights.
-permalink: /getting-started/next-steps
 categories: [getting-started]
 order: 7
 ---

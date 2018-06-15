@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What is a User Scenario?
 description: "What is a User Scenario?"
-permalink: /3.0/what-is-a-user-scenario
 categories: [user-scenarios]
 order: 1
 redirect_from:

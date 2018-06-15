@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Integrating other Monitoring products into Load Impact
 description: While we do not have official integrations with other monitoring tools, it is possible, with some effort, to pull them into Load Impact for analysis. We provide this example, using AppDynamics
-permalink: /3.0/other-monitoring-tools
 categories: [monitoring-agents]
 order: 3
 redirect_from: /knowledgebase/articles/801591-how-to-get-your-appdynamics-metrics-into-load-impa

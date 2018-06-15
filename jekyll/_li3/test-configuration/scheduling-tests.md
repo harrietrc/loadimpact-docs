@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Scheduling Tests
 description: How to schedule tests in Load Impact.  Scheduled tests can be one time or recurring.
-permalink: /3.0/scheduling-tests
 categories: [test-configuration]
 order: 5
 redirect_from: /knowledgebase/articles/602886-scheduling-tests

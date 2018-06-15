@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Sample k6 script
 description: A sample k6 script with comments to explain the different parts.  Feel free to take this and adapt to your need
-permalink: /getting-started/sample-script
 categories: [getting-started]
 order: 8
 ---

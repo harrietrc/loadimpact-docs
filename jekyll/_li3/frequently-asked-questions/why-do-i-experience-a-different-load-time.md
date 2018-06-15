@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Why am I experiencing a different load time than my result?
 description: Reasons you may experience a different load time than your test result.
-permalink: /3.0/why-do-i-experience-a-different-load-time
 categories: [frequently-asked-questions]
 order: 7
 redirect_from: /knowledgebase/articles/174526-will-load-testing-transactions-show-up-on-google-a

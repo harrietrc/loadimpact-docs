@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Installing Server Monitoring Agents on Ubuntu
 description: Brief install guide to get Server Monitoring Agents installed on a server running Ubuntu
-permalink: /3.0/server-monitoring-agents-ubuntu-install
 categories: [monitoring-agents]
 order: 4
 redirect_from: /knowledgebase/articles/1093015-how-to-install-server-monitoring-agents-ubuntu

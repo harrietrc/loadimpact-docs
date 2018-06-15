@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Test Results
 description: Introduction on understanding and interpreting your Load Impact load and performance test results
-permalink: /3.0/test-result-introduction
 categories: [test-results]
 order: 1
 redirect_from:

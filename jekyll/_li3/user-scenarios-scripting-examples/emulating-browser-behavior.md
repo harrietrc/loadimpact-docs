@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Emulating Browser Behavior
 description: When running load tests it important to consider how a real user would make requests in the browser. Real browsers open multiple connections in parallel. The request_batch() allows you to emulate this behavior.
-permalink: /3.0/emulating-browser-behavior
 categories: [user-scenario-scripting-examples]
 order: 7
 redirect_from:

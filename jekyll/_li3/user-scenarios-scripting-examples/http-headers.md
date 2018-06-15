@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Reading and setting HTTP headers
 description: How to Set and read HTTP headers in Load Impact
-permalink: /3.0/http-headers
 categories: [user-scenario-scripting-examples]
 order: 4
 redirect_from: /knowledgebase/articles/835719-http-headers

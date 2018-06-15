@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What is the CSV export format?
 description: Examples and definition of Load Impacts CSV export format
-permalink: /3.0/what-is-the-csv-export-format
 categories: [frequently-asked-questions]
 order: 8
 redirect_from: /knowledgebase/articles/174526-will-load-testing-transactions-show-up-on-google-a

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Complex User Behavior
 description: Lua code samples and methods for emulating complex user behavior in your Load Test
-permalink: /3.0/complex-user-behavior
 categories: [user-scenario-scripting-examples]
 order: 8
 redirect_from: /knowledgebase/articles/835731-simulating-complex-user-behavior

@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Testing a JSON API
 description: Basic example on load testing a JSON API endpoint and handling the response.
-permalink: /3.0/testing-json-api
 categories: [user-scenario-scripting-examples]
 order: 21
 redirect_from: /knowledgebase/articles/827841-testing-a-json-api

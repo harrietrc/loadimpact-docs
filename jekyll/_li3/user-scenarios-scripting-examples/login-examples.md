@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Login Code Examples
 description: Variety of code samples on how to instruct Virtual Users to login during a performance test
-permalink: /3.0/login-examples
 categories: [user-scenario]
 order: 15
 redirect_from:

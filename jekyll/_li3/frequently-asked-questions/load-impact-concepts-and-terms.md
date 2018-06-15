@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What are Load Impact's definitions of concepts and terms?
 description: Definitions of concepts and terminology commonly used in Load Testing as it relates to Load Impact.
-permalink: /3.0/load-impact-concepts-and-terms
 categories: [frequently-asked-questions]
 order: 1
 redirect_from:

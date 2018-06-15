@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Using the Load Impact Chrome Extension
 description: "How do I use the Load Impact Chrome Extension to record user scenarios?"
-permalink: /3.0/load-impact-chrome-extension
 categories: [user-scenarios]
 order: 3
 redirect_from: /knowledgebase/articles/174664-how-do-i-use-the-chrome-extension-to-record-user-s

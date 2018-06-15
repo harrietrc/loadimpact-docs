@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Projects
 description: Projects are a foldering system within Load Impact. Projects allow you to organize your tests/scenarios and assign team members to have access to them.
-permalink: /3.0/projects
 categories: [organizations-projects]
 order: 2
 redirect_from: /knowledgebase/articles/780474-organizations

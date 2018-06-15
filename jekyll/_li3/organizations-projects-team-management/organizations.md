@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Organizations
 description: Explanation of the organization hierarchy in Load Impact
-permalink: /3.0/organizations
 categories: [organizations-projects]
 order: 1
 redirect_from:

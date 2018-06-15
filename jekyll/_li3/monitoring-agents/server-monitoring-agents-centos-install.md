@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Installing Server Monitoring Agents on CentOS
 description: Brief install guide to get Server Monitoring Agents installed on a server running CentOS
-permalink: /3.0/server-monitoring-agents-centos-install
 categories: [monitoring-agents]
 order: 5
 redirect_from: /knowledgebase/articles/1094101-how-to-install-server-monitoring-agents-centos

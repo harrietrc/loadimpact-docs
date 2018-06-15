@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Will load tests show up in Google Analytics?
 description: Explanation on why load tests do not show up in Google Analytics and a code sample on how to make them show up, if desired.
-permalink: /3.0/will-load-tests-show-up-in-google-analytics
 categories: [frequently-asked-questions]
 order: 6
 redirect_from: /knowledgebase/articles/174526-will-load-testing-transactions-show-up-on-google-a

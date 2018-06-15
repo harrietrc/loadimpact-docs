@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Adding Team Members
 description: Brief guide on adding/inviting team members to participate in your Load Impact account and subscription.
-permalink: /3.0/adding-team-members
 categories: [organizations-projects]
 order: 3
 redirect_from: /knowledgebase/articles/922467-adding-team-members

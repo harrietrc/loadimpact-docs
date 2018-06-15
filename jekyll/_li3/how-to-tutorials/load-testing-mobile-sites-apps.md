@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Testing Mobile Sites/Apps
 description: Guide on testing mobile sites/apps
-permalink: /3.0/how-to-test-a-site-that-requires-login
 categories: [how-to-tutorials]
 order: 5
 redirect_from: /knowledgebase/articles/432349-how-to-never-use-the-same-user-login-twice-in-a-te

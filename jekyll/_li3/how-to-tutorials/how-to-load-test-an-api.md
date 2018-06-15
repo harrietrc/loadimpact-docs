@@ -2,7 +2,6 @@
 layout: classic-docs
 title: How to Load Test an API
 description: Useable code sample to load test APIs with Load Impact. Simply put your endpoint in.  This will make 25 rps per VU until the test is over.
-permalink: /3.0/how-to-load-test-an-api
 categories: [how-to-tutorials]
 order: 1
 redirect_from:

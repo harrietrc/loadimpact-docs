@@ -2,7 +2,6 @@
 layout: classic-docs
 title: What are the different types of performance tests?
 description: Definitions of the most common load and performance tests
-permalink: /3.0/types-of-performance-tests
 categories: [frequently-asked-questions]
 order: 3
 redirect_from: /knowledgebase/articles/265462-different-types-of-website-performance-testing

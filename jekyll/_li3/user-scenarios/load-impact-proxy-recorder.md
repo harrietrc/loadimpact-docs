@@ -2,7 +2,6 @@
 layout: classic-docs
 title: Load Impact Proxy Recorder
 description: "The Load Impact Proxy Recorder"
-permalink: /3.0/load-impact-proxy-recorder
 categories: [user-scenarios]
 order: 5
 redirect_from: /knowledgebase/articles/175462-what-is-the-proxy-recorder-and-how-does-it-work
