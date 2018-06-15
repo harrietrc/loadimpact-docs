@@ -58,12 +58,6 @@ defaults:
       hide: false
       search: true
 
-segment: ''
-
-analytics:
-  events:
-    go_button_clicked: go-button-clicked
-
 algolia:
   application_id: OW2UD9NPMI
   index_name: staging_li_docs
