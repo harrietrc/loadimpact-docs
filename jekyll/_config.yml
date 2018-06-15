@@ -66,6 +66,7 @@ analytics:
 
 algolia:
   application_id: OW2UD9NPMI
+  index_name: staging_li_docs
 
 plugins:
   - jekyll-redirect-from
