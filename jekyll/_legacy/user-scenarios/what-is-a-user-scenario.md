@@ -19,12 +19,12 @@ You can create multiple user scenarios and use them all in a single load test. E
 
 **User scenarios** can be created in several ways. Starting on the [User scenarios](https://app.loadimpact.com/user-scenarios/new) page, you click the _**New user scenario**_ button.
 
-<\INSERT IMAGE>
+![Create user scenarios in a variety of ways]( {{ site.baseurl}}/jekyll/assets/img/legacy/user-scenarios/what-is-a-user-scenario/user-scenario-options.jpg)
 
  You then have several options:
   - You can enter a URL in the _**Submit a URL for a quick scenario**_ field and then click the Proceed button.
   - If you know exactly what individual URLs you want the user scenario to load, you can write the load script for the scenario manually, choosing the **Scripting** option.
-  - You can also choose the [Scenario Recorder](chrome-recorder) option, or the [Proxy Recorder](proxy-recorder) option.
+  - You can also choose the [Chrome Extension]({{ site.baseurl }}/legacy/user-scenarios/load-impact-chrome-extension) option, or the [Proxy Recorder]({{ site.baseurl }}/legacy/user-scenarios/load-impact-proxy-recorder) option.
 
 The _**Submit a URL for a quick scenario**_ field will make the system load the URL and parse it like a web browser does. i.e. if you specified the address of a certain web page, the system would load that address, parse the HTML code it gets and find out what other resources (images, CSS files, etc) would be necessary to load for a web browser to be able to render the web page. Then a load script would be generated that fetched all these resources, in the same order a web browser would have fetched them. When the user scenario is run in a load test it would be just like a real user loaded that one, single web page with all its dependent resources.
 
