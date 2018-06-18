@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Before You Begin
+title: Load test preperations - Before you begin
 description: Guide to help you prepare for your first load or performance test.  Things to think about and have in mind before you start hammering your site with traffic.
 categories: [quick-start-guide]
 order: 1
@@ -25,14 +25,17 @@ Whether you’re testing your application for 100 users or 1 million, it’s imp
 ## Calculating Virtual Users
 Before getting started, we recommend looking into any analytics you may have for the following information:
 
-Peak hourly sessions - on your busiest day, what is your busiest hour
+- Peak hourly sessions - on your busiest day, what is your busiest hour
+- Average session duration - In seconds, how long does each user stay on average
 
-Average session duration - In seconds, how long does each user stay on average
+With these two metrics, you can determine the number of Virtual Users needed, using the following formula:
 
-With these two metrics, you can determine the number of Virtual Users needed, using the following formula: VUs = (Peak Hourly Sessions * Average Session Duration in Seconds) / 3600.  Depending on your goals, you may want increase this number to provide a cushion beyond your expectations (i.e. 10%, 25%, etc.)
+`VUs = (Peak Hourly Sessions * Average Session Duration in Seconds) / 3600`.
+
+Depending on your goals, you may want increase this number to provide a cushion beyond your expectations (i.e. 10%, 25%, etc.)
 
 ## Considerations when testing APIs
-If you are testing an API endpoint, I would suggest going straight to our article on the topic ~~[here](INSERT LINK).~~  Testing API endpoints will require some different scripting configurations.  Since our Virtual Users are able to make multiple requests per second you can push them a little bit harder to hit some request/second goals you may have.
+If you are testing an API endpoint, I would suggest going straight to our article on the topic [here]( {{ site.baseurl }}/legacy/how-to-tutorials/how-to-load-test-an-api/).  Testing API endpoints will require some different scripting configurations.  Since our Virtual Users are able to make multiple requests per second you can push them a little bit harder to hit some request/second goals you may have.
 
 ## Define your load test iterations:
 - The first test (or series of tests) will be used as a baseline for performance
@@ -48,4 +51,4 @@ If you are testing an API endpoint, I would suggest going straight to our articl
 - Make sure your goals are realistic for your business and industry
 - Have goals for load on the application that may go above and beyond stated requirements
 
-Next, let's [create a user scenario]({{ site.baseurl }}/3.0/Create_User_Scenario)
+Next, let's [create a user scenario]({{ site.baseurl }}/legacy/quick-start-guide/create-user-scenario/)
