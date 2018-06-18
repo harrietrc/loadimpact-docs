@@ -152,6 +152,6 @@
 
 body.embedded {
   .navbar {
-      display: none;
+      display: none !important;
   }
 }
