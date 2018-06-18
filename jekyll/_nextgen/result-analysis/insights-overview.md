@@ -82,4 +82,4 @@ See more:
 - [Insights: filters]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-filters.md %})
 - [Insights: breakdown tree view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-break-down-tree.md %})
 - [Insights: analysis view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-analysis-view.md %})
-- [Insights: URL]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-url-table.md %})
+- [Insights: URL table]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-url-table.md %})
