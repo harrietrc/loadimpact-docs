@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Login Code Examples
+title: Login Examples
 description: Variety of code samples on how to instruct Virtual Users to login during a performance test
 categories: [user-scenario-scripting-examples]
 order: 15

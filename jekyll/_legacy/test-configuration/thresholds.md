@@ -32,6 +32,6 @@ Here are some examples of Thresholds that can be set:
 
 Thresholds are configured on a per test basis in your [test configuration]({{ site.baseurl }}/legacy/test-configuration/what-is-a-test-configuration/):
 
-![Threshold examples]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/thresholds/thresholds-1.png)
+![Threshold examples]({{ site.baseurl }}/assets/img/legacy/test-configuration/thresholds/thresholds-1.png)
 
 As in other testing disciplines, your own criteria defines a test as a success or failure. Thresholds provides this pass/fail behaviour for your load tests.

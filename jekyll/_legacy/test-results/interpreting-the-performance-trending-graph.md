@@ -18,7 +18,7 @@ To make the best use of the Performance trending graph, we recommend utilizing o
 Since performance and load testing typically calls for multiple iterations and changes of a test run, we demarcate the graph to show when test configurations were changed.  This is displayed as an orange line on the graph, as shown below.
 
 
-![Performance trending graph]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/interpreting-the-performance-trending-graph/performance-trending-graph.png)
+![Performance trending graph]({{ site.baseurl }}/assets/img/legacy/test-result/interpreting-the-performance-trending-graph/performance-trending-graph.png)
 
 
 **Note**: Although we will include all URLs tested by default, you can purposely include/exclude certain URLs from trending by setting “report_results=true/false” in the load script for the test.

@@ -17,12 +17,12 @@ You can configure URL groups in your test configuration. A URL group is defined 
 - A display name
 - A regular expression pattern, that is used to match URLs that should be part of a grouping.
 
-![URL Grouping examples]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/url-grouping/url-grouping-1.png)
+![URL Grouping examples]({{ site.baseurl }}/assets/img/legacy/test-configuration/url-grouping/url-grouping-1.png)
 
 
 The order of the URL groups is important: if a given URL matches multiple regular expressions it will be assigned to the first group in the list. You can reorder groups by clicking arrow buttons on the left side of the table.
 
-![Creating a URL grouping]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/url-grouping/url-grouping-2.png)
+![Creating a URL grouping]({{ site.baseurl }}/assets/img/legacy/test-configuration/url-grouping/url-grouping-2.png)
 
 **Note**: Don't forget to save your test configuration after updating the URL group list!
 
@@ -30,4 +30,4 @@ The order of the URL groups is important: if a given URL matches multiple regula
 
 During the test execution all urls from the test script that match the given regular expression of a URL group will be combined and displayed as a single entry in the “URLs” overview section of the test results page. This enables you to optimize your test results, making them easier to analyze by reducing the number of URLs without losing the relevant information.
 
-![URL Grouping in a test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/url-grouping/url-grouping-3.png)
+![URL Grouping in a test]({{ site.baseurl }}/assets/img/legacy/test-configuration/url-grouping/url-grouping-3.png)

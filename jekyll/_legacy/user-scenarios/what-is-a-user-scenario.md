@@ -11,15 +11,13 @@ redirect_from:
 
 ***
 
--YOU TUBE VIDEO-
-
 A **user scenario** defines what URLs or web pages will be requested by the simulated users during a load test. The best user scenarios are ones that mimic real user behavior.
 
 You can create multiple user scenarios and use them all in a single load test. E.g. if you have a shopping site, you can then have one user scenario that simulates a user just browsing on the site, and another user scenario that simulates a user who logs in on the site, puts some products into the shopping cart, and then performs a check-out.
 
 **User scenarios** can be created in several ways. Starting on the [User scenarios](https://app.loadimpact.com/user-scenarios/new) page, you click the _**New user scenario**_ button.
 
-![Create user scenarios in a variety of ways]( {{ site.baseurl}}/jekyll/assets/img/legacy/user-scenarios/what-is-a-user-scenario/user-scenario-options.jpg)
+![Create user scenarios in a variety of ways]( {{ site.baseurl}}/assets/img/legacy/user-scenarios/what-is-a-user-scenario/user-scenario-options.jpg)
 
  You then have several options:
   - You can enter a URL in the _**Submit a URL for a quick scenario**_ field and then click the Proceed button.

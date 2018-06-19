@@ -19,7 +19,7 @@ In most situations, it is correct to say that if `VU Load Time` is flat the Syst
 #### Metrics reported in a test
 `VU Load Time` is the “default” metric that gets shown in the default chart for every test started, along with the number of active clients. Below is an example of the default chart, showing `VU Load Time` as a blue graph and active clients as a green graph _(Colors may vary based on the metrics you plot)_
 
-![Flat `VU Load Time` Graph]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/flat-vu-load-time.png)
+![Flat `VU Load Time` Graph]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/flat-vu-load-time.png)
 
 `VU Load Time` tells you how much time it took the simulated clients to perform all the HTTP transactions in your user scenario. It measures the total time it takes Virtual Users to make all the HTTP(s) requests in a user scenario, ignoring any client.sleep(). When looking at `VU Load Time` you want to look for trends:
 
@@ -33,7 +33,7 @@ Below are some common patterns you may encounter and what to potentially take aw
 
 The chart below shows a green graph that displays number of active clients in a test, and a blue graph that shows user load time (response time) during the test. Despite increasing the load (the green graph) from 1 to 25 concurrent clients you can see that the blue graph doesn't change – it fluctuates slightly up and down but stays at the same average level regardless of the load level. This tells us that the system being tested is nowhere near stressed by the load it is subjected to. Substantially higher load levels would be required to see any kind of performance degradation.
 
-![Flat `VU Load Time` Graph]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/flat-vu-load-time.png)
+![Flat `VU Load Time` Graph]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/flat-vu-load-time.png)
 
 ##### 2. The rising graph
 
@@ -41,13 +41,13 @@ Consider a test where the load level is ramped up from about 75 to 500 clients o
 
 From this graph we can deduce that demand for some resource is exceeding availability of that resource around 200 clients, causing a graceful performance degradation from that point onwards as every client has to share the scarce resource equally. Shortage of some system resources (e.g. network bandwidth) will cause this kind of graceful/linear performance degradation, while others will result in very fast, exponential performance degradation (system memory shortage, for instance). Note that graceful degradation usually becomes exponential once the shortage gets severe enough.
 
-![Rising `VU Load Time` Graph]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/rising-vu-load-time.png)
+![Rising `VU Load Time` Graph]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/rising-vu-load-time.png)
 
 ##### 3. The exponential graph
 
 This graph looks flat to begin with, but then it starts to rise, and keeps rising faster and faster as load increases. This is called exponential behavior, where every little bit of load that is added will cause an ever larger performance degradation. When you see this type of graph you know that you are not far away from the extreme limit of your system’s performance.
 
-![Expoonential `VU Load Time` Graph]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/exponential-vu-load-time.png)
+![Expoonential `VU Load Time` Graph]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/exponential-vu-load-time.png)
 
 ### Additional Metrics
 
@@ -77,7 +77,7 @@ Once you have reviewed the main result metrics, you should consider the URL and 
 
 The URL tab will show you how each resource requested during the test has performed. The tab is searchable and sortable for most test cases. You should look for unexpected statuses and large variances between min and max load time for individual resources. These two things suggest potential performance problems.  You can use the three dots next to Avg to plot the resource to the main or small chart.
 
-![URL Tab]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/url-tab.png)
+![URL Tab]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/url-tab.png)
 
 Title| Definition
 -|-
@@ -100,4 +100,4 @@ If you have utilized `http.page_start()` and `http.page_end()` in your script, w
 
 The structure of the tab is similar to the URL tab.  You should be looking for large variances between Min and Max load times for these pages.  It's sometimes useful to start on the Pages tab to find the worst performing pages and then digging into the URL tab to find the exact request.
 
-![Pages Tab]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/how-do-i-interpret-results/pages-tab.png)
+![Pages Tab]({{ site.baseurl }}/assets/img/legacy/test-result/how-do-i-interpret-results/pages-tab.png)

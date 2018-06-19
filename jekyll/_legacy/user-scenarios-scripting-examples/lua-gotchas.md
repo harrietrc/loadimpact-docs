@@ -79,14 +79,14 @@ In general, avoid making “holes” in tables that you use as a linear arrays�
 
 
 ##### Information available at loadimpact.com
-The Load Impact load script API: https://loadimpact.com/load-script-api
+[The Load Impact load script API](https://loadimpact.com/load-script-api)
 
 
 ##### Official Lua documentation
-Lua Reference Manual: http://www.lua.org/manual/5.1/
-Programming in Lua 2nd ed.: http://www.lua.org/docs.html#pil
+[Lua Reference Manual](http://www.lua.org/manual/5.1/)
+[Programming in Lua 2nd ed.](http://www.lua.org/docs.html#pil)
 
 
 ##### Lua community
-Lua Unofficial Frequently Asked Questions (FAQ): http://batbytes.com/luafaq/
-Lua users wiki: http://lua-users.org/wiki/
+[Lua Unofficial Frequently Asked Questions (FAQ)](http://batbytes.com/luafaq/)
+[Lua users wiki](http://lua-users.org/wiki/)

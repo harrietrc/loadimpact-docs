@@ -80,11 +80,11 @@ http.request_batch({
 
 
 
-See also:
+Refer to:
 
-- The Load Impact load script API: https://loadimpact.com/load-script-api
-- http.post(): https://loadimpact.com/load-script-api#http-post
-- http.get(): https://loadimpact.com/load-script-api#http-get
-- http module: https://loadimpact.com/load-script-api#http
-- http.request(): https://loadimpact.com/load-script-api#http-request
-- http.request_batch(): https://loadimpact.com/load-script-api#http-request_batch
+- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [http.post()](https://loadimpact.com/load-script-api#http-post)
+- [http.get()](https://loadimpact.com/load-script-api#http-get)
+- [http module](https://loadimpact.com/load-script-api#http)
+- [http.request()](https://loadimpact.com/load-script-api#http-request)
+- [http.request_batch()](https://loadimpact.com/load-script-api#http-request_batch)

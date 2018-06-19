@@ -131,7 +131,6 @@ You may code whole user stories this way:
 
 ```
 
-See also:
+Refer to:
 
-- The Load Impact load script API: https://loadimpact.com/load-script-api
-- More code examples: http://support.loadimpact.com/knowledgebase/topics/23898-code-examples
+- [The Load Impact load script API](https://loadimpact.com/load-script-api)

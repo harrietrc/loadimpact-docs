@@ -23,7 +23,7 @@ You can schedule tests to recur:
 
 Tests can be scheduled by clicking on "Schedule" in the top right corner within a test result overview:
 
-![Scheduling tests]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/scheduling-tests/scheduling-tests-1.png)
+![Scheduling tests]({{ site.baseurl }}/assets/img/legacy/test-configuration/scheduling-tests/scheduling-tests-1.png)
 
 
 **Note:** The time zone for scheduling will be dependent on the Time Zone you've selected under your [User Profile Settings](https://app.loadimpact.com/account)
@@ -32,7 +32,7 @@ Tests can be scheduled by clicking on "Schedule" in the top right corner within 
 
 After clicking, the test schedule pop-up window will appear
 
-![Scheduling tests]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/scheduling-tests/scheduling-tests-2.png)
+![Scheduling tests]({{ site.baseurl }}/assets/img/legacy/test-configuration/scheduling-tests/scheduling-tests-2.png)
 
 You may want to setup Notifications to be aware when a test has been started and completed.
 

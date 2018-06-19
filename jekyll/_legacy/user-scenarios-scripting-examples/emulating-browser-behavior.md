@@ -53,7 +53,7 @@ Here is an example that shows a load script that loads all the content on the pa
 
  In the above example, we configure the simulated client to do two things:
 
- Use the specific User-Agent string used by an [Internet Explorer 6][1] browser running on Windows XP
+ Use the specific User-Agent string used by an [Internet Explorer 6](http://www.browserscope.org/?category=network&v=1&ua=Chrome%2022%2CIE%206) browser running on Windows XP
  Use max 2 concurrent connections per target host, and max 34 concurrent connections in total in the first example, like IE6 would.
 
 
@@ -74,18 +74,16 @@ Here is an example that shows a load script that loads all the content on the pa
       {"GET", "http://test.loadimpact.com/contacts.php"}
  })
  ```
- [Chrome 22][1] uses up to 6 concurrent connections to the same host, and up to 17 concurrent connections in total. In our example that would mean that Chrome was able to open 4 concurrent connections to the “test.loadimpact.com” host and fetch all four items in parallel. If each item takes 100 ms to fetch, it would mean the whole batch of requests were done in just 100 ms.
+ [Chrome 22](http://www.browserscope.org/?category=network&v=1&ua=Chrome%2022%2CIE%206) uses up to 6 concurrent connections to the same host, and up to 17 concurrent connections in total. In our example that would mean that Chrome was able to open 4 concurrent connections to the “test.loadimpact.com” host and fetch all four items in parallel. If each item takes 100 ms to fetch, it would mean the whole batch of requests were done in just 100 ms.
 
  The User-Agent string we set in both examples will be sent in the “User-Agent:” HTTP header to the web server when our simulated client makes a request, making the remote web server believe that the client is using this particular browser/platform combination. For some sites it can trigger delivery of specialized content that has been adapted for a particular browser and/or platform.
 
  Because Chrome uses up to three times as many concurrent connections as IE6 to the same host when it is fetching things, it means it can fetch things much faster (up to three times faster). This also places the target host/system under a lot more pressure, which is why it is important to emulate the right mix of browsers when you run your load test.
 
- [1]: http://www.browserscope.org/?category=network&v=1&ua=Chrome%2022%2CIE%206
 
  See also:
 
- - Function http.set_user_agent_string()
- - Function http.set_max_connections()
- - Simulated user types
- - HTTP User Agent strings
- - Browser network characteristics IE6 vs Chrome 22
+ - [Function http.set_user_agent_string()](https://loadimpact.com/load-script-api#http)
+ - [Function http.set_max_connections()](https://loadimpact.com/load-script-api#http)
+ - [HTTP User Agent strings](http://www.useragentstring.com/)
+ - [Browser network characteristics IE6 vs Chrome 22](http://www.browserscope.org/?category=network&v=1&ua=Chrome%2022%2CIE%206)

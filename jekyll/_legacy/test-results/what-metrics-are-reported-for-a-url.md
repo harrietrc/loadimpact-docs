@@ -13,7 +13,7 @@ For each URL in a test, Load Impact reports what status codes the tested server 
 
 On the test results page, there is an tab “URLs” where you see a list of every URL included in the test, and some statistics about the URL. This is how it looks:
 
-![URL Tab]({{ site.baseurl }}/jekyll/assets/img/legacy/test-result/what-metrics-are-reported-for-a-url/url-tab.png)
+![URL Tab]({{ site.baseurl }}/assets/img/legacy/test-result/what-metrics-are-reported-for-a-url/url-tab.png)
 
 Title| Definition
 -|-

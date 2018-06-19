@@ -55,5 +55,5 @@ In the example we assume that you do know the exact page modification date.
 
 See also:
 
-The Load Impact load script API: https://loadimpact.com/load-script-api
-If-Modified-Since header: http://en.wikipedia.org/wiki/List_of_HTTP_headers
+- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [If-Modified-Since header](http://en.wikipedia.org/wiki/List_of_HTTP_headers)

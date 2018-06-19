@@ -55,9 +55,9 @@ else -- Toss result is valid, go on
 end
 ```
 
-See also:
+Refer to:
 
-- The Load Impact load script API: https://loadimpact.com/load-script-api
-- math.random(): http://www.lua.org/manual/5.1/manual.html#pdf-math.random
-- string.match(): http://www.lua.org/manual/5.1/manual.html#pdf-string.match
-- Lua string patterns: http://www.lua.org/manual/5.1/manual.html#5.4.1
+- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [Lua math.random()](http://www.lua.org/manual/5.1/manual.html#pdf-math.random)
+- [Lua string.match()](http://www.lua.org/manual/5.1/manual.html#pdf-string.match)
+- [Lua string patterns](http://www.lua.org/manual/5.1/manual.html#5.4.1)

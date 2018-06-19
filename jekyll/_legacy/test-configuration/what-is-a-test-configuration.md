@@ -20,26 +20,26 @@ A test configuration allows you to define how the load test will execute:
 
 Start by click on "New Test" from your Dashboard
 
-![Click create new test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-1.png)
+![Click create new test]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-1.png)
 
 
 In test configuration you have to supply [User Scenarios]({{ site.baseurl }}/legacy/user-scenarios/what-is-a-user-scenario/) to the site you want to test. You can configure your test to use one or more user scenarios. It is recommended to use our [Chrome Extension]({{ site.baseurl }}/legacy/user-scenarios/load-impact-chrome-extension/) or [Proxy Recorder]({{ site.baseurl }}/legacy/user-scenarios/load-impact-proxy-recorder/)  to create User Scenarios based on real user behavior.
 Start by clicking "Add User Scenario"
-![Click add User Scenario]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-2.png)
+![Click add User Scenario]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-2.png)
 
 After clicking, you can select scenarios you've already created from the drop down, Alternatively, you can enter a URL for a quick scenario.  URL generated scenarios will only load content from the target domain.
-![Choose your scenario]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-3.png)
+![Choose your scenario]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-3.png)
 
 
 You are also able to assign the User Scenarios to different Load Zones using the drop down menu below the scenario name. You are able to add the same scenario multiple times if needed.  Each unique User Scenario/Load zone will be given it's own Load Generator at minimum, you can have up to 10 individual User Scenarios in a single test.
 
-![Select your Load Zones]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-4.png)
+![Select your Load Zones]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-4.png)
 
 After adding your User Scenarios you are able to further configure and change Traffic Simulation settings.
 
 Virtual User Distribution across the scenarios added (if you have two or more scenarios in a single test). A Stress Test pattern is used in the example below. See our article on [ramping configurations]({{ site.baseurl }}/legacy/test-configuration/load-test-ramping-configurations/) for more information.
 
-![Define your distribution]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-5.png)
+![Define your distribution]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-5.png)
 
 
 
@@ -51,7 +51,7 @@ Under Advanced Settings:
 
 **Source IP Multiplier** - Up to 2x for Standard plans and above. This will increase the number of Load Generators in the test.  Virtual Users will be distributed as evenly as possible, based on current distribution.
 
-![Define your ramping pattern and network options]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-6.png)
+![Define your ramping pattern and network options]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-6.png)
 
 
 
@@ -65,4 +65,4 @@ Finally, we also have three optional configuration options for you to use:
 
 **URL Grouping** - Recommended for tests against systems that generate unique identifiers in the URL.  This allows you to group similar URLs together and stay organized when analyzing results.
 
-![Configure your other options]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-7.png)
+![Configure your other options]({{ site.baseurl }}/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-7.png)
