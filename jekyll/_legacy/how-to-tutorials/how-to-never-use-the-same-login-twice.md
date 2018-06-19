@@ -9,13 +9,13 @@ redirect_from: /knowledgebase/articles/432349-how-to-never-use-the-same-user-log
 
 ***
 
-While this article uses login as an example, the same method can be used for any parameterized data that can not be used more than once in a test. 
+While this article uses login as an example, the same method can be used for any parameterized data that can not be used more than once in a test.
 
-It is not uncommon that you might want the VUs in your load test to all behave differently, and perhaps use different usernames and passwords when logging onto your site/application. Sometimes it is also necessary to prevent a certain login (or other information) to be used more than once in the same load test. This can be slightly tricky as every VU will (normally) repeat its user scenario multiple times during a load test, but it can be done.
+It is not uncommon that you might want the VUs in your load test to all behave differently, and perhaps use different [usernames and passwords]({{ site.baseurl }}/legacy/user-scenarios-scripting-examples/data-stores/) when logging onto your site/application. Sometimes it is also necessary to prevent a certain login (or other information) to be used more than once in the same load test. This can be slightly tricky as every VU will (normally) repeat its user scenario multiple times during a load test, but it can be done.
 
 First of all, some background information. A VU is basically an execution thread, and it will, when it is started, immediately start running its user scenario. When the user scenario ends, the VU will execute it again, and again, and again until the VU is shut down. A VU is shut down for one of 3 reasons: the load test ends, the configuration specifies that the load level should be ramped down, or the VU encounters some runtime error when executing its user scenario code
 
-Each VU keeps track of how many times it has executed its user scenario. We call this the "repetition count". On its first iteration, the count is 1. It is then increased upon the start of every new iteration. This counter can be read by the user scenario code by calling the function client.get_repetition()
+Each VU keeps track of how many times it has executed its user scenario. We call this the "repetition count". On its first iteration, the count is 1. It is then increased upon the start of every new iteration. This counter can be read by the user scenario code by calling the function [client.get_repetition()](https://loadimpact.com/load-script-api#client-get_repetition)
 
 Now, you can make a VU execute its user scenario only once, if you want, by making sure your user scenario doesn't end before the load test does. This can be done e.g. by writing it in the form of an endless loop:
 ```
@@ -51,4 +51,4 @@ local username = 'user' .. tostring(unique_number)
 local password = 'password' .. tostring(unique_number)
 ```
 
-Note also, that this works fine for tests up to 500 VUs, but for larger tests there is a little added complexity as you will then have multiple load generators, each with its own VU count. client.get_id() might then return the same number for two different VUs in the test. In this case you have to also use client.get_load_generator_id()  when calculating your unique number.
+Note also, that this works fine for tests up to 500 VUs, but for larger tests there is a little added complexity as you will then have multiple load generators, each with its own VU count. [client.get_id()](https://loadimpact.com/load-script-api#client-get_id) might then return the same number for two different VUs in the test. In this case you have to also use [client.get_load_generator_id()](https://loadimpact.com/load-script-api#client-get_load_generator_id)  when calculating your unique number.

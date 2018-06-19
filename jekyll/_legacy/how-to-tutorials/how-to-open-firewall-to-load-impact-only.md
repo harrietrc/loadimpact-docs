@@ -21,7 +21,7 @@ Here is a more detailed explanation of how to do the steps:
 
 1. Opening up your firewall to all IPs potentially used in the test
 
-    We list the full range of IP addresses used in [this article](what-ip-addresses-are-used-by-load-impact). You will need to whitelist the IP ranges for the load zones you are utilizing.
+    We list the full range of IP addresses used in [this article]({{ site.baseurl }}/legacy/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/). You will need to whitelist the IP ranges for the load zones you are utilizing.
 
 2. Using HTTP headers or URL query parameters to send an identifying token
 

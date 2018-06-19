@@ -98,15 +98,14 @@ end
 - **When configuring your test, you will need to set your Browser Emulation in the Traffic Simulation -> Advanced Settings menu to LOAD IMPACT MAX**
 - There are a few possible configurations or customizations to the script that may or may not apply depending on the characteristics of the system under test - e.g. changing concurrent TCP connections per VU.
 - When following this pattern, the VU Load Time is likely a meaningless metric, and it is not reported until the end of the user scenario execution. Checkout this article for more information.
-- This script generates a [custom metric](creating-custom-metrics) `sleep_time` that you can use for understanding the behavior of your testing
+- This script generates a [custom metric]({{ site.baseurl }}/legacy/user-scenarios-scripting-examples/creating-custom-metrics/) `sleep_time` that you can use for understanding the behavior of your testing
 - Below is an example chart showing how Load Impact would report a 500VU/11m run of the above sample script:
 
-Image: https://loadimpact.uservoice.com/assets/118222516/Image%202017-03-13%20at%2016.17.50.png
+![Example API Test Result]( {{ site.baseurl }}/assets/img/legacy/how-to-tutorials/how-to-load-test-an-api/api-test-result.png)
 
 See also:
-- Virtual Users
-- Requests Per Second, RPS
-- Load testing with Postman
-- Different types of ramping configurations
-- User scenario scripting
-- client.sleep()
+- [Virtual Users]({{ site.baseurl }}//legacy/test-configuration/what-are-virtual-users-vus/)
+- [Requests Per Second, RPS]({{ site.baseurl }}/legacy/test-configuration/what-are-requests-per-second-rps/)
+- [Load testing with Postman]({{ site.baseurl }}/legacy/integrations/load-testing-with-postman/)
+- [Different types of ramping configurations]({{ site.baseurl }}/legacy/test-configuration/load-test-ramping-configurations/)
+- [User scenario scripting]({{ site.baseurl }}/legacy/user-scenario-scripting-examples/)

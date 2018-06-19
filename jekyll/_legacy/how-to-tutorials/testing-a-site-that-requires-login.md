@@ -15,9 +15,9 @@ Load Impact supports both basic HTTP authentication and HTTP POST operations, as
 
 Many sites let users login by filling in their username and password in input fields of a form that is then POST:ed to the web server. Load Impact supports HTTP POST operations, which mean that you may edit your load script and provide the login credentials (username/password) in a POST operation. When the server gets the right login credentials through this POST operation, it sets a session cookie in your browser. The session cookie is used for all future communications with the web server, authenticating you as a logged-in user. Load Impact automatically sets cookies when asked to by the server, so accessing pages as a logged-in user works fine if you just make sure your load script performs that initial POST operation.
 
-More information:
+Refer to:
 
-The Load Impact load script API – http.post
+[The Load Impact load script API – http.post](https://loadimpact.com/load-script-api#http-post)
 
 ***
 
@@ -39,8 +39,8 @@ http.request({
   headers={ ["Authorization"]= 'Basic ' .. base64.encode(username .. ':' .. password) }
 })
 ```
-See also:
-- User scenario scripting
-- The Load Impact load script API
-- Setting HTTP headers for a request
-- How to load test an API
+Refer to:
+- [User scenario scripting]({{ site.baseurl }}/legacy/user-scenario-scripting-examples/)
+- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [Setting HTTP headers for a request]({{ site.baseurl }}legacy/user-scenarios-scripting-examples/http-headers/)
+- [How to load test an API]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-load-test-an-api/)
