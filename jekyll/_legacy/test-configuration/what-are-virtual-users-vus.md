@@ -9,20 +9,21 @@ redirect_from: /knowledgebase/articles/174260-what-are-virtual-users-vus
 
 ***
 
-NEEDS UPDATE - CLEARLY EXPLAIN VUS.
+**Simply**: Virtual users (VUs) are concurrent users that are able to open multiple connections in parallel during a test. Virtual Users constantly iterate through their user scenario until the test is over.  A small number of Virtual Users can create a number of sessions magnitudes greater than their total.
+
+Because Virtual Users are using multiple parallel network connections, they will be opening multiple concurrent network connections and transferring resources in parallel. This results in faster page loads, more stress on the target server, and more realistic result data set. **Not all load testing tools operate in this more complex and realistic fashion**
+
+You also have access to change both the connection rules(`http.set_max_connections(max_connections, max_connections_per_host)`) and user agent strings (`http.set_user_agent_string("My UA String")`) through our Load Script API. This allows you to fine tune how the Virtual Users will operate and put stress on your system that mimics real users on a per user scenario basis.  We also have some selections you can make for the entire test.
 
 
+Calculating the number of virtual users can be done by using this formula:
 
-When executing a load test we will simulate a certain number of users accessing your system concurrently.
+` VUs = (hourly sessions*average session duration in seconds)/3600`
 
-A VU can use multiple concurrent network connections when loading resources from a single target host. This means that if e.g. the simulated user needs to fetch four different resources from the same target host, it can open four concurrent network connections and transfer all four resources in parallel. Obviously, this results in faster page loads, but also a lot more stress on the target server that has to serve four connections at once instead of just one.
-
-You are also able to have your VUs emulate a wide range of popular browsers such as IE, Firefox, Chrome, Safari, Opera etc. and even different versions of those browsers. The performance impact of emulating different browser can be huge – for instance, IE6 will never open more than two concurrent network connections to your web server, while most newer browsers will open up to six connections.
-
-If you're looking to understand how to calculate the number of VUs you might need based on your Google Analytics, this blog article might be useful to you.
+We wrote this [blog post](http://blog.loadimpact.com/blog/monthly-visits-concurrent-users/) that uses Google Analytics as an example source of this information.
 
 ***
 
 See also:
-- Requests per second, RPS
-- User scenario scripting
+- [Requests per second, RPS]({{ site.baseurl }}/legacy/test-configuration/what-are-requests-per-second-rps/)
+- [User scenario scripting]({{ site.baseurl }}/legacy/user-scenario-scripting-examples/)

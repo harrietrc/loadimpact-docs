@@ -11,44 +11,47 @@ redirect_from:
 
 ***
 
-A test configuration describes the load test you want to run – how many simulated virtual users the test should load your site, what those users should do on your site (what pages they should load on the site) and from which load zones (which geographic region to run each scenario from, allowing you to distribute the simulated load across different types of users coming from different geographic locations).
+A test configuration allows you to define how the load test will execute:
+- How many Virtual Users will be simulated
+- What User Scenarios(journeys) they will be taking
+- What load zones they originate from
+- How they should ramp up and down and for what length of time the test should run
+- Other optional features such as server monitoring, URL grouping and thresholds
 
-Start by click on "New Test" from your Insights Dashboard
+Start by click on "New Test" from your Dashboard
 
-Image: https://loadimpact.uservoice.com/assets/115272343/Image%202017-01-17%20at%201.11.19%20PM.png
+![Click create new test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-1.png)
 
 
+In test configuration you have to supply [User Scenarios]({{ site.baseurl }}/legacy/user-scenarios/what-is-a-user-scenario/) to the site you want to test. You can configure your test to use one or more user scenarios. It is recommended to use our [Chrome Extension]({{ site.baseurl }}/legacy/user-scenarios/load-impact-chrome-extension/) or [Proxy Recorder]({{ site.baseurl }}/legacy/user-scenarios/load-impact-proxy-recorder/)  to create User Scenarios based on real user behavior.
+Start by clicking "Add User Scenario"
+![Click add User Scenario]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-2.png)
 
-In test configuration you have to supply User Scenarios to the site you want to test. You can configure your test to use one or more user scenarios. It is recommended to use our Chrome Extension or Proxy Recorder to create User Scenarios based on real user behavior.  Alternatively, you can enter a URL for a quick scenario.  URL generated scenarios will only load content from the target domain.
+After clicking, you can select scenarios you've already created from the drop down, Alternatively, you can enter a URL for a quick scenario.  URL generated scenarios will only load content from the target domain.
+![Choose your scenario]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-3.png)
 
-Image: https://loadimpact.uservoice.com/assets/115272502/Image%202017-01-17%20at%201.14.28%20PM.png
 
-You are also able to assign the User Scenarios to different Load Zones using the drop down menu below the scenario name. You are able to add the same scenario multiple times if needed.  Each User Scenario will be given it's own Load Generator at minimum, you can have up to 10 individual User Scenarios in a single test.
+You are also able to assign the User Scenarios to different Load Zones using the drop down menu below the scenario name. You are able to add the same scenario multiple times if needed.  Each unique User Scenario/Load zone will be given it's own Load Generator at minimum, you can have up to 10 individual User Scenarios in a single test.
 
-Image: https://loadimpact.uservoice.com/assets/115274434/Image%202017-01-17%20at%201.41.14%20PM.png
+![Select your Load Zones]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-4.png)
 
 After adding your User Scenarios you are able to further configure and change Traffic Simulation settings.
 
-Virtual User Distribution across the scenarios added (if you have three or more scenarios in a single test). A Stress Test pattern is used in the example below.
+Virtual User Distribution across the scenarios added (if you have two or more scenarios in a single test). A Stress Test pattern is used in the example below. See our article on [ramping configurations]({{ site.baseurl }}/legacy/test-configuration/load-test-ramping-configurations/) for more information.
 
-Image: https://loadimpact.uservoice.com/assets/115274557/Image%202017-01-17%20at%201.41.49%20PM.png
+![Define your distribution]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-5.png)
 
 
 
 Under Advanced Settings:
 
-Multi-step ramping - Allows for granular control of how many Virtual Users are active, up to 10 steps. In the below picture, we use a stress test ramping pattern.  More patterns can be found in this article.
+**Multi-step ramping** - Allows for granular control of how many Virtual Users are active, up to 10 steps. In the below picture, we use a stress test ramping pattern.  More patterns can be found in this article.
 
-Image: https://loadimpact.uservoice.com/assets/115273780/Image%202017-01-17%20at%201.35.17%20PM.png
+**Network Emulation **- Select a browser or network speeds to emulate for the entire test.  You are also able to set custom User Agents and Max Connections using our Load Script API on a per User Scenario basis
 
+**Source IP Multiplier** - Up to 2x for Standard plans and above. This will increase the number of Load Generators in the test.  Virtual Users will be distributed as evenly as possible, based on current distribution.
 
-
-
-Network Emulation - Select a browser or network speeds to emulate for the entire test.  You are also able to set custom User Agents and Max Connections using our Load Script API on a per User Scenario basis
-
-Source IP Multiplier - Up to 2x for Standard plans and above. This will increase the number of Load Generators in the test.  Virtual Users will be distributed as evenly as possible, based on current distribution.
-
-Image: https://loadimpact.uservoice.com/assets/115274083/Image%202017-01-17%20at%201.37.04%20PM.png
+![Define your ramping pattern and network options]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-6.png)
 
 
 
@@ -56,8 +59,10 @@ Image: https://loadimpact.uservoice.com/assets/115274083/Image%202017-01-17%20at
 
 Finally, we also have three optional configuration options for you to use:
 
-Thresholds - Allow you to set a binary pass/fail criteria that can also automatically abort the test
+**Thresholds** - Allow you to set a binary pass/fail criteria that can also automatically abort the test
 
-Server Monitoring Agents - Using either our Open Source Agents or our integration with New Relic you are able to report back on various server side metrics for correlation in your test results in Load Impact
+**Server Monitoring Agents** - Using either our Open Source Agents or our integration with New Relic you are able to report back on various server side metrics for correlation in your test results in Load Impact
 
-URL Grouping - Recommended for tests against systems that generate unique identifiers in the URL.  This allows you to group similar URLs together and stay organized when analyzing results.
+**URL Grouping** - Recommended for tests against systems that generate unique identifiers in the URL.  This allows you to group similar URLs together and stay organized when analyzing results.
+
+![Configure your other options]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-7.png)

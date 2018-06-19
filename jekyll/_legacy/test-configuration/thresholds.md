@@ -9,39 +9,29 @@ redirect_from: /knowledgebase/articles/918699-thresholds
 
 ***
 
-The threshold feature allows to set your criteria to fail a load test.
+The threshold feature allows to set binary pass/fail criteria for a test.
 
 
-VIDEO
+Tests that meet or exceed the set criteria would be "Failed by Threshold".  Individual Thresholds can also be set to automatically abort a running test.  Both options would return non zero exit codes - useful when automating tests in a CI Pipeline.
 
+You can define Thresholds based on:
 
-With thresholds, you can setup your own criteria based on your performance needs as the following examples:
-
-When total/user load time is higher than 1000ms.
-
-When the response time of a specific resource or a page is higher than expected.
-
-When a server response is different than expected.
-
-You configure thresholds in your test configuration.
-
-
-
-For now, thresholds can be defined based on:
-
-Predefined metrics: User Load Time and Failure Rate.
-
-Page and custom metrics. (These name field are case sensitive)
-If the threshold is reached and the "Abort Test" option is enabled, the test will be immediately aborted.
-
-
-
+- Virtual User Load Time
+- Failure Rate.
+- Page load time
+- Custom metrics
 
 When running your load tests, thresholds will be continuously evaluated, and they determine the final status of your load test.
 
 
+Here are some examples of Thresholds that can be set:
 
+- When total/user load time is higher than 1000ms.
+- When the response time of a specific resource or a page is higher than expected.
+- When a server response is different than expected.
+
+Thresholds are configured on a per test basis in your [test configuration]({{ site.baseurl }}/legacy/test-configuration/what-is-a-test-configuration/):
+
+![Threshold examples]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/thresholds/thresholds-1.png)
 
 As in other testing disciplines, your own criteria defines a test as a success or failure. Thresholds provides this pass/fail behaviour for your load tests.
-
-Soon, you will be able to define your assertions with the Load Script API to support the same pass/fail behaviour in your user scenario scripts.

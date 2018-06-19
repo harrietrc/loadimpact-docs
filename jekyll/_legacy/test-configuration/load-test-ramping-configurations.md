@@ -9,34 +9,42 @@ redirect_from: /knowledgebase/articles/945337-different-types-of-ramping-configu
 
 ***
 
-There are many different ways to configure tests in Load Impact. You can even control how VUs ramp up and down during a test.  Depending on how you configure your ramping, it will provide different test profiles that can help you learn different things. Running different types of ramp up profile will provide different types of results.
+There are countless ways to configure tests in Load Impact. Depending on how you configure your ramping, it will provide different test profiles that can help you learn different things. Running different types of tests will provide different types of results so you can take different types of actions.
 
-For the following examples, we list theoretical tests you might run. This isn't meant to be an all inclusive list, but some of the most common test ramping configurations used.
+Here are some examples of tests you may run. This isn't meant to be an all inclusive list, but some of the most common test ramping configurations used. You should adjust values to suit your specific need.
 
+#### Baseline test:
 
-Stress test:
+The first test you should run, almost always.  It is ssed to determine what performance is like under ideal conditions and sets a baseline to compare future tests against. After your initial testing you may want to run **Baseline Tests** on a very regular basis to monitor performnace without impact your systems too much. You may increase VUs slightly in this case, based on your needs.
 
-Simply put - how much can you take and when will you break? Any performance test that will push above and beyond your normal level of load. It configures ramp ups that aren't too steep, which might cause servers to experience a spike test. It can be one step or several, just make sure you overreach and try for more than you expect your system can handle.
-
-
-
-
-Load test:
-
-Used to evaluate if performance goals are met. Set the thresholds and limits for the goals you target with your test.
+![Baseline Test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/load-test-ramping-configurations/baseline-test.png)
 
 
+#### Stress test:
+
+This test is designed to help narrow down where performance starts to breakdown. The stability of Virtual Users after quick growth will help highlight if performance issues occur at that level.  It configures ramp ups that aren't too steep, which might cause servers to experience a **spike test**. It can be one step or several, just make sure you overreach and try for more than you expect your system can handle. In most cases, you should expect to iterate this test multiple times.
+
+![Stress Test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/load-test-ramping-configurations/stress-test.png)
+
+
+#### Load test:
+
+Used to evaluate if performance goals are met. Set the thresholds and limits for the goals you target with your test. After running multiple **Stress Tests** you would use a **Load Test** to verify all your changes are working. You may continue to run **Load Tests** on a regular basis to monitor performance over time.
+
+
+![Load Test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/load-test-ramping-configurations/load-test.png)
+
+
+#### Spike test:
+
+Sudden spike in traffic from normal levels that may last for any amount of time. If you were running an ad campaign during the next big game you would really like to make sure you can handle the amount of users coming in a very short amount of time. The defining characteristic is a very short ramp up time.
+
+![Spike Test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/load-test-ramping-configurations/spike-test.png)
 
 
 
-Spike test:
-
-Sudden spike in traffic from normal levels that may last for any amount of time. If you were running an ad campaign on the next Superbowl you would really like to make sure you can handle the amount of users coming in a very short amount of time. The defining characteristic is a very short ramp up time.
-
-
-
-
-
-Soak test:
+#### Soak test:
 
 Used to find problems that arise when a system is under pressure for extended periods of time. Run for longer duration and is used to find long term problems such as memory leaks, resource leaks or corruption and degradation that occurs over time. Run these at roughly 80% of your load testing goals. Not at max capacity.
+
+![Soak Test]({{ site.baseurl }}/jekyll/assets/img/legacy/test-configuration/load-test-ramping-configurations/soak-test.png)
