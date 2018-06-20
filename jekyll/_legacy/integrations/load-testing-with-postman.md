@@ -12,98 +12,83 @@ redirect_from: /knowledgebase/articles/894636-load-testing-with-postman
 Postman is one of the best-in-market tools for functional testing of APIs.
 
 
+1 - Install the Command Line Tool.
 
-Load Impact provides CLI tools to convert your Postman tests to:
+  Load Impact provides CLI tools to convert your Postman tests to both versions of our platform:
 
-LUA tests: https://github.com/loadimpact/postman-to-loadimpact
-k6 tests: https://github.com/loadimpact/postman-to-k6
-
-Choose one of the tools depending on your needs and desired script language.
-- LUA tests: cloud execution and result visualization through Load Impact. Scripts are written in LUA.
-- k6 tests: local execution and Insights visualization. Scripts are written in Javascript.
-
-The following section describes the steps to convert your Postman configuration.
-
-1 - As a Postman user, you organize your API tests into collections of requests. First, you have to export your Postman collections.
+  - [Postman to Lua converter](https://github.com/loadimpact/postman-to-loadimpact#installation-and-usage)
+  - [Postman to k6/JavaScript converter](https://github.com/loadimpact/postman-to-k6#installation-and-usage)
 
 
+2 - As a Postman user, you organize your API tests into collections of requests. First, you have to export your Postman collections.
 
-
-2 - Install the Command Line Tool.
-
-https://github.com/loadimpact/postman-to-loadimpact#installation-and-usage
-
-
-https://github.com/loadimpact/postman-to-k6#installation-and-usage
+  ![Download Postman collection]({{ site.baseurl }}/assets/img/legacy/integrations/load-testing-with-postman/download-postman-collection-1.png)
 
 
 3 - Use the command line to convert the Postman collection:
-`postman-to-loadimpact path/my-collection.json -o path/my-collection.lua`
-`postman-to-k6 path/my-collection.json -o path/k6-script.js`
+  `postman-to-loadimpact path/my-collection.json -o path/my-collection.lua`
+  `postman-to-k6 path/my-collection.json -o path/k6-script.js`
 
-4 - **Only LUA tests/scripts** Copy the content of the command output into a new or existing user scenario script.
+4 - _Only LUA tests/scripts:_ Copy the content of the command output into a new or existing user scenario in Load Impact.
 
+5 - Based on your script, you may need to do some additional scripting for it to validate. Here are common cases:
 
+  5.1  -  Assign Lua variable values.
+    The transformer will convert variables as:
 
-
-5 - It’s time to validate your load script and tweak it some specific cases:
-
-
-5.1  -  Assign Lua variable values.
-The transformer will convert variables as:
-```
-    "{{url}}/repos/{{username}}/{{repository}}/contributors"
-    ""..url.."/repos/"..username.."/"..repository.."/contributors"
-```
-
-But, you will have to assign values to the auto-generate variables at the top of the script.
-```
-    local url = “YOUR_VALUE”
-    local username = “YOUR_VALUE”
-    local repository = “YOUR_VALUE”
-```
-5.2  -  Replicate the behaviour defined in your Postman pre-request and response test.
-
-This code will be inserted as a comment before and after the Lua request.
-```
-    --[[
-    tests["Body matches string"] = responseBody.has("OMG");
-    tests["Status code is 200"] = responseCode.code === 200;
-    --]]
-```
-You could easily replace the code to simulate this behaviour:
+  ```
+  {% raw %}
+    `{{url}}/repos/{{username}}/{{repository}}/contributors`
+    ..url.."/repos/"..username.."/"..repository.."/contributors
+  {% endraw %}
+  ```
 
 
-5.2.1 - LUA tests using the Load script API
-```
-    if response.status_code ~= 200 then
-      log.error("Status code is 200")
-       -- or
-      result.custom_metric("Status code is 200", 1)
-    end
-    if not string.find(response.body, "OMG") then
-      log.error("Body matches string")
-      -- or
-      result.custom_metric("Body matches string", 1)
-    end
-```
+  At the top of the script, we have auto-generated variables. You must assign values to these. If these are dynamic, you may wish to use a [Data Store]({{ site.baseurl }}/legacy/user-scenarios-scripting-examples/data-stores/)
 
-5.2.2 - k6 tests using the k6 API.
-```
-    check(res, {
-      "status was 200": (r) => r.status == 200
-    });
-```
-6 - Once, the script has been validated, you can run your load tests.
+  ```
+      local url = “YOUR_VALUE”
+      local username = “YOUR_VALUE”
+      local repository = “YOUR_VALUE”
+  ```
 
-Happy load testing!
+  5.2  -  Replicate the behaviour defined in your Postman pre-request and response test.
+
+  This code will be inserted as a comment before and after the Lua request.
+  ```
+      --[[
+      tests["Body matches string"] = responseBody.has("API endpoint authorized");
+      tests["Status code is 200"] = responseCode.code === 200;
+      --]]
+  ```
+  You could easily replace the code to simulate this behaviour:
 
 
-If you have any suggestions, please, contact support or post a Github issue.
+  **LUA tests using the Load script API**
+  ```
+      if response.status_code ~= 200 then
+        log.error("Status code is 200")
+         -- or
+        result.custom_metric("Status code is 200", 1)
+      end
+      if not string.find(response.body, "API endpoint authorized") then
+        log.error("Body does not match")
+        -- or
+        result.custom_metric("Body does not match", 1)
+      end
+  ```
+
+  **k6 tests using the k6 API.**
+  ```
+      check(res, {
+        "status was 200": (r) => r.status == 200
+      });
+  ```
+6 - Validate your script and run your test!
+
 
 
 See also:
-- Virtual Users, VUs
-- Requests Per Second, RPS
-- How to load test an API
-- User scenario scripting
+- [Virtual Users, VUs]({{ site.baseurl }}legacy/test-configuration/what-are-virtual-users-vus/)
+- [Requests Per Second, RPS]({{ site.baseurl }}legacy/test-configuration/what-are-requests-per-second-rps/)
+- [How to load test an API]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-load-test-an-api/)

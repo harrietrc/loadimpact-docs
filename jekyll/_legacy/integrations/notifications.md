@@ -23,6 +23,7 @@ Load Impact supports three different notification options:
 
 **Note:** Notifications are configured per organization by the organization owner or an admin member.
 
+![Load Impact Notifications]({{ site.baseurl }}/assets/img/legacy/integrations/notifications/loadimpact-notifications.png)
 
 
 ### Slack
@@ -33,7 +34,7 @@ Slack is a messaging app for teams. Follow these instructions to configure Slack
 3. From Load Impact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
 4. Add Slack WebHook URL into the Slack input and click Save or Test Hook.
 
-IMAGE
+![Slack Setup]({{ site.baseurl }}/assets/img/legacy/integrations/notifications/slack-instructions.png)
 
 ***
 
@@ -44,7 +45,7 @@ HipChat is a group chat & IM for teams . Follow these instructions to configure 
 2. From Load Impact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
 3. Paste room notification URL into the HipChat input and click Save or Test Hook.
 
-IMAGE
+![Hipchat Setup]({{ site.baseurl }}/assets/img/legacy/integrations/notifications/hipchat-instructions.png)
 
 ***
 
@@ -63,6 +64,7 @@ Header             | Description
 X-LoadImpact-ID    | Unique ID for this request
 X-LoadImpact-Event | Name of the event
 User-Agent         | User agent for webhook requests always start with `LoadImpactWebHook`
+{: class="table table-bordered"}
 
 ```
     Example headers:
@@ -125,6 +127,7 @@ Status | Description
 10     | Aborting by threshold
 11     | Aborted by threshold
 12     | Failed threshold
+{: class="table table-bordered"}
 
 ***
 

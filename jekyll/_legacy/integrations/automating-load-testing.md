@@ -11,9 +11,9 @@ redirect_from:
 
 ***
 
-Automating load testing as part of a CI Pipeline/build process is becoming increasingly popular and a best practice recommendation.  How often you run these automated tests will depend on the individual needs of your organization. Our general recommendation is [with your nightly builds](http://blog.loadimpact.com/how-often-you-should-load-test) as that seems to be the closest to a one-size-fits-all approach. If you are using a Continuous Integration tool or want to build something yourself, we recommend one of the options below.  You can also [schedule tests](scheduling-tests) to run at regular intervals within our tool.
+Automating load testing as part of a CI Pipeline/build process is becoming increasingly popular and a best practice recommendation.  How often you run these automated tests will depend on the individual needs of your organization. Our general recommendation is [with your nightly builds](http://blog.loadimpact.com/how-often-you-should-load-test) as that seems to be the closest to a one-size-fits-all approach. If you are using a Continuous Integration tool or want to build something yourself, we recommend one of the options below.  You can also [schedule tests]({{ site.baseurl }}/legacy/test-configuration/scheduling-tests/) to run at regular intervals within our tool.
 
-Before you start with either method below, you should have a test that you want to automate as well as [thresholds](thresholds) set up to be your pass/fail criteria. The exact criteria will depend on your needs, but you should think about:
+Before you start with either method below, you should have a test that you want to automate as well as [thresholds]({{ site.baseurl }}/legacy/test-configuration/thresholds/) set up to be your pass/fail criteria. The exact criteria will depend on your needs, but you should think about:
 
 - What's an acceptable response time for a resource/page/API call?
 - What's an acceptable failure rate?
@@ -54,5 +54,5 @@ your **Continuous Integration & Deployment** process to detect problems and perf
 
 Load Impact can be [integrated](https://loadimpact.com/integrations/) with different services using our [SDKs](http://developers.loadimpact.com/sdk) and [examples](https://github.com/loadimpact/loadimpactapi-samples) in different programming languages.
 
-Note: The [Command line interface](https://github.com/loadimpact/loadimpact-cli) is for API version 3 (located at the [integrations page](integrations page)).
+Note: The [Command line interface](https://github.com/loadimpact/loadimpact-cli) is for API version 3 (Token is available in app on the [integrations tab](https://app.loadimpact.com/account/token)).
 The version 3 API will replace the version 2 in the near future but for now it can only be used in the Load Impact CLI.
