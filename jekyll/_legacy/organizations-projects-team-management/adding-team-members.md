@@ -11,31 +11,32 @@ Team members are other users within your [organization](organizations) that you 
 
 Either use the Organizations and project menu
 
-Image: https://loadimpact.uservoice.com/assets/125385931/Image%202017-08-09%20at%2010.36.07%20AM.png
-
-
-
-
+![Menu navigation]({{ site.baseurl }}/assets/img/legacy/organizations-projects-team-management/adding-team-members/menu-navigation.png)
 
 
 or the  "+" sign
 
-Image: https://loadimpact.uservoice.com/assets/125386054/Image%202017-08-09%20at%2010.41.11%20AM.png
+![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/legacy/organizations-projects-team-management/adding-team-members/alternative-add-team-member.png)
+
+
+Click "Add Member" and type the email of the team member you wish to invite and assign them the correct permission level, and projects (if they are a read/write member).
 
 
 
-
-
-Next, click "Add Member" and type the email of the team member you wish to invite and assign them the correct permission level, and projects (if they are a read/write member).
-
-Read/Write members can create user scenarios, data stores, test configurations and execute test runs for assigned projects.
-Admin users have full access, like the account owner.
-
-
-Image: https://loadimpact.uservoice.com/assets/125386072/Image%202017-08-09%20at%2010.37.23%20AM.png
+![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/legacy/organizations-projects-team-management/adding-team-members/add-member-assign-role.png)
 
 
 
 Once finished, click "update organization".
 
-If you have any questions or need to add more team members, please let us know.
+***
+
+Once someone has been invited to an organization and assigned a permission level, they are either automatically(admins) or manually(read/write members) added to projects. Permissions are set at the organization level, and include the following:
+
+**Owner:** Owns the organization and has all privileges. Automatically assigned to all projects. Each organization has one owner.
+
+**Admin:** Can do everything an Owner can do, including adding/removing members and permissions, assigning members to projects, managing billing, creating projects, managing testing, managing API/server agent/New Relic tokens and keys, and creating new organizations. The only thing they can not do is remove an organization owner. Finally, Admins are automatically assigned to all projects in the organization.
+
+**Read/Write:** Once assigned to a project, Read/Write members can create user scenarios, data stores and tests, and can run tests. They can also access Load Impact server agent tokens and New Relic API keys. They can not manage billing, create projects, assign themselves or other members to projects, add/remove members from the organization, or access Load Impact API tokens. Finally, Read/Write members must be specifically added to projects by organization Owners or Admins.
+
+If you require more team members, please reach out to support.
