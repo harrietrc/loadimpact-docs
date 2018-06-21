@@ -62,6 +62,6 @@ export let options = {
 };
 {% endhighlight %}
 
-For more information, see the [available options](https://docs.k6.io/docs/options) in the k6 documentation.
-g
+For more information, see [configuration options]({{ site.baseurl }}{% link _nextgen/test-scripting/test-configuration-options.md %}).
+
 Next: [Lua to JS migration guide]({{ site.baseurl }}{% link _nextgen/migrating-lua-to-js/lua-to-js.md %})
