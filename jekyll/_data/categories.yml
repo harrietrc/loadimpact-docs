@@ -66,6 +66,10 @@
   name: Getting Started
 
 - section: nextgen
+  slug: migrating-lua-to-js
+  name: Migrating from Legacy (Lua)
+
+- section: nextgen
   slug: test-scripting
   name: Test scripting
 
@@ -91,7 +95,7 @@
 
 - section: nextgen
   slug: pricing
-  name: "Troubleshooting"
+  name: Pricing
 
 - section: nextgen
   slug: faq
