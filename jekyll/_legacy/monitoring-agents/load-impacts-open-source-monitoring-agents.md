@@ -13,16 +13,20 @@ redirect_from:
 
 Server Monitoring helps you to measure performance metrics from your own servers and integrates these metrics with the graphs generated from your Load Impact test.
 
-Load Impact offers three options to monitor a system under test(SUT).  We offer:
+Load Impact offers three options to monitor a system under test(SUT).
+
+You can use:
 
 - Our open source monitoring agents (described in this article)
-- [An Integration with New Relic ](new-relic-integration)
-- Using the open source nature of our agents to send metrics from other monitoring solutions (ADVANCED)
+- [An Integration with New Relic ]({{ site.baseurl }}/legacy/monitoring-agents/new-relic-integration/)
+- [Sending metrics from another APM via our Server Monitoring Agents (advanced)]({{ site.baseurl }}/legacy/monitoring-agents/other-monitoring-tools/)
 
 
-Whichever you choose makes it much easier for you to correlate data from your servers with test result data. It also helps you identify the reasons behind possible performance problems.
+These instructions, plus source code, are available on our [GitHub Repo](https://github.com/loadimpact/loadimpact-server-metrics)
 
-If you wish to collect more specialized metrics than just the standard physical server metrics (i.e. CPU usage, memory, Disk I/O and Network I/O), our Server Monitoring Agents are also compatible with the Nagios plugin system. A tutorial on custom metrics with [Server Monitoring agents is available here](configuring-custom-monitoring-agent-metrics)
+In all cases, monitoring agents will provide you with additional context to monitor the system under test during a test.  This allows you to make powerful correlations helping you identify performnace problems, faster.
+
+If you wish to collect more specialized metrics than just the standard physical server metrics (i.e. CPU usage, memory, Disk I/O and Network I/O), our Server Monitoring Agents are also compatible with the Nagios plugin system. A tutorial on custom metrics with [Server Monitoring agents is available here]({{ site.baseurl }}/legacy/monitoring-agents/configuring-custom-monitoring-agent-metrics/)
 
 ***
 
@@ -31,49 +35,29 @@ If you wish to collect more specialized metrics than just the standard physical 
 
 The first step is to download the agent installer for your server platform. Download links can be found below.
 
-The server monitoring agent requires Python 2.6+ and the module psutil. Both Python and psutil are bundled in the Windows installer, but on Ubuntu you might need to apt-get install python-psutil
+**DEPENDENCIES:**
+
+The server monitoring agent requires Python 2.6+ and the module `psutil`. Both Python and `psutil` are bundled in the Windows installer, but on Ubuntu you may need to `apt-get install python-psutil`
 
 
-Packages/Installers:  The latest installers/packages of our Server Monitoring Agents are found within our app here: [Monitoring](https://app.loadimpact.com/monitoring) (Login required).
+Packages/Installers:  The latest installers/packages of our Server Monitoring Agents are found within our app here: [Monitoring](https://app.loadimpact.com/monitoring) or by navigating to the integrations menu -> Server Agent (Login required).
 
-In case you do not yet have a [free account](https://app.loadimpact.com/account/register), here are the instructions, for your reference.
-
-**Ubuntu Specific instructions:** Please see this article for specific instructions on Ubuntu install
-
-**CentOS:** Please see this article for specific instructions on CentOS install
-
-**Windows:** Windows Server 2008R2 and Windows Server 2012 supported. Your mileage might vary on other platforms.  The installer is found here.
-
-**Source:** To get it running on any other platform, you can use the Python files directly
-https://github.com/loadimpact/loadimpact-server-metrics
-
-
-
+![Navigation to install agent]({{ site.baseurl }}/assets/img/legacy/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-install-navigation.png)
 
 ### Step 2: Generate a Server Monitoring Token
 
-In order to identify the agents when they are talking to Load Impact, we need an identification key. We refer to this as a "token".
+Below the packages, you can also generate your token:
 
-In the app,  on the left side bar, under the menu item "Integrations" you can generate a token. If you are logged in, you can access the menu here.
-
-First, choose "Load Impact"
-
-Image: https://loadimpact.uservoice.com/assets/116761147/Image%202017-02-14%20at%2012.47.48%20PM.png
+![Token generation]({{ site.baseurl }}/assets/img/legacy/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-token-generation.png)
 
 
-Scroll to step two and click `Generate Token`.
-
-
-
-Image: https://loadimpact.uservoice.com/assets/77332142/Token.jpg
-
-Use the same token for all agents/machines you wish to monitor. You can re-generate a new token at any time if you believe it has been compromised or distributed to someone outside your company. If you do re-generate a token, the old token will no longer be valid.
+You will use the **same token** for all Load Impact Monitoring Agents. You can re-generate a new token at any time if you believe it has been compromised or distributed to someone outside your company. Upon re-generation, the old token is no longer valid.
 
 ### Step 3: Name your agents and give them access
 
-During the installation of the server monitoring agent you will be asked to provide a name for the agent and the token. We suggest you give it a name equal to, or describing, the name of the server you are installing it on to make it easier to identify it later on.
+During the installation of the server monitoring agent you will be asked to provide a name for the agent and the token. You should give it a contextual name to make it easier to identify it later on.
 
-If you are using the python files to install your agent, we recommend you read "README.md". That being said, you will need to set the name and token within the config file.  Using our provided template, this can be found on lines 1-8 of li_metrics_agent.conf:
+If you are using the python files to install your agent, please read [README.md](https://github.com/loadimpact/loadimpact-server-metrics/blob/master/README.md). You will need to set the name and token within the config file.  Using our provided template, this can be found on lines 1-8 of li_metrics_agent.conf:
 ```
 # Load Impact Server Metrics sample configuration file
 
@@ -85,26 +69,26 @@ agent_name = myagent
 server_metrics_token = SERVER_METRICS_API_TOKEN
 ```
 
+_To ensure that the agents can connect, please allow outgoing port 443 against api.loadimpact.com in your firewall._
+
 ### Step 4: Wait for check-in
 
-We will see if your agent has started communication with us.
+Once installed, click "Check installation" within Load Impact. We will see if your agent has started communication with us.
 
-To ensure that the agents can connect, please allow outgoing port 443 against api.loadimpact.com in your firewall.
+![Check Install]({{ site.baseurl }}/assets/img/legacy/monitoring-agents/load-impacts-open-source-monitoring-agents/check-install.png)
+
 
 ### Step 5: Configure your test to include the agents
 
-Once the installation is complete, the server monitoring agent will start automatically and you should be able to select it on the test configuration page in the Load Impact interface.
+Once the installation is complete, the server monitoring agent will start automatically and you will be able to select it on the test configuration page. You must specifically add the Server Monitoring Agent to any test you wish to collect these metrics for.
 
-Image: https://loadimpact.uservoice.com/assets/77332185/AddAgent.jpg
+![Check Install]({{ site.baseurl }}/assets/img/legacy/monitoring-agents/load-impacts-open-source-monitoring-agents/test-configuration.png)
+
+Refer to: [Test Configuration]({{ site.baseurl }}/legacy/test-configuration/what-is-a-test-configuration/) for more details
 
 ### Step 6: Review your Server Monitoring results
 
-Once your test has started, you will be able to see your Server Monitoring results in real time. Simply select the type(s) of server monitoring you wish to view in the “Add Visualization” drop down menu. This will plot the results for the specific server metric that you wish to view.
-
-Image: https://loadimpact.uservoice.com/assets/77332222/Add-visualization2.jpg
-
-
-Take a look at the test results below for an example of Server Monitoring in action. The results show CPU usage as load is increased on a website.
+Once your test has started, you will be able to see your Server Monitoring results in real time. Scroll down below the main graph and "Add Visualization Widget" -> Select your monitoring agent.  You can now plot your metrics on the main graph.
 
 ***
 
@@ -113,11 +97,11 @@ Take a look at the test results below for an example of Server Monitoring in act
 
 #### How do the Server Monitoring Agents communicate with Load Impact?
 
-Load Impact servers never contact the server monitoring agents. It is the other way around - the agents contact Load Impact regularly. This is to make it more likely that there are no firewall issues affecting the communication, etc. Most firewalls are set up to allow outgoing HTTP connections. To ensure that the agents can connect, please allow outgoing **port 443 against api.loadimpact.com** in your firewall.
+Load Impact servers never contact the server monitoring agents. It is the other way around - the agents contact Load Impact regularly. Since most firewalls allow outgoing HTTP connections, this generally ensures that the data can be sent to our servers. If you have outgoing firewall rules, please allow outgoing **port 443 against api.loadimpact.com** in your firewall.
 
-The agents contact Load Impact every few minutes and if our system sees you logon to your Load Impact account we will tell the agents to start contacting us a little more frequently in case you are going to start a load test (i.e. we don't want you to have to wait a long time for the Server Metric Agents to get ready when you start a test).
+The agents contact Load Impact every few minutes. If our system sees you are logged in to your Load Impact account we will tell the agents to start contacting us a little more frequently.  This is to minimize the waiting time for tests to start with monitoring agents.
 
-Then when you do start a test where you have chosen to collect data from an agent, we will wait for that agent to contact us and when it does - by sending us an HTTP request - we will respond with an order for the agent to start collecting data and sending it to us. The agent will then go into active mode - collecting data and transmitting it to us continuously throughout the load test (using HTTP). Then when the test is over, we will tell the agent to stop collecting data, and after you logout from loadimpact.com, we will also tell the agent to contact us less frequently.
+When a test is started with an agent configured, we will wait for that agent to contact us as described above.  When it does - by sending us an HTTP request - we will respond to the agent to begin collecting data and sending it to us. This is considered active mode - collecting data and transmitting it to us continuously throughout the load test (using HTTP).  When the test is complete, we will tell the agent to stop collecting data. When you logout from loadimpact.com, we will also tell the agent to contact us less frequently.
 
 **Note:** On Windows Server you must make sure that the proper Truested Root CA Certificate ("GeoTrust Global CA") is present in the Trusted Root Certificate Authorities. If you don't have this root CA certificate you'll see CERTIFICATE_VERIFY_FAILED errors in the Server Monitoring Agent log file. The needed root CA certificate can be downloaded from [GeoTrust](https://www.geotrust.com/resources/root_certificates/certificates/GeoTrust_Global_CA.pem)
 (from this page: https://www.geotrust.com/resources/root-certificates/), and installed by following these steps:
@@ -146,10 +130,10 @@ The default values reported back are as follows:
 - Memory - % of utilization
 - Our agents are also compatible with the Nagios plugin system if you wanted to send other metrics back during a test.
 
-If you would like to configure custom metrics with our Monitoring Agents, please see [this tutorial](configuring-custom-monitoring-agent-metrics).
+If you would like to configure custom metrics with our Monitoring Agents, please see [this tutorial]({{ site.baseurl }}/legacy/monitoring-agents/configuring-custom-monitoring-agent-metrics/).
 
 
-You can report back on different things that may be interesting for you.  For example, packets/s for network performance or an individual CPU.  You can change the defaults by opening the li_metrics_agent.conf file in the install directory and making the necessary changes
+You can report back on different things that may be interesting for you.  For example, packets/s for network performance or an individual CPU.  You can change the defaults by opening the `li_metrics_agent.conf` file in the install directory and making the necessary changes
 
 #### My agent is not working! Help!
 

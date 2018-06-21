@@ -9,14 +9,14 @@ redirect_from: /knowledgebase/articles/1094101-how-to-install-server-monitoring-
 
 ***
 
-Load Impact distributes .deb and .rpm packages for Linux systems and a Windows installation package. Linux packages are distributed by the packagecloud.io service. Linux installation requires Python v2.6 or v2.7 installed on your server.
+Load Impact distributes .deb and .rpm packages for Linux systems and a Windows installation package. Linux packages are distributed by the [packagecloud.io service](https://packagecloud.io/loadimpact/server-metrics-agent). Linux installation requires Python v2.6 or v2.7 installed on your server.
 
 Install the **psutil** dependency
 ```
 $ sudo yum install epel-release
 $ sudo yum install python-psutil
 ```
-Packagecloud.io provides a setup script that manages .deb package installation including https-transport setup, setting PGP verification keys and adding a system .list file. You can see details here. So quick way is to download and run this script. Alternatively you can run the commands manually by following the instructions in the "manual" tab.
+Packagecloud.io provides a setup script that manages .deb package installation including https-transport setup, setting PGP verification keys and adding a system .list file. You can see details [here](https://packagecloud.io/loadimpact/server-metrics-agent/install). So quick way is to download and run this script. Alternatively you can run the commands manually by following the instructions in the "manual" tab.
 ```
 wget https://packagecloud.io/install/repositories/loadimpact/server-metrics-agent/script.rpm.sh
 sudo bash script.rpm.sh
@@ -29,7 +29,7 @@ Run the configuration tool. You will be asked to give the agent a name and your 
 ```
 $ sudo li-metrics-agent-config
 ```
-You can also press the "Check installation" button on the https://app.loadimpact.com/monitoring/load-impact page. If a new entry appears in the list then the agent has been successfully installed.
+You can also click the "Check installation" button on the monitoring tab within Load Impact. If a new entry appears in the list then the agent has been successfully installed.
 
 
 
