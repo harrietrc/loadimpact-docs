@@ -3,7 +3,7 @@ layout: classic-docs
 title: Using tags
 description: Overview on how to use tags
 categories: [test-scripting]
-order: 5
+order: 6
 ---
 
 Tags can be a powerful tool from a few different perspectives:
