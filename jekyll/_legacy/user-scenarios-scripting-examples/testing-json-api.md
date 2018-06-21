@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/827841-testing-a-json-api
 
 This is a basic example which uses the http and json load script APIs to test a JSON API server. Since testing API endpoints typically has slightly different requirements than testing an app or website. We also suggest our article on [How to load test an API]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-load-test-an-api/)
 
-```
+{% highlight lua linenos %}
 local username = "xxxxx"
 local password = "yyyyyyy"
 
@@ -60,4 +60,4 @@ data = json.parse(response.body)
 
 
 client.sleep(math.random(20, 40))
-```
+{% endhighlight %}

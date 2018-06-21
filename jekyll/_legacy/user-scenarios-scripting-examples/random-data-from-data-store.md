@@ -21,7 +21,7 @@ http://example.com/page4
 ```
 #### User scenario
 The following scenario creates a request batch of five randomly selected URLs from the data store "URL data store".
-```
+{% highlight lua linenos %}
 -- Seed RNG
 math.randomseed(util.time())
 
@@ -42,5 +42,5 @@ local responses = http.request_batch(batch_params)
 
  -- Simulate user think time before script is reiterated
 sleeptime = 100 + math.random(100)
-client.sleep(sleeptime)
-```
+client.sleep(sleeptime))
+{% endhighlight %}

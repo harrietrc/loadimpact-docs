@@ -26,8 +26,7 @@ If you want your transactions to show up on Google Analytics**(NOT RECOMMENDED)*
 
  We provide a sample which you are free to modify and use:
 
-```
-
+ {% highlight lua linenos %}
 -- The only things you need to set is Google-Analytics ID (ga_id) and then make a ga_request() to get them into Google-Analytics
 -- GOOGLE ANALYTICS STUFF START.
 -- Return a random number
@@ -99,10 +98,6 @@ function ga_request(url, referer, cid)
   })
 end
 
-
-
-
-
 -- Set Client ID
 local cid = ga_gen_uuid()
 -- Set User Agent
@@ -111,9 +106,6 @@ local ua = get_random_ua()
 -- Set Goggle-Analytics ID
 local ga_id = "UA-1234567-8"
 -- GOOGLE ANALYTICS STUFF END
-
-
-
 
 http.page_start("page 1")
 -- Get ga javascript
@@ -131,4 +123,4 @@ http.request_batch({
 -- Set URL, Referrer and Client ID
 ga_request("http://www.mydomain.com/path/2", "http://www.mydomain.com/path", cid)
 http.page_end("page 2")
-```
+{% endhighlight %}

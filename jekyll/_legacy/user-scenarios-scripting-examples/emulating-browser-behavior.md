@@ -18,7 +18,7 @@ Modern browsers load all these resources asynchronuously, using multiple network
 You can use `http.request()` (or its wrappers, `http.get()` and `http.post()`) to issue a blocking HTTP request call that will load only a single resource, but if you want to take advantage of the ability of the Load Impact load generator to load multiple resources at once, across multiple network connections, you should use `http.request_batch()` to issue multiple request in parallel.
 
 Here is an example that shows a load script that loads all the content on the page `http://test.loadimpact.com/` in a way that emulates a modern browser:
-```
+{% highlight lua linenos %}
  http.get("http://test.loadimpact.com") -- Get the main HTML code for the page
  -- Get resources mentioned in the HTML code we just loaded
  http.request_batch({
@@ -29,7 +29,7 @@ Here is an example that shows a load script that loads all the content on the pa
  http.request_batch({
      {"GET", "http://test.loadimpact.com/images/logo.png" }
  })
- ```
+ {% endhighlight %}
 
  ***
 
@@ -38,7 +38,7 @@ Here is an example that shows a load script that loads all the content on the pa
  To emulate a specific browser, you can use the load script API functions `http.set_user_agent_string()` and `http.set_max_connections()` to configure the simulated client to behave as if it was the browser in question.
 
  Here is code where we perform an emulation of IE6. We chose IE6 for illustrative purposes.
-```
+ {% highlight lua linenos %}
  -- Emulating IE6
  http.set_user_agent_string("Mozilla/5.0 (Windows; U; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)")
  http.set_max_connections(34, 2)
@@ -49,7 +49,7 @@ Here is an example that shows a load script that loads all the content on the pa
       {"GET", "http://test.loadimpact.com/news.php"},
       {"GET", "http://test.loadimpact.com/contacts.php"}
  })
-```
+ {% endhighlight %}
 
  In the above example, we configure the simulated client to do two things:
 
@@ -62,7 +62,7 @@ Here is an example that shows a load script that loads all the content on the pa
  ***
 
  This is an example of the same code, but instead emulating Chrome 22:
-```
+ {% highlight lua linenos %}
  -- Emulating Chrome 22
  http.set_user_agent_string("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1")
  http.set_max_connections(17, 6)
@@ -73,7 +73,7 @@ Here is an example that shows a load script that loads all the content on the pa
       {"GET", "http://test.loadimpact.com/news.php"},
       {"GET", "http://test.loadimpact.com/contacts.php"}
  })
- ```
+ {% endhighlight %}
  [Chrome 22](http://www.browserscope.org/?category=network&v=1&ua=Chrome%2022%2CIE%206) uses up to 6 concurrent connections to the same host, and up to 17 concurrent connections in total. In our example that would mean that Chrome was able to open 4 concurrent connections to the “test.loadimpact.com” host and fetch all four items in parallel. If each item takes 100 ms to fetch, it would mean the whole batch of requests were done in just 100 ms.
 
  The User-Agent string we set in both examples will be sent in the “User-Agent:” HTTP header to the web server when our simulated client makes a request, making the remote web server believe that the client is using this particular browser/platform combination. For some sites it can trigger delivery of specialized content that has been adapted for a particular browser and/or platform.

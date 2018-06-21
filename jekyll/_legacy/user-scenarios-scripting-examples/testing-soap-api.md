@@ -12,7 +12,7 @@ redirect_from: /knowledgebase/articles/828378-testing-a-soap-api
 This is a basic SOAP example which uses the http and xml load script APIs to test a SOAP server. Since testing API endpoints typically has slightly different requirements than testing an app or website. We also suggest our article on [How to load test an API]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-load-test-an-api/)
 
 
-```
+{% highlight lua linenos %}
 local headers = {
   ["Content-Type"]="text/xml; charset=UTF-8",
   ["SOAPAction"] = "http://tempuri.org/Service/Download"
@@ -51,5 +51,4 @@ if node ~= nil then
 else
   log.error("no found book title")
 end
-
-```
+{% endhighlight %}

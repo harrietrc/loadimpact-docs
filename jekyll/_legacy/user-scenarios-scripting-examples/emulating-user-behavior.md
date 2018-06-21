@@ -35,7 +35,7 @@ Total pageloads | 10573            | 1.0
 
 Now we can create our user scenario that replicates real traffic on our site – i.e. that will exercise our web server in the same way real users do.
 
-```
+{% highlight lua linenos %}
 -- We create functions for each of the three pages. Calling one of these functions
 -- will result in the simulated client loading all the resources necessary for rendering
 -- the page. I.e. the client will perform one page load of that particular page.
@@ -86,4 +86,4 @@ else
   -- ...and the rest of the time (2.7%), page3 gets loaded
   page3()
 end
-```
+{% endhighlight %}

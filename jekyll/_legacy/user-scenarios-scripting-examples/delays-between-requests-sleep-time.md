@@ -12,7 +12,7 @@ redirect_from:
 ***
 
 It is uncommon for a visitor to load one single page and then leave your site, it is probably very uncommon that a user loads one page and then immediately loads another page, with no time to read the content on the first page. Humans need a little while to process information on a page before moving on. It is often called “think time” or “page view time”. To simulate this behavor of real, human visitors, we have to add delays to our load script:
-```
+{% highlight lua linenos %}
  http.request_batch({
      {"GET", "http://test.loadimpact.com/news.php"},
  })
@@ -22,19 +22,19 @@ It is uncommon for a visitor to load one single page and then leave your site, i
  http.request_batch({
      {"GET", "http://test.loadimpact.com/news.php"},
  })
-```
+ {% endhighlight %}
 
 You can identify and adjust sleeps in our load testing script. by default, we add a sleep time between pages and to the end of scripts recorded with the chrome extension:
 
-```
+{% highlight lua linenos %}
 client.sleep(math.random(20, 40)) -- Sleep between 20 to 40 seconds
-```
+{% endhighlight %}
 
-The sleep time between your `http.page_start()` and `http.page_end()` in your script will depend on how long you spend "sleeping" in your recording. You may edit this as needed.  The `math.random(x,y)` fucntion comes in handy to make this more dynamic. An example of what would be generated automatically:
+The sleep time between your `http.page_start()` and `http.page_end()` in your script will depend on how long you spend "sleeping" in your recording. You may edit this as needed.  The `math.random(x,y)` fucntion comes in handy to make this more dynamic. The below is an example of what is generated automatically.  It is recommended to add the `math.random()` function to your sleep times.
 
-```
+{% highlight lua linenos %}
 client.sleep(5)
-```
+{% endhighlight %}
 
 
 See also:

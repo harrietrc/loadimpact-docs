@@ -13,7 +13,7 @@ redirect_from: /knowledgebase/articles/835719-http-headers
 
 You have a direct access to the HTTP headers in the response from the server. For example, we can read a header from a request and log it.  In this example we only log the information for the VU with ID == 1 and on the first repetition:
 
-```
+{% highlight lua linenos %}
  local response = http.request_batch({
      {"GET", "http://google.com"},
  })
@@ -23,7 +23,7 @@ You have a direct access to the HTTP headers in the response from the server. Fo
      as a server software"
    )
  end
- ```
+ {% endhighlight %}
 
 #### Setting headers for a request
 Sometimes you need to set custom HTTP headers for your request. One reason is to see if your server handles client-side caching.
@@ -34,7 +34,7 @@ If the web browser already has the requested resource in its cache, it may send 
 
 In the example we assume that you do know the exact page modification date.
 
-```
+{% highlight lua linenos %}
  local response = http.request_batch({
     {"GET", "http://test.loadimpact.com/",
         headers = {
@@ -49,7 +49,7 @@ In the example we assume that you do know the exact page modification date.
  else
      log.error("unexpected code" .. tostring(response[1].status_code))
  end
-```
+ {% endhighlight %}
 
 (Note that you may want to additionally test the support for “If-None-Match” header)
 

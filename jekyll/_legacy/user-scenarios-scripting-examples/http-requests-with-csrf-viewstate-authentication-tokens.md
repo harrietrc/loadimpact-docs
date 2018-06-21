@@ -17,7 +17,7 @@ To fix this, you will need to do a little bit of scripting. The first thing you 
 
 #### Example code
 This is a theoretical example. You will need to identify the page where the token is created and adjust the `string.match()` criteria.
-```
+{% highlight lua linenos %}
 -- Make sure you save enough bytes of the reply to include the form, in this case 100000
 local pages = http.request_batch({
     {"GET", "http://mydomain.com/myform.html", response_body_bytes=100000}
@@ -44,5 +44,5 @@ if token ~= nil then
 else
     log.error("Failed to find token")
 end
-```
+{% endhighlight %}
 Note: You will probably want to check the token variable before using it, or you will risk Lua errors in case the page no longer returns the expected content.

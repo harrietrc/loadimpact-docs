@@ -22,7 +22,7 @@ log.error() | This logs text with a red background, to make it really stand out 
 
 
 #### Example:
-```
+{% highlight lua linenos %}
 -- Make an HTTP request and verify returned content. If it is not what we expect
 -- we log an error using the log.error() function
 local request = http.request({"GET",     "http://test.loadimpact.com/pi.php?decimals=18",
@@ -34,7 +34,7 @@ if request.body ~= "3.141592653589793238" then
          .. test.get_clients() .. " simulated clients: " .. request.body
     )
 end
-```
+{% endhighlight %}
 
 Limitations
 In order to prevent excessive logging by a malfunctioning or badly programmed script, we limit the number of messages that can be logged in any given 3-second reporting time period (refer to - [What result metrics are reported for a URL]({{ site.baseurl }}/legacy/test-results/what-metrics-are-reported-for-a-url/)? for more info about how reporting data is stored and transferred) to 100 messages. This means that if your script logs 1000 messages within 3 seconds, chances are you will only see the first 100 of those messages. The rest will be quietly discarded by the load generator application.
@@ -44,7 +44,7 @@ It's also important to note that you must set `response_body_bytes=` when captur
 Each log message can also be max 1024 bytes (characters) in length before it is truncated. I.e. if you try to log a text message that is 1100 bytes long, the actual text that is logged will only be the first 1024 bytes of your message, the remaining 76 bytes will be lost.
 
 If you know the data you are looking for you can workaround this limit by conducting a string search.  Once you find the position of the data, you can then avoid logging the output before that point. Here is an example of a string search:
-```
+{% highlight lua linenos %}
 local s = response[1].body
 local position = string.find(s, "csrf%-token")
 if position == nil then
@@ -54,4 +54,4 @@ log.info(string.sub(s, position))
 end
 
 -- note the % to escape the Lua magic character "-"
-```
+{% endhighlight %}

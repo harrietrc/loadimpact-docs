@@ -13,7 +13,7 @@ redirect_from: /knowledgebase/articles/835731-simulating-complex-user-behavior
 
 To load test certain pages on your website you may require to create a session for the user's account on that site.
 
-```
+{% highlight lua linenos %}
  -- Authorize user
  local response = http.request_batch({
      {"POST", "http://test.loadimpact.com/login.php", data="login=test_user&password=1234"}
@@ -28,11 +28,11 @@ To load test certain pages on your website you may require to create a session f
  response = http.request_batch({
      {"GET", "http://test.loadimpact.com/my_messages.php"}
  })
-```
+ {% endhighlight %}
 #### Randomize user behaviour
 
 If you do not want to write a complex scenario, you may be able to approximate it by picking URLs randomly.
-```
+{% highlight lua linenos %}
  -- List URLs we want to randomly load
  local urls =
  {
@@ -45,11 +45,11 @@ If you do not want to write a complex scenario, you may be able to approximate i
  http.request_batch({
      {"GET", random_url}
  })
-```
+ {% endhighlight %}
 #### Weights
 
 If you know that your average user visits some pages more often than another, you may use that knowledge to improve the load profile approximation. The simplest way to do this is to mention the same URL several times in the list:
-```
+{% highlight lua linenos %}
  -- URLs we want to randomly load
  local INDEX = "http://test.loadimpact.com"
  local NEWS = "http://test.loadimpact.com/news.php"
@@ -66,14 +66,14 @@ If you know that your average user visits some pages more often than another, yo
  http.request_batch({
      {"GET", urls[math.random(#urls)]}
  })
-```
+ {% endhighlight %}
 
 #### Behavior tables
 
 To get even more flexibility, instead of using a table of URL strings, you may use a table of Lua functions, where each function would describe the behavior of one “kind” of your website’s clients. It's often easier to use multiple user scenarios, but this could be useful if you find yourself reusing similar requests and scripting methods.
 
 You may code whole user stories this way:
-```
+{% highlight lua linenos %}
  -- URLs we want to load
  local INDEX = "http://test.loadimpact.com"
  local NEWS = "http://test.loadimpact.com/news.php"
@@ -128,8 +128,7 @@ You may code whole user stories this way:
  local scenario = scenarios[math.random(#scenarios)]
  -- ...and execute it
  scenario()
-
-```
+ {% endhighlight %}
 
 Refer to:
 

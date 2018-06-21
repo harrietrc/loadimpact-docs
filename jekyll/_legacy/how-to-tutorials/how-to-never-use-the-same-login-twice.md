@@ -18,7 +18,7 @@ First of all, some background information. A VU is basically an execution thread
 Each VU keeps track of how many times it has executed its user scenario. We call this the "repetition count". On its first iteration, the count is 1. It is then increased upon the start of every new iteration. This counter can be read by the user scenario code by calling the function [client.get_repetition()](https://loadimpact.com/load-script-api#client-get_repetition)
 
 Now, you can make a VU execute its user scenario only once, if you want, by making sure your user scenario doesn't end before the load test does. This can be done e.g. by writing it in the form of an endless loop:
-```
+{% highlight lua linenos %}
 -- log in the user, then enter an endless loop that loads pages on the site
 do_login()
 while true
@@ -26,29 +26,35 @@ while true
   load_something_more()
   client.sleep(math.random(20, 40))   -- simulate user think time
 end
-```
+{% endhighlight %}
+
 You could also just add a long sleep at the end of your user scenario:
 
-`client.sleep(3600)`
+{% highlight lua linenos %}
+client.sleep(3600)
+{% endhighlight %}
 
 However, this would mean you're not using all the VUs you have at your disposal throughout the test, and it would be difficult to know what load level the server is subjected to if clients just do one thing and then go to sleep (i.e. the traffic as experienced by the server might be the same at 100 concurrent clients as with 200 concurrent clients, depending on the ramp-up speed and how fast the clients complete their iterations)
 
 Another option that is often the best solution to this kind of problem, is to calculate a unique number for each VU and script iteration combination, and then use that number to index a row in a data store that contains login credentials or whatever it is you just want to use once.
 
+{% highlight lua linenos %}
 local unique_number = client.get_id() * 100 + client.get_repetition()
+{% endhighlight %}
 
-And then you use that to index your data store, e.g:
-```
+And then you use that to index your data store:
+{% highlight lua linenos %}
 local row = ds:get(unique_number)
 local username = row[1]
 local password = row[2]
-```
+{% endhighlight %}
+
 The above would mean you get a number that for VU #1 starts at 101 and increases with 1 for each repetition. VU #2 would get a number starting at 201 and increasing with 1 for each repetition, and so on. Each VU would be able to run up to 100 repetitions before getting into the number range of the next VU so as long as a repetition takes enough time that the earliest started VUs in the test do not manage to complete 100 of them, it will work fine. Your data store needs to have 100x as many rows as the max number of clients you will use in the test.
 
 Simpler than using a data store is of course if you can pre-generate a large number of easily guessed usernames and passwords. Like "user1", "user2", "user3" and so on, combined with "password1", "password2", etc. Then you don't need a data store but can just let your user scenario create the correct login string and password like:
-```
+{% highlight lua linenos %}
 local username = 'user' .. tostring(unique_number)
 local password = 'password' .. tostring(unique_number)
-```
+{% endhighlight %}
 
 Note also, that this works fine for tests up to 500 VUs, but for larger tests there is a little added complexity as you will then have multiple load generators, each with its own VU count. [client.get_id()](https://loadimpact.com/load-script-api#client-get_id) might then return the same number for two different VUs in the test. In this case you have to also use [client.get_load_generator_id()](https://loadimpact.com/load-script-api#client-get_load_generator_id)  when calculating your unique number.

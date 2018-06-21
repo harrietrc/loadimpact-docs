@@ -10,7 +10,7 @@ redirect_from: /knowledgebase/articles/265432-simple-crawl-of-website
 ***
 
 It is possible to simulate loading a random next URL from the current pages. If done enough times in a row it would basically be a simple "spider" crawl of the site. This could perhaps be useful in conjunction with custom metrics to record the average load time of random pages. Here is an example which loads the Load Impact front page and then picks a random link and loads that:
-```
+{% highlight lua linenos %}
 -- Site base URL.
 local base_url = "http://loadimpact.com"
 
@@ -37,7 +37,7 @@ end
 function random_link(page_body)
     -- Extract links matching <a href="..."...>
     local links = {}
-    for link in string.gmatch(page_body, "<a[%s]+href=\"([^\"]-)\"") do
+    for link in string.gmatch(page_body, '<a[%s]+href=\"([^\"]-)\"') do
         links[link] = link -- Use table as a set to avoid duplicates
     end
     local count = 0
@@ -78,7 +78,7 @@ response = http.request_batch({
 })
 http.request_batch(build_static_request_batch())
 http.page_end("Random page")
-```
+{% endhighlight %}
 
 
 It is important to note that, depending on your testing goals and objectives, "crawling" a site for load testing is not often encouraged. Load tests often fail to give an accurate picture of a website's performance because user actions (user scenarios) are not simulated accurately. As such, if you're looking at discovering page load times from realistic user interactions with your site, we would recommend recording several sessions over crawling a website.

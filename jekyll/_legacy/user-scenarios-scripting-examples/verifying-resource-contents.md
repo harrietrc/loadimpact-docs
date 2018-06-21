@@ -15,7 +15,7 @@ When your website gets stressed it may at some point start to return errors inst
 However, another common outcome is that you get valid HTML code back, and a 200-response (indicating a successful HTTP transaction), but where the actual content returned is just an HTML page with an error message. A human user will read the error message and note that it was not the content they were expecting, but how does a computer program (our simulated user running the load script) do that? This is where you need to write content verification code.
 
 Here is a script that verifies that it is getting the expected content, and if it doesn’t, it will log an error message:
-```
+{% highlight lua linenos %}
  local response = http.request_batch({
      {"GET", "http://test.loadimpact.com/pi.php?decimals=18",
          response_body_bytes = 100  -- Tell the system it should store up to 100 bytes of body data for us
@@ -27,7 +27,7 @@ Here is a script that verifies that it is getting the expected content, and if i
          .. test.get_clients() .. " simulated clients: " .. response[1].body
    )
  end
- ```
+ {% endhighlight %}
 
 **IMPORTANT!** – don’t forget to add the last parameter `response_body_bytes=100`  to the GET request if you want to examine the reply from the server. Without this extra parameter, response.body will be empty. This is a very common mistake many make. It might seem like a silly parameter to require, but many server responses can be quite big, consuming a lot of memory on the load generator host if we have to save them all, and most of the time, they are not used at all by the client load script.
 
@@ -37,7 +37,7 @@ Here is a script that verifies that it is getting the expected content, and if i
 
 The `http.request_batch()` returns a table of `http.Response` objects, one for each request:
 
-```
+{% highlight lua linenos %}
  -- Create a table with correct request sizes
  local sizes = {
      103,
@@ -61,7 +61,7 @@ The `http.request_batch()` returns a table of `http.Response` objects, one for e
         )
      end
  end
- ```
+ {% endhighlight %}
 **IMPORTANT!** – don’t forget to add the last parameter `response_body_bytes=100`  to the GET request if you want to examine the reply from the server. Without this extra parameter, response.body will be empty. This is a very common mistake many make. It might seem like a silly parameter to require, but many server responses can be quite big, consuming a lot of memory on the load generator host if we have to save them all, and most of the time, they are not used at all by the client load script.
 
 See also:

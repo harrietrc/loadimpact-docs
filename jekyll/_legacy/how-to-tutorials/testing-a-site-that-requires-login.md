@@ -26,19 +26,19 @@ Refer to:
 Basic HTTP Authentication is a method where the server will only honor requests if they contain a special HTTP header (the “Authorization:” header) where the client has to place the login credentials (username and password) that are to be used to gain access to the site or page.
 
 Load Impact supports Basic HTTP Authentication by the use of URLs in this format:
-```
+{% highlight lua linenos %}
 http://username:password@www.mydomain.com/index.php
-```
+{% endhighlight %}
 If you use URLs of that format, that include the username and password to be used when accessing the site/page, requests will automatically get the “Authorization:” header, with the correct data in them.
 
 We also allow HTTP request headers to be specified for each transaction, so it is possible to create the data for the “Authorization:” header in the load script code and then add the header to each request.
-```
+{% highlight lua linenos %}
 http.request({
   method="GET",
   url="http://example.com/",
   headers={ ["Authorization"]= 'Basic ' .. base64.encode(username .. ':' .. password) }
 })
-```
+{% endhighlight %}
 Refer to:
 - [User scenario scripting]({{ site.baseurl }}/legacy/user-scenario-scripting-examples/)
 - [The Load Impact load script API](https://loadimpact.com/load-script-api)

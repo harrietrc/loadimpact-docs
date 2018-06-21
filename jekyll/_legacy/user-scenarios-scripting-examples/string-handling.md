@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/174607-testing-a-site-with-csrf-token-or-
 
 #### Splitting string on specified delimiter
 The following function will take as parameters a string and a delimiter and will split the string on the delimiter and return all parts as a Lua table.
-```
+{% highlight lua linenos %}
 --
 -- String splitting function.
 --
@@ -32,4 +32,4 @@ function string_split(str, delimiter)
     end
     return ret
 end
-```
+{% endhighlight %}

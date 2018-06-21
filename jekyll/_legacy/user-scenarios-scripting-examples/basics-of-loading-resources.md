@@ -13,11 +13,11 @@ redirect_from: /knowledgebase/articles/835704-load-resources
 
 The simplest possible behavior for the client is to issue a HTTP request for a just one single resource (URL) on your site. Lets try it out:
 
-```
+{% highlight lua linenos %}
  http.request_batch({
      {"GET", "http://test.loadimpact.com/"}
  })
-```
+{% endhighlight %}
 
 That’s it. Each client will issue a single GET request, via `http.request_batch()`, to the given URL every time it executes the load script. In the example the URL is `http://test.loadimpact.com`, you should of course replace it with an URL that accesses your site.
 
@@ -27,11 +27,11 @@ That’s it. Each client will issue a single GET request, via `http.request_batc
 
 Note that you may use either HTTP or HTTPS when fetching resources. To use HTTPS you just change the URL so it starts with `https://`:
 
-```
+{% highlight lua linenos %}
  http.request_batch({
      {"GET", "https://test.loadimpact.com/"}
  })
- ```
+{% endhighlight %}
 
 ***
 
@@ -39,11 +39,11 @@ Note that you may use either HTTP or HTTPS when fetching resources. To use HTTPS
 
 If you need to pass GET request parameters, just add them to the URL string:
 
-```
+{% highlight lua linenos %}
 http.request_batch({
      {"GET", "http://test.loadimpact.com/pi.php?decimals=18"}
  })
- ```
+{% endhighlight %}
 
  ***
 
@@ -51,11 +51,11 @@ http.request_batch({
 
 To pass POST data, use the `POST` method and supply the post data using the data parameter.
 
-```
+{% highlight lua linenos %}
 http.request_batch({
      {"POST", "http://test.loadimpact.com/login.php", data="login=test_user&password=1234"}
  })
- ```
+{% endhighlight %}
 
 ***
 
@@ -69,14 +69,14 @@ Let’s try out a simple case first. Say, you notice that your users usually vis
 
 
 
-```
+{% highlight lua linenos %}
 http.request_batch({
      {“GET”, “http://test.loadimpact.com/news.php”}
  })
  http.request_batch({
      {“GET”, “http://test.loadimpact.com/contacts.php”}
  })
- ```
+{% endhighlight %}
 
 
 

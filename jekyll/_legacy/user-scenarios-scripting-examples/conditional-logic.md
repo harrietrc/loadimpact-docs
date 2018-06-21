@@ -21,7 +21,7 @@ Toss result: tails!
 
 If the client wins, he should then request `won.php`, otherwise `lost.php`. This means that the client has to make a request to the server to make it perform the coin flip, then read the returned result from the server and act upon its contents, either loading “won.php” or “lost.php”.
 
-```
+{% highlight lua linenos %}
 -- Define a list of coin sides
 local coin_sides = {"heads", "tails"}
 -- Pick a random coin side
@@ -53,7 +53,7 @@ else -- Toss result is valid, go on
         })
     end
 end
-```
+{% endhighlight %}
 
 Refer to:
 

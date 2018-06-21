@@ -13,18 +13,18 @@ While a client runs its load script, cookies set by the server (via the “Set-C
 
 It is also possible to further set other cookies manually. You can do this by adding this to your script:
 
-```
+{% highlight lua linenos %}
 http.request_batch({
     {"GET", "http://example.com/", headers={["Cookie"]="name=value"}}
 })
-```
+{% endhighlight %}
 
 You may also desire to get the a specific cookie from the response.  Here is a code sample where we get a cookie named `JSESSIONID` from a `http.request_batch()`:
 
-```
+{% highlight lua linenos %}
 local responses = http.request_batch({
    {"GET", "http://your_website.com/",response_body_bytes=100000},
 })
 
 local jsessid = responses[1]['cookies']['JSESSIONID']
-```
+{% endhighlight %}

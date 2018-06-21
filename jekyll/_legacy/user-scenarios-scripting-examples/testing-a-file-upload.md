@@ -24,7 +24,7 @@ If you can send random data, that is the easiest thing to do. It means you can j
 
 
 We have the following example code that will help you with scripting your scenarios to allow for this:
-```
+{% highlight lua linenos %}
 -- LOADIMPACT script example for file upload
 
 local boundary = "dV4Dzl7FuKKkC94lMJgmmw"
@@ -118,4 +118,4 @@ if(response.status_code == 504) then
   log.info(uid)
 end
 log.info(response.status_code)
-```
+{% endhighlight %}

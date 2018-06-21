@@ -36,36 +36,36 @@ Postman is one of the best-in-market tools for functional testing of APIs.
   5.1  -  Assign Lua variable values.
     The transformer will convert variables as:
 
-  ```
-  {% raw %}
+    {% highlight lua linenos %}
+    {% raw %}
     `{{url}}/repos/{{username}}/{{repository}}/contributors`
     ..url.."/repos/"..username.."/"..repository.."/contributors
-  {% endraw %}
-  ```
+    {% endraw %}
+    {% endhighlight %}
 
 
   At the top of the script, we have auto-generated variables. You must assign values to these. If these are dynamic, you may wish to use a [Data Store]({{ site.baseurl }}/legacy/user-scenarios-scripting-examples/data-stores/)
 
-  ```
+  {% highlight lua linenos %}
       local url = “YOUR_VALUE”
       local username = “YOUR_VALUE”
       local repository = “YOUR_VALUE”
-  ```
+  {% endhighlight %}
 
   5.2  -  Replicate the behaviour defined in your Postman pre-request and response test.
 
   This code will be inserted as a comment before and after the Lua request.
-  ```
+  {% highlight lua linenos %}
       --[[
       tests["Body matches string"] = responseBody.has("API endpoint authorized");
       tests["Status code is 200"] = responseCode.code === 200;
       --]]
-  ```
+  {% endhighlight %}
   You could easily replace the code to simulate this behaviour:
 
 
   **LUA tests using the Load script API**
-  ```
+  {% highlight lua linenos %}
       if response.status_code ~= 200 then
         log.error("Status code is 200")
          -- or
@@ -76,14 +76,14 @@ Postman is one of the best-in-market tools for functional testing of APIs.
         -- or
         result.custom_metric("Body does not match", 1)
       end
-  ```
+  {% endhighlight %}
 
   **k6 tests using the k6 API.**
-  ```
+  {% highlight js linenos %}
       check(res, {
         "status was 200": (r) => r.status == 200
       });
-  ```
+  {% endhighlight %}
 6 - Validate your script and run your test!
 
 

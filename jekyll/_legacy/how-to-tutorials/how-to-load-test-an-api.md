@@ -25,7 +25,7 @@ In the current version of Load Impact, sizing of load tests are determined by VU
 
 The below sample script generates throughput towards the system under test at 25 RPS/VU:
 
-```
+{% highlight lua linenos %}
 -- This script takes a URL as input, and attempts to generate a steady flow
 -- of 25 requests per second, RPS. Dividing your target RPS by 25 while using this
 -- script as the user scenario(s), you will know the number of required VUs to
@@ -91,7 +91,7 @@ while true do
     return
   end
 end
-```
+{% endhighlight %}
 
 #### _Notes_:
 

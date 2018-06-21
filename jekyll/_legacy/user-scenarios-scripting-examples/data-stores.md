@@ -59,7 +59,7 @@ Once in the IDE, you can select your data store from the drop down menu.
 Now, you just have to click to select which data stores to associate with your user scenario. You can use MULTIPLE data stores in the same user scenario. Please note: you must select a data store to use it in the scenario. If left unselected you will get a Script Error "\[Line]Failed to find datastore "data store name"."
 
 In your load script, you could then use the following code:
-```
+{% highlight lua linenos %}
  -- Initialize data store
  local ds = datastore.open("login")
  -- Get a random row from data store
@@ -70,4 +70,4 @@ In your load script, you could then use the following code:
  local password = row[2]
  -- Issue a HTTP POST request to login this user on our site
  http.request({"POST", "http://test.loadimpact.com/user_login.php", data="username=" .. username .. "&password=" .. password})
-```
+ {% endhighlight %}

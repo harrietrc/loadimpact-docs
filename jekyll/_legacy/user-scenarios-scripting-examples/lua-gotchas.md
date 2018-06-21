@@ -13,18 +13,18 @@ The programming language Lua is widely accepted as simple, elegant and easy to l
 
 #### Conversion to boolean
 Any value except `nil` and `false` is considered to be `true` in Lua. Note that this means that `0` is `true` as well:
-```
+{% highlight lua linenos %}
  if 0 then
    log.info("zero is true")
  else
    log.info("zero is false")
  end
  --> Prints "zero is true"
-```
+ {% endhighlight %}
 
 #### Variables are global by default
 You have to explicitly declare local variables using keyword `local`. This means that a typo in variable name may potentially bring you trouble:
-```
+{% highlight lua linenos %}
  local has_color = true
  if has_colour then -- Note typo
    log.info("in color")
@@ -32,7 +32,7 @@ You have to explicitly declare local variables using keyword `local`. This means
    log.info("in monochrome")
  end
  --> Unexpectedly prints "in monochrome" since has_colour is nil
- ```
+ {% endhighlight %}
 It is considered a good practice to declare all variables as local and to limit their scope as much as possible.
 
 #### Arrays / tables
@@ -41,19 +41,20 @@ Lua has single all-powerful data structuring type, called “table”. All commo
 
 #### Arrays indices start at one, not zero
 Keep in mind that array indices in Lua start at one (1):
-```
+{% highlight lua linenos %}
  local t = { "one", "two", "three" }
  log.info(tostring(t[0])) --> nil
  log.info(tostring(t[1])) --> one
- ```
+ {% endhighlight %}
+
 Key `0` does not belong to the array part of the table:
-```
+{% highlight lua linenos %}
  t = { }
  t[0] = "zero"
  log.info(tostring(#t)) --> 0
  t[1] = "one"
  log.info(tostring(#t)) --> 1
- ```
+ {% endhighlight %}
 #### Holes in arrays
 The table length (i.e. array size) definition in Lua is a bit unusual and worth reading carefully:
 
@@ -67,12 +68,12 @@ The table length (i.e. array size) definition in Lua is a bit unusual and worth 
 Source: http://www.lua.org/manual/5.1/manual.html#2.5.5
 
 This affects not only length operator `#`, but any code that uses it directly or indirectly, like functions `unpack()` and `table.concat()`.
-```
+{% highlight lua linenos %}
  local t = { "one", "two", "three", "four" }
  log.info(tostring(#t)) --> 4
  t[3] = nil -- Make a hole
  log.info(tostring(#t)) -- May print either 2 or 4
- ```
+ {% endhighlight %}
 In general, avoid making “holes” in tables that you use as a linear arrays‚ unless you know what you’re doing.
 
 ## Where to find more information
