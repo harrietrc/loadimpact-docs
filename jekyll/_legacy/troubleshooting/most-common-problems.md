@@ -13,7 +13,7 @@ When running a test, a lot of different things can happen. The following is a li
 
 ### Tests aborted by system
 
-This issue has a variety of causes, typically on the scripting and configuration side. We've written an article specifically on this topic and the most common (and uncommon) reason for this to happen:  [Tests aborted by system](tests-aborted-by-system)
+This issue has a variety of causes, typically on the scripting and configuration side. We've written an article specifically on this topic and the most common (and uncommon) reason for this to happen:  [Tests aborted by system]({{ site.baseurl }}/legacy/troubleshooting/tests-aborted-by-system/)
 
 
 ***
@@ -30,7 +30,7 @@ This can happen for one of two different reasons:
 
 ##### You're trying to test a private IP address
 
-If you see that the system tries to connect to an address beginning with "10." (e.g. "10.121.44.32") or "192.168." (e.g. "192.168.0.1") or "172.16." the test will not start because these address ranges are private address space, not reachable across the public Internet. If you have entered the IP addresses yourself when creating your load test configuration it means you have some homework to do, finding out what public IP addresses the site/app that you are trying to test is using. A private address is likely used internally, on a corporate LAN, while a public address is necessary for other Internet hosts (in this case, the Load Impact load generators) to be able to reach your system.
+If you see that the system tries to connect to an address beginning with "10." (for example "10.121.44.32") or "192.168." (for example: "192.168.0.1") or "172.16." the test will not start because these address ranges are [private address space](http://en.wikipedia.org/wiki/Private_network), not reachable across the public Internet. If you have entered the IP addresses yourself when creating your load test configuration it means you have some homework to do, finding out what public IP addresses the site/app that you are trying to test is using. A private address is likely used internally, on a corporate LAN, while a public address is necessary for other Internet hosts (in this case, the Load Impact load generators) to be able to reach your system.
 
 If you did not enter the address/es yourself into your load test configuration, but instead wrote the name of your site (e.g. "www.acme.com") and still get this problem and Load Impact complaining that you're trying to test a private IP address, then it means that the name of your site (e.g. "www.acme.com") is being resolved to a private IP address by the DNS system.
 
@@ -38,7 +38,7 @@ If this was not intentionally done by your DNS administrator there is another co
 
 The DNS lookup will end up on Amazon's DNS servers as they are hosting DNS for your domain. Amazon's DNS servers will realize that an AWS host (our load generator) wants to communicate with another AWS host (your site) and then, probably in an attempt to make communication more efficient and reduce a router hop or two, it will tell our load generator to use the AWS-internal, private IP address of your site. I.e. all EC2 machines have both an internal, private IP address used for AWS-internal communication, and an external, public IP that is used for communicating with the rest of the Internet, and Amazon tries to make machines inside AWS use the private IPs when they communicate with eachother.
 
-The problem is that our load generator doesn't know that this is one of the very few cases where using a private IP would actually work. 99 times out of 100 it will fail because it is simply a misconfigured load test, so our load generator refuses to run tests where it has to communicate with private IP addresses. The workaround here is to use our util.dns_remap() function to prevent the load generator from asking DNS for the IP address in the first place. See util.dns_remap() and the code examples.
+The problem is that our load generator doesn't know that this is one of the very few cases where using a private IP would actually work. 99 times out of 100 it will fail because it is simply a misconfigured load test, so our load generator refuses to run tests where it has to communicate with private IP addresses. The workaround here is to use our [util.dns_remap()]({{ site.baseurl }}legacy/user-scenarios-scripting-examples/overriding-public-dns/) function to prevent the load generator from asking DNS for the IP address in the first place.
 
 ##### Your site is using an IP in a range that has been blacklisted
 
@@ -66,7 +66,7 @@ You've added too many user scenarios to your test configuration.  Lower the numb
 
 ### Why don't I see XYZ metric?
 
-The default metrics are allowed viewable if they have been recorded during the test run.  For example, if the time it takes to finish your user scenario is longer than the length of your test, you will not see a VU Load Time.
+The default metrics are viewable if they have been recorded during the test run.  For example, if the time it takes to finish your user scenario is longer than the length of your test, you will not see a VU Load Time.
 
 ***
 

@@ -25,9 +25,9 @@ A common reason why such a large number of URLs are reported is that the Load Im
 
 Also, if your site makes a lot of requests to various tracking or cross marketing services (Google Analytics, Twitter analytics, Omniture, Chartbeat, Hubspot, Pardot, etc.), these requests often redirect to unique URLs and will quickly lead to many URLs being reported.
 
-If you don't necessarily care about those URLs, what you should do is remove them from the user scenario. In some cases you will also be in violation of the service's terms of service if you run a load test against them which is reason enough for removing these requests.
+If you don't necessarily care about those URLs, what you should do is **remove** them from the user scenario. In some cases you will also be in violation of the service's terms of service if you run a load test against them. This is reason enough for removing these requests.
 
-But, in the case that you need the requests and want to report results for the URLs you have two options.  Use URL Grouping to group similar URLs together, or:
+But, in the case that you need the requests and want to report results for the URLs you have two options.  Use [URL grouping]({{ site.baseurl }}/legacy/test-configuration/url-grouping/) to group similar URLs together, or:
 turn off the default reporting of the URL by setting `report_results=false`.
 create a custom metric that will group the results of similar requests instead.
 ```
