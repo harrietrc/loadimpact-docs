@@ -34,15 +34,15 @@ collections:
     selectorName: "Next-gen"
     description: "Get started with Load Impact Next-gen, the successor of what is now referred to as Load Impact Legacy. Run tests in the cloud or on your machine."
     order: 0
-  api:
-    name: "API Docs"
-    site_section: true
-    output: true
-    permalink: /api/:path/
-    prefix: "/api"
-    selectorName: "API"
-    description: "Reference for the Load Impact API."
-    order: 2
+  # api:
+  #   name: "API Docs"
+  #   site_section: true
+  #   output: true
+  #   permalink: /api/:path/
+  #   prefix: "/api"
+  #   selectorName: "API"
+  #   description: "Reference for the Load Impact API."
+  #   order: 2
 
 sass:
   sass_dir: _sass
