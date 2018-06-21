@@ -19,6 +19,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "sidebar";
 @import "articles";
 @import "search";
+@import "syntax";
 
 body {
     padding-top: $top-nav-height;

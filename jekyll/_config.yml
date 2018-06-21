@@ -47,6 +47,8 @@ collections:
 sass:
   sass_dir: _sass
 
+highlighter: rouge
+
 twitter_username: loadimpact
 github_username: loadimpact
 
