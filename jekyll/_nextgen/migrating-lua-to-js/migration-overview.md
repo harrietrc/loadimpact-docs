@@ -26,7 +26,7 @@ This brings us to an important difference, in the Next-gen product you're respon
 ### User scenario
 In the Legacy product user scenarios described using Lua code. You can end up with the Lua code in various ways, by using one of the recorder options, the Postman converter or hand coding it, but at the end of the day the output of all these various ways is a piece of Lua code.
 
-In the Next-gen product user scenarios are described using JavaScript, the ES6 version of JS to be precise. This means it's not only a more familiar language to most developers/testers but it also introduces a nice additions compared to the Legacy product: support for modules, allowing code to be modularized and reused across tests and teams.
+In the Next-gen product user scenarios are described using JavaScript, the ES6 version of JS to be precise. This means it's not only a more familiar language to most developers/testers but it also introduces a nice addition compared to the Legacy product: support for modules, allowing code to be modularized and reused across tests and teams.
 
 See the [Lua to JS migration guide]({{ site.baseurl }}{% link _nextgen/migrating-lua-to-js/lua-to-js.md %}) for more information on how to migrate your Lua user scenarios to JS.
 
@@ -62,6 +62,6 @@ export let options = {
 };
 {% endhighlight %}
 
-For more information, see the [available options](https://docs.k6.io/docs/options) in the k6 documentation.
+For more information, see [configuration options]({{ site.baseurl }}{% link _nextgen/test-scripting/test-configuration-options.md %}).
 
 Next: [Lua to JS migration guide]({{ site.baseurl }}{% link _nextgen/migrating-lua-to-js/lua-to-js.md %})
