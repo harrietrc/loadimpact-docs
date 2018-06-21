@@ -34,13 +34,13 @@ value – `[Auto-generate user scenario]`), the Target URL will be used to dynam
 
 **Accumulated load time** – The Accumulated load time is a result metric representing the total load time of all individual objects in the User scenario, added together. This is also excluding any sleeps as well as any time spent looking up hostnames in DNS. When multiple User scenarios are used the reported value will be an average of the Accumulated load time for all the User scenarios.
 
-**Ramping up/down **– Ramping up means increasing the number of active Users over a period of time. Ramping down means reducing the number of active Users.
+**Ramping up/down** – Ramping up means increasing the number of active Users over a period of time. Ramping down means reducing the number of active Users.
 
-Queue – The Queue is a holding area where tests are stored while waiting to be started by a test worker. Whenever a test is in this state, it will appear as “Queued” in the Load Impact user interface.
+**Queue** – The Queue is a holding area where tests are stored while waiting to be started by a test worker. Whenever a test is in this state, it will appear as “Queued” in the Load Impact user interface.
 
-Test worker – The Test worker is an internal Load Impact service that is responsible for reserving and booting load generator instances, transferring the needed Test configurations, starting load generation, aggregating results etc. In general, it runs the load test.
+**Test worker** – The Test worker is an internal Load Impact service that is responsible for reserving and booting load generator instances, transferring the needed Test configurations, starting load generation, aggregating results etc. In general, it runs the load test.
 
-**Page analyzer **– A tool for creating User scenarios of single pages. Also has an interface that can be used for analyzing and optimizing client side code, accessed through the footer menu at Load Impact.
+**Page analyzer** – A tool for creating User scenarios of single pages. Also has an interface that can be used for analyzing and optimizing client side code, accessed through the footer menu at Load Impact.
 
 **Chrome Extension** - A tool for creating User scenarios. Records the HTTP requests of a real browser and turns them into a User scenario.
 

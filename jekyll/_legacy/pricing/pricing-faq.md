@@ -18,13 +18,21 @@ Here are some of our most frequently asked questions about pricing.  If your que
 
 No - There is no concept of VU hours for our plans.  You can run all your tests up to the maximum limits as defined by your subscription
 
-### Can I pay with a PO or Wire tranfer?
+### Can I pay with a PO or Wire transfer?
 
 Yes - please contact sales or support to initiate the process
 
 ### Do plans autorenew?
 
 Yes - our online plans will autorenew, however they can be canceled at any time in app, for any reason.
+
+### Can I upgrade or downgrade my plan?
+
+Yes - You can upgrade or downgrade.
+
+Upgrades result in a prorated amount being applied towards your new plan.  For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
+
+Downgrades are charged immediately but do not start unti the next billing cycle.  You retain the ability to test with your current plan until the next billing cycle starts.
 
 ### How do I get an invoice/receipt for my purchase?
 
@@ -65,4 +73,4 @@ Yes, when you are not logged on, you can always run anonymous tests from the loa
 
 #### Where do I purchase pay-per-test credits?
 
-Pay-per-test credits can be purchased in app upon configuring a test that falls outside of your subscription. i.e. if you configure a test with 2000 VUs and you have a standard plan, you will be asked to purchase credits.  You can also purchase credits directly using this link.
+Pay-per-test credits can be purchased in app upon configuring a test that falls outside of your subscription.  You can also purchase credits directly using [this link](https://loadimpact.com/pricing-credits-calculator).
