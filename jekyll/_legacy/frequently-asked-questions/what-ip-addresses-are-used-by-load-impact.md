@@ -1,20 +1,19 @@
 ---
 layout: classic-docs
-title: What IP Addresses are used by Load Impact to generate load?
-description: List and explanation of the IP addresses Load Impact uses to generate load during a test.
+title: What IP Addresses are used by Load Impact's to generate load?
+description: List and explanation of the IP addresses Load Impact's Lua based product uses to generate load during a test.
 categories: [frequently-asked-questions]
 order: 5
 redirect_from: /knowledgebase/articles/174262-what-load-zones-and-ip-addresses-does-load-impact
 ---
 
 ***
+This article contains the information regarding the various IP addresses Load Impact will use during a test, validation or script creation.
+
+If you are looking to run tests behind a firewall completely, you may want to consider our new open source load generator, k6.  k6 allows you to run tests locally and stream those results into Load Impact Insights, for analysis. To get started with k6, please refer to our [Quick Start Guide]({{ site.baseurl }}/next-gen/getting-started/hello-world/)
 
 
-Some people have firewalls that prevent the general public out on the Internet from reaching their staging web sites. They often configure their firewalls to block traffic from all IP addresses except the ones used by their developers. To run tests with Load Impact they therefore need to either:
-- Add the Load Impact load generator IP addresses to the list of addresses that are allowed to pass the firewall.
-- Use another method, such as header or query parameter whitelisting, as described in [this article]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-open-firewall-to-load-impact-only/)
-
-Load Impact generates load solely from the cloud, using Amazon cloud servers. However, you will need to include our main loadimpact.com IP addresses as well.
+If you are unable to whitelist a large ranges of IPs, you may want to consider another method, such as header or query parameter whitelisting, as described in [this article]({{ site.baseurl }}/legacy/how-to-tutorials/how-to-open-firewall-to-load-impact-only/)
 
 **The main loadimpact.com IP address:**
 
