@@ -8,7 +8,7 @@ order: 1
 
 ***
 
-# Intro
+## Intro
 In this guide, we will walk through the suggested steps to run a Load/Performance test. The best tests are the ones that simulate real user behavior. Before you move on to creating user scenarios, think about what your users are doing.  Realistically simulating how these users navigate your site, use your app or hit your API endpoints will give you the most actionable results.
 
 A load test simulates users coming to your website, app or API, which produces metrics detailing web performance — such as user load time, accumulated load time, HTTP requests and many more.
