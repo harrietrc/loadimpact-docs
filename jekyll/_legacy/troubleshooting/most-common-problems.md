@@ -9,7 +9,11 @@ redirect_from: /knowledgebase/articles/173855-common-problems-when-running-load-
 
 ***
 
-When running a test, a lot of different things can happen. The following is a list of some of the more common problems that you might face when running a load test, and how to deal with it.
+When running a test, a lot of different things can happen. The following is a list of some of the most common problems that you might face when running a load test, and how to deal with it.
+
+- TOC
+{:toc}
+
 
 ### Tests aborted by system
 

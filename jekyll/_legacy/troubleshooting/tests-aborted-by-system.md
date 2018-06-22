@@ -9,7 +9,10 @@ redirect_from: /knowledgebase/articles/802215-test-aborted-by-system
 
 ***
 
-It's possible that your test will be aborted by the system. Below is a list of reasons this could occur from most common to least with suggested fixes:
+It's possible that your test will be aborted by the system. Below is a list of reasons this could occur from most common to least common, with suggested fixes.
+
+- TOC
+{:toc}
 
 ### 1. Fatal Script Error (Most Common)
 

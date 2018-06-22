@@ -12,6 +12,8 @@ These articles, code samples and videos will help you improve your load testing 
 Important Links
 - [Load script API reference](https://loadimpact.com/load-script-api/)
 - [What IP Addresses does Load Impact use?]({{ site.baseurl }}/legacy/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/)
-- [definitions of our support levels](https://loadimpact.com/premium-support/).
+- [Quick Start Guide]({{ site.baseurl }}/legacy/quick-start-guide/load-test-preparations/)
+- [Definitions of our support levels](https://loadimpact.com/premium-support/)
+- [Using the Load Impact Chrome Extension]({{ site.baseurl }}/legacy/user-scenarios/load-impact-chrome-extension/)
 
 Please be sure to whitelist `@loadimpact.com` within your email settings/spam filter to ensure you receive responses to anything you send in.

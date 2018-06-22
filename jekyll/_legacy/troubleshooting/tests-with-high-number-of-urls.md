@@ -30,7 +30,7 @@ If you don't necessarily care about those URLs, what you should do is **remove**
 But, in the case that you need the requests and want to report results for the URLs you have two options.  Use [URL grouping]({{ site.baseurl }}/legacy/test-configuration/url-grouping/) to group similar URLs together, or:
 turn off the default reporting of the URL by setting `report_results=false`.
 create a custom metric that will group the results of similar requests instead.
-```
+{% highlight lua linenos %}
 -- Turn off normal URL reporting by setting report_results=false
 local responses = http.request_batch({
 { "GET", "http://example.com/search?q="..tostring(math.random()), report_results=false }
@@ -38,4 +38,4 @@ local responses = http.request_batch({
 
 -- Use a custom metric instead to group similar results
 result.custom_metric("Search query", responses[1].total_load_time)
-```
+ {% endhighlight %}

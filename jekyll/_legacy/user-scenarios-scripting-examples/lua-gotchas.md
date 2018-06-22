@@ -11,6 +11,9 @@ redirect_from: /knowledgebase/articles/835737-lua-gotchas
 
 The programming language Lua is widely accepted as simple, elegant and easy to learn. It is also light-weight and very suitable for resource-intensive applications such as load testing. But, as with any other language, it has its own pitfalls. Here is a short list of gotchas that are most often encountered by people coming to Lua from other languages. (Note that in several code examples we use the function log.log() to print out text. This is the API function provided by the Load Impact API to log text messages during execution of a load script)
 
+- TOC
+{:toc}
+
 #### Conversion to boolean
 Any value except `nil` and `false` is considered to be `true` in Lua. Note that this means that `0` is `true` as well:
 {% highlight lua linenos %}
@@ -78,16 +81,13 @@ In general, avoid making “holes” in tables that you use as a linear arrays�
 
 ## Where to find more information
 
-
-##### Information available at loadimpact.com
+**Information available at loadimpact.com**
 [The Load Impact load script API](https://loadimpact.com/load-script-api)
 
-
-##### Official Lua documentation
+**Official Lua documentation**
 [Lua Reference Manual](http://www.lua.org/manual/5.1/)
 [Programming in Lua 2nd ed.](http://www.lua.org/docs.html#pil)
 
-
-##### Lua community
+**Lua community**
 [Lua Unofficial Frequently Asked Questions (FAQ)](http://batbytes.com/luafaq/)
 [Lua users wiki](http://lua-users.org/wiki/)
