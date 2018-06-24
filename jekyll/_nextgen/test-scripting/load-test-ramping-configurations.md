@@ -3,7 +3,7 @@ layout: classic-docs
 title: Ramping configurations
 description: Common load test ramping configuration examples and what you can learn from using them
 categories: [test-scripting]
-order: 9
+order: 11
 ---
 
 ***

@@ -40,4 +40,4 @@ TODO
 
 See the k6 docs on [setup/teardown code](https://docs.k6.io/docs/test-life-cycle#section-setup-and-teardown-stages) for more information.
 
-Next: [Modules and imports]({{ site.baseurl }}{% link _nextgen/test-scripting/modules-imports.md %})
+**Next**: [Modules and imports]({{ site.baseurl }}{% link _nextgen/test-scripting/modules-imports.md %})

@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Module imports
-description: An overview of using modules to modularize and reuse test logic across tests and team members
+title: Custom metrics
+description: An overview of using custom metrics
 categories: [test-scripting]
-order: 2
+order: 10
 ---
 
 TODO
@@ -24,4 +24,4 @@ TODO
 
 See the k6 docs on [Node.js](https://docs.k6.io/docs/modules#section-npm-modules) for more information.
 
-**Next**: [Test configuration options]({{ site.baseurl }}{% link _nextgen/test-scripting/test-configuration-options.md %})
+**Next**: [Ramping configurations]({{ site.baseurl }}{% link _nextgen/test-scripting/load-test-ramping-configurations.md %})

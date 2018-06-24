@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
 title: Tags
-description: Overview on how to use tags
+description: An overview of using tags
 categories: [test-scripting]
-order: 6
+order: 8
 ---
 
 Tags can be a powerful tool from a few different perspectives:
@@ -21,4 +21,4 @@ TODO
 
 See the k6 docs on [tags](https://docs.k6.io/docs/tags-and-groups) for more information.
 
-Next: [Using environment variables]({{ site.baseurl }}{% link _nextgen/test-scripting/environment-variables.md %})
+**Next**: [Environment variables]({{ site.baseurl }}{% link _nextgen/test-scripting/environment-variables.md %})

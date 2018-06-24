@@ -3,7 +3,7 @@ layout: classic-docs
 title: Environment variables
 description: Overview on how to use environment variables
 categories: [test-scripting]
-order: 7
+order: 9
 ---
 
 Environment variables is a useful mechanism for being able to change configurations or behavior of a test without changing the code itself, e.g. making your tests reusable across different hosting environment (dev, staging, production etc.) by changing a base URL.
@@ -105,3 +105,5 @@ c:\k6> k6 run script.js</code></pre>
 </div>
 
 See the k6 docs on [environment variables](https://docs.k6.io/docs/environment-variables) for more information.
+
+**Next**: [Custom metrics]({{ site.baseurl }}{% link _nextgen/test-scripting/custom-metrics.md %})

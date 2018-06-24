@@ -87,4 +87,4 @@ TODO
 
 See the k6 docs on [options](https://docs.k6.io/docs/options) for more information.
 
-Next: [Main function]({{ site.baseurl }}{% link _nextgen/test-scripting/main-function.md %})
+**Next**: [Main function]({{ site.baseurl }}{% link _nextgen/test-scripting/main-function.md %})

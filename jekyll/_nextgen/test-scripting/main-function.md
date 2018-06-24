@@ -10,4 +10,4 @@ TODO
 
 **Note: Make sure to use sleep() statements to pace your VUs**
 
-Next: [Test setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _nextgen/test-scripting/test-setup-teardown-life-cycle.md %})
+**Next**: [Test setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _nextgen/test-scripting/test-setup-teardown-life-cycle.md %})
