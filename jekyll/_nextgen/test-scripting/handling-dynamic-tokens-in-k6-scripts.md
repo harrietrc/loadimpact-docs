@@ -6,11 +6,36 @@ categories: [test-scripting]
 order: 12
 ---
 
-TODO
+If your site is using some kind of CSRF token and you do a [recording using a browser]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/how-to-do-browser-recording.md %}), the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a `VIEWSTATE`.
 
-Very common question/issue in v3.
+To fix this, you will need to do a little bit of scripting.
 
-Refer to:
-legacy/user-scenarios-scripting-examples/http-requests-with-csrf-viewstate-authentication-tokens/
+## Example code
 
-for existing example
+This is a theoretical example. You will need to identify the page where the token is created and adjust the `res.html(selector)` criteria.
+
+{% highlight js lineno %}
+import {group} from "k6";
+import http from "k6/http";
+
+export default function() {
+    let res = http.get("http://mydomain.com/myform.html");
+
+    -- Find the actual value of the token
+    -- We are looking for the value of an input field with a name of "token"
+    let token = res.html("input[name=token]").val();
+
+    // Make the POST request if a the token was found
+    if (token) {
+        // Use the token value in the following POST
+        http.post("http://mydomain.com/post",
+                  "token=" + token + "&foo=bar",
+                  { headers: { "Content-Type": "application/x-www-form-urlencoded" }}
+        );
+    } else {
+        console.error("Failed to find token");
+    }
+}
+{% endhighlight %}
+
+See the jQuery-like [HTML selection](https://docs.k6.io/docs/selection-k6html) APIs in the k6 docs for more information on how to extract values from an HTML document.
