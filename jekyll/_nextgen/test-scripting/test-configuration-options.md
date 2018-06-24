@@ -87,4 +87,4 @@ TODO
 
 See the k6 docs on [options](https://docs.k6.io/docs/options) for more information.
 
-Next: [Test setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _nextgen/test-scripting/test-setup-teardown-life-cycle.md %})
+Next: [Main function]({{ site.baseurl }}{% link _nextgen/test-scripting/main-function.md %})
