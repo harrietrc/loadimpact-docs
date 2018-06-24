@@ -74,6 +74,10 @@
   name: Test scripting
 
 - section: nextgen
+  slug: test-running
+  name: Test running
+
+- section: nextgen
   slug: result-analysis
   name: Result analysis
 
