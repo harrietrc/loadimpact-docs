@@ -25,7 +25,7 @@ Here are the basic steps you need to take to make a recording in some popular br
 <ol>
 <li><p>Open a new incognito window in Chrome (not really necessary, but using an incognito window means you won't be sending a lot of cookies etc that might have been saved by your browser)</p></li>
 
-<li><p>Open up Chrome developer tools (CMD-SHIFT-I on a Mac)</p></li>
+<li><p>Open up Chrome developer tools (<kbd><kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd></kbd> on a Mac)</p></li>
 
 <li><p>Click the "Network" tab</p></li>
 
@@ -33,14 +33,43 @@ Here are the basic steps you need to take to make a recording in some popular br
 
 <li><p>Go to your site and start doing whatever you'd like your simulated load test users to be doing</p></li>
 
-<li><p>When done, right-click on the list of URLs in Chrome developer tools and choose "Save as HAR with content" - see screenshot below</p></li>
+<li><p>When done, right-click on the list of URLs in Chrome developer tools and choose "Save as HAR with content" - see screenshot below</p>
+    <p><img src="{{ site.baseurl }}/assets/img/nextgen/how-to-tutorials/browser-recording-chrome-save-as-har.png" alt="Chrome save to HAR"></p>
+</li>
 
-<li><p>Convert the HAR file using k6: <code>k6 convert -O myscript.js myfile.har</code></p></li>
+<li><p>Convert the HAR file using k6:<br>
+<code>k6 convert -O myscript.js myfile.har</code>
+</p></li>
 
-<li><p>Run the resulting myscript.js script: <code>k6 run myscript.js</code></p></li></ol>
+<li><p>Run the resulting myscript.js script:<br>
+<code>k6 run myscript.js</code></p>
+</li>
+</ol>
             </div>
             <div class="tab-pane fade" id="platform-tabs-content-firefox" role="tabpanel" aria-labelledby="platform-tabs-link-firefox">
-                TODO
+<ol>
+<li><p>Open a new private window in Firefox (not really necessary, but using a private window means you won't be sending a lot of cookies etc that might have been saved by your browser)</p></li>
+
+<li><p>Open up Firefox developer tools (<kbd><kbd>CMD</kbd>+<kbd>SHIFT</kbd>+<kbd>I</kbd></kbd> on a Mac)</p></li>
+
+<li><p>Click the "Network" tab</p></li>
+
+<li><p>Click the "Preserve logs" checkbox if you want to make a recording of several successive page loads</p></li>
+
+<li><p>Go to your site and start doing whatever you'd like your simulated load test users to be doing</p></li>
+
+<li><p>When done, right-click on the list of URLs in Firefox developer tools and choose "Save all as HAR" - see screenshot below</p>
+    <p><img src="{{ site.baseurl }}/assets/img/nextgen/how-to-tutorials/browser-recording-firefox-save-all-as-har.png" alt="Chrome save to HAR"></p>
+</li>
+
+<li><p>Convert the HAR file using k6:<br>
+<code>k6 convert -O myscript.js myfile.har</code>
+</p></li>
+
+<li><p>Run the resulting myscript.js script:<br>
+<code>k6 run myscript.js</code></p>
+</li>
+</ol>
             </div>
         </div>
     </div>
