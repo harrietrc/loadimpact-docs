@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Using environment variables
+title: Environment variables
 description: Overview on how to use environment variables
 categories: [test-scripting]
 order: 7

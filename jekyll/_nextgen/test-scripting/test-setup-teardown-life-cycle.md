@@ -59,4 +59,4 @@ export default function(setupData) {
 
 See the k6 docs on the [test life cycle](https://docs.k6.io/docs/test-life-cycle) for more information.
 
-Next: [Using tags]({{ site.baseurl }}{% link _nextgen/test-scripting/using-tags.md %})
+Next: [Using tags]({{ site.baseurl }}{% link _nextgen/test-scripting/tags.md %})
