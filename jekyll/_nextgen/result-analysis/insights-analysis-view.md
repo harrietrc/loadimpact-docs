@@ -39,4 +39,4 @@ Once added the metric will appear in the comparison area and you can compare it 
 
 ![Insights: Analysis section metrics comparison]({{ site.baseurl }}/assets/img/nextgen/result-analysis/insights-analysis-section-metrics-compare.png)
 
-See next: [Insights: URL table]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-url-table.md %})
+**Next**: [Insights: URL table]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-url-table.md %})

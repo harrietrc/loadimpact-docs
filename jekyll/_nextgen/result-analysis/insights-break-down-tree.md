@@ -84,4 +84,4 @@ Custom metrics and thresholds created in your test script will be available to t
 
 ![Insights: Custom metrics and Thresholds]({{ site.baseurl }}/assets/img/nextgen/result-analysis/insights-breakdown-custom-metrics-thresholds.png)
 
-See next: [Insights: analysis view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-analysis-view.md %})
+**Next**: [Insights: analysis view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-analysis-view.md %})

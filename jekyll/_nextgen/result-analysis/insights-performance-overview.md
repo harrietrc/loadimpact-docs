@@ -14,4 +14,4 @@ The performance overview section contains a timeline over the VUs ramping togeth
 
 This section will help you to see overall statuses on thresholds, checks and requests errors.
 
-See next: [Insights: filters]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-filters.md %})
+**Next**: [Insights: filters]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-filters.md %})

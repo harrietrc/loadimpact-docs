@@ -42,4 +42,4 @@ When the aggregation method is changed, it will change the result aggregation by
 
 *Note: this will apply only to metrics type "trend". Read more about [k6 metrics](https://docs.k6.io/docs/result-metrics).*
 
-See next: [Insights: breakdown tree view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-break-down-tree.md %})
+**Next**: [Insights: breakdown tree view]({{ site.baseurl }}{% link _nextgen/result-analysis/insights-break-down-tree.md %})
