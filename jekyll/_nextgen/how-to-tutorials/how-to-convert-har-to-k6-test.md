@@ -28,4 +28,6 @@ The built-in HAR converter is very useful because HAR is a format supported by m
 - [Crossbrowsertesting](http://crossbrowsertesting.com/) (Online testing service)
 - [pcap2har](https://github.com/andrewf/pcap2har) (Converts sniffer - e.g. Wireshark - pcap files to HAR)
 
-See also [How to do a browser recording]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/how-to-do-browser-recording.md %}) for a guide on recording a session in a web browser and exporting it to a HAR file for conversion to a k6 test.
+**See also**:
+- [How to do a browser recording]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/how-to-do-browser-recording.md %})
+- [How to load test with Postman collections]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/load-testing-with-postman-collections.md %})

@@ -47,3 +47,7 @@ Here are the basic steps you need to take to make a recording in some popular br
 </div>
 
 Recommended is of course to review the script before running it. There may be dynamic data used on your site - CSRF tokens or whatnot - that will be hardcoded into the k6 script and which you may want to replace with dynamic data that k6 gets from the server you are testing.
+
+**See also**:
+- [How to load test with Postman collections]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/load-testing-with-postman-collections.md %})
+- [How to convert HAR files to k6 tests]({{ site.baseurl }}{% link _nextgen/how-to-tutorials/how-to-convert-har-to-k6-test.md %})
