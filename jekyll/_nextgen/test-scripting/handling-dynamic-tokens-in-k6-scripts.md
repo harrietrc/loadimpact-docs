@@ -21,8 +21,8 @@ import http from "k6/http";
 export default function() {
     let res = http.get("http://mydomain.com/myform.html");
 
-    -- Find the actual value of the token
-    -- We are looking for the value of an input field with a name of "token"
+    // Find the actual value of the token
+    // We are looking for the value of an input field with a name of "token"
     let token = res.html("input[name=token]").val();
 
     // Make the POST request if a the token was found
