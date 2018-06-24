@@ -10,7 +10,7 @@ order: 6
 
 If you are running a `k6 cloud` test, you will be utilizing Load Impact's infrastructure. These are dynamically allocated from our cloud providers and we do not know the source IP until the test is running.
 
-**If you are streaming results to Insights utilizing `k6 run myscript.js -o cloud` you SHOULD NOT need to whitelist anything.**
+**If you are streaming results to Insights utilizing `k6 run -o cloud myscript.js` you SHOULD NOT need to whitelist anything.**
 
 To open your firewall to Load Impact traffic, you have multiple options. Depending on your business needs, one may be a better fit than another.
 
@@ -35,7 +35,7 @@ import http from "k6/http";
 export default function() {
   var url = "http://test.loadimpact.com/login";
   var payload = JSON.stringify({ email: "aaa", password: "bbb" });
-  var params =  { headers: { "Content-Type": "application/json" }, {"Myheader": "TOKEN_STRING"} }
+  var params =  { headers: { "Content-Type": "application/json" , "Myheader": "TOKEN_STRING"} }
   http.post(url, payload, params);
 };
 {% endhighlight %}
