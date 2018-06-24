@@ -89,9 +89,9 @@
   slug: team-project-management
   name: Team and Project Management
 
-- section: nextgen
-  slug: on-premise-testing
-  name: Onpremise testing
+#- section: nextgen
+#  slug: on-premise-testing
+#  name: Onpremise testing
 
 - section: nextgen
   slug: integrations
@@ -101,9 +101,9 @@
   slug: pricing
   name: Pricing
 
-- section: nextgen
-  slug: faq
-  name: FAQ
+#- section: nextgen
+#  slug: faq
+#  name: FAQ
 
 # Load Impact API Docs
 - section: api
