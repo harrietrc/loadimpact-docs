@@ -6,7 +6,7 @@ categories: [test-scripting]
 order: 7
 ---
 
-Environment variables are great for making your tests usable across different hosting environment (dev, staging, production etc.).
+Environment variables is a useful mechanism for being able to change configurations or behavior of a test without changing the code itself, e.g. making your tests reusable across different hosting environment (dev, staging, production etc.) by changing a base URL.
 
 ## Accessing environment variables
 
@@ -27,7 +27,26 @@ There are two ways to pass environment variables to a k6 test:
 
 ### Setting CLI flags
 
-TODO
+The most portable way to pass environment variables to a k6 test is by using one or more `-e KEY=VALUE` CLI flags:
+
+If we have a test script like this:
+
+{% highlight js lineno %}
+import { check, sleep } from "k6";
+import http from "k6/http";
+
+export default function() {
+    var r = http.get(`https://${__ENV.MY_HOSTNAME}/`);
+    check(r, {
+        "status is 200": (r) => r.status === 200
+    });
+    sleep(5);
+}
+{% endhighlight %}
+
+you would set the environment variable `MY_HOSTNAME` and execute k6 like this:
+
+`k6 run -e MY_HOSTNAME=test.loadimpact.com script.js`
 
 ### Reading from system environment
 
@@ -35,7 +54,7 @@ TODO
     Note that this way of setting environment variables is only supported when running Locally Executed tests, it will not work with <a href="CLOUD_EXEC_DOCS_LINK" class="alert-link">Cloud Execution</a>.
 </div>
 
-If we have a test script like this:
+Using the same the same test script as above:
 
 {% highlight js lineno %}
 import { check, sleep } from "k6";
