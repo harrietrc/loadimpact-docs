@@ -6,22 +6,68 @@ categories: [test-scripting]
 order: 10
 ---
 
-TODO
+For situations where you want to track something not part of the standard metrics, you can reach for the custom metrics functionality in k6.
 
-## Modules
-TODO
+The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All four can be used when creating custom metrics.
 
-See the k6 docs on [modules](https://docs.k6.io/docs/modules) for more information.
+## Counter metrics
 
-### Builtin modules
-There are a number of builtin modules in k6 with performance testing related APIs.
+{% highlight js lineno %}
+import http from "k6/http";
+import { Counter } from "k6/metrics";
 
-## Remote modules
-TODO
+let CounterErrors = new Counter("Errors");
 
-## Using Node.js modules
-TODO
+export default function() {
+    let res = http.get("https://loadimpact.com");
+    let contentOK = res.html("h1").text().includes("Load Impact");
+    CounterErrors.add(!contentOK);
+};
+{% endhighlight %}
 
-See the k6 docs on [Node.js](https://docs.k6.io/docs/modules#section-npm-modules) for more information.
+## Gauge metrics
+
+{% highlight js lineno %}
+import http from "k6/http";
+import { Gauge } from "k6/metrics";
+
+let GaugeContentSize = new Gauge("ContentSize");
+
+export default function() {
+    let res = http.get("https://loadimpact.com");
+    GaugeContentSize.add(res.body.length);
+};
+{% endhighlight %}
+
+## Rate metrics
+
+{% highlight js lineno %}
+import http from "k6/http";
+import { Rate } from "k6/metrics";
+
+let RateContentOK = new Rate("Content OK");
+
+export default function() {
+    let res = http.get("https://loadimpact.com");
+    let contentOK = res.html("h1").text().includes("Load Impact");
+    RateContentOK.add(contentOK);
+};
+{% endhighlight %}
+
+## Trend metrics
+
+{% highlight js lineno %}
+import http from "k6/http";
+import { Trend } from "k6/metrics";
+
+let TrendRTT = new Trend("RTT");
+
+export default function() {
+    let res = http.get("https://loadimpact.com");
+    TrendRTT.add(res.timings.duration);
+};
+{% endhighlight %}
+
+See the k6 docs on [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) for more information.
 
 **Next**: [Ramping configurations]({{ site.baseurl }}{% link _nextgen/test-scripting/load-test-ramping-configurations.md %})
