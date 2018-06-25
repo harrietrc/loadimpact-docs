@@ -36,7 +36,7 @@
 		{% if page.page-type != "homepage" %}
 			<ul class="nav">
 			{% capture sidebar %}
-				{% if page.collection == "nextgen" %}
+				{% if page.collection == "v4" %}
 				<li>
 					<ul class="left-links main-nav" class="d-block">
 						{% assign cats = site.data.categories | where:"section",section.label %}
@@ -66,7 +66,7 @@
 					</ul>
 				</li>
 				{% endif %}
-				{% if page.collection == "legacy" %}
+				{% if page.collection == "v3" %}
 				<li>
 					<ul class="left-links main-nav" class="d-block">
 						{% assign cats = site.data.categories | where:"section",section.label %}

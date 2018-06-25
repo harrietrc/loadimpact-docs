@@ -56,7 +56,7 @@
 		<div class="article-container docs">
 			{% include breadcrumb.html %}
 			<form id="site-search" class="doc-search" action="">
-				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'legacy' %}Legacy {% elsif page.collection == 'nextgen' %}Next-gen {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
+				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'v3' %}3.0 {% elsif page.collection == 'v4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
 			</form>
 			{% if page.page-type == "index" %}<h2>{{ page.title }}</h2>{% endif %}
 			<article>
@@ -84,7 +84,7 @@
 		apiKey: 'aa62993341e446f6aca87228215be496',
 		indexName: 'staging_li_docs',
 		inputSelector: '#li-search',
-		algoliaOptions: { 'facetFilters': ["collection:{% if page.collection == 'legacy' %}legacy{% elsif page.collection == 'nextgen' %}nextgen{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
+		algoliaOptions: { 'facetFilters': ["collection:{% if page.collection == 'v3' %}v3{% elsif page.collection == 'v4' %}v4{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
 		/*debug: {% if jekyll.environment == "production" %}false{% else %}true{% endif %}*/ // Set debug to true if you want to inspect the dropdown
 	});
 	</script>-->

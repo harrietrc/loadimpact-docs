@@ -1,9 +1,9 @@
-# Load Impact Legacy Docs
+# Load Impact 3.0 Docs
 
 # REQUIRED
 # Load Impact Version 3 docs
 # corresponds to Jekyll collection
-#- section: legacy
+#- section: v3
   # REQUIRED
   # filename of category's page: "_collection/<slug>.md"
   # lowercase, no spaces, unique within section
@@ -12,96 +12,96 @@
   # human-readable slug / display name for website
 #  name: "Getting Started"
 
-- section: legacy
+- section: v3
   slug: quick-start-guide
   name: "Quick Start Guide"
 
-- section: legacy
+- section: v3
   slug: user-scenarios
   name: User Scenarios
 
-- section: legacy
+- section: v3
   slug: test-configuration
   name: Test Configuration
 
-- section: legacy
+- section: v3
   slug: test-results
   name: Test Results
 
-- section: legacy
+- section: v3
   slug: user-scenario-scripting-examples
   name: User Scenario Scripting Examples
 
-- section: legacy
+- section: v3
   slug: organizations-projects
   name: Organization, Projects, and Team Members
 
-- section: legacy
+- section: v3
   slug: monitoring-agents
   name: Server Monitoring Agents
 
-- section: legacy
+- section: v3
   slug: integrations
   name: Integrations
 
-- section: legacy
+- section: v3
   slug: how-to-tutorials
   name: How to/Tutorials
 
-- section: legacy
+- section: v3
   slug: troubleshooting
   name: Troubleshooting your Load Test
 
-- section: legacy
+- section: v3
   slug: frequently-asked-questions
   name: Frequently Asked Questions
 
-- section: legacy
+- section: v3
   slug: pricing
   name: Pricing
 
 # Load Impact Next Gen Docs
-- section: nextgen
+- section: v4
   slug: getting-started
   name: Getting Started
 
-- section: nextgen
+- section: v4
   slug: migrating-lua-to-js
-  name: Migrating from Legacy (Lua)
+  name: Migrating from 3.0 (Lua)
 
-- section: nextgen
+- section: v4
   slug: test-scripting
   name: Test scripting
 
-- section: nextgen
+- section: v4
   slug: test-running
   name: Test running
 
-- section: nextgen
+- section: v4
   slug: result-analysis
   name: Result analysis
 
-- section: nextgen
+- section: v4
   slug: how-to-tutorials
   name: How to/Tutorials
 
-- section: nextgen
+- section: v4
   slug: team-project-management
   name: Team and Project Management
 
-#- section: nextgen
+#- section: v4
 #  slug: on-premise-testing
 #  name: Onpremise testing
 
-- section: nextgen
+- section: v4
   slug: integrations
   name: Integrations
 
-- section: nextgen
+- section: v4
   slug: pricing
   name: Pricing
 
-#- section: nextgen
+#- section: v4
 #  slug: faq
 #  name: FAQ
 

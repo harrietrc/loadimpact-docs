@@ -16,23 +16,23 @@ liquid:
   error_mode: strict
 
 collections:
-  legacy:
-    name: "Legacy (Lua) Docs"
+  v3:
+    name: "3.0 (Lua) Docs"
     site_section: true
     output: true
-    permalink: /legacy/:path/
-    prefix: "/legacy"
-    selectorName: "Legacy"
-    description: "Documentation for Load Impact Legacy, the Lua based product, in operation since 2011."
+    permalink: /3.0/:path/
+    prefix: "/3.0"
+    selectorName: "3.0"
+    description: "Documentation for Load Impact 2.0, the Lua based product, in operation since 2011."
     order: 1
-  nextgen:
-    name: "Next-gen (k6/JS) Docs"
+  v4:
+    name: "4.0 (k6/JS) Docs"
     site_section: true
     output: true
-    permalink: /next-gen/:path/
-    prefix: "/next-gen"
-    selectorName: "Next-gen"
-    description: "Get started with Load Impact Next-gen, the successor of what is now referred to as Load Impact Legacy. Run tests in the cloud or on your machine."
+    permalink: /4.0/:path/
+    prefix: "/4.0"
+    selectorName: "4.0"
+    description: "Get started with Load Impact 4.0. Run tests in the cloud or on your machine/on-premise."
     order: 0
   # api:
   #   name: "API Docs"
