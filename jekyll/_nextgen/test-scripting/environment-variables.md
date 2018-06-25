@@ -51,7 +51,7 @@ you would set the environment variable `MY_HOSTNAME` and execute k6 like this:
 ### Reading from system environment
 
 <div class="callout callout-warning" role="alert">
-    Note that this way of setting environment variables is only supported when running Locally Executed tests, it will not work with <a href="CLOUD_EXEC_DOCS_LINK" class="alert-link">Cloud Execution</a>.
+    Note that this way of setting environment variables is only supported when running Locally Executed tests, it will not work with <a href="{{ site.baseurl }}{% link _nextgen/test-running/cloud-execution.md %}" class="alert-link">Cloud Execution</a>.
 </div>
 
 Using the same the same test script as above:
