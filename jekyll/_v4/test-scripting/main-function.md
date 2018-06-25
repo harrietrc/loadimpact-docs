@@ -6,8 +6,40 @@ categories: [test-scripting]
 order: 4
 ---
 
-TODO
+The main test code (aka "VU code") is called after the "init code" and "setup code" has been run:
 
-**Note: Make sure to use sleep() statements to pace your VUs**
+{% highlight js linenos %}
+// 1. init code
+
+export function setup() {
+    // 2. setup code
+}
+
+export default function(data) {
+    // 3. vu code
+}
+
+export function teardown(data) {
+    // 4. teardown code
+}
+{% endhighlight %}
+
+The "VU code" is put inside the `export default function` (aka "main") function.
+
+<div class="callout callout-warning" role="alert">
+    Note that the <code>setup()</code> and <code>teardown()</code> functions are optional <a href="{{ site.baseurl }}{% link _v4/test-scripting/test-setup-teardown-life-cycle.md %}" class="alert-link">life-cycle hooks</a>. If they're not used no <code>data</code> will be passed to the <code>export default function</code>.
+</div>
+
+It's in the "main" function you'll be spending most of your time. The most important thing to grasp before writing your test code is how a VU executes the main function.
+
+## The main function life-cycle
+
+A VU will execute the main function from start to end in sequence. Nothing out of the ordinary so far, but here's the important part; once the VU reaches the end of the main function it will loop back to the start and execute the code all over.
+
+As part of this "restart" process, the VU is reset. Cookies are cleared and TCP connections might be torn down, depending on your test configuration options.
+
+<div class="callout callout-warning" role="alert">
+    Make sure to use <code>sleep()</code> statements to pace your VUs properly. An appropriate amount of sleep/think time at the end of the main function is often needed to properly simulate a user reading content on a page. If you don't have a <code>sleep()</code> statement at the end of the main function your VU might be "aggressive" than you've planned.
+</div>
 
 **Next**: [Test setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _v4/test-scripting/test-setup-teardown-life-cycle.md %})
