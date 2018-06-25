@@ -25,19 +25,22 @@ export function teardown(data) {
 }
 {% endhighlight %} 
 
+It can also be visualized like this:
+
+<p class="text-center"><img src="{{ site.baseurl }}/assets/img/nextgen/test-scripting/v4-k6-execution-breakdown.svg" alt="k6 execution breakdown" width="400"></p>
+
 ## Init code
-TODO
+
+Init code is run once per VU, when the VU is initialized. This is the only place where interacting with files is allowed, via the [`open()`](https://docs.k6.io/docs/open-filepath-mode) API.
 
 See the k6 docs on [init code](https://docs.k6.io/docs/test-life-cycle#section-init-and-vu-stages) for more information.
 
 ### VU code
-TODO
 
-See the k6 docs on [VU code](https://docs.k6.io/docs/test-life-cycle#section-init-and-vu-stages) for more information.
+The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}{% link _nextgen/test-scripting/main-function.md %})
 
-### Setup/teardown lifecycle hooks
-TODO
+### Setup/teardown life-cycle hooks
 
-See the k6 docs on [setup/teardown code](https://docs.k6.io/docs/test-life-cycle#section-setup-and-teardown-stages) for more information.
+The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _nextgen/test-scripting/test-setup-teardown-life-cycle.md %}) for more details.
 
 **Next**: [Modules and imports]({{ site.baseurl }}{% link _nextgen/test-scripting/modules-imports.md %})
