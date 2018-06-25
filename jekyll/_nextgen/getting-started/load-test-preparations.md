@@ -8,11 +8,13 @@ order: 2
 
 ***
 
-## Intro
+## Purpose
 
-By now you should have an understanding of the basic parts of k6 and testing with Load Impact.
+By now you should have an understanding of the basic parts of k6 and testing with Load Impact. If you haven't completed our [`Hello World`]({{ site.baseurl }}/next-gen/getting-started/hello-world/), we suggest going back and doing so.
 
 This next section is intended to walk through the suggested steps that will help you get started and running your first test, faster. The best tests are the ones that simulate the most realistic conditions and user behavior.  However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
+
+## What am I testing?
 
 If you have not already, you start thinking about any or all of the following:
 

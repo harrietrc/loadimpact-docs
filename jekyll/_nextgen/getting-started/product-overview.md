@@ -6,13 +6,15 @@ categories: [getting-started]
 order: 0
 ---
 
+***
+
 As illustrated below Load Impact Next-gen is composed of 3 major components:
 
-- **k6** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by us at Load Impact
+- **[k6]({{ site.baseurl }}/next-gen/getting-started/product-overview/#k6)** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by us, Load Impact.
 
-- **Load Impact Insights** - part of the Load Impact cloud service offering for storing, analyzing and trending k6 test results with your team
+- **[Load Impact Insights]({{ site.baseurl }}/next-gen/getting-started/product-overview/#load-impact-insights)** - A Load Impact cloud service offering. Insights enables you to store, analyze, plot trending graphs, and share your k6 test results with your team.
 
-- **Load Impact Cloud Execution** - part of the Load Impact cloud service offering for running tests on global cloud infrastructure managed by us at Load Impact, with support for larger tests and geographic distribution
+- **[Load Impact Cloud Execution]({{ site.baseurl }}/next-gen/getting-started/product-overview/#load-impact-cloud-execution)** - A Load Impact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by Load Impact. We provide on-demand support for larger tests and geographically distributed tests.
 
 ![Load Impact Next-gen product overview]({{ site.baseurl }}/assets/img/nextgen/getting-started/v4-product-overview.svg)
 

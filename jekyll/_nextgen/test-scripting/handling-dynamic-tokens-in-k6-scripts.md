@@ -14,7 +14,7 @@ To fix this, you will need to do a little bit of scripting.
 
 This is a theoretical example. You will need to identify the page where the token is created and adjust the `res.html(selector)` criteria.
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import {group} from "k6";
 import http from "k6/http";
 

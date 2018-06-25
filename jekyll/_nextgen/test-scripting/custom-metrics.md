@@ -12,7 +12,7 @@ The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All fou
 
 ## Counter metrics
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import http from "k6/http";
 import { Counter } from "k6/metrics";
 
@@ -27,7 +27,7 @@ export default function() {
 
 ## Gauge metrics
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import http from "k6/http";
 import { Gauge } from "k6/metrics";
 
@@ -41,7 +41,7 @@ export default function() {
 
 ## Rate metrics
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import http from "k6/http";
 import { Rate } from "k6/metrics";
 
@@ -56,7 +56,7 @@ export default function() {
 
 ## Trend metrics
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import http from "k6/http";
 import { Trend } from "k6/metrics";
 

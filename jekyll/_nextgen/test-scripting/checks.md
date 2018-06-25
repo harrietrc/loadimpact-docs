@@ -10,7 +10,7 @@ Checks are like asserts but differ in that they don't halt the execution of the 
 
 Use checks to make sure functional pass/fail conditions are met during test execution.
 
-{% highlight js lineo %}
+{% highlight js linenos %}
 import { check } from "k6";
 import http from "k6/http";
 
@@ -31,7 +31,7 @@ Checks on their own can' t fail a test, you need to combine them with [threshold
 
 In the below example we set a threshold that specifies we accept a 10% check failure rate before considering the test a failure:
 
-{% highlight js lineo %}
+{% highlight js linenos %}
 import http from "k6/http";
 import { check } from "k6";
 import { Rate } from "k6/metrics";

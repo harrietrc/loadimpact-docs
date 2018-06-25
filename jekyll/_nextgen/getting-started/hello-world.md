@@ -6,6 +6,17 @@ categories: [getting-started]
 order: 1
 ---
 
+***
+
+# Purpose
+
+In this document, we will focus on running a very simple test. This is so you can understand the various parts of k6 and how they relate to one another. We will be making a single request to `https://test.loadimpact.com`, but feel free to change that to a URL, or API endpoint, that you _are allowed to test_.
+
+_Note:_ This test and script is one of the most basic ones you could have.  In our example, `https://test.loadimpact.com` is only the main HTML document.  No other dependencies, such as CSS and JavaScript, would be loaded. Further along in this documentation we will highlight ways to create more complex scripts (user scenarios) to create more realistic tests.
+
+***
+
+
 To get started with Load Impact Next-gen you'll need to complete a few steps:
 
 1. Download and install k6 for your platform of choice: Linux, Mac or Windows
@@ -65,7 +76,7 @@ Read more about [installation options](https://docs.k6.io/docs/installation) in 
 
 Let's have a look at a simple k6 test script that you can use to run your first k6 test:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import { sleep } from "k6";
 import http from "k6/http";
 
@@ -75,9 +86,9 @@ export default function() {
 }
 {% endhighlight %}
 
-Not too fancy, we import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3s (before starting over at the top of the [main function]({{ site.baseurl}}{% link _nextgen/test-scripting/main-function.md %}).
+We import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3 seconds. The [main function]({{ site.baseurl}}{% link _nextgen/test-scripting/main-function.md %}) is essentially a while true loop. As long as the test as time left on it and an iteration limit has not been met, Virtual Users will continue to iterate over it.
 
-Let's run this test script with k6. Save it in a file on your computer (we'll assume it's saved to a file called `script.js` below). In a terminal, where the current working directory is where you saved the file, execute the following command:
+Let's run this test script with k6. Save it in a file on your computer (we'll assume it's saved to a file called `script.js` below). In a terminal, in the same working directory where you saved the file, execute the following command:
 
 `k6 run script.js`
 
@@ -87,28 +98,28 @@ You should see something like this in the terminal:
 
 This executed the test with k6's default settings in terms of number of concurrent Virtual Users (VU) and test duration. The default is 1 VU doing one iteration through the test script.
 
-Well done!
+**Congratulations! You just ran your first k6 test.**
 
 ### Ramping VUs
 
-To run an actual load test we need more than 1 VU :)
+To run a meaningful load test, we will need more than 1 Virtual User :)
 
-We can specify the VU ramping that we want by extending out test script with some [test configuration options]({{ site.baseurl}}{% link _nextgen/test-scripting/test-configuration-options.md %}):
+We can specify the Virtual User ramping that we want by extending out test script with some [test configuration options]({{ site.baseurl}}{% link _nextgen/test-scripting/test-configuration-options.md %}). These options are global in scope and are configured in the section `export let options` on lines 4-16 below:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import { sleep } from "k6";
 import http from "k6/http";
 
 export let options = {
     // Add VU ramping option, total test length is 3m
     stages: [
-        // Ramp up from 1 VU to 25 VUs for 1m
+        // Ramp up from 1 VU to 25 VUs for 1 minute
         { target: 25, duration: "60s" },
 
-        // Stay constant at 25 VUs for 1m
+        // Stay constant at 25 VUs for 1 minute
         { target: 25, duration: "60s" },
 
-        // Ramp down from 25 VUs to 0 VUs for 1m
+        // Ramp down from 25 VUs to 0 VUs for 1 minute
         { target: 0, duration: "60s" }
     ]
 };
@@ -118,6 +129,8 @@ export default function() {
   sleep(3);
 }
 {% endhighlight %}
+
+_Note:_ Ramping configurations are linear and evenly distributed over the duration. In the above example, a new Virtual User would start every 2.4 seconds until reaching 25 at the 1 minute mark.
 
 Let's run the test again:
 
@@ -133,7 +146,7 @@ Read more about [VU ramping configurations]({{ site.baseurl}}{% link _nextgen/te
 
 ## Stream results to Load Impact Insights
 
-So far we've only used one component (k6) of Load Impact Next-gen. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing and trending k6 test results. It's easy to use, you just login to your Load Impact account and add `-o cloud`:
+So far we've only used one component (k6) of Load Impact Next-gen. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just login to your Load Impact account and add `-o cloud`:
 
 **Login to your Load Impact account**:
 
@@ -163,6 +176,8 @@ Same as when we streamed our results to Insights, we'll now get a link to Insigh
 
 Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _nextgen/test-running/cloud-execution.md %}) section.
 
-You made it to the end, congrats!
+**Congratulations!  You've run a smoke test, a locally executed test and a cloud executed test!**
 
-Now that you've successfully run your first k6 test, consider the following [load test preparations]({{ site.baseurl}}{% link _nextgen/getting-started/load-test-preparations.md %})
+## Next Steps
+
+Now that you've successfully run your first batch of k6 tests, consider the following [load test preparations]({{ site.baseurl}}{% link _nextgen/getting-started/load-test-preparations.md %}) to assist on your journey or performance testing mastery.

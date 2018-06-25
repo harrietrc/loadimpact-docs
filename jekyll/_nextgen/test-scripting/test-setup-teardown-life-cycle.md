@@ -17,7 +17,7 @@ In k6 tests there are two life cycle hooks for running code pre and post test, `
 ## Setup hook
 To run code before the test starts, you implement the `setup()` function:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 export function setup() {
     // setup code
 }
@@ -26,7 +26,7 @@ export function setup() {
 ## Teardown hook
 To run code after the test has finished, you implement the `teardown()` function:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 export function teardown() {
     // teardown code
 }
@@ -36,7 +36,7 @@ export function teardown() {
 
 A convenient thing with how the `setup()`/`teardown()` functionality is implemented is that anything returned from the `setup()` function will be passed as the first argument to both the [main function]({{ site.baseurl }}{% link _nextgen/test-scripting/main-function.md %}) and the `teardown()` function:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 export function setup() {
     let data = { message: "Hello world!" };
     return data;

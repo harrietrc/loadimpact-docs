@@ -12,7 +12,7 @@ Environment variables is a useful mechanism for being able to change configurati
 
 To access an environment variable from a k6 test you use the global `__ENV` variable. So if you set an env var `MY_ENV_VAR` you'd access it like so:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 export default function() {
     console.log(__ENV.MY_ENV_VAR);
 }
@@ -31,7 +31,7 @@ The most portable way to pass environment variables to a k6 test is by using one
 
 If we have a test script like this:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import { check, sleep } from "k6";
 import http from "k6/http";
 
@@ -56,7 +56,7 @@ you would set the environment variable `MY_HOSTNAME` and execute k6 like this:
 
 Using the same the same test script as above:
 
-{% highlight js lineno %}
+{% highlight js linenos %}
 import { check, sleep } from "k6";
 import http from "k6/http";
 
