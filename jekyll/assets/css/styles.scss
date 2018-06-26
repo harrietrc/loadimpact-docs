@@ -41,3 +41,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+#site-search{
+	padding-bottom: 30px;
+
+	.algolia-autocomplete {
+		width: 100%;
+	}
+
+	.algolia-autocomplete.algolia-autocomplete-right .ds-dropdown-menu {
+		left: 0 !important;
+		right: none !important;
+	}
+}

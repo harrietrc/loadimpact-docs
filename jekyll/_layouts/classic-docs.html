@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 	<title>{% if page.title %}{{ page.title | escape }} - Load Impact{% else %}{{ site.title | escape }} - Load Impact{% endif %}</title>
 
 	<!-- Start of Async Drift Code -->
@@ -55,9 +55,9 @@
 		{% unless page.url == "/" %}{% include sidebar.html %}{% endunless %}
 		<div class="article-container docs">
 			{% include breadcrumb.html %}
-			<!--<form id="site-search" class="doc-search" action="">
+			<form id="site-search" class="doc-search" action="">
 				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'v3' %}3.0 {% elsif page.collection == 'v4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
-			</form>-->
+			</form>
 			{% if page.page-type == "index" %}<h2>{{ page.title }}</h2>{% endif %}
 			<article>
 				{% if page.page-type != "index" and page.page-type != "homepage" %}<h1>{{ page.title }}</h1>{% endif %}
@@ -77,17 +77,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="{{ "/assets/js/jquery.navgoco.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 	<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" type="text/javascript"></script>
-	<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 	<script type="text/javascript">
 	docsearch({
-		appId: 'OW2UD9NPMI',
-		apiKey: 'aa62993341e446f6aca87228215be496',
-		indexName: 'staging_li_docs',
+		apiKey: '4a18039b32cddf821f1f4fd4c57b2c07',
+		indexName: 'loadimpact',
 		inputSelector: '#li-search',
-		algoliaOptions: { 'facetFilters': ["collection:{% if page.collection == 'v3' %}v3{% elsif page.collection == 'v4' %}v4{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
-		/*debug: {% if jekyll.environment == "production" %}false{% else %}true{% endif %}*/ // Set debug to true if you want to inspect the dropdown
+		algoliaOptions: { 'facetFilters': ["version:{% if page.collection == 'v3' %}3.0{% elsif page.collection == 'v4' %}4.0{% elsif page.collection == 'api' %}api{% else %}{% endif %}"] },
+		debug: {% if jekyll.environment == "production" %}false{% else %}true{% endif %} // Set debug to true if you want to inspect the dropdown
 	});
-	</script>-->
+	</script>
 </div><!-- .outer -->
 </body>
 </html>
