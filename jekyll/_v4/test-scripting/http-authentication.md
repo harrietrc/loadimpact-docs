@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Handling dynamic tokens in k6 tests
-description: Guide on how to handle tokens (CSRF, VIEWSTATE, NONCE, etc) in a k6 script
+title: HTTP Authentication examples
+description: Examples of different HTTP authentication methods
 categories: [test-scripting]
 
 ---
