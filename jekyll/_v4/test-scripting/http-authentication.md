@@ -3,7 +3,7 @@ layout: classic-docs
 title: HTTP Authentication examples
 description: Examples of different HTTP authentication methods
 categories: [test-scripting]
-
+order: 13
 ---
 
 ***
