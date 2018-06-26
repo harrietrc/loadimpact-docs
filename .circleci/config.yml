@@ -73,8 +73,8 @@ jobs:
       - run:
           name: Deploy to S3 if tests pass and branch is master
           command: |
-            aws s3 sync jekyll/_site/docs s3://support.staging.loadimpact.com/ --size-only --exclude "*" --include "*.*" --delete
-            aws s3 sync jekyll/_site/docs s3://support.staging.loadimpact.com/ --size-only --content-type text/html --exclude "*.*" --delete
+            aws s3 sync jekyll/_site/docs s3://support.loadimpact.com/ --size-only --exclude "*" --include "*.*" --delete
+            aws s3 sync jekyll/_site/docs s3://support.loadimpact.com/ --size-only --content-type text/html --exclude "*.*" --delete
 
 workflows:
   version: 2
