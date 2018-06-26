@@ -23,7 +23,7 @@ collections:
     permalink: /3.0/:path/
     prefix: "/3.0"
     selectorName: "3.0"
-    description: "Documentation for Load Impact 2.0, the Lua based product, in operation since 2011."
+    description: "Documentation for Load Impact 3.0, the Lua based product, in operation since 2011."
     order: 1
   v4:
     name: "4.0 (k6/JS) Docs"
