@@ -8,6 +8,25 @@ order: 1
 
 Cloud execution is a convenient extension to the [local/on-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %}) capability of k6. Great when you need to run larger tests or distribute traffic generation across several geographic locations (aka "load zones").
 
+## Executing a cloud test
+
+When you want to run a k6 test from the cloud you simple change the k6 command used from `run` ro `cloud`. So say you have a test in a file called `script.js`, you'd then trigger a cloud test by executing the following in your terminal:
+
+`k6 cloud script.js`
+
+### GUI based approach
+
+If you want a simpler approach to creating and running tests, cloud tests in particular, you can use the in-app "Create test" feature to create and run tests based on one or more URLs (that we create scenarios from using Chrome):
+
+![Create test from URL(s)]({{ site.baseurl }}/assets/img/v4/test-running/url-based-test-in-app.png)
+
+1. Enter one or more URLs
+2. Select a max number of VUs to rampup to (starts at 1) and a total test duration (in seconds)
+3. Select which load zones you want the traffic to be generated from.
+4. Optionally add domain filters that will filter out potentially unwanted URLs from the script (think third-party content like JS trackers, Facebook and Twitter widgets etc.).
+
+See also the second option, [uploading a HAR file from a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}), for creating tests without doing any scripting.
+
 ## Test configuration options
 
 When running a cloud execution test you can configure from which load zones the traffic should be generated. You specify the load zones as part of the `ext.loadimpact.distribution` option:
