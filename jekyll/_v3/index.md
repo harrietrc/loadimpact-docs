@@ -7,7 +7,7 @@ permalink: /3.0/
 ---
 Welcome to Load Impact 3.0 documentation! Here you'll find information on Load Impact's 3.0 Lua based load testing service.
 
-These articles, code samples and videos will help you improve your load testing skills and understanding. You're welcome to contact us if you have other questions, comments or suggestions. If you wish to make a contribution to this documentation, it is hosted on GitHub - so feel free to open an issue or make a pull request!
+These articles, code samples and videos will help you improve your load testing skills and understanding. You're welcome to contact us if you have other questions, comments or suggestions. If you wish to make a contribution to this documentation, it is hosted on [GitHub](https://github.com/loadimpact/loadimpact-docs) - so feel free to open an issue or make a pull request!
 
 Important Links
 - [Load script API reference](https://loadimpact.com/load-script-api/)

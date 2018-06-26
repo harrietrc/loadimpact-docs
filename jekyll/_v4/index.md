@@ -9,7 +9,7 @@ Welcome to Load Impact 4.0 documentation! Here you'll find information on Load I
 
 These articles will help you improve your load testing skills and understanding of Load and Performance testing with Load Impact. You're welcome to contact us if you have other questions, comments or suggestions.
 
-**We welcome your feedback**. If you wish to make a contribution or share a comment on this documentation, we've open sourced it on GitHub. So please create a pull request or issue!
+**We welcome your feedback**. If you wish to make a contribution or share a comment on this documentation, we've open sourced it on [GitHub](https://github.com/loadimpact/loadimpact-docs). So please create a pull request or issue!
 
 Important links:
 - [Getting Started]({{ site.baseurl }}/4.0/getting-started/)

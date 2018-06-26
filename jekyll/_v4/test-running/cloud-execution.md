@@ -6,11 +6,17 @@ categories: [test-running]
 order: 1
 ---
 
+***
+
+# Purpose
+
+Explanation of Load Impact's cloud service and how to utilize it with your k6 test scripts.
+
 Cloud execution is a convenient extension to the [local/on-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %}) capability of k6. Great when you need to run larger tests or distribute traffic generation across several geographic locations (aka "load zones").
 
 ## Executing a cloud test
 
-When you want to run a k6 test from the cloud you simple change the k6 command used from `run` ro `cloud`. So say you have a test in a file called `script.js`, you'd then trigger a cloud test by executing the following in your terminal:
+When you want to run a k6 test from the cloud you simple change the k6 command used from `run` to `cloud`. For example, if you have a test script named `script.js`, you'd then trigger a cloud test by executing the following in your terminal:
 
 `k6 cloud script.js`
 
@@ -53,94 +59,35 @@ The `percent` is a specifies how VUs should be distributed across the different 
 
 Valid values for `loadZone` are:
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Location</th>
-      <th scope="col">Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Ashburn, Virginia, US (Default)</td>
-      <td><code>amazon:us:ashburn</code></td>
-    </tr>
-    <tr>
-      <td>Columbus, Ohio, US</td>
-      <td><code>amazon:us:columbus</code></td>
-    </tr>
-    <tr>
-      <td>Dublin, Ireland</td>
-      <td><code>amazon:ie:dublin</code></td>
-    </tr>
-    <tr>
-      <td>Frankfurt, Germany</td>
-      <td><code>amazon:de:frankfurt</code></td>
-    </tr>
-    <tr>
-      <td>London, UK</td>
-      <td><code>amazon:gb:london</code></td>
-    </tr>
-    <tr>
-      <td>Montreal, Canada</td>
-      <td><code>amazon:ca:montreal</code></td>
-    </tr>
-    <tr>
-      <td>Mumbai, India</td>
-      <td><code>amazon:in:mumbai</code></td>
-    </tr>
-    <tr>
-      <td>Palo Alto, California, US</td>
-      <td><code>amazon:us:palo alto</code></td>
-    </tr>
-    <tr>
-      <td>Portland, Oregon, US</td>
-      <td><code>amazon:us:portland</code></td>
-    </tr>
-    <tr>
-      <td>Seoul, South Korea</td>
-      <td><code>amazon:kr:seoul</code></td>
-    </tr>
-    <tr>
-      <td>Singapore</td>
-      <td><code>amazon:sg:singapore</code></td>
-    </tr>
-    <tr>
-      <td>Sydney, Australia</td>
-      <td><code>amazon:au:sydney</code></td>
-    </tr>
-    <tr>
-      <td>Tokyo, Japan</td>
-      <td><code>amazon:jp:tokyo</code></td>
-    </tr>
-  </tbody>
-</table>
+Location                        | Value
+--------------------------------|--------------------
+Ashburn, Virginia, US (Default) | amazon:us:ashburn
+Columbus, Ohio, US              | amazon:us:columbus
+Dublin, Ireland                 | amazon:ie:dublin
+Frankfurt, Germany              | amazon:de:frankfurt
+London, UK                      | amazon:gb:london
+Montreal, Canada                | amazon:ca:montreal
+Mumbai, India                   | amazon:in:mumbai
+Palo Alto, California, US       | amazon:us:palo alto
+Portland, Oregon, US            | amazon:us:portland
+Seoul, South Korea              | amazon:kr:seoul
+Singapore                       | amazon:sg:singapore
+Sydney, Australia               | amazon:au:sydney
+Tokyo, Japan                    | amazon:jp:tokyo
+{: class="table table-striped"}
+
 
 ## Tags
 
 When running a k6 test in the cloud two [tags]({{ site.baseurl }}{% link _v4/test-scripting/tags.md %}) are added to all metrics:
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Tag name</th>
-      <th scope="col">Type</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>load_zone</code></td>
-      <td>string</td>
-      <td>The load zone from where the the metric was collected. Values will be of the form: <code>amazon:us :ashburn</code> (see list above).</td>
-    </tr>
-    <tr>
-      <td><code>instance_id</code></td>
-      <td>int</td>
-      <td>A unique number representing the ID of a load generator server taking part in the test.</td>
-    </tr>
-  </tbody>
-</table>
+
+Tag name|	Type|	Description
+-|-|-
+load_zone	|string|	The load zone from where the the metric was collected. Values will be of the form: amazon:us :ashburn (see list above).
+instance_id	|int|	A unique number representing the ID of a load generator server taking part in the test.
+{: class="table table-striped"}
+
 
 ![Insights tags]({{ site.baseurl }}/assets/img/v4/test-running/cloud-execution-tags.png)
 
@@ -201,4 +148,5 @@ export function frontpageScenario() {
 }
 {% endhighlight %}
 
-**See also**: [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
+## See also
+- [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
