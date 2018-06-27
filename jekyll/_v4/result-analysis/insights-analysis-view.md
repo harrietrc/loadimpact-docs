@@ -4,7 +4,9 @@ title: Insights analysis view
 description: Documentation for the Insights analysis view
 categories: [result-analysis]
 order: 4
-redirect_from: /knowledgebase/articles/1172473-insights-analysis-view
+redirect_from:
+  - /knowledgebase/articles/1172473-insights-analysis-view
+  - /knowledgebase/articles/1172458-insights-overview
 ---
 
 The analysis section is where you analyze selected metrics. It's divided into two parts, the top part contains a larger chart used for comparison and the bottom part contains all your metrics added from the breakdown.
