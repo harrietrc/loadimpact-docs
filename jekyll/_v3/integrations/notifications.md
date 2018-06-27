@@ -4,7 +4,7 @@ title: Load Impact Notifications
 description: Notifications allow you to send updates to be aware of tests starting and finishing. You can view these notifications in Slack, Hipchat, or via webhook.
 categories: [integrations]
 order: 3
-redirect_from: /knowledgebase/articles/894636-load-testing-with-postman
+redirect_from: /knowledgebase/articles/878235-webhooks
 ---
 
 ***

@@ -7,6 +7,7 @@ order: 1
 redirect_from:
   - /knowledgebase/articles/174522-what-is-a-test-configuration
   - /knowledgebase/topics/118842-test-configuration
+  - /knowledgebase/articles/174522-what-is-a-test-configuration-
 ---
 
 ***

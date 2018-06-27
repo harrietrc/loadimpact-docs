@@ -4,7 +4,9 @@ title: What IP Addresses are used by Load Impact's to generate load?
 description: List and explanation of the IP addresses Load Impact's Lua based product uses to generate load during a test.
 categories: [frequently-asked-questions]
 order: 5
-redirect_from: /knowledgebase/articles/174262-what-load-zones-and-ip-addresses-does-load-impact
+redirect_from:
+  - /knowledgebase/articles/174262-what-load-zones-and-ip-addresses-does-load-impact
+  - /knowledgebase/articles/174524-where-do-you-generate-the-load-traffic-from
 ---
 
 ***

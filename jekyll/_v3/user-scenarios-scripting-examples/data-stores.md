@@ -4,7 +4,9 @@ title: Using Data Stores (Parameterized Data)
 description: Data stores allow you to parameterize data in your script.  User Logins, URLs and form data are just some examples.
 categories: [user-scenario-scripting-examples]
 order: 13
-redirect_from: /knowledgebase/articles/174258-how-do-i-use-parameterized-data-data-stores
+redirect_from:
+  - /knowledgebase/articles/174258-how-do-i-use-parameterized-data-data-stores
+  - /knowledgebase/articles/174258-how-do-i-use-parameterized-data
 ---
 
 ***

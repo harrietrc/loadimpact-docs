@@ -4,7 +4,7 @@ title: Will status codes are reported back on URLs in a test?
 description: Explanation of the status codes returned for URLs in a test.
 categories: [test-results]
 order: 6
-redirect_from: /knowledgebase/articles/174526-will-load-testing-transactions-show-up-on-google-a
+redirect_from: /knowledgebase/articles/174137-what-status-codes-are-there
 ---
 
 ***

@@ -8,6 +8,7 @@ redirect_from:
   - /knowledgebase/topics/117699-user-scenario-scripting
   - /knowledgebase/articles/835701-scripting-introduction
   - /knowledgebase/topics/23898-scripting-examples
+  - /knowledgebase/articles/174637-lua-load-script-tutorial
 ---
 
 ***

@@ -7,6 +7,7 @@ order: 1
 redirect_from:
   - /knowledgebase/topics/43408-integrations
   - /knowledgebase/articles/833856-automating-load-testing-with-the-load-impact-api
+  - /knowledgebase/articles/265475-using-the-load-impact-api-to-run-tests-programmati
 ---
 
 ***

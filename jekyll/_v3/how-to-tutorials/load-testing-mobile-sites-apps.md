@@ -4,7 +4,7 @@ title: Testing Mobile Sites/Apps
 description: Guide on testing mobile sites/apps
 categories: [how-to-tutorials]
 order: 5
-redirect_from: /knowledgebase/articles/432349-how-to-never-use-the-same-user-login-twice-in-a-te
+redirect_from: /knowledgebase/articles/363175-how-to-load-test-a-mobile-site-or-app
 hide: true
 ---
 

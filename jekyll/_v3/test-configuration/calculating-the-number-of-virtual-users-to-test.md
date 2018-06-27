@@ -4,7 +4,9 @@ title: Calculating the number of Virtual Users needed
 description: How to calculate the number of Virtual Users required for your Load or Performance test.
 categories: [test-configuration]
 order: 7
-redirect_from: /knowledgebase/articles/265461-calculating-the-number-of-virtual-users-concurren
+redirect_from:
+  - /knowledgebase/articles/265461-calculating-the-number-of-virtual-users-concurren
+  - /knowledgebase/articles/265461-calculating-the-number-of-concurrent-users-to-test
 ---
 
 ***

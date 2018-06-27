@@ -4,6 +4,11 @@ title: Load test preparations - Before you begin
 description: Guide to help you prepare for your first load or performance test.  Things to think about and have in mind before you start hammering your site with traffic.
 categories: [quick-start-guide]
 order: 1
+redirect_from:
+  - /knowledgebase/articles/302067-load-impact-quick-start-guide
+  - /knowledgebase/articles/174637-lua-quick-start-guide
+  - /knowledgebase/topics/117702-quick-start-guide
+  - /knowledgebase/articles/836118-load-test-preparations
 ---
 
 ***
