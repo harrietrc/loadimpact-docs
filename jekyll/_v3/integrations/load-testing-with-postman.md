@@ -89,6 +89,6 @@ Postman is one of the best-in-market tools for functional testing of APIs.
 
 
 See also:
-- [Virtual Users, VUs]({{ site.baseurl }}3.0/test-configuration/what-are-virtual-users-vus/)
-- [Requests Per Second, RPS]({{ site.baseurl }}3.0/test-configuration/what-are-requests-per-second-rps/)
-- [How to load test an API]({{ site.baseurl }}/3.0/how-to-tutorials/how-to-load-test-an-api/)
+- [Virtual Users, VUs]({{ site.baseurl }}/test-configuration/what-are-virtual-users-vus/)
+- [Requests Per Second, RPS]({{ site.baseurl }}/test-configuration/what-are-requests-per-second-rps/)
+- [How to load test an API]({{ site.baseurl }}/how-to-tutorials/how-to-load-test-an-api/)
