@@ -22,21 +22,21 @@ First, Click **"Create New Test"**
 
 
 
-![Click create new test]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-1.png)
+![Click create new test]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-1.png)
 
 
 
 Then, **"Add User Scenario"**
 
-![Add a user scenario]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-2.png)
+![Add a user scenario]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-2.png)
 
 
 From here, you can select a scenario you created in the previous step, or enter a URL for a quick scenario(URL Analyzer):
-![Choose a user scenario](/{{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-3.png)
+![Choose a user scenario](/{{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-3.png)
 
 You can add up to 10 user scenarios in a single test.  Most users find that 4-5 are generally more than enough and prevents "analytics overload". However some use cases require fully utilizing all of them.  It's also important to note that you can add the same scenario multiple times.  Each scenario represented will have it's own load generator - even if added from the same zone.
 
-![Add additional user scenarios (if required)]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-4.png)
+![Add additional user scenarios (if required)]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-4.png)
 
 
 
@@ -47,7 +47,7 @@ Inputs needed:
 - Specifying the percentage of simulated users that will be allocated to each scenario
 - You can also use Advanced Settings to set [ramping configurations]({{ site.baseurl }}/3.0/test-configuration/load-test-ramping-configurations/)
 
-![Configure ramping and distribution]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-5.png)
+![Configure ramping and distribution]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-5.png)
 
 
 
@@ -59,7 +59,7 @@ Server Monitoring is useful for receiving server side metrics during a test.  Th
 
 URL Grouping is useful when running a test with dynamic URLs. This will group similar URLs together to make analysis easier.
 
-![Configure optional features]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-a-test/create-a-test-6.png)
+![Configure optional features]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-6.png)
 
 
 Then, simply click the "Save Changes" button in the top-right corner of the testing window, and you'll be ready to run your test!

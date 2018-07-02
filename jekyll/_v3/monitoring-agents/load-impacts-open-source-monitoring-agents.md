@@ -42,13 +42,13 @@ The server monitoring agent requires Python 2.6+ and the module `psutil`. Both P
 
 Packages/Installers:  The latest installers/packages of our Server Monitoring Agents are found within our app here: [Monitoring](https://app.loadimpact.com/monitoring) or by navigating to the integrations menu -> Server Agent (Login required).
 
-![Navigation to install agent]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-install-navigation.png)
+![Navigation to install agent]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-install-navigation.png)
 
 ### Step 2: Generate a Server Monitoring Token
 
 Below the packages, you can also generate your token:
 
-![Token generation]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-token-generation.png)
+![Token generation]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-token-generation.png)
 
 
 You will use the **same token** for all Load Impact Monitoring Agents. You can re-generate a new token at any time if you believe it has been compromised or distributed to someone outside your company. Upon re-generation, the old token is no longer valid.
@@ -75,14 +75,14 @@ _To ensure that the agents can connect, please allow outgoing port 443 against a
 
 Once installed, click "Check installation" within Load Impact. We will see if your agent has started communication with us.
 
-![Check Install]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/check-install.png)
+![Check Install]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/check-install.png)
 
 
 ### Step 5: Configure your test to include the agents
 
 Once the installation is complete, the server monitoring agent will start automatically and you will be able to select it on the test configuration page. You must specifically add the Server Monitoring Agent to any test you wish to collect these metrics for.
 
-![Check Install]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/test-configuration.png)
+![Check Install]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/test-configuration.png)
 
 Refer to: [Test Configuration]({{ site.baseurl }}/3.0/test-configuration/what-is-a-test-configuration/) for more details
 

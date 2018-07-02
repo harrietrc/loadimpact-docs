@@ -31,13 +31,13 @@ It contains the usernames and passwords of three users, and you want to use thes
 
 To upload the CSV file as a data store, go to the tab in the left side bar, titled "Date Stores" and click the button "New Data Store".
 
-![Create Data Store]({{ site.baseurl }}/assets/img/3.0/user-scenario-scripting-examples/data-stores/create-data-store.png)
+![Create Data Store]({{ site.baseurl }}/assets/img/v3/user-scenario-scripting-examples/data-stores/create-data-store.png)
 
 
 
 This box will pop open and allow you to choose a local CSV file and preview column names before continuing.  This file should be a text file in the CSV format. It can be up to a maximum of 50 MB in size. In our example we select our small “login-details.csv” file that contains only five rows. Next, we will see this:
 
-![Upload Data Store]({{ site.baseurl }}/assets/img/3.0/user-scenario-scripting-examples/data-stores/upload-data-store.png)
+![Upload Data Store]({{ site.baseurl }}/assets/img/v3/user-scenario-scripting-examples/data-stores/upload-data-store.png)
 
 
 Note: the file has not been uploaded yet, but partially parsed on the upload screen. The preview shows you what data your file contains, and also how it is going to be parsed when it is uploaded. However, we are not so interested in including the first row from the file – the one that says “Username” and “Password”. Those are just the column names, not actual login credentials that we can use. Using the `Start from line` option you can select the row to first use.
@@ -49,13 +49,13 @@ When we are done setting file parsing options click the “Upload” button, whi
 
 Once you've added your data store, you will see it in the list of data stores you have available to use. From this list view, you can see how many rows (lines) of data were included in the CSV and delete any old data stores you no longer need.
 
-![Data Store List]({{ site.baseurl }}/assets/img/3.0/user-scenario-scripting-examples/data-stores/data-store-list.png)
+![Data Store List]({{ site.baseurl }}/assets/img/v3/user-scenario-scripting-examples/data-stores/data-store-list.png)
 
 To use your data store(s) in a user scenario, proceed to the menu section called "User scenarios". Either select a previously created scenario from the list, or create a new scenario.
 
 Once in the IDE, you can select your data store from the drop down menu.
 
-![Select Data Store]({{ site.baseurl }}/assets/img/3.0/user-scenario-scripting-examples/data-stores/select-data-store.png)
+![Select Data Store]({{ site.baseurl }}/assets/img/v3/user-scenario-scripting-examples/data-stores/select-data-store.png)
 
 
 Now, you just have to click to select which data stores to associate with your user scenario. You can use MULTIPLE data stores in the same user scenario. Please note: you must select a data store to use it in the scenario. If left unselected you will get a Script Error "\[Line]Failed to find datastore "data store name"."

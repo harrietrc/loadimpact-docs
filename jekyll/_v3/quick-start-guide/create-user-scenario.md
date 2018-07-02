@@ -16,19 +16,19 @@ You can create your load script from scratch, or use the following custom tools 
 - Submit a URL (this will only capture requests from the target domain of the URL submitted, no external requests will be included in the script)
 - Writing a Lua script by hand
 
-![Step 1]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-user-scenario/create-user-scenario-1.png)
+![Step 1]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-user-scenario/create-user-scenario-1.png)
 
 
 After clicking new user scenario you will be prompted to select how you want to create the scenario:
 
-![Step 2]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-user-scenario/create-user-scenario-2.png)
+![Step 2]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-user-scenario/create-user-scenario-2.png)
 
 
 
 
 Once your script has been created, it will be available at the user scenario menu.
 
-![Step 3]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/create-user-scenario/create-user-scenario-3.png)
+![Step 3]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-user-scenario/create-user-scenario-3.png)
 
 
 

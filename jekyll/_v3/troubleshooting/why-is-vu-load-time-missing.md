@@ -13,7 +13,7 @@ The VU Load Time metric is an aggregated result metric. It represents how much t
 
 For example, If you have a recording/user journey that took 10 minutes to create, there will not be any VU load times reported for at least that time after the test is started. If the site responds slower than it did during the recording, it will take even longer before the user load time can be reported.
 
-![Missing VU Load Time]({{ site.baseurl }}/assets/img/3.0/troubleshooting/why-is-vu-load-time-missing/missing-vu-load-time-1.jpg)
+![Missing VU Load Time]({{ site.baseurl }}/assets/img/v3/troubleshooting/why-is-vu-load-time-missing/missing-vu-load-time-1.jpg)
 
 Even if your site is quick and has very low response times, this can still take quite a long time if you have a recording over several pages in your scenario, with sleeps in between the pages.
 
@@ -53,7 +53,7 @@ client.sleep(math.random(60, 65))
 ```
  This scenario loads a page with the corresponding resources. Then it simulates the user browsing the content of the page for about a minute before loading the next page (simulated in the script as client.sleep). It repeats this pattern until three pages have been loaded and all sleeps have been accounted for. Here's what you'll see if you add the response time graphs for Page 1, Page 2 and Page 3 for the test example above:
 
-![Page metrics]({{ site.baseurl }}/assets/img/3.0/troubleshooting/why-is-vu-load-time-missing/missing-vu-load-time-2.jpg)
+![Page metrics]({{ site.baseurl }}/assets/img/v3/troubleshooting/why-is-vu-load-time-missing/missing-vu-load-time-2.jpg)
 
 For the first minute of the test the only reported value (of the graphs plotted) is Page 1. All the simulated clients that are active for the first minute are busy either loading the first page or, if all content has already completed loading, browsing content ('sleeping'). Once the first client is done taking in the first page, it loads the second page and reports the load time, which can then be plotted in the graph. A minute later, the load time for the third page can be reported and after an additional minute the whole scenario is completed, generating the user load time metric.
 

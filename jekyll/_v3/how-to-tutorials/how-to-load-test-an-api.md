@@ -101,7 +101,7 @@ end
 - This script generates a [custom metric]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/creating-custom-metrics/) `sleep_time` that you can use for understanding the behavior of your testing
 - Below is an example chart showing how Load Impact would report a 500VU/11m run of the above sample script:
 
-![Example API Test Result]( {{ site.baseurl }}/assets/img/3.0/how-to-tutorials/how-to-load-test-an-api/api-test-result.png)
+![Example API Test Result]( {{ site.baseurl }}/assets/img/v3/how-to-tutorials/how-to-load-test-an-api/api-test-result.png)
 
 See also:
 - [Virtual Users]({{ site.baseurl }}//3.0/test-configuration/what-are-virtual-users-vus/)

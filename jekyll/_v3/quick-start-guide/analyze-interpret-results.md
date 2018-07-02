@@ -22,7 +22,7 @@ The *Vitual Users active* graph and the *Virtual User Load Time (VU Load Time)* 
 
 ### Example results 1:
 
-![example 1]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/analyze-interpret-results/analyze-interpret-results-1.png)
+![example 1]({{ site.baseurl }}/assets/img/v3/quick-start-guide/analyze-interpret-results/analyze-interpret-results-1.png)
 
 
 - Green graph shows the Number of VUs active increasing.
@@ -30,7 +30,7 @@ The *Vitual Users active* graph and the *Virtual User Load Time (VU Load Time)* 
 - If there was significant slow down in how fast the site responded to HTTP requests, it will be visible in the VU Load Time graph. It will show steadily increasing values as the load level increased.
 
 ### Example results 2:
-![example 2]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/analyze-interpret-results/analyze-interpret-results-2.png)
+![example 2]({{ site.baseurl }}/assets/img/v3/quick-start-guide/analyze-interpret-results/analyze-interpret-results-2.png)
 
 
 - Green graph shows the Number of VUs active
@@ -50,7 +50,7 @@ If, on the other hand, you are testing to determine the extreme performance limi
 
 
 ### Example results 3:
-![example 3]({{ site.baseurl }}/assets/img/3.0/quick-start-guide/analyze-interpret-results/analyze-interpret-results-3.png)
+![example 3]({{ site.baseurl }}/assets/img/v3/quick-start-guide/analyze-interpret-results/analyze-interpret-results-3.png)
 
 
 - Green graph shows the Number of VUs active

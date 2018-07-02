@@ -17,7 +17,7 @@ You can create multiple user scenarios and use them all in a single load test. E
 
 **User scenarios** can be created in several ways. Starting on the [User scenarios](https://app.loadimpact.com/user-scenarios/new) page, you click the _**New user scenario**_ button.
 
-![Create user scenarios in a variety of ways]( {{ site.baseurl}}/assets/img/3.0/user-scenarios/what-is-a-user-scenario/user-scenario-options.jpg)
+![Create user scenarios in a variety of ways]( {{ site.baseurl}}/assets/img/v3/user-scenarios/what-is-a-user-scenario/user-scenario-options.jpg)
 
  You then have several options:
   - You can enter a URL in the _**Submit a URL for a quick scenario**_ field and then click the Proceed button.

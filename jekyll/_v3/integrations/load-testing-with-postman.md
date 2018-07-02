@@ -22,7 +22,7 @@ Postman is one of the best-in-market tools for functional testing of APIs.
 
 2 - As a Postman user, you organize your API tests into collections of requests. First, you have to export your Postman collections.
 
-  ![Download Postman collection]({{ site.baseurl }}/assets/img/3.0/integrations/load-testing-with-postman/download-postman-collection-1.png)
+  ![Download Postman collection]({{ site.baseurl }}/assets/img/v3/integrations/load-testing-with-postman/download-postman-collection-1.png)
 
 
 3 - Use the command line to convert the Postman collection:

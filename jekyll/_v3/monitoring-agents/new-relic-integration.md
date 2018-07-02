@@ -20,14 +20,14 @@ Begin by adding your New Relic API key to your Load Impact account. You can [fin
 
 To add your API key to Load Impact, in the left side bar, click Integrations then "New Relic"
 
-![Add New Relic API Key]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/new-relic-integration/navigate-new-relic.png)
+![Add New Relic API Key]({{ site.baseurl }}/assets/img/v3/monitoring-agents/new-relic-integration/navigate-new-relic.png)
 
 
 ### Step 3
 
 Add your API key in the area shown:
 
-![Add New Relic API Token]({{ site.baseurl }}/assets/img/3.0/monitoring-agents/new-relic-integration/add-api-token.png)
+![Add New Relic API Token]({{ site.baseurl }}/assets/img/v3/monitoring-agents/new-relic-integration/add-api-token.png)
 
 Once your API key has been validated by our system, we will add all your New Relic applications/servers to the list under Monitoring on the left sidebar menu. Your API key will be validated nearly instantly.  If you don't see any agents after adding your key, you can utilize [this tool](https://rpm.newrelic.com/api/explore/applications/list) from New Relic to investigate/see the response that your API key will generate. If you don't see any applications listed, please check that your installations are correct in New Relic
 

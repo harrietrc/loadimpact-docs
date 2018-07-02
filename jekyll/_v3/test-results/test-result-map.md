@@ -15,4 +15,4 @@ The map shows the geographical location of the target system and the load genera
 **Note**:  At times, the location identified could be incorrect. This is typically due to the geolocation data on file for that IP address or because another request was made first.  i.e. if your test starts with a request against google, the map will likely show the target server as Mountainview, California. You can safely ignore any incorrect display of location
 
 
-![Load Impact Test Result Map]({{ site.baseurl }}/assets/img/3.0/test-result/test-result-map.jpg)
+![Load Impact Test Result Map]({{ site.baseurl }}/assets/img/v3/test-result/test-result-map.jpg)

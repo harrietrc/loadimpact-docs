@@ -13,7 +13,7 @@ redirect_from:
 
 Every Load Impact user is, by default, the owner of an organization with the option of creating a second one. Organization owners and admins can invite new [team members]({{ site.baseurl }}/3.0/organizations-projects-team-management/adding-team-members/). Owners and Admins can manage [projects]({{ site.baseurl }}/3.0/organizations-projects-team-management/projects/) within an organization. Each project consists of tests, user scenarios, data stores, monitoring agents, and integrations. Each organization can also have its own subscription plan. Here is a diagram of the organizational hierarchy:
 
-![Hierarchy]({{ site.baseurl }}/assets/img/3.0/organizations-projects-team-management/organizations/organization-hierarchy-diagram.png)
+![Hierarchy]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/organizations/organization-hierarchy-diagram.png)
 
 ***
 

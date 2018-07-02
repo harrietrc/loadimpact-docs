@@ -11,19 +11,19 @@ Team members are other users within your [organization](organizations) that you 
 
 Either use the Organizations and project menu
 
-![Menu navigation]({{ site.baseurl }}/assets/img/3.0/organizations-projects-team-management/adding-team-members/menu-navigation.png)
+![Menu navigation]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/adding-team-members/menu-navigation.png)
 
 
 or the  "+" sign
 
-![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/3.0/organizations-projects-team-management/adding-team-members/alternative-add-team-member.png)
+![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/adding-team-members/alternative-add-team-member.png)
 
 
 Click "Add Member" and type the email of the team member you wish to invite and assign them the correct permission level, and projects (if they are a read/write member).
 
 
 
-![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/3.0/organizations-projects-team-management/adding-team-members/add-member-assign-role.png)
+![Alternative method to add team members using + icon]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/adding-team-members/add-member-assign-role.png)
 
 
 

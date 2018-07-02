@@ -32,6 +32,6 @@ Here are some examples of Thresholds that can be set:
 
 Thresholds are configured on a per test basis in your [test configuration]({{ site.baseurl }}/3.0/test-configuration/what-is-a-test-configuration/):
 
-![Threshold examples]({{ site.baseurl }}/assets/img/3.0/test-configuration/thresholds/thresholds-1.png)
+![Threshold examples]({{ site.baseurl }}/assets/img/v3/test-configuration/thresholds/thresholds-1.png)
 
 As in other testing disciplines, your own criteria defines a test as a success or failure. Thresholds provides this pass/fail behaviour for your load tests.

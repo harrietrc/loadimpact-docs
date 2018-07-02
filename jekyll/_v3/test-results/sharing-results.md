@@ -12,7 +12,7 @@ redirect_from: /knowledgebase/articles/553950-public-url-sharing-test-results
 #### Public URL
 Once a new test has started to run it is immediately possible to share the test in its current status by clicking on the three dots in the top right corner -> Share these results.
 
-![Performance trending graph]({{ site.baseurl }}/assets/img/3.0/test-result/sharing-results/sharing-results.png)
+![Performance trending graph]({{ site.baseurl }}/assets/img/v3/test-result/sharing-results/sharing-results.png)
 
 
 This unique generated Public URL will allow access to this specific test only and will be active and accessible at any future date.
