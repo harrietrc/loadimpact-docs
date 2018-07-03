@@ -8,7 +8,7 @@ or give us feedback about the documentation in general.
 
 If you have a question related to the Load Impact tool, you should instead engage
 with the support team by utilizing the live chat within the documentation at
-support.loadimpact.com, or by email support@loadimpct.com.
+support.loadimpact.com, or by email support@loadimpact.com.
 
 
 ## Pull Requests
@@ -20,4 +20,3 @@ For small changes, such as typos or formatting, please utilize the
 "Suggest an edit" at the bottom of the specific document. You will be able to
 make your change and submit an edit directly in GitHub.
 
-Please be sure to refer to our Style Guide and Document Templates.
