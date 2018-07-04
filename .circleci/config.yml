@@ -72,7 +72,7 @@ jobs:
           command: find jekyll/_site/docs/knowledgebase/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
       - run:
           name: Deploy to S3 if tests pass and branch is master
-          command: deploy.sh
+          command: ./deploy.sh
 
 
 workflows:
