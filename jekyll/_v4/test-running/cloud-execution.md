@@ -20,6 +20,22 @@ When you want to run a k6 test from the cloud you simple change the k6 command u
 
 `k6 cloud script.js`
 
+### Authenticating with Load Impact cloud service
+
+Before you can execute `k6 cloud ...` you'll need to authenticate with the Load Impact cloud service. You can login with your Load Impact credentials by entering the following command into your terminal:
+
+`k6 login cloud`
+
+<div class="callout callout-warning" role="alert">
+    <b>Google/Github Single-Sign On Users</b><br>
+    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a Load Impact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
+</div>
+
+<div class="callout callout-warning" role="alert">
+    <b>Docker Users</b><br>
+    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the Load Impact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
+</div>
+
 ### GUI based approach
 
 If you want a simpler approach to creating and running tests, cloud tests in particular, you can use the in-app "Create test" feature to create and run tests based on one or more URLs (that we create scenarios from using Chrome):

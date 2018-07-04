@@ -22,6 +22,16 @@ You do this by first making sure you're logged in to your Load Impact account:
 
 `k6 login cloud`
 
+<div class="callout callout-warning" role="alert">
+    <b>Google/Github Single-Sign On Users</b><br>
+    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a Load Impact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
+</div>
+
+<div class="callout callout-warning" role="alert">
+    <b>Docker Users</b><br>
+    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the Load Impact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
+</div>
+
 and then adding the `-o cloud` CLI flag:
 
 `k6 run -o cloud script.js`
