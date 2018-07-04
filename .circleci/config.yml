@@ -54,16 +54,17 @@ jobs:
           path: run-results/
           destination: run-results
       - persist_to_workspace:
-          root: ~/loadimpact-docs/jekyll/_site 
+          root: ~/loadimpact-docs
           paths:
-            - docs
+            - jekyll/_site/docs
+            - deploy.sh
   deploy:
     docker:
       - image: circleci/python:2.7
     working_directory: ~/loadimpact-docs  
     steps:
       - attach_workspace:
-          at: ~/loadimpact-docs/jekyll/_site 
+          at: ~/loadimpact-docs
       - run:
           name: Install awscli
           command: sudo pip install awscli
