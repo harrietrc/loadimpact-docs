@@ -41,21 +41,21 @@ jobs:
       - run:
           name: Build the Jekyll site
           command: bundle exec jekyll build --config jekyll/_config.yml,jekyll/_config_production.yml --source jekyll --destination jekyll/_site/docs/ 2>&1 | tee $JOB_RESULTS_PATH/build-results.txt
-      - run:
-          name: Algolia indexing
-          command: bundle exec jekyll algolia --config jekyll/_config.yml --source jekyll
       #- run:
-      #    name: Test with HTMLproofer
-      #    command: bundle exec htmlproofer jekyll/_site --allow-hash-href --check-favicon --check-html #--disable-external --empty-alt-ignore | tee $JOB_RESULTS_PATH/htmlproofer-results.txt
-      - store_artifacts: 
+      #    name: Algolia indexing
+      #    command: bundle exec jekyll algolia --config jekyll/_config.yml --source jekyll
+      - run:
+          name: Test with HTMLproofer
+          command: bundle exec htmlproofer jekyll/_site --allow-hash-href --check-favicon --check-html --disable-external --empty-alt-ignore | tee $JOB_RESULTS_PATH/htmlproofer-results.txt
+      - store_artifacts:
           path: jekyll/_site/docs/
           destination: loadimpact-docs
-      - store_artifacts: 
+      - store_artifacts:
           path: run-results/
           destination: run-results
       - persist_to_workspace:
           root: ~/loadimpact-docs/jekyll/_site 
-          paths: 
+          paths:
             - docs
   deploy:
     docker:
