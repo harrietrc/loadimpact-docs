@@ -73,6 +73,18 @@ You can also directly add your Load Impact API authentication token to a configu
 
 or by specifying the `-c/--config PATH/TO/CONFIG_FILE` CLI flag.
 
+When your Load Impact API authentication token has been added to the config file, it should look something like this (removing any other config options from the file):
+
+{% highlight json linenos %}
+{
+    "collectors" {
+        "cloud": {
+            "token": "YOUR_API_AUTH_TOKEN"
+        }
+    }
+}
+{% endhighlight %}
+
 ## See also
 - [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
 - [Cloud execution]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %})
