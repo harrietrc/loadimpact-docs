@@ -9,7 +9,6 @@ s3_bucket="s3://support.loadimpact.com/"
 distribution_id=E2PUIJ818EQ47L
 
 set -e # halt script on error
-set -v # echo on
 
 tempfile=$(mktemp)
 
