@@ -42,29 +42,26 @@ Follow these instructions for your platform of choice to download and install k6
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="platform-tabs-content-linux" role="tabpanel" aria-labelledby="platform-tabs-link-linux">
-                <ol>
-                    <li>Download the latest k6 binary:<br>
-                        <code>curl -OL https://github.com/loadimpact/k6/releases/download/v0.21.1/k6-v0.21.1-linux64.tar.gz</code>
-                    </li>
-                </ol>
-                <ol start="2">
-                    <li>Unzip and put binary somewhere in your <code>$PATH</code>:<br>
-                        <pre><code>$ tar -xzf k6-v0.21.1-linux64.tar.gz
-$ cp k6-v0.21.1-linux64/k6 /usr/local/bin</code></pre>
-                    </li>
-                </ol>
+                <p>
+                    <h4>Debian/Ubuntu</h4>
+                    <pre><code>$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
+$ echo "deb https://dl.bintray.com/loadimpact/deb stable main" | sudo tee -a /etc/apt/sources.list
+$ sudo apt-get update
+$ sudo apt-get install k6</code></pre>
+                </p>
+                <p>
+                    <h4>Redhat/CentOS</h4>
+                    <pre><code>$ wget https://bintray.com/loadimpact/rpm/rpm -O bintray-loadimpact-rpm.repo
+$ sudo mv bintray-loadimpact-rpm.repo /etc/yum.repos.d/
+$ sudo yum install k6</code></pre>
+                </p>
             </div>
             <div class="tab-pane fade" id="platform-tabs-content-macos" role="tabpanel" aria-labelledby="platform-tabs-link-macos">
                 <pre><code>brew tap loadimpact/k6
 brew install k6</code></pre>
             </div>
             <div class="tab-pane fade" id="platform-tabs-content-windows" role="tabpanel" aria-labelledby="platform-tabs-link-windows">
-                <ol>
-                    <li><a href="https://github.com/loadimpact/k6/releases">Download the latest k6 binary</a> from Github.</li>
-                </ol>
-                <ol start="2">
-                    <li>Unzip and put binary somewhere in your PATH</li>
-                </ol>
+                <a href="https://dl.bintray.com/loadimpact/windows/k6-latest-amd64.msi">Download the latest k6 installer</a>
             </div>
         </div>
     </div>
