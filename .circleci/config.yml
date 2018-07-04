@@ -72,9 +72,8 @@ jobs:
           command: find jekyll/_site/docs/knowledgebase/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
       - run:
           name: Deploy to S3 if tests pass and branch is master
-          command: |
-            aws s3 sync jekyll/_site/docs s3://support.loadimpact.com/ --size-only --exclude "*" --include "*.*" --delete
-            aws s3 sync jekyll/_site/docs s3://support.loadimpact.com/ --size-only --content-type text/html --exclude "*.*" --delete
+          command: deploy.sh
+
 
 workflows:
   version: 2
