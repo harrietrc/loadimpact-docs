@@ -69,7 +69,7 @@ export let options = {
 
 Each entry, or scenario, in the `distribution` object specifies an arbitrary label as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as [environment variables]({{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}) (`__ENV["scenarioLabel1"]` and `__ENV["scenarioLabel2"]`) into the k6 processes running in the corresponding load zone.
 
-The `percent` is a specifies how VUs should be distributed across the different scenarios, and the `loadZone` the origin of the traffic for the scenario.
+The `percent` specifies how VUs should be distributed across the different scenarios, and the `loadZone` the origin of the traffic for the scenario.
 
 ### Load zones
 
