@@ -3,7 +3,7 @@ layout: classic-docs
 title: Local and On-premise execution
 description: An overview running k6 tests locally and on-premise
 categories: [test-running]
-order: 0
+order: 1
 ---
 
 Running load tests from your laptop or an on-premise machine is one of the ways you can use k6.
@@ -20,7 +20,7 @@ By default when running a local test, k6 will output a summary of the results to
 
 You do this by first making sure you're logged in to your Load Impact account:
 
-`k6 login cloud`
+`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>

@@ -3,7 +3,7 @@ layout: classic-docs
 title: Cloud execution
 description: An overview running k6 tests with Load Impact Cloud Execution
 categories: [test-running]
-order: 1
+order: 2
 ---
 
 ***
@@ -24,7 +24,7 @@ When you want to run a k6 test from the cloud you simple change the k6 command u
 
 Before you can execute `k6 cloud ...` you'll need to authenticate with the Load Impact cloud service. You can login with your Load Impact credentials by entering the following command into your terminal:
 
-`k6 login cloud`
+`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>
