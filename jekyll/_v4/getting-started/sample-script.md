@@ -4,25 +4,29 @@ title: Sample k6 script
 description: A sample k6 script with comments to explain the different parts.  Feel free to take this and adapt to your need
 categories: [getting-started]
 order: 8
-hide: true
 ---
 
 ***
+# Purpose
 
-Needs an intro.
-
-We should link the below to it's own file.  Maybe expand with more examples from here: https://github.com/loadimpact/k6/tree/master/samples
-
-
+The below sample script is provided as a guide to the overall structure and features available.
+Feel free to edit the script, as needed, or use it unedited to test Load Impact's test system.
 
 
-```
+## Script
+
+{% highlight js linenos %}
 
 import http from "k6/http";
 import { check, group, sleep } from "k6";
 import { Counter, Rate, Trend } from "k6/metrics";
 
-// Options
+/* Options
+Global options for your script
+stages - Ramping pattern
+thresholds - pass/fail criteria for the test
+ext - Options used by Load Impact cloud service test name and distribution
+*/
 export let options = {
     stages: [
         { target: 200, duration: "60s" },
@@ -46,20 +50,31 @@ export let options = {
 };
 
 // Custom metrics
+// We instatiate them before our main function
 var successfulLogins = new Counter("successful_logins");
 var checkFailureRate = new Rate("check_failure_rate");
 var timeToFirstByte = new Trend("time_to_first_byte", true);
 
-// random number between integers
+/* random number between integers
+This is not necessary - It's added to force a performance alert in the test result
+This is for demonstration purposes.  If you pass an env variable when running your test
+you will force this alert. i.e. URL_ALERT=1 k6 run script.js
+*/
 
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-// Main functon
+/* Main function
+The main function is what the virtual users will loop over during test execution.
+*/
 export default function() {
+    // We define our first group.  Pages natually fit a concept of a group
+    // You may have other similar actions you wish to "group" together
     group("Front page", function() {
         let res = null;
+        // As mention above, this logic just forces a perf URL_ALERT
+        // It also highlights the ability to programmatically do things right in your script
         if (__ENV.URL_ALERT) {
             res = http.get("http://test.loadimpact.com/?ts=" + Math.round(getRandomArbitrary(1,2000)));
         } else {
@@ -128,6 +143,9 @@ export default function() {
         sleep(10);
     });
 }
+{% endhighlight %}
 
-
-```
+## See also
+- Groups
+- Thresholds
+- Checks

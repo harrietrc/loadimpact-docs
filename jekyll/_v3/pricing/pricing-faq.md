@@ -4,9 +4,6 @@ title: Pricing FAQ
 description: FAQ for Load Impact pricing related questions
 categories: [pricing]
 order: 1
-redirect_from:
-  - /knowledgebase/topics/29137-pricing
-  - /knowledgebase/articles/173835-how-can-i-get-an-invoice-for-the-purchase
 ---
 
 ***
