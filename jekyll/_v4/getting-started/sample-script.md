@@ -29,8 +29,8 @@ ext - Options used by Load Impact cloud service test name and distribution
 */
 export let options = {
     stages: [
-        { target: 200, duration: "60s" },
-        { target: 200, duration: "180s" },
+        { target: 100, duration: "60s" },
+        { target: 100, duration: "180s" },
         { target: 0, duration: "60s" }
     ],
     thresholds: {
