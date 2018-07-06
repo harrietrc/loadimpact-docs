@@ -40,7 +40,7 @@ export let options = {
     },
     ext: {
         loadimpact: {
-            name: "Insights Demo with Cloud Execution",
+            name: "Version 4.0 knowledge base sample",
             distribution: {
                 scenarioLabel1: { loadZone: "amazon:us:ashburn", percent: 50 },
                 scenarioLabel2: { loadZone: "amazon:ie:dublin", percent: 50 }
