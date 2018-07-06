@@ -146,6 +146,9 @@ export default function() {
 {% endhighlight %}
 
 ## See also
-- Groups
-- Thresholds
-- Checks
+- [Main Function]({{ site.baseurl }}/4.0/test-scripting/main-function/)
+- [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
+- [Checks]({{ site.baseurl }}/4.0/test-scripting/checks/)
+- [Tags]({{ site.baseurl }}/4.0/test-scripting/tags/)
+- [Environment Variables]({{ site.baseurl }}/4.0/test-scripting/environment-variables/)
+- [Custom Metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
