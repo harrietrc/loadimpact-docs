@@ -4,6 +4,7 @@ title: How to automate load tests with Load Impact/k6
 description: How to automate your load tests with Load Impact and k6
 categories: [integrations]
 order: 1
+hide: true
 ---
 
 ***
