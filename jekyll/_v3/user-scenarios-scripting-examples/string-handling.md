@@ -4,7 +4,6 @@ title: String handling
 description: Example code to take a string and return it as a Lua table
 categories: [user-scenario-scripting-examples]
 order: 18
-redirect_from: /knowledgebase/articles/174607-testing-a-site-with-csrf-token-or-viewstate
 ---
 
 ***
