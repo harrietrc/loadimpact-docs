@@ -16,7 +16,7 @@ Important links:
 - [k6 scripting API](http://docs.k6.io/docs)
 - [k6 project page](https://k6.io/)
 - [k6 GitHub repo](https://github.com/loadimpact/k6)
-- [What IP addresses are used by Load Impact?]({{ site.baseurl }}/v4/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/)
+- [What IP addresses are used by Load Impact?]({{ site.baseurl }}/4.0/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/)
 - [Definitions of our support levels](https://loadimpact.com/premium-support/).
 
 

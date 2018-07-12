@@ -3,12 +3,12 @@ layout: classic-docs
 title: What IP Addresses are used by Load Impact to generate load for cloud based tests?
 description: List and explanation of the IP addresses Load Impact uses to generate load during a k6 cloud executed test.
 categories: [frequently-asked-questions]
-order: 5
+order: 1
 ---
 
 ***
 
-This article contains the various IP addresses Load Impact uses to generate load for cloud based tests and other services. The most common reason for needing this information is to open your firewall to allow tests to reach the staging/test environment from a cloud based test.  If you are streaming results to Insights utilizing `k6 run myscript.js -o cloud` you SHOULD NOT need to whitelist anything.
+This article contains the various IP addresses Load Impact uses to generate load for cloud based tests and other services. The most common reason for needing this information is to open your firewall to allow tests to reach the staging/test environment from a cloud based test.  If you are streaming results to Insights utilizing `k6 run myscript.js -o cloud` you may only need to allow traffic against ingest.loadimpact.com on port 443.
 
 Other methods, such as header or query parameter whitelisting, may also fit your requirements. Refer to [this article]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/) for more information on those methods.
 
