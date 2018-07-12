@@ -5,12 +5,10 @@ description: Guide on testing mobile sites/apps
 categories: [how-to-tutorials]
 order: 5
 redirect_from: /knowledgebase/articles/363175-how-to-load-test-a-mobile-site-or-app
-hide: true
 ---
 
 ***
 
-**We should potentially deprecate this if the proxy recorder will no longer exist.**
 
 Load testing a mobile application is not very different from load testing a desktop web application or site.
 
