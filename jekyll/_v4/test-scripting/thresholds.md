@@ -8,6 +8,8 @@ order: 7
 
 Thresholds are used to specify test pass/fail criteria. Thresholds can be set on all metrics including custom ones and you can limit the data point of a metric that are being included in the evaluation by scoping the threshold with tags.
 
+**Note**: When using Thresholds, you want to stay within the defined values. Thresholds that evaluate to `false` will result in a failed test.
+
 ## Threshold expressions
 
 Thresholds can be specified in a short or full format. The short format looks like this:
