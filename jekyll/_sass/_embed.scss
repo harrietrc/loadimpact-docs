@@ -3,6 +3,7 @@
     width: 100%;
     background: #fff;
     padding: 15px 43px;
+    z-index: 9999; /* top most! */
 
     .title {
         font-weight: bold;
