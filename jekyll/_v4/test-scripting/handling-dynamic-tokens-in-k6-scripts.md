@@ -5,10 +5,10 @@ description: Guide on how to handle tokens (CSRF, VIEWSTATE, NONCE, etc) in a k6
 categories: [test-scripting]
 order: 12
 ---
+# Purpose
+Explanation and guide on how to handle HTTP requests that use some type of token to prevent cross site forgery. These tokens are typically called, CSRF, VIEWSTATE, NONCE, etc. If the system you are testing is using some kind type of token. The [browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}) will capture the token from your session. This token is likely to no longer be valid when you run your test.
 
-If your site is using some kind of CSRF token and you do a [recording using a browser]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}), the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a `VIEWSTATE`.
-
-To fix this, you will need to do a little bit of scripting.
+This issue is fairly common and can be handled with a little bit of scripting.
 
 ## Example code
 
