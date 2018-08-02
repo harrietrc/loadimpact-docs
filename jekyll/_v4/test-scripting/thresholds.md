@@ -6,9 +6,19 @@ categories: [test-scripting]
 order: 7
 ---
 
+***
+
+<h1>Purpose</h1>
+This artile explains Thresholds and how they are utilized within Load Impact Version 4.0 and k6.
+
 Thresholds are used to specify test pass/fail criteria. Thresholds can be set on all metrics including custom ones and you can limit the data point of a metric that are being included in the evaluation by scoping the threshold with tags.
 
 **Note**: When using Thresholds, you want to stay within the defined values. Thresholds that evaluate to `false` will result in a failed test.
+
+- TOC
+{:toc}
+
+
 
 ## Threshold expressions
 

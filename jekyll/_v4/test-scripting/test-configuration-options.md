@@ -6,7 +6,14 @@ categories: [test-scripting]
 order: 3
 ---
 
+***
+
+<h1>Purpose</h1>
+
 This article documents the most common configuration options and how to change them in your k6 test.
+
+- TOC
+{:toc}
 
 ## Naming your test
 

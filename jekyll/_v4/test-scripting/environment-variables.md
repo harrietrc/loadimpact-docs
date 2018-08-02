@@ -6,7 +6,13 @@ categories: [test-scripting]
 order: 9
 ---
 
+***
+
+<h1>Purpose</h1>
 Environment variables is a useful mechanism for being able to change configurations or behavior of a test without changing the code itself, e.g. making your tests reusable across different hosting environment (dev, staging, production etc.) by changing a base URL.
+
+- TOC
+{:toc}
 
 ## Accessing environment variables
 

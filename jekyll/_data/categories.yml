@@ -101,9 +101,9 @@
   slug: pricing
   name: Pricing
 
-#- section: v4
-#  slug: faq
-#  name: FAQ
+- section: v4
+  slug: frequently-asked-questions
+  name: FAQ
 
 # Load Impact API Docs
 - section: api
