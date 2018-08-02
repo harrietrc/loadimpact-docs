@@ -34,15 +34,21 @@ _Figure 1: Test creation options_
 _Figure 2, Test URL input screen_
 
 
-**Input** the target URL for the site, endpoint or system you want to test. Upon running this test, our URL analyzer will visit the URL entered and create a script from the requests we see made. This script includes all requests made, including external requests, just like if you were to visit the page.  It’s advised that you use the option to filter domains.  This allows you to specify which domains you **want to be included** when generating the script.  Generally speaking, you should not test third party resources. For example, trackers, analytic tools, advertising pixels, etc.  Depending on your need, you may or may not want to include any Content Delivery Network (CDN) resources.  For example, if you are testing test.loadimpact.com, you would use loadimpact.com as the domain filter.
+**Input** the target URL for the site, endpoint or system you want to test.
+
+Upon run/save and run, our URL analyzer visits the URL entered.  We analyze the requests being made to completely load the page, including external requests. We create a script from this analysis and use that to run your test.  This test is similar to a user visiting that URL, loading all the contents, then closing the tab.
+
+It’s advised that you use the option to filter domains.  This allows you to specify which domains you **want to be included** when generating the script.  Generally speaking, you should not test third party resources. For example, trackers, analytic tools, advertising pixels, etc.  Depending on your need, you may or may not want to include any Content Delivery Network (CDN) resources.
+
+**Domain filtering example**: if you are testing test.loadimpact.com, you would use loadimpact.com as the domain filter.
 
 Enter your URLs and test parameters then click the **SAVE AND RUN** button to start your test.
 
 Next, take a look at your **test results**:
 
-![Test results overview]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/test-result-overview.png)
+![Figure 3]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/test-result-overview.png)
 
-_The performance status section provides a high level overview of the performance of your test. You should consider the following._
+_Figure 3, The performance status section provides a high level overview of the performance of your test. You should consider the following when analyzing your results._
 
 - This test ramps to 50 Virtual Users over 1 minute, stays at 50 Virtual Users for 1 minute, ramps down to 0 Virtual Users over 1 minute.
 - If Thresholds were configured, the number of passed `Thresholds / Total Thresholds`
@@ -64,14 +70,16 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ### Creating a test from Browser Activity (Converting a HAR file)
 
-When running performance tests, it’s always good to make them as realistic as possible. One way to do this is to capture activity in your browser and save it as a HAR file. A number of browsers, including Chrome, Firefox and Microsoft Edge, as well as many other tools, can generate HAR files. k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed.
+When running performance tests, you should make your test cases as realistic as possible. One way to do this is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/docs/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
+
+**Also note: **k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/docs/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
 
 Click on **Create New Test** and select **Browser recording**, as shown in the middle of Figure 1 above.
 
 
-![Figure 3]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-har-file-test.png)
+![Figure 4]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-har-file-test.png)
 
-_Figure 3, Browser recording input_
+_Figure 4, Browser recording input_
 
 The **HAR file upload **allows you to take a recorded browser session, where you emulated real user behavior, and convert that into a k6 script. The requests made in this session will be identical to the ones you made - so if you logged into a system, that will also be attempted. If your system uses any tokens to prevent CSRF attacks, it’s likely that you will see some 400 level responses (since the token has since expired).
 
@@ -89,8 +97,8 @@ One of the powerful features of Load Impact 4.0 is the ability to create test sc
 
 Click on **Create New Test** and select **Scripting** as shown on the right side of Figure 1 above. You will see that **the in-app script editor is pre-populated with a sample test script**. You can edit this script to meet your needs.
 
-![Figure 4]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-javascript-scripted-test.png)
-_Figure 4, Insights result analysis_
+![Figure 5]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-javascript-scripted-test.png)
+_Figure 5, In app scripting_
 
 
 Take note of the script here; it defines your test configuration as well as the requests made. It is exactly what our platform reads and executes for your test. Within the options section, you can define things such as ramping patterns or load zone distribution.  The default function serves as the main entry point for Virtual Users. That is, Virtual Users will iterate over this function until they ramp down or the test ends.  You can change the GET request to your domain if you would like.  Finally, this is a JavaScript environment, so you can express complex behaviors and actions as code. Make any edits you would like then click **SAVE AND RUN** to start your test.  The Virtual Users will follow the ramping configuration specified.
