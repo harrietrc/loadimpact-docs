@@ -81,7 +81,7 @@ Click on **Create New Test** and select **Browser recording**, as shown in the m
 
 _Figure 4, Browser recording input_
 
-The **HAR file upload **allows you to take a recorded browser session, where you emulated real user behavior, and convert that into a k6 script. The requests made in this session will be identical to the ones you made - so if you logged into a system, that will also be attempted. If your system uses any tokens to prevent CSRF attacks, it’s likely that you will see some 400 level responses (since the token has since expired).
+The **HAR file upload** allows you to take a recorded browser session, where you emulated real user behavior, and convert that into a k6 script. The requests made in this session will be identical to the ones you made - so if you logged into a system, that will also be attempted. If your system uses any tokens to prevent CSRF attacks, it’s likely that you will see some 400 level responses (since the token has since expired).
 
 Similar to the URL analyzer, you can also filter domains. We advise you to take the same care as mentioned above to limit the test to domains you are able to and want to test.
 
@@ -198,12 +198,12 @@ Refer to the following resources for more information on result analysis:
 
 ### Next Steps/Automating testing
 
-As a best practice, building automation into your development cycle for testing provides a multitude of benefits to aid yourself and your organization in:
+As a best practice, building automation into your development cycle for testing provides a multitude of benefits, such as:
 - Deploying higher quality code, faster
 - Improving efficiencies
-- Detecting performnace issues, before they become problems in production
+- Detecting performance issues, before they become problems in production
 
-Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or built around custom processes you've create.  The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls.  This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
+Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or custom processes you've already created.  The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls.  This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
 
 The frequency in which you run tests varies from organization to organization.  Our best practice recommendation is to _run tests with your nightly builds_.
 
