@@ -6,22 +6,153 @@ categories: [test-scripting]
 order: 2
 ---
 
-TODO
+***
+
+<h1>Purpose</h1>
+Explanation and code samples to explain how to import the included and external modules into your k6 script.
+
+- TOC
+{:toc}
+
 
 ## Modules
-TODO
+Load testing sophisticated applications requires advanced scripting capabilities, k6 supports powerful modules feature allowing you to:
 
-See the k6 docs on [modules](https://docs.k6.io/docs/modules) for more information.
+- modularize your code.
+- reuse existing Javascript libraries.
+
+k6 can load ES6 modules and ES5 libraries.
+
+Refer to k6 docs on [modules](https://docs.k6.io/docs/modules) for additional information.
 
 ### Builtin modules
-There are a number of builtin modules in k6 with performance testing related APIs.
+There are a number of builtin modules in k6 with performance testing related APIs. These are:
+
+- [k6](https://docs.k6.io/docs/k6)
+  - The k6 module contains k6-specific functionality.
+- [k6/crypto](https://docs.k6.io/docs/k6crypto)
+  - The k6/crypto module provides common hashing functionality available in the GoLang [crypto](https://golang.org/pkg/crypto/) package.
+- [k6/encoding](https://docs.k6.io/docs/k6encoding)
+  - The encoding module provides base64 encoding/decoding as defined by RFC4648.
+- [k6/html](https://docs.k6.io/docs/k6html)
+  - The k6/html module contains functionality for HTML parsing.
+- [k6/http](https://docs.k6.io/docs/k6http)
+  - The k6/http module contains functionality for performing HTTP transactions.
+- [k6/metrics](https://docs.k6.io/docs/k6metrics)
+  - The metrics module provides functionality to create custom metrics
+- [k6/ws](https://docs.k6.io/docs/k6-websocket-api)
+  - The ws module provides a WebSocket client implementing the WebSocket protocol.
+
+{% highlight js linenos %}
+//Example import of built in Modules
+import http from "k6/http";
+import { Counter, Gauge, Rate, Trend} from "k6/metrics";
+import { check } from "k6";
+import { sha256 } from "k6/crypto";
+{% endhighlight %}
+
+Full documentation of these modules can be found within the [k6 docs](https://docs.k6.io/docs/)
 
 ## Remote modules
-TODO
+
+k6 can import modules that are hosted remotely.
+
+{% highlight js linenos %}
+import http from "k6/http";
+import moment from "s3.amazonaws.com/k6samples/moment.js";
+
+export default function() {
+	http.get("http://test.loadimpact.com/");
+	console.log(moment().format());
+}
+{% endhighlight %}
+
+This also works with modules from hosting services:
+
+{% highlight js linenos %}
+import http from "k6/http";
+import moment from "cdnjs.com/libraries/moment.js/2.18.1";
+
+export default function() {
+	http.get("http://test.loadimpact.com/");
+	console.log(moment().format());
+}
+{% endhighlight %}
 
 ## Using Node.js modules
-TODO
+
+k6 does not run Node.js. However, it can load bundled npm modules with browserify.
+
+Run `browserify` with the [standalone](https://github.com/browserify/browserify-handbook#standalone) option to generate a [Universal Module Definition](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html) bundle. This creates a package containing all the dependencies, and make the module available via module.exports. This new package can be imported in a k6 test.
+
+{% highlight js linenos %}
+
+import http from "k6/http";
+import { check } from "k6";
+import cheerio from "./vendor/cheerio.js";
+import xml2js from "./vendor/xml2js.js";
+
+
+export default function() {
+
+  const res = http.get("https://loadimpact.com/");
+
+  const $ = cheerio.load(res.body);
+
+  const title = $('head title').text();
+  check(title, {
+    "has correct title": () => title == 'Performance testing for DevOps | Load Impact'
+  });
+
+
+  var xmlString = '<?xml version="1.0" ?>' +
+   	'<items xmlns="http://foo.com">' +
+   ' <item>Foo</item>' +
+   ' <item color="green">Bar</item>' +
+   '</items>'
+
+  xml2js.parseString(xmlString, function (err, result) {
+      console.log(JSON.stringify(result));
+  });
+
+}
+
+{% endhighlight %}
 
 See the k6 docs on [Node.js](https://docs.k6.io/docs/modules#section-npm-modules) for more information.
+
+## Local modules with Docker
+
+When executing k6 in a Docker container you must make sure to mount the necessary folders from the host into the container, using Docker volumes. This enables k6 to see all the JS modules required.
+
+For example, say you have the following structure on your host machine:
+
+/home/k6/example/src/index.js
+/home/k6/example/src/modules/module.js
+
+{% highlight js linenos %}
+//myScript.js
+import { hello_world } from './modules/module.js';
+
+export default function() {
+    hello_world();
+}
+
+{% endhighlight %}
+
+{% highlight js linenos %}
+// module.js
+export function hello_world() {
+    console.log("Hello world");
+}
+{% endhighlight %}
+
+{% highlight bash %}
+docker run -v /home/k6/example/src:/src -i loadimpact/k6 run /src/index.js
+{% endhighlight %}
+
+## Considerations and Limtations
+Each Virtual User will load the required modules into memory during text execution. RAM usage is directly correlated to the number of Virtual Users and the total size of your JS objects. Excessive use of RAM can negatively impact the machine performing the test and the test execution and results.
+
 
 **Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %})
