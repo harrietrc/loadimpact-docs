@@ -25,6 +25,7 @@ You should filter your domains for all or some of the following reasons:
 - External resources may throttle your requests generated from a load test, this could produce skewed results or even trigger a threshold when it should not have been.
 - External resources typically don't want to be a part of a load test and including them may violate your TOS with that third party
 - In most cases, even if you did notice a performance problem with a 3rd party you normally will have no way to fix that issue
+- Most CDNs charge based on usage, so making requests against the CDN could have financial costs associated with the test. _Note:_ You may have a valid reason to test your CDN. We have seen users specifically test CDNs in the past for various reasons.
 
 ## Filtering test scripts created in-app
 There are a few ways to filter your domains with Load Impact.  If you are using the URL analyzer or HAR file upload in-app, you can utilize the `Domain` option.  This allows you to enter domains you specifically want to include within your test.  e.g. If I was testing `app.example.com` I would use `example.com` in the `Domain` option.
