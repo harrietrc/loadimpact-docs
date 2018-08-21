@@ -51,7 +51,7 @@ For large tests, we recommend to consider your user scenarios and test configura
 
     You will be able to find this metric “my URL” in your test results, by clicking the "Add visualization widget" button below the main graph and smaller graphs, at the bottom of the page.
 
-    Refer to: [Creating Custom Metrics]({{ site.baseurl }}3.0/user-scenarios-scripting-examples/creating-custom-metrics/)
+    Refer to: [Creating Custom Metrics]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/creating-custom-metrics/)
 
 
 3. Avoid logging information. When using our chrome extension we include a logging example at the top. You can/should comment this out. Logging is a fairly expensive process so it's just making the Virtual Users inefficient.  If you are looking for something in particular, such as a status code being returned, consider a custom metric that counts the number of times it has been returned.

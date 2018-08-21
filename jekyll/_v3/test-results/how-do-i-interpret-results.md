@@ -92,8 +92,8 @@ Avg  |  Average response time for this resource
 {: class="table table-bordered"}
 
 Also refer to:
-- [What Metrics are reported for a URL?]({{ site.baseurl }}/3.0/test-restults/what-metrics-are-reported-for-a-url/)
-- [What Status codes are reported back for a URL?]({{ site.baseurl }}/3.0/test-restults/what-status-codes-are-there/)
+- [What Metrics are reported for a URL?]({{ site.baseurl }}/3.0/test-results/what-metrics-are-reported-for-a-url/)
+- [What Status codes are reported back for a URL?]({{ site.baseurl }}/3.0/test-results/what-status-codes-are-there/)
 
 #### Pages Tab
 If you have utilized `http.page_start()` and `http.page_end()` in your script, we will group and calculate all resources between those functions in your script on this tab.  It's highly recommended to rename the default names to something contextual.  i.e. `http.page_start("Page 1")` ---> `http.page_start("Homepage")`  This small adjustment will make your results a lot easier to read for yourself and others you share the results with.

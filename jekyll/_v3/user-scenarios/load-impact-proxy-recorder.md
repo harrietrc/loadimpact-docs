@@ -8,6 +8,7 @@ redirect_from:
   - /knowledgebase/articles/175462-what-is-the-proxy-recorder-and-how-does-it-work
   - /knowledgebase/articles/175465-how-do-i-configure-my-proxy-settings-for-the-sessi
   - /knowledgebase/articles/175466-why-doesn-t-the-proxy-recorder-wor
+  - /knowledgebase/articles/175466-why-doesn-t-the-proxy-recorder-work
 ---
 
 ***

@@ -49,7 +49,7 @@ http.request_batch({
 
 
 #### Simple login using HTTP POST
-Note: Ideally you should use a [data store](data-stores) to provide credentials to variables named `login` and `password`. The below example is simplified for sample purposes.
+Note: Ideally you should use a [data store]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/data-stores/) to provide credentials to variables named `login` and `password`. The below example is simplified for sample purposes.
 {% highlight lua linenos %}
 local post_data = "login=test_user&password=123"
 

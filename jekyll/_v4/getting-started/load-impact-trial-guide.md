@@ -70,9 +70,9 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ### Creating a test from Browser Activity (Converting a HAR file)
 
-When running performance tests, you should make your test cases as realistic as possible. One way to do this is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/docs/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
+When running performance tests, you should make your test cases as realistic as possible. One way to do this is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
 
-**Also note: **k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/docs/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
+**Also note: **k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
 
 Click on **Create New Test** and select **Browser recording**, as shown in the middle of Figure 1 above.
 

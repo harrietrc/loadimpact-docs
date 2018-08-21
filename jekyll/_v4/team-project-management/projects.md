@@ -24,7 +24,7 @@ Next, Select "New Project":
 
 ![Create New Project]({{ site.baseurl }}/assets/img/v4/team-project-management/projects/create-new-project.png)
 
-Then, give your project a name and add [team members]({{ site.baseurl }}/4.0/team-project-management/adding-team-members/), as appropriate.  Note: you can only add team member who have been invited to your [organization]({{ site.baseurl }}/v4/team-project-management/organizations/) previously.
+Then, give your project a name and add [team members]({{ site.baseurl }}/4.0/team-project-management/adding-team-members/), as appropriate.  Note: you can only add team member who have been invited to your [organization]({{ site.baseurl }}/4.0/team-project-management/organizations/) previously.
 
 ![Name your project, add team member and create it]({{ site.baseurl }}/assets/img/v4/team-project-management/projects/name-invite-create.png)
 

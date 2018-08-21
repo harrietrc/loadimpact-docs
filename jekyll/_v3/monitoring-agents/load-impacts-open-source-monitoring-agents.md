@@ -7,6 +7,7 @@ order: 1
 redirect_from:
   - /knowledgebase/topics/114939-monitoring
   - /knowledgebase/articles/265482-server-monitoring-formerly-server-metric-agents
+  - /knowledgebase/articles/265482-server-metrics-tutorial
 ---
 
 ***

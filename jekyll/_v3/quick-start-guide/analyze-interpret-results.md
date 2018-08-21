@@ -8,7 +8,7 @@ order: 4
 
 ***
 
-Interpreting [test results]({{ site.baseurl }}/3.0/test-results/test-result-introduction/) can be tricky, but there are some general guidelines that you should consider when viewing your results.
+Interpreting [test results]({{ site.baseurl }}/3.0/test-results/how-do-i-interpret-results/) can be tricky, but there are some general guidelines that you should consider when viewing your results.
 
 The *Vitual Users active* graph and the *Virtual User Load Time (VU Load Time)* graph are default graphs displayed on the result page.
 ### Simple Reminders:

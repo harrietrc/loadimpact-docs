@@ -35,7 +35,7 @@ Once your script has been created, it will be available at the user scenario men
 Then, if needed, you can [script your user scenario]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/scripting-introduction/) to include any specific customization, including sleep time and randomization of events to make the test as realistic as possible.  Some of the most popular scripting methods include:
 
 - [Parameterization of data (i.e. logins)]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/data-stores/)
-- [Handling of dynamic authentication tokens]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/http-requests-wiht-csrf-viewstate-authentication-tokens)
+- [Handling of dynamic authentication tokens]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/http-requests-with-csrf-viewstate-authentication-tokens)
 
 
 

@@ -7,6 +7,7 @@ order: 1
 redirect_from:
   - /knowledgebase/topics/29118-common-issues
   - /knowledgebase/articles/173814-load-impact-s-definition-of-concepts-and-terminolo
+  - /knowledgebase/articles/173814-load-impact-s-definition-of-concepts-and-terms
 ---
 
 ***

@@ -25,7 +25,7 @@ Install last version of the package
 ```
 $ sudo apt-get install li-metrics-agent
 ```
-Run the configuration tool. You will be asked to give the agent a name and your server metrics token. The name is used for identification in the Load Impact application, so it is recommended to choose a short readable name. The name and token will be written to the config file. You can read about advanced configuration of [Nagios and custom metrics plugins here]({{ site.baseurl }}egacy/monitoring-agents/configuring-custom-monitoring-agent-metrics/).
+Run the configuration tool. You will be asked to give the agent a name and your server metrics token. The name is used for identification in the Load Impact application, so it is recommended to choose a short readable name. The name and token will be written to the config file. You can read about advanced configuration of [Nagios and custom metrics plugins here]({{ site.baseurl }}/3.0/monitoring-agents/configuring-custom-monitoring-agent-metrics/).
 ```
 $ sudo li-metrics-agent-config
 ```
