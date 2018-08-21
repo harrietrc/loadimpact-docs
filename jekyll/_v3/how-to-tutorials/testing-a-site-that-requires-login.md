@@ -42,5 +42,5 @@ http.request({
 Refer to:
 - [User scenario scripting]({{ site.baseurl }}/3.0/user-scenario-scripting-examples/)
 - [The Load Impact load script API](https://loadimpact.com/load-script-api)
-- [Setting HTTP headers for a request]({{ site.baseurl }}3.0/user-scenarios-scripting-examples/http-headers/)
+- [Setting HTTP headers for a request]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/http-headers/)
 - [How to load test an API]({{ site.baseurl }}/3.0/how-to-tutorials/how-to-load-test-an-api/)
