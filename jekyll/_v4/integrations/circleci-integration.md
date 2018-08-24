@@ -117,13 +117,13 @@ To have the results of our load tests streamed to Insights or executed in the Lo
 
 Next, let's connect Slack to our CircleCI project so that we are notified when our load tests finish. For this, you will need to set up an [Incoming Webhook](https://api.slack.com/incoming-webhooks) integration in Slack. Once that is complete, copy/paste the Webhook URL into the input field in "Chat Notifications" Settings:
 
-![CircleCI Slack Notifications]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-slack-notifications.png)
+![CircleCI Slack Notifications]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-slack-notification.png)
 
 ## Triggering builds
 
 In this example, we will trigger a build by making a small change to the load test script. We suggest changing the threshold to 100ms.  Push the change to Github, CircleCI will pick up the repo change and execute the `circle.yml` file.
 
-![CircleCI triggered test run]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-slack-triggered.png)
+![CircleCI triggered test run]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-load-test-triggered.png)
 
 In this example, lowering the threshold to 100ms results in a failed build step and thus a failed build.  The notifcation informed us:
 
