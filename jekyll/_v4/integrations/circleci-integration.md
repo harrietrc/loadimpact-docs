@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to automate load tests with Load Impact/k6
-description: How to automate your load tests with Load Impact and k6
+title: How to integrate CircleCI with Load Impact/k6
+description: Guide on how to integrate CircleCI with Load Impact 4.0/k6
 categories: [integrations]
 order: 3
 ---
@@ -10,7 +10,7 @@ order: 3
 
 <h1>Purpose</h1>
 
-This guide and sample describes how to integrate Load Impact 4.0 with CircleCI and above.   Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample.  Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and Load Impact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
+This guide and sample describes how to integrate Load Impact 4.0 with CircleCI.   Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample.  Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and Load Impact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
 
 - TOC
 {:toc}
@@ -134,7 +134,7 @@ In this example, lowering the threshold to 100ms results in a failed build step 
 Passing builds aren't too interesting.  When builds fail, you will want to determine why.  When it comes to load tests, there is no exception to be made.  Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6.  Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
 
 ## See also
-- [GitHub repo for this example](https://github.com/loadimpact/k6-circleci-example
+- [GitHub repo for this example](https://github.com/loadimpact/k6-circleci-example)
 - [Installing k6]({{ site.baseurl }}/4.0/getting-started/hello-world/#download-and-install-k6)
 - [Your API token](https://app.loadimpact.com/integrations)
 - [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
