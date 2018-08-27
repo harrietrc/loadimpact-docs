@@ -11,7 +11,7 @@ Being able to execute code pre and post test is common place when running tests.
 In k6 tests there are two life cycle hooks for running code pre and post test, `setup()` and `teardown()`.
 
 <div class="callout callout-warning" role="alert">
-    <code>setup()</code> and <code>teardown()</code> will only be called once each per test, they're test-wide life cycle hooks, not per-VU or per-loadzone/server (in the <a href="/docs/4.0/test-running/cloud-execution/" class="alert-link">Cloud Execution</a> case).
+    <code>setup()</code> and <code>teardown()</code> will only be called once each per test, they're test-wide life cycle hooks, not per-VU or per-loadzone/server (in the <a href="/4.0/test-running/cloud-execution/" class="alert-link">Cloud Execution</a> case).
 </div>
 
 ## Setup hook
@@ -54,7 +54,7 @@ export default function(setupData) {
 {% endhighlight %}
 
 <div class="callout callout-warning" role="alert">
-    You can only return JSON compatible data types from the <code>setup()</code> function, as the returned data is serialized to JSON before being passed to the main and <code>teardown()</code> functions. In the <a href="/docs/4.0/test-running/cloud-execution/" class="alert-link">Cloud Execution</a> case the data will be extracted from the cloud server that runs the <code>setup()</code> function and distributed to all other cloud servers and passed to the main and <code>teardown()</code> functions.
+    You can only return JSON compatible data types from the <code>setup()</code> function, as the returned data is serialized to JSON before being passed to the main and <code>teardown()</code> functions. In the <a href="/4.0/test-running/cloud-execution/" class="alert-link">Cloud Execution</a> case the data will be extracted from the cloud server that runs the <code>setup()</code> function and distributed to all other cloud servers and passed to the main and <code>teardown()</code> functions.
 </div>
 
 See the k6 docs on the [test life cycle](https://docs.k6.io/docs/test-life-cycle) for more information.

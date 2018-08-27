@@ -62,4 +62,4 @@ Load generator CPU utilization    | How large a percentage of system CPU is bein
 [3] User load time is the average time it has taken user scenarios (any user scenarios) to run to completion. Note that only time spent actively loading things is counted here – sleep statements in a load script are excluded. A user scenario will commonly take a lot more than 3 seconds to complete, however, so the data for each 3-second period will consist of the user scenario load times that were reported during this 3-second period (i.e. the actual user scenario execution would have happened earlier).
 
 See Also:
-- [What Status codes are reported back for a URL?]({{ site.baseurl }}/3.0/test-restults/what-status-codes-are-there/)
+- [What Status codes are reported back for a URL?]({{ site.baseurl }}/3.0/test-results/what-status-codes-are-there/)

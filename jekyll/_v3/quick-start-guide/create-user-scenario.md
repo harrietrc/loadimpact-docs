@@ -8,7 +8,7 @@ order: 2
 
 ***
 
-A [user scenario]({{ site.baseurl }}/3.0/user-scenarios/what-is-a-user-scenario/) is a script, defining the requests performed by the simulated users during a load test. A good user scenario will be based on the credible story of an user or system performing a realistic task.
+A [user scenario]({{ site.baseurl }}/3.0/user-scenarios/what-is-a-user-scenario/) is a script, defining the requests performed by the simulated users during a load test. A good user scenario will be based on real user behavior and will test systems, components, pages, or actions that are important to your organization. 
 
 You can create your load script from scratch, or use the following custom tools to auto-generate your script.
 - A [Google Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension/) **(Most popular!)**
