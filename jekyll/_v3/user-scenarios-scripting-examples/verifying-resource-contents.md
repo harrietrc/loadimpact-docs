@@ -62,7 +62,8 @@ The `http.request_batch()` returns a table of `http.Response` objects, one for e
      end
  end
  {% endhighlight %}
-**IMPORTANT!** – don’t forget to add the last parameter `response_body_bytes=100`  to the GET request if you want to examine the reply from the server. Without this extra parameter, response.body will be empty. This is a very common mistake many make. It might seem like a silly parameter to require, but many server responses can be quite big, consuming a lot of memory on the load generator host if we have to save them all, and most of the time, they are not used at all by the client load script.
+**Note: ** In this example since we are just examining the body size, we do not need to save any `response_body_bytes`.  We only need to save `response_body_bytes` when we need to access the response itself.
+
 
 See also:
 
