@@ -55,6 +55,8 @@ export let options = {
 
 *Note: that you must also specify `duration` to set the test length. Each VU will run the default (aka main) function over and over (like a while-true loop) for the length of the test.*
 
+**NOTE:** If `vus` are specified as written above and dynamic stages are also used as described in the following section. Tests will **START** at the constant VU level specified.
+
 ### Dynamic VU load
 
 To specify an arbitrary number of ramp-up, constant and ramp-down stages you set the `stages` option:
