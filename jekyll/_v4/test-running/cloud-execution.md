@@ -67,7 +67,7 @@ export let options = {
 };
 {% endhighlight %}
 
-Each entry, or scenario, in the `distribution` object specifies an arbitrary label as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as [environment variables]({{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}) (`__ENV["scenarioLabel1"]` and `__ENV["scenarioLabel2"]`) into the k6 processes running in the corresponding load zone.
+Each entry, or scenario, in the `distribution` object specifies an arbitrary label (aka "distribution label") as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as an [environment variable]({{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}) (`__ENV["LI_DISTRIBUTION"]`) into the k6 processes running in the corresponding load zone ([see below]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-impact-environment-variables) for more details).
 
 The `percent` specifies how VUs should be distributed across the different scenarios, and the `loadZone` the origin of the traffic for the scenario.
 
@@ -116,6 +116,19 @@ To use environment variables when running a cloud executed test you use one or m
     With cloud execution you must use the CLI flags (<code>-e/--env</code>) to set <a href="{{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}" class="alert-link">environment variables</a>. Environment variables set in the local terminal before executing k6 won't be forwarded to the Load Impact cloud service, and thus won't be available to your script when executing in the cloud.
 </div>
 
+### Load Impact environment variables
+
+When running a cloud executed test with Load Impact the following environment variables will always be set:
+
+Name|	Value|	Description
+-|-|-
+LI_LOAD_ZONE	|string|	The load zone from where the the metric was collected. Values will be of the form: amazon:us :ashburn (see list above).
+LI_INSTANCE_ID	|number|	A sequential number representing the unique ID of a load generator server taking part in the test, starts at 0.
+LI_DISTRIBUTION	|string|	The value of the "distribution label" that you used in `ext.loadimpact.distribution` corresponding to the load zone the script is currently executed in.
+{: class="table table-striped"}
+
+See below for an example on how the `LI_DISTRIBUTION` environment variable can be used to create multi-scenario tests.
+
 
 ## Multi scenario load tests
 
@@ -140,11 +153,11 @@ export let options = {
 };
 
 export default function() {
-    if (__ENV["frontpageScenarioLabel"]) {
+    if (__ENV["LI_DISTRIBUTION"] === "frontpageScenarioLabel") {
         frontpageScenario();
-    } else if (__ENV["searchScenarioLabel"]) {
+    } else if (__ENV["LI_DISTRIBUTION"] === "searchScenarioLabel") {
         searchScenario();
-    } else if (__ENV["shoppingScenarioLabel"]) {
+    } else if (__ENV["LI_DISTRIBUTION"] === "shoppingScenarioLabel") {
         shoppingScenario();
     }
 }
