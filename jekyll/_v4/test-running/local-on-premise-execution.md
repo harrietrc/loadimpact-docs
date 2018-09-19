@@ -38,7 +38,7 @@ and then adding the `-o cloud` CLI flag:
 
 You should now see something like this in your terminal:
 ![Local execution with Insights streaming]({{ site.baseurl }}/assets/img/v4/test-running/k6-local-exec-streaming-to-insights.png)
-Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. That URLs is where you go to see the test results as the come streaming in from the test execution.
+Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. That URLs is where you go to see the test results as they come streaming in from the test execution.
 
 <div class="callout callout-warning" role="alert">
     Note that you can change under which project your tests and results are stored by adding a project ID to your <a href="{{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %}#sending-results to-a-specific-project" class="alert-link">test configuration options</a>.
