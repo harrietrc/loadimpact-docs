@@ -4,7 +4,6 @@ title: How to interpret the performance trending graph
 description: How to Interpret the performance trending graph for your load tests
 categories: [test-results]
 order: 5
-redirect_from: /knowledgebase/articles/617088-how-do-i-interpret-the-performance-trend-analysis
 ---
 
 ***

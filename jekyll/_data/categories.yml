@@ -78,6 +78,10 @@
   name: Test running
 
 - section: v4
+  slug: testing-methodologies
+  name: Testing Methodologies
+
+- section: v4
   slug: result-analysis
   name: Result analysis
 
