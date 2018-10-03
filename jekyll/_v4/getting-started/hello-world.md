@@ -145,7 +145,7 @@ Read more about [VU ramping configurations]({{ site.baseurl}}{% link _v4/test-sc
 
 ## Stream results to Load Impact Insights
 
-So far we've only used one component (k6) of Load Impact 4.0. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just login to your Load Impact account and add `-o cloud`:
+So far we've only used one component (k6) of Load Impact 4.0. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just log in to your Load Impact account and add `-o cloud`:
 
 **Login to your Load Impact account**:
 

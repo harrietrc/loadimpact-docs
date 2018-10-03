@@ -15,7 +15,7 @@ The single high-level performance metric given in the performance trending graph
 
 Performance trending provides the most value when tests are executed on a regular basis. Refer to our [integrations]({{ site.baseurl }}/4.0/integrations/) for more information on integrating/automating your tests.
 
-**Note:** Failed tests will be shown in red, passing tests in green, and aborted tests will shown a "negative" value.
+**Note:** Failed tests will be shown in red, passing tests in green, and aborted tests will show a "negative" value.
 
 
 ![Performance trending graph]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/perf-trending.png)

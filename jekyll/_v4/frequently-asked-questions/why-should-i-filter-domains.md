@@ -14,7 +14,7 @@ This article explains the reasons why you should filter domains within your load
 
 ## Background
 
-Nearly all apps, sites, and services on the web make requests to external resources.  It's likely that a app or site you are testing includes any or all of the following: CDNs, marketing trackers (Facebook, twitter, etc.), analytics tools (Google Analytics), marketing automation trackers (Hubspot, Marketo, Eloqua), developer tools (Fullstory, HotJar, etc.) and more.
+Nearly all apps, sites, and services on the web make requests to external resources. It's likely that an app or site you are testing includes any or all of the following: CDNs, marketing trackers (Facebook, Twitter, etc.), analytics tools (Google Analytics), marketing automation trackers (Hubspot, Marketo, Eloqua), developer tools (Fullstory, HotJar, etc.) and more.
 
 
 ## Why should I filter domains?
