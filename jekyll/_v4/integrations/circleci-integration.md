@@ -10,7 +10,7 @@ order: 3
 
 <h1>Purpose</h1>
 
-This guide and sample describes how to integrate Load Impact 4.0 with CircleCI.   Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample.  Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and Load Impact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
+This guide and sample describes how to integrate Load Impact 4.0 with CircleCI. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and Load Impact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
 
 - TOC
 {:toc}
@@ -19,7 +19,7 @@ This guide and sample describes how to integrate Load Impact 4.0 with CircleCI. 
 
 Load Impact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, webapps, or anything else you may want to monitor for performance regressions over time.
 
-It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test.  Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
+It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ It's highly advised to utilize thresholds in automated tests, so you can pass or
 
 ## Your test script
 
-It all starts with code, here is the example script we will be using in this guide.  It tests our site, `test.loadimpact.com`.
+It all starts with code, here is the example script we will be using in this guide. It tests our site, `test.loadimpact.com`.
 
 {% highlight js linenos %}
 import { check, group, sleep } from "k6";
@@ -121,17 +121,17 @@ Next, let's connect Slack to our CircleCI project so that we are notified when o
 
 ## Triggering builds
 
-In this example, we will trigger a build by making a small change to the load test script. We suggest changing the threshold to 100ms.  Push the change to Github, CircleCI will pick up the repo change and execute the `circle.yml` file.
+In this example, we will trigger a build by making a small change to the load test script. We suggest changing the threshold to 100ms. Push the change to Github, CircleCI will pick up the repo change and execute the `circle.yml` file.
 
 ![CircleCI triggered test run]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-load-test-triggered.png)
 
-In this example, lowering the threshold to 100ms results in a failed build step and thus a failed build.  The notifcation informed us:
+In this example, lowering the threshold to 100ms results in a failed build step and thus a failed build. The notifcation informed us:
 
 ![CircleCI Slack Notifications]({{ site.baseurl }}/assets/img/v4/integrations/circleci-integration/k6-circleci-notifications-slack.png)
 
 ## Result analysis
 
-Passing builds aren't too interesting.  When builds fail, you will want to determine why.  When it comes to load tests, there is no exception to be made.  Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6.  Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
+Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
 
 ## See also
 - [GitHub repo for this example](https://github.com/loadimpact/k6-circleci-example)

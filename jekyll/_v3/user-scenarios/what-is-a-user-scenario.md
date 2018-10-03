@@ -30,6 +30,6 @@ The **Chrome Extension _(Most users utilize this option)_** button will allow yo
 
 The **Proxy session button** will make Load Impact launch a HTTP proxy server, allowing you to configure your web browser so that it uses this proxy server to access the web. It works similiar to the chrome extension.
 
-**Tip**: A basic load test is better than no load test.  If you are unsure of where to start use the URL generator so you can set some baseline performance metrics.
+**Tip**: A basic load test is better than no load test. If you are unsure of where to start use the URL generator so you can set some baseline performance metrics.
 
 **IMPORTANT**: _User scenarios are **NOT** automatically refreshed when your app/API/website is updated, or if you change the Target URL in the test configuration. Script maintenance is a normal part of performance testing and should be kept in mind as your site/app/APIs are updated._

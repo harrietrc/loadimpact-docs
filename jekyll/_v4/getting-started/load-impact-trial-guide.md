@@ -9,7 +9,7 @@ order: 9
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in the Load Impact 4.0. This cloud interface is complemented by our open source load testing tool, k6.  Version 4.0 of Load Impact is built upon k6.  k6 itself is freely available on GitHub. You can utilize the cloud functions of Load Impact through the web GUI or by using k6 locally.
+The purpose of this document is to aid you in exploring the primary features available in the Load Impact 4.0. This cloud interface is complemented by our open source load testing tool, k6. Version 4.0 of Load Impact is built upon k6. k6 itself is freely available on GitHub. You can utilize the cloud functions of Load Impact through the web GUI or by using k6 locally.
 
 - TOC
 {:toc}
@@ -36,9 +36,9 @@ _Figure 2, Test URL input screen_
 
 **Input** the target URL for the site, endpoint or system you want to test.
 
-Upon run/save and run, our URL analyzer visits the URL entered.  We analyze the requests being made to completely load the page, including external requests. We create a script from this analysis and use that to run your test.  This test is similar to a user visiting that URL, loading all the contents, then closing the tab.
+Upon run/save and run, our URL analyzer visits the URL entered. We analyze the requests being made to completely load the page, including external requests. We create a script from this analysis and use that to run your test. This test is similar to a user visiting that URL, loading all the contents, then closing the tab.
 
-It’s advised that you use the option to filter domains.  This allows you to specify which domains you **want to be included** when generating the script.  Generally speaking, you should not test third party resources. For example, trackers, analytic tools, advertising pixels, etc.  Depending on your need, you may or may not want to include any Content Delivery Network (CDN) resources.
+It’s advised that you use the option to filter domains. This allows you to specify which domains you **want to be included** when generating the script. Generally speaking, you should not test third party resources. For example, trackers, analytic tools, advertising pixels, etc. Depending on your need, you may or may not want to include any Content Delivery Network (CDN) resources.
 
 **Domain filtering example**: if you are testing test.loadimpact.com, you would use loadimpact.com as the domain filter.
 
@@ -57,7 +57,7 @@ _Figure 3, The performance status section provides a high level overview of the 
   - Checks **will not** fail a test, nor can they halt execution
   - Checks are often used with a Threshold and Custom Metrics
     - e.g. `"check_failure_rate": ["rate<0.3"]`
-- The number of of URLs with a status code `<400 / Total requests`
+- The number of URLs with a status code `<400 / Total requests`
 
 **Some Ideal performance result correlations**
 - Flat response times with rising Virtual Users
@@ -101,7 +101,7 @@ Click on **Create New Test** and select **Scripting** as shown on the right side
 _Figure 5, In app scripting_
 
 
-Take note of the script here; it defines your test configuration as well as the requests made. It is exactly what our platform reads and executes for your test. Within the options section, you can define things such as ramping patterns or load zone distribution.  The default function serves as the main entry point for Virtual Users. That is, Virtual Users will iterate over this function until they ramp down or the test ends.  You can change the GET request to your domain if you would like.  Finally, this is a JavaScript environment, so you can express complex behaviors and actions as code. Make any edits you would like then click **SAVE AND RUN** to start your test.  The Virtual Users will follow the ramping configuration specified.
+Take note of the script here; it defines your test configuration as well as the requests made. It is exactly what our platform reads and executes for your test. Within the options section, you can define things such as ramping patterns or load zone distribution. The default function serves as the main entry point for Virtual Users. That is, Virtual Users will iterate over this function until they ramp down or the test ends. You can change the GET request to your domain if you would like. Finally, this is a JavaScript environment, so you can express complex behaviors and actions as code. Make any edits you would like then click **SAVE AND RUN** to start your test. The Virtual Users will follow the ramping configuration specified.
 
 ***
 
@@ -111,13 +111,13 @@ To realize the full value out of Load Impact 4.0, download and install k6 on you
 
 By working locally, you can use your favorite IDE to write your scripts, create custom modules or libraries to share with your team, and utilize any version control you already have in place. This knowledge base contains sample scripts and code snippets to help you get started.
 
-Aside from where the load generates from and the results output, the script itself remains unchanged between execution modes.  This allows you to shift testing left to be available in the development cycle.
+Aside from where the load generates from and the results output, the script itself remains unchanged between execution modes. This allows you to shift testing left to be available in the development cycle.
 
 ***
 
 ### Downloading k6
 
-k6 is available directly from our GitHub repository.  You may also utilize the following install methods:
+k6 is available directly from our GitHub repository. You may also utilize the following install methods:
 
 <div class="row platform-tabs">
     <div class="col-12">
@@ -166,13 +166,13 @@ Refer to [installation options](https://docs.k6.io/docs/installation) in the k6 
 Once you've installed k6, try these commands to try the different execution modes:
 
 ##### Local Execution with local output
-This mode is useful for validations and smoke tests.  Load generated from your local machine with output to stdout
+This mode is useful for validations and smoke tests. Load generated from your local machine with output to stdout
 {% highlight shell %}
 k6 run -u 1 -d 10s github.com/loadimpact/k6/samples/http_get.js
 {% endhighlight %}
 
 ##### Local Execution with cloud streaming output
-This mode is useful for testing behind the firewall.  Cloud output enables you to analyze your results within Load Impact's cloud platform. In stdout, you are given a link to the test result to watch in real-time.
+This mode is useful for testing behind the firewall. Cloud output enables you to analyze your results within Load Impact's cloud platform. In stdout, you are given a link to the test result to watch in real-time.
 {% highlight shell %}
 k6 login cloud
 k6 run -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js -o cloud
@@ -180,7 +180,7 @@ k6 run -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js -o cloud
 
 ##### Cloud Execution triggered from local command line
 
-This mode allows you to scale to a large number of Virtual Users on demand, utilizing Load Impact's cloud infrastructure. Your script and it's depedencies(if applicable) are uploading to our cloud service and then executed.  In stdout, you are given a link to the test result to watch in real-time.
+This mode allows you to scale to a large number of Virtual Users on demand, utilizing Load Impact's cloud infrastructure. Your script and it's dependencies (if applicable) are uploading to our cloud service and then executed. In stdout, you are given a link to the test result to watch in real-time.
 {% highlight shell %}
 k6 login cloud
 k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
@@ -190,7 +190,7 @@ k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
 
 ### Results analysis
 Refer to the following resources for more information on result analysis:
-- Take an [in app tour](https://app.loadimpact.com/k6/anonymous/9b480b664bee46c3bf1a9d1ffb57328d)
+- Take an [in-app tour](https://app.loadimpact.com/k6/anonymous/9b480b664bee46c3bf1a9d1ffb57328d)
 - [Load Impact insights]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
 - [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
 
@@ -203,9 +203,9 @@ As a best practice, building automation into your development cycle for testing 
 - Improving efficiencies
 - Detecting performance issues, before they become problems in production
 
-Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or custom processes you've already created.  The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls.  This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
+Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or custom processes you've already created. The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls. This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
 
-The frequency in which you run tests varies from organization to organization.  Our best practice recommendation is to _run tests with your nightly builds_.
+The frequency in which you run tests varies from organization to organization. Our best practice recommendation is to _run tests with your nightly builds_.
 
 
 ***

@@ -14,7 +14,7 @@ The single high-level performance metric given in the performance trending graph
 
 To make the best use of the Performance trending graph, we recommend utilizing our API to [automate tests]({{ site.baseurl }}/3.0/integrations/automating-load-testing/) or [schedule tests]({{ site.baseurl }}/3.0/test-configuration/scheduling-tests/) to run on a regular basis.
 
-Since performance and load testing typically calls for multiple iterations and changes of a test run, we demarcate the graph to show when test configurations were changed.  This is displayed as an orange line on the graph, as shown below.
+Since performance and load testing typically calls for multiple iterations and changes of a test run, we demarcate the graph to show when test configurations were changed. This is displayed as an orange line on the graph, as shown below.
 
 
 ![Performance trending graph]({{ site.baseurl }}/assets/img/v3/test-result/interpreting-the-performance-trending-graph/performance-trending-graph.png)

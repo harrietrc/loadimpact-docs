@@ -62,7 +62,7 @@ The `http.request_batch()` returns a table of `http.Response` objects, one for e
      end
  end
  {% endhighlight %}
-**Note:** In this example since we are just examining the body size, we do not need to save any `response_body_bytes`.  We only need to save `response_body_bytes` when we need to access the response itself.
+**Note:** In this example since we are just examining the body size, we do not need to save any `response_body_bytes`. We only need to save `response_body_bytes` when we need to access the response itself.
 
 
 See also:

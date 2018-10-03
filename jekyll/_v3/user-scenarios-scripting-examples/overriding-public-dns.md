@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: How do I override public DNS?
-description: Overriding the public DNS record allows you to test different environments without overhauling your user scenario.  This is handy when you need to run the same scenario against staging, production or even an environment spun up for only the test.
+description: Overriding the public DNS record allows you to test different environments without overhauling your user scenario. This is handy when you need to run the same scenario against staging, production or even an environment spun up for only the test.
 categories: [user-scenario-scripting-examples]
 order: 14
 redirect_from: /knowledgebase/articles/174527-how-do-i-override-public-dns

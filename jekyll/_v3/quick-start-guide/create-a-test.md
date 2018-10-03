@@ -34,7 +34,7 @@ Then, **"Add User Scenario"**
 From here, you can select a scenario you created in the previous step, or enter a URL for a quick scenario(URL Analyzer):
 ![Choose a user scenario](/{{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-3.png)
 
-You can add up to 10 user scenarios in a single test.  Most users find that 4-5 are generally more than enough and prevents "analytics overload". However some use cases require fully utilizing all of them.  It's also important to note that you can add the same scenario multiple times.  Each scenario represented will have it's own load generator - even if added from the same zone.
+You can add up to 10 user scenarios in a single test. Most users find that 4-5 are generally more than enough and prevents "analytics overload". However some use cases require fully utilizing all of them. It's also important to note that you can add the same scenario multiple times. Each scenario represented will have it's own load generator - even if added from the same zone.
 
 ![Add additional user scenarios (if required)]({{ site.baseurl }}/assets/img/v3/quick-start-guide/create-a-test/create-a-test-4.png)
 
@@ -53,9 +53,9 @@ Inputs needed:
 
 The final options at the bottom of the page are optional.
 
-[Thresholds]({{ site.baseurl }}/3.0/test-configuration/what-is-a-test-configuration/) allow you to set binary pass fail metrics for a test.  Useful after you have established a baseline or you are integrating testing as part of your CI Pipeline.
+[Thresholds]({{ site.baseurl }}/3.0/test-configuration/what-is-a-test-configuration/) allow you to set binary pass fail metrics for a test. Useful after you have established a baseline or you are integrating testing as part of your CI Pipeline.
 
-Server Monitoring is useful for receiving server side metrics during a test.  This is helpful for correlating performance degradation and finding causes of performance issues. You can use our [open source agents]({{ site.baseurl }}/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/) or our integration with [New Relic]({{ site.baseurl }}/3.0/monitoring-agents/new-relic-integration/) (New Relic subscription required)
+Server Monitoring is useful for receiving server side metrics during a test. This is helpful for correlating performance degradation and finding causes of performance issues. You can use our [open source agents]({{ site.baseurl }}/3.0/monitoring-agents/load-impacts-open-source-monitoring-agents/) or our integration with [New Relic]({{ site.baseurl }}/3.0/monitoring-agents/new-relic-integration/) (New Relic subscription required)
 
 URL Grouping is useful when running a test with dynamic URLs. This will group similar URLs together to make analysis easier.
 

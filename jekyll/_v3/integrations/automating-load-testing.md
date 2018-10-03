@@ -13,7 +13,7 @@ redirect_from:
 
 ***
 
-Automating load testing as part of a CI Pipeline/build process is becoming increasingly popular and a best practice recommendation.  How often you run these automated tests will depend on the individual needs of your organization. Our general recommendation is [with your nightly builds](http://blog.loadimpact.com/how-often-you-should-load-test) as that seems to be the closest to a one-size-fits-all approach. If you are using a Continuous Integration tool or want to build something yourself, we recommend one of the options below.  You can also [schedule tests]({{ site.baseurl }}/3.0/test-configuration/scheduling-tests/) to run at regular intervals within our tool.
+Automating load testing as part of a CI Pipeline/build process is becoming increasingly popular and a best practice recommendation. How often you run these automated tests will depend on the individual needs of your organization. Our general recommendation is [with your nightly builds](http://blog.loadimpact.com/how-often-you-should-load-test) as that seems to be the closest to a one-size-fits-all approach. If you are using a Continuous Integration tool or want to build something yourself, we recommend one of the options below. You can also [schedule tests]({{ site.baseurl }}/3.0/test-configuration/scheduling-tests/) to run at regular intervals within our tool.
 
 Before you start with either method below, you should have a test that you want to automate as well as [thresholds]({{ site.baseurl }}/3.0/test-configuration/thresholds/) set up to be your pass/fail criteria. The exact criteria will depend on your needs, but you should think about:
 
@@ -31,9 +31,9 @@ To use the CLI, we have built [this walkthrough](https://app.loadimpact.com/inte
 If you don't like guided walkthroughs, here are the steps for you to follow:
 
 1. Get your v3 token [here](https://app.loadimpact.com/account/token) (If you already have a token, regenerating one will replace the old one. Only do that if necessary)
-2. Download the CLI to the CI server.  You can access our [GitHub repo](https://github.com/loadimpact/loadimpact-cli) for specific instructions.  If you use pip, you can run the command `pip install loadimpact-cli`
+2. Download the CLI to the CI server. You can access our [GitHub repo](https://github.com/loadimpact/loadimpact-cli) for specific instructions. If you use pip, you can run the command `pip install loadimpact-cli`
 3. Once installed and configured with your token. Add a CLI call as a build step loadimpact test run `TEST_CONFIG_ID`
-Your test ID can be found by navigating to your desired test and grabbing the the test ID from the URL.  i.e. : `https://app.loadimpact.com/tests/XXXXXXX`
+Your test ID can be found by navigating to your desired test and grabbing the the test ID from the URL. i.e. : `https://app.loadimpact.com/tests/XXXXXXX`
 
 ### B. Using our Developer API
 

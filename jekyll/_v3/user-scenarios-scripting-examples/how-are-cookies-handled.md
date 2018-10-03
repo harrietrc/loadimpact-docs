@@ -19,7 +19,7 @@ http.request_batch({
 })
 {% endhighlight %}
 
-You may also desire to get the a specific cookie from the response.  Here is a code sample where we get a cookie named `JSESSIONID` from a `http.request_batch()`:
+You may also desire to get the a specific cookie from the response. Here is a code sample where we get a cookie named `JSESSIONID` from a `http.request_batch()`:
 
 {% highlight lua linenos %}
 local responses = http.request_batch({

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Testing HTTP requests with Authentication tokens
-description: In this article we provide a method to test a site with an CSRF token.  The same principle applies for VIEWSTATE or other authentication tokens.
+description: In this article we provide a method to test a site with an CSRF token. The same principle applies for VIEWSTATE or other authentication tokens.
 categories: [user-scenario-scripting-examples]
 order: 17
 redirect_from:

@@ -52,25 +52,25 @@ Contact us to learn the reason why your particular IP has been blacklisted. Usua
 
 ### Tests not covered by subscription
 
-The test you are trying to run falls outside of the subscription rules.  Check your VUs and test duration.
+The test you are trying to run falls outside of the subscription rules. Check your VUs and test duration.
 
 ***
 
 ### Your current subscription does not cover the number of selected load zones.
 
-Your subscription does not allow the amount of Load Zones you have selected in your test configuration.  Either change your configuration or upgrade your plan.
+Your subscription does not allow the amount of Load Zones you have selected in your test configuration. Either change your configuration or upgrade your plan.
 
 ***
 
 ### Too many tracks
 
-You've added too many user scenarios to your test configuration.  Lower the number of user scenarios.   If you have a unique case that requires more, please reach out to us at support to discuss.
+You've added too many user scenarios to your test configuration. Lower the number of user scenarios. If you have a unique case that requires more, please reach out to us at support to discuss.
 
 ***
 
 ### Why don't I see XYZ metric?
 
-The default metrics are viewable if they have been recorded during the test run.  For example, if the time it takes to finish your user scenario is longer than the length of your test, you will not see a VU Load Time.
+The default metrics are viewable if they have been recorded during the test run. For example, if the time it takes to finish your user scenario is longer than the length of your test, you will not see a VU Load Time.
 
 ***
 

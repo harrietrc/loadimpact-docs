@@ -28,11 +28,11 @@ In test configuration you have to supply [User Scenarios]({{ site.baseurl }}/3.0
 Start by clicking "Add User Scenario"
 ![Click add User Scenario]({{ site.baseurl }}/assets/img/v3/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-2.png)
 
-After clicking, you can select scenarios you've already created from the drop down, Alternatively, you can enter a URL for a quick scenario.  URL generated scenarios will only load content from the target domain.
+After clicking, you can select scenarios you've already created from the drop down, Alternatively, you can enter a URL for a quick scenario. URL generated scenarios will only load content from the target domain.
 ![Choose your scenario]({{ site.baseurl }}/assets/img/v3/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-3.png)
 
 
-You are also able to assign the User Scenarios to different Load Zones using the drop down menu below the scenario name. You are able to add the same scenario multiple times if needed.  Each unique User Scenario/Load zone will be given it's own Load Generator at minimum, you can have up to 10 individual User Scenarios in a single test.
+You are also able to assign the User Scenarios to different Load Zones using the drop down menu below the scenario name. You are able to add the same scenario multiple times if needed. Each unique User Scenario/Load zone will be given it's own Load Generator at minimum, you can have up to 10 individual User Scenarios in a single test.
 
 ![Select your Load Zones]({{ site.baseurl }}/assets/img/v3/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-4.png)
 
@@ -46,11 +46,11 @@ Virtual User Distribution across the scenarios added (if you have two or more sc
 
 Under Advanced Settings:
 
-**Multi-step ramping** - Allows for granular control of how many Virtual Users are active, up to 10 steps. In the below picture, we use a stress test ramping pattern.  More patterns can be found in this article.
+**Multi-step ramping** - Allows for granular control of how many Virtual Users are active, up to 10 steps. In the below picture, we use a stress test ramping pattern. More patterns can be found in this article.
 
-**Network Emulation **- Select a browser or network speeds to emulate for the entire test.  You are also able to set custom User Agents and Max Connections using our Load Script API on a per User Scenario basis
+**Network Emulation **- Select a browser or network speeds to emulate for the entire test. You are also able to set custom User Agents and Max Connections using our Load Script API on a per User Scenario basis
 
-**Source IP Multiplier** - Up to 2x for Standard plans and above. This will increase the number of Load Generators in the test.  Virtual Users will be distributed as evenly as possible, based on current distribution.
+**Source IP Multiplier** - Up to 2x for Standard plans and above. This will increase the number of Load Generators in the test. Virtual Users will be distributed as evenly as possible, based on current distribution.
 
 ![Define your ramping pattern and network options]({{ site.baseurl }}/assets/img/v3/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-6.png)
 
@@ -64,6 +64,6 @@ Finally, we also have three optional configuration options for you to use:
 
 **Server Monitoring Agents** - Using either our Open Source Agents or our integration with New Relic you are able to report back on various server side metrics for correlation in your test results in Load Impact
 
-**URL Grouping** - Recommended for tests against systems that generate unique identifiers in the URL.  This allows you to group similar URLs together and stay organized when analyzing results.
+**URL Grouping** - Recommended for tests against systems that generate unique identifiers in the URL. This allows you to group similar URLs together and stay organized when analyzing results.
 
 ![Configure your other options]({{ site.baseurl }}/assets/img/v3/test-configuration/what-is-a-test-configuration/what-is-a-test-configuration-7.png)

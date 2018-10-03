@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Sample k6 script
-description: A sample k6 script with comments to explain the different parts.  Feel free to take this and adapt to your need
+description: A sample k6 script with comments to explain the different parts. Feel free to take this and adapt to your need
 categories: [getting-started]
 order: 8
 ---
@@ -58,7 +58,7 @@ var timeToFirstByte = new Trend("time_to_first_byte", true);
 
 /* random number between integers
 This is not necessary - It's added to force a performance alert in the test result
-This is for demonstration purposes.  If you pass an env variable when running your test
+This is for demonstration purposes. If you pass an env variable when running your test
 you will force this alert. i.e. URL_ALERT=1 k6 run script.js
 */
 
@@ -70,7 +70,7 @@ function getRandomArbitrary(min, max) {
 The main function is what the virtual users will loop over during test execution.
 */
 export default function() {
-    // We define our first group.  Pages natually fit a concept of a group
+    // We define our first group. Pages natually fit a concept of a group
     // You may have other similar actions you wish to "group" together
     group("Front page", function() {
         let res = null;

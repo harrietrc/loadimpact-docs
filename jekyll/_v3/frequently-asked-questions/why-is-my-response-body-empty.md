@@ -10,7 +10,7 @@ redirect_from: /knowledgebase/articles/1166368-why-is-my-response-body-empty
 ***
 
 
-By default, Load Impact does not save any responses from the requests we send.  Saving this information would consume extra resources on the load generator and generally are not needed when testing.
+By default, Load Impact does not save any responses from the requests we send. Saving this information would consume extra resources on the load generator and generally are not needed when testing.
 
 However, there are cases where you need to access the content response:
 - [to verify the response content.]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/verifying-resource-contents/)
@@ -18,7 +18,7 @@ However, there are cases where you need to access the content response:
 - [to log the body content.]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/printing-debug-messages/)
 - other reasons as defined by you
 
-In order to save the response, you will need to add 'response_body_bytes=' to your request.  For example:
+In order to save the response, you will need to add 'response_body_bytes=' to your request. For example:
 {% highlight lua linenos %}
 res = http.request_batch({
 {'GET',
@@ -30,4 +30,4 @@ res = http.request_batch({
 log.debug(res[1].body) -- The log window is limited to 1024 bytes!
 {% endhighlight %}
 
-Do note that the log window is limited to 1024 bytes and we recommend that you limit logging during a test.  However, the full response is available if you needed to access it with a `string.match()` to find what you are looking for.
+Do note that the log window is limited to 1024 bytes and we recommend that you limit logging during a test. However, the full response is available if you needed to access it with a `string.match()` to find what you are looking for.

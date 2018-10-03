@@ -11,18 +11,18 @@ redirect_from:
 
 ***
 
-Here are some of our most frequently asked questions about pricing.  If your question isn't answered here, please contact [support](mailto:support@loadimpact.com).
+Here are some of our most frequently asked questions about pricing. If your question isn't answered here, please contact [support](mailto:support@loadimpact.com).
 
 - TOC
 {:toc}
 
 ### Does Load Impact have a concept of VU Hours?
 
-No - There is no concept of VU hours for our plans.  You can run all your tests up to the maximum limits as defined by your subscription.
+No - There is no concept of VU hours for our plans. You can run all your tests up to the maximum limits as defined by your subscription.
 
 ### What tests count against my monthly limit?
 
-Only tests executed on the Load Impact cloud or streamed to the Load Impact cloud will count against your total number of tests. Specifically tests run with the `cloud` command or `-o cloud` flag.  e.g. `k6 cloud myScript.js` or `k6 run myScript.js -o cloud`
+Only tests executed on the Load Impact cloud or streamed to the Load Impact cloud will count against your total number of tests. Specifically tests run with the `cloud` command or `-o cloud` flag. e.g. `k6 cloud myScript.js` or `k6 run myScript.js -o cloud`
 
 ### Can I pay with a PO or Wire transfer?
 
@@ -40,9 +40,9 @@ Yes - our online plans will autorenew, however they can be canceled at any time 
 
 Yes - You can upgrade or downgrade.
 
-Upgrades result in a prorated amount being applied towards your new plan.  For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
+Upgrades result in a prorated amount being applied towards your new plan. For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
 
-Downgrades are charged immediately but do not start unti the next billing cycle.  You retain the ability to test with your current plan until the next billing cycle starts.
+Downgrades are charged immediately but do not start unti the next billing cycle. You retain the ability to test with your current plan until the next billing cycle starts.
 
 ### Can I specify a billing contact to receive monthly receipts?
 
@@ -61,17 +61,17 @@ You can choose to either save or print the receipt. Your receipt number is consi
 
 ### My receipt details aren't correct, help!
 
-Please update the billing details in the [billing menu](https://app.loadimpact.com/billing).  This will regenerate the receipts with proper address, company name and other details.
+Please update the billing details in the [billing menu](https://app.loadimpact.com/billing). This will regenerate the receipts with proper address, company name and other details.
 
 ### I've been charged VAT but have a valid VAT number
 
 For Swedish organizations - we must charge this as we are based in Sweden
 
-For other EU organizations - please be sure to enter your VAT number in the [billing menu](https://app.loadimpact.com/billing).  If you have forgotten to add your VAT number and it is the same calendar month as your charge, please contact support for potential options on adjusting the charge.
+For other EU organizations - please be sure to enter your VAT number in the [billing menu](https://app.loadimpact.com/billing). If you have forgotten to add your VAT number and it is the same calendar month as your charge, please contact support for potential options on adjusting the charge.
 
 ### Do you offer professional services or help with scripting?
 
-Yes - we have a professional services team that can be engaged to assist in your testing.  This team can be utilized to just give a hand with scripting or execute entire projects based on your need.  Please contact [sales](mailto:sales@loadimpact.com) for more information.  Note: Projects need to be scoped and typically require a 1-2 week lead time, depending on availablity.
+Yes - we have a professional services team that can be engaged to assist in your testing. This team can be utilized to just give a hand with scripting or execute entire projects based on your need. Please contact [sales](mailto:sales@loadimpact.com) for more information. Note: Projects need to be scoped and typically require a 1-2 week lead time, depending on availablity.
 
 ### But you can run tests without even registering an account, can’t you?
 

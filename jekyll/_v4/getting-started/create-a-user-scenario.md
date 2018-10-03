@@ -56,7 +56,7 @@ export function teardown(data) {
 
 ## By hand
 
-Unless you are running the most basic of tests.  You should expect to write some JavaScript to express your user journeys as code. Even if it's just to configure options, setup/teardown, or other functionality.
+Unless you are running the most basic of tests. You should expect to write some JavaScript to express your user journeys as code. Even if it's just to configure options, setup/teardown, or other functionality.
 
 
 ## HAR file converter

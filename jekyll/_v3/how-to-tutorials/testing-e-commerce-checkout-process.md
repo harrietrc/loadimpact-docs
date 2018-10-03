@@ -8,7 +8,7 @@ redirect_from: /knowledgebase/articles/747981-testing-a-checkout-or-e-commerce-p
 ---
 
 
-If you are looking to perform a performance and load test on a website and will be including a checkout process as a user scenario within that test it’s important to keep some key things in mind.  This list is not meant to be all inclusive, but rather some key things we have seen as important to consider. [Data Stores]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/data-stores/) will be essential to this type of test, so make sure you upload the appropriate information to include in your user scenario.
+If you are looking to perform a performance and load test on a website and will be including a checkout process as a user scenario within that test it’s important to keep some key things in mind. This list is not meant to be all inclusive, but rather some key things we have seen as important to consider. [Data Stores]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/data-stores/) will be essential to this type of test, so make sure you upload the appropriate information to include in your user scenario.
 
 
 
@@ -37,4 +37,4 @@ If you are looking to perform a performance and load test on a website and will 
 
 
 - Tokens - CSRF Tokens, VIEWSTATE, etc.
-  - The last thing that you may run into during creation/validation of your user scenario is the need to handle a token that is being passed for the current session.  Since the Chrome Extension will capture the token for your session, it's likely that it won't be valid when you run a test.  To handle these cases the value must be extracted, saved to a variable and concatenated in future requests.  We have a separate article on this topic with a theoretical code sample to explain the principal: Testing a Site with a CSRF token or VIEWSTATE
+  - The last thing that you may run into during creation/validation of your user scenario is the need to handle a token that is being passed for the current session. Since the Chrome Extension will capture the token for your session, it's likely that it won't be valid when you run a test. To handle these cases the value must be extracted, saved to a variable and concatenated in future requests. We have a separate article on this topic with a theoretical code sample to explain the principal: Testing a Site with a CSRF token or VIEWSTATE

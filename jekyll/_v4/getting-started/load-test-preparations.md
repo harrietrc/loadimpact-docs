@@ -12,7 +12,7 @@ order: 2
 
 By now you should have an understanding of the basic parts of k6 and testing with Load Impact. If you haven't completed our [`Hello World`]({{ site.baseurl }}/4.0/getting-started/hello-world/), we suggest going back and doing so.
 
-This next section is intended to walk through the suggested steps that will help you get started and running your first test, faster. The best tests are the ones that simulate the most realistic conditions and user behavior.  However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
+This next section is intended to walk through the suggested steps that will help you get started and running your first test, faster. The best tests are the ones that simulate the most realistic conditions and user behavior. However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
 
 ## What am I testing?
 
@@ -29,21 +29,21 @@ If you have not already, you start thinking about any or all of the following:
 
 ### When do I run tests?
 
-As the world shifts left with DevOps, testing earlier in the development cycle is becoming the best practice.  After an initial testing project, many users decide to continue to run tests, at a smaller scale, so they can identify performance issues immediately after the line of code that caused it, is built.
+As the world shifts left with DevOps, testing earlier in the development cycle is becoming the best practice. After an initial testing project, many users decide to continue to run tests, at a smaller scale, so they can identify performance issues immediately after the line of code that caused it, is built.
 
 ### Virtual Users or Requests Per Second?
 
 This depends on what you are testing, and there is a good chance you want to think in terms of both. Virtual Users are complex workers that can open multiple connections in parallel, thus making multiple requests per second.
 
 #### Virtual Users
-When testing anything that is "User journey" related, webapps, websites, or API endpoints in a specific order you should think in terms of Virtual Users. It's important to also note that Virtual Users are concurrent, unless specified otherwise, they will continue to iterate through their script until the test is complete.  A small number of Virtual Users can create a number of sessions magnitudes higher than their count.  _This is a very common point of overestimation we see._
+When testing anything that is "User journey" related, webapps, websites, or API endpoints in a specific order you should think in terms of Virtual Users. It's important to also note that Virtual Users are concurrent, unless specified otherwise, they will continue to iterate through their script until the test is complete. A small number of Virtual Users can create a number of sessions magnitudes higher than their count. _This is a very common point of overestimation we see._
 
 #### Requests per second
-When testing individual API endpoints it makes more sense to think in terms of request per second. As mentioned above, Load Impact's virtual users are complex and can make multiple requests per second each.  For example, if you wanted to test an end point with 100 rps you wouldn't need 100 virtual users in nearly all cases.
+When testing individual API endpoints it makes more sense to think in terms of request per second. As mentioned above, Load Impact's virtual users are complex and can make multiple requests per second each. For example, if you wanted to test an endpoint with 100 rps you wouldn't need 100 virtual users in nearly all cases.
 
 ### Calculating Virtual Users
 
-We recommend looking into any analytics tools you may have.  If they list any metric for concurrent users, you can likely use that.  If not, you can instead look for:
+We recommend looking into any analytics tools you may have. If they list any metric for concurrent users, you can likely use that. If not, you can instead look for:
 
 - Hourly Sessions
 - Average session duration for those Users
@@ -56,7 +56,7 @@ With these two metrics, you can determine the number of Virtual Users needed, us
 
 `VUs = (Peak Hourly Sessions * Average Session Duration in Seconds) / 3600`
 
-Depending on your goals, you may want increase this number to provide a cushion beyond your expectations(15-30% is typical).
+Depending on your goals, you may want to increase this number to provide a cushion beyond your expectations (15-30% is typical).
 
 ### Plan your first tests
 

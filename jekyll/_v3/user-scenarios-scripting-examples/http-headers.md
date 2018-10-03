@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/835719-http-headers
 
 #### Reading HTTP headers from a response
 
-You have a direct access to the HTTP headers in the response from the server. For example, we can read a header from a request and log it.  In this example we only log the information for the VU with ID == 1 and on the first repetition:
+You have a direct access to the HTTP headers in the response from the server. For example, we can read a header from a request and log it. In this example we only log the information for the VU with ID == 1 and on the first repetition:
 
 {% highlight lua linenos %}
  local response = http.request_batch({
