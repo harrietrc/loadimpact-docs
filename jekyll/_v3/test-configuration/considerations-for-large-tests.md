@@ -54,12 +54,12 @@ For large tests, we recommend to consider your user scenarios and test configura
     Refer to: [Creating Custom Metrics]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/creating-custom-metrics/)
 
 
-3. Avoid logging information. When using our chrome extension we include a logging example at the top. You can/should comment this out. Logging is a fairly expensive process so it's just making the Virtual Users inefficient. If you are looking for something in particular, such as a status code being returned, consider a custom metric that counts the number of times it has been returned.
+3. Avoid logging information. When using our Chrome extension we include a logging example at the top. You can/should comment this out. Logging is a fairly expensive process so it's just making the Virtual Users inefficient. If you are looking for something in particular, such as a status code being returned, consider a custom metric that counts the number of times it has been returned.
 
     Refer to: [Log module](https://loadimpact.com/load-script-api#log)
 
 
-4. Another thing that also affects memory usage is the decompression of compressed response content. Using the "auto_decompress" parameter for requests (default with the chrome extension) will decompress the compressed responses. This is really only necessary if you intend to use the contents in your script. Otherwise, we recommend you remove the "auto_decompress" parameter and just set the "Accept-Encoding" header instead, like so:
+4. Another thing that also affects memory usage is the decompression of compressed response content. Using the "auto_decompress" parameter for requests (default with the Chrome extension) will decompress the compressed responses. This is really only necessary if you intend to use the contents in your script. Otherwise, we recommend you remove the "auto_decompress" parameter and just set the "Accept-Encoding" header instead, like so:
 ```
 http.request_batch({
   {"GET", "https://example.com/", headers={["Accept-Encoding"]="gzip, deflate"}}

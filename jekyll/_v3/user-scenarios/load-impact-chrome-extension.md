@@ -15,7 +15,7 @@ Create a complex User Scenario with just a few clicks. Record all HTTP traffic a
 
 The Load Impact Chrome extension will capture everything – every single HTTP(s) request being loaded into the browser as you click – including ads, images, documents, etc., so you get a far more accurate read of what’s going on. Just press “record”, start browsing and when complete, the script will automatically upload to your Load Impact account.
 
-_**Consider this:** The chrome extension will not record other tabs or pop up windows. If you need to capture this information, you should check out our Proxy Recorder._
+_**Consider this:** The Chrome extension will not record other tabs or pop up windows. If you need to capture this information, you should check out our Proxy Recorder._
 
 Here's how to start:
 
