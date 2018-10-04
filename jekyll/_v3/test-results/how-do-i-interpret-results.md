@@ -51,11 +51,11 @@ This graph looks flat to begin with, but then it starts to rise, and keeps risin
 
 ### Additional Metrics
 
-Below the main graph, you have the ability to add additional result metrics.  If you have any Server Monitoring Agents or created Custom Metrics they are available here.
+Below the main graph, you have the ability to add additional result metrics. If you have any Server Monitoring Agents or created Custom Metrics they are available here.
 
 **What other metrics should I consider?**
 
-This varies greatly depeding on your testing goals.  Here are some general things to keep in mind:
+This varies greatly depeding on your testing goals. Here are some general things to keep in mind:
 
   - Load Generator CPU and memory
     - Good for a sanity check. Are these > 50%? If yes - you may be overutilizing the Load Gen and should consider configuration changes
@@ -75,7 +75,7 @@ Once you have reviewed the main result metrics, you should consider the URL and 
 
 #### URL Tab
 
-The URL tab will show you how each resource requested during the test has performed. The tab is searchable and sortable for most test cases. You should look for unexpected statuses and large variances between min and max load time for individual resources. These two things suggest potential performance problems.  You can use the three dots next to Avg to plot the resource to the main or small chart.
+The URL tab will show you how each resource requested during the test has performed. The tab is searchable and sortable for most test cases. You should look for unexpected statuses and large variances between min and max load time for individual resources. These two things suggest potential performance problems. You can use the three dots next to Avg to plot the resource to the main or small chart.
 
 ![URL Tab]({{ site.baseurl }}/assets/img/v3/test-result/how-do-i-interpret-results/url-tab.png)
 
@@ -96,8 +96,8 @@ Also refer to:
 - [What Status codes are reported back for a URL?]({{ site.baseurl }}/3.0/test-results/what-status-codes-are-there/)
 
 #### Pages Tab
-If you have utilized `http.page_start()` and `http.page_end()` in your script, we will group and calculate all resources between those functions in your script on this tab.  It's highly recommended to rename the default names to something contextual.  i.e. `http.page_start("Page 1")` ---> `http.page_start("Homepage")`  This small adjustment will make your results a lot easier to read for yourself and others you share the results with.
+If you have utilized `http.page_start()` and `http.page_end()` in your script, we will group and calculate all resources between those functions in your script on this tab. It's highly recommended to rename the default names to something contextual. i.e. `http.page_start("Page 1")` ---> `http.page_start("Homepage")`  This small adjustment will make your results a lot easier to read for yourself and others you share the results with.
 
-The structure of the tab is similar to the URL tab.  You should be looking for large variances between Min and Max load times for these pages.  It's sometimes useful to start on the Pages tab to find the worst performing pages and then digging into the URL tab to find the exact request.
+The structure of the tab is similar to the URL tab. You should be looking for large variances between Min and Max load times for these pages. It's sometimes useful to start on the Pages tab to find the worst performing pages and then digging into the URL tab to find the exact request.
 
 ![Pages Tab]({{ site.baseurl }}/assets/img/v3/test-result/how-do-i-interpret-results/pages-tab.png)

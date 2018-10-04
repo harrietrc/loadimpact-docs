@@ -50,7 +50,7 @@ If you have a firewall running, do make sure that these IP addresses (especially
 Check if your system/network administrators limit the ports accessible on your site. Load Impact randomly uses ports between 20000 and 21000 to record sessions, and it is necessary to open the entire range of ports for the recording duration.
 
 **Security limitations**
-In some cases, the unsigned security certificate is rejected by the server based on your security rules.  In this case it's very likely that you won't be able to use the proxy recorder, however you will need to work with your internal teams to see if any exception can be made.
+In some cases, the unsigned security certificate is rejected by the server based on your security rules. In this case it's very likely that you won't be able to use the proxy recorder, however you will need to work with your internal teams to see if any exception can be made.
 
 **Why do I get logged out of my account when I start a recording?**
 

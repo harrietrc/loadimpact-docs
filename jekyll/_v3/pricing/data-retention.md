@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/578331-how-does-the-data-retention-subscr
 
 Data Retention allows you to downgrade your plan during periods of low testing. This is especially useful for organizations that have seasonal testing needs.
 
-We are happy to accommodate this situation with our Data Retention subscription. This $14 a month subscription will allow you to keep your test results as is - for as long as you need.  This is especially important if you have been building performance trends over time to compare results between test runs. Test configurations, scripts and data stores are not subject to deletion.
+We are happy to accommodate this situation with our Data Retention subscription. This $14 a month subscription will allow you to keep your test results as is - for as long as you need. This is especially important if you have been building performance trends over time to compare results between test runs. Test configurations, scripts and data stores are not subject to deletion.
 
 Data retention is available to purchase upon canceling your existing plan. Please note that data is only retained for 30 days upon cancelation so please purchase the plan before that time has elapsed.
 

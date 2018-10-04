@@ -8,12 +8,12 @@ order: 1
 
 ***
 
-Here are some of our most frequently asked questions about pricing.  If your question isn't answered here, please contact support.
+Here are some of our most frequently asked questions about pricing. If your question isn't answered here, please contact support.
 
 
 ### Does Load Impact have a concept of VU Hours?
 
-No - There is no concept of VU hours for our plans.  You can run all your tests up to the maximum limits as defined by your subscription
+No - There is no concept of VU hours for our plans. You can run all your tests up to the maximum limits as defined by your subscription
 
 ### Can I pay with a PO or Wire transfer?
 
@@ -27,9 +27,9 @@ Yes - our online plans will autorenew, however they can be canceled at any time 
 
 Yes - You can upgrade or downgrade.
 
-Upgrades result in a prorated amount being applied towards your new plan.  For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
+Upgrades result in a prorated amount being applied towards your new plan. For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
 
-Downgrades are charged immediately but do not start unti the next billing cycle.  You retain the ability to test with your current plan until the next billing cycle starts.
+Downgrades are charged immediately but do not start unti the next billing cycle. You retain the ability to test with your current plan until the next billing cycle starts.
 
 ### How do I get an invoice/receipt for my purchase?
 
@@ -42,9 +42,9 @@ You can choose to either save or print the receipt. Your receipt number is consi
 
 ### Do I get credits/tests back if a test is aborted?
 
-For tests executed under a subscription/add-on, tests aborted by user will count towards your test limit.  It's highly recommended that you double check your configuration and/or run smaller tests to work out low level issues in the case of an add-on.  If you have an extenuating circumstance, please reach out and we will see if we can make an exception.
+For tests executed under a subscription/add-on, tests aborted by user will count towards your test limit. It's highly recommended that you double check your configuration and/or run smaller tests to work out low level issues in the case of an add-on. If you have an extenuating circumstance, please reach out and we will see if we can make an exception.
 
-For tests aborted by the system or script error, these tests do not count against your test limit and will not consume a test.  No action is needed on your part.
+For tests aborted by the system or script error, these tests do not count against your test limit and will not consume a test. No action is needed on your part.
 
 For credit based tests, if you abort it early. We will automatically refund different amounts depending on when you aborted the test:
 
@@ -70,4 +70,4 @@ Yes, when you are not logged on, you can always run anonymous tests from the loa
 
 #### Where do I purchase pay-per-test credits?
 
-Pay-per-test credits can be purchased in app upon configuring a test that falls outside of your subscription.  You can also purchase credits directly using [this link](https://loadimpact.com/pricing-credits-calculator).
+Pay-per-test credits can be purchased in app upon configuring a test that falls outside of your subscription. You can also purchase credits directly using [this link](https://loadimpact.com/pricing-credits-calculator).

@@ -13,7 +13,7 @@ For situations where you want to track something that is not part of the standar
 
 The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All four can be used when creating custom metrics. Below we provide examples of each and how they could be utilized within a test.
 
-**Note:** In order to utilize custom metrics, you MUST `import { Counter, Gauge, Rate, Trend } from "k6/metrics";` within the init context of your script.  You may remove any types you are not using in the specific test.
+**Note:** In order to utilize custom metrics, you MUST `import { Counter, Gauge, Rate, Trend } from "k6/metrics";` within the init context of your script. You may remove any types you are not using in the specific test.
 
 - TOC
 {:toc}

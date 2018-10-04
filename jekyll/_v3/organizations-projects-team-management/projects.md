@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/780522-projects
 
 ### What are projects?
 
-Projects are a way to organize work and can be thought of as folders.  Every organization can have several projects.
+Projects are a way to organize work and can be thought of as folders. Every organization can have several projects.
 
 All tests, user scenarios, data stores and organization members are grouped under projects. Here is a diagram of the organizational hierarchy:
 
@@ -25,7 +25,7 @@ Next, Select "New Project":
 
 ![Create New Project]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/projects/create-new-project.png)
 
-Then, give your project a name and add [team members]({{ site.baseurl }}/3.0/organizations-projects-team-management/adding-team-members/), as appropriate.  Note: you can only add team member who have been invited to your [organization]({{ site.baseurl }}/3.0/organizations-projects-team-management/organizations/) previously.
+Then, give your project a name and add [team members]({{ site.baseurl }}/3.0/organizations-projects-team-management/adding-team-members/), as appropriate. Note: you can only add team member who have been invited to your [organization]({{ site.baseurl }}/3.0/organizations-projects-team-management/organizations/) previously.
 
 ![Name your project, add team member and create it]({{ site.baseurl }}/assets/img/v3/organizations-projects-team-management/projects/name-invite-create.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Lua Gotchas
-description: Lua is a simple and lightweight programming language, which makes it perfect for load testing.  However, it has some unique attributes that you should be aware of
+description: Lua is a simple and lightweight programming language, which makes it perfect for load testing. However, it has some unique attributes that you should be aware of
 categories: [user-scenario-scripting-examples]
 order: 9
 redirect_from: /knowledgebase/articles/835737-lua-gotchas

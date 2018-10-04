@@ -47,7 +47,7 @@ The following section describes the steps to convert your Postman collections to
 5. Utilize your script with your Load Impact account
     `k6 run k6-script.js` will execute your script locally with local output
     `k6 run k6-script.js -o cloud` will execute locally with cloud output to the Load Impact platform
-    `k6 cloud k6-script.js` will package up the script and any depedencies for execution on Load Impact's infrastructure
+    `k6 cloud k6-script.js` will package up the script and any dependencies for execution on Load Impact's infrastructure
 
 **See also**:
 - [How to do a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %})

@@ -23,10 +23,10 @@ The above command will make k6 read myfile.har, convert it into k6-compatible Ja
 
 ## k6 converter options
 
-The converter offers various options to aid in producing a script, without extra noise.  You can view all options with `k6 help convert`
+The converter offers various options to aid in producing a script, without extra noise. You can view all options with `k6 help convert`
 
 ### `-O, --output`
-This allows you to specify the name of the output file.  The default is "har-script.js"
+This allows you to specify the name of the output file. The default is "har-script.js"
 
 ### `--only`
 This option allows you to supply a comma-separated list of domains which are the only ones you want to fetch things from in your k6 test. This means that k6 will filter out any requests that go to domains other than these.
@@ -36,7 +36,7 @@ The inverse of `--only`. This option allows you to specify some domains that you
 
 ### `--batch-threshold`
 
-When executing tests of websites or webapps, you want Virtual Users to make requests like a browser would.  Browsers open connections in parallel and load those resources in parallel.  By default, the converter looks for requests made within 500 ms of one another and includes them in the same batch request in your script.
+When executing tests of websites or webapps, you want Virtual Users to make requests like a browser would. Browsers open connections in parallel and load those resources in parallel. By default, the converter looks for requests made within 500 ms of one another and includes them in the same batch request in your script.
 
 This flag allows you to specify the maximum duration between requests. e.g. `--batch-threshold 1000` would change the setting to all requests made within 1 second of each other, are put in the same batch request in the outputted script. If there is a delay of longer than 1 second, a new batch request is created in the script.
 

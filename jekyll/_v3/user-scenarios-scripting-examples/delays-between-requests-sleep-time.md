@@ -24,13 +24,13 @@ It is uncommon for a visitor to load one single page and then leave your site, i
  })
  {% endhighlight %}
 
-You can identify and adjust sleeps in our load testing script. by default, we add a sleep time between pages and to the end of scripts recorded with the chrome extension:
+You can identify and adjust sleeps in our load testing script. by default, we add a sleep time between pages and to the end of scripts recorded with the Chrome extension:
 
 {% highlight lua linenos %}
 client.sleep(math.random(20, 40)) -- Sleep between 20 to 40 seconds
 {% endhighlight %}
 
-The sleep time between your `http.page_start()` and `http.page_end()` in your script will depend on how long you spend "sleeping" in your recording. You may edit this as needed.  The `math.random(x,y)` fucntion comes in handy to make this more dynamic. The below is an example of what is generated automatically.  It is recommended to add the `math.random()` function to your sleep times.
+The sleep time between your `http.page_start()` and `http.page_end()` in your script will depend on how long you spend "sleeping" in your recording. You may edit this as needed. The `math.random(x,y)` fucntion comes in handy to make this more dynamic. The below is an example of what is generated automatically. It is recommended to add the `math.random()` function to your sleep times.
 
 {% highlight lua linenos %}
 client.sleep(5)

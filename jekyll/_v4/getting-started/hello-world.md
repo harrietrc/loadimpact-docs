@@ -12,7 +12,7 @@ order: 1
 
 In this document, we will focus on running a very simple test from the command line with k6. This is so you can understand the various parts of k6 and how they relate to one another. We will be making a single request to `https://test.loadimpact.com`, but feel free to change that to a URL, or API endpoint, that you _are allowed to test_.
 
-_Note:_ This test and script is one of the most basic ones you could have.  In our example, `https://test.loadimpact.com` is only the main HTML document.  No other dependencies, such as CSS and JavaScript, would be loaded. Further along in this documentation we will highlight ways to create more complex scripts (user scenarios) to create more realistic tests.
+_Note:_ This test and script is one of the most basic ones you could have. In our example, `https://test.loadimpact.com` is only the main HTML document. No other dependencies, such as CSS and JavaScript, would be loaded. Further along in this documentation we will highlight ways to create more complex scripts (user scenarios) to create more realistic tests.
 
 ***
 
@@ -145,7 +145,7 @@ Read more about [VU ramping configurations]({{ site.baseurl}}{% link _v4/test-sc
 
 ## Stream results to Load Impact Insights
 
-So far we've only used one component (k6) of Load Impact 4.0. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just login to your Load Impact account and add `-o cloud`:
+So far we've only used one component (k6) of Load Impact 4.0. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just log in to your Load Impact account and add `-o cloud`:
 
 **Login to your Load Impact account**:
 

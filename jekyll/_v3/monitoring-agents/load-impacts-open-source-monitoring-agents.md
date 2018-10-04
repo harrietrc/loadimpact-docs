@@ -25,7 +25,7 @@ You can use:
 
 These instructions, plus source code, are available on our [GitHub Repo](https://github.com/loadimpact/loadimpact-server-metrics)
 
-In all cases, monitoring agents will provide you with additional context to monitor the system under test during a test.  This allows you to make powerful correlations helping you identify performnace problems, faster.
+In all cases, monitoring agents will provide you with additional context to monitor the system under test during a test. This allows you to make powerful correlations helping you identify performnace problems, faster.
 
 If you wish to collect more specialized metrics than just the standard physical server metrics (i.e. CPU usage, memory, Disk I/O and Network I/O), our Server Monitoring Agents are also compatible with the Nagios plugin system. A tutorial on custom metrics with [Server Monitoring agents is available here]({{ site.baseurl }}/3.0/monitoring-agents/configuring-custom-monitoring-agent-metrics/)
 
@@ -58,7 +58,7 @@ You will use the **same token** for all Load Impact Monitoring Agents. You can r
 
 During the installation of the server monitoring agent you will be asked to provide a name for the agent and the token. You should give it a contextual name to make it easier to identify it later on.
 
-If you are using the python files to install your agent, please read [README.md](https://github.com/loadimpact/loadimpact-server-metrics/blob/master/README.md). You will need to set the name and token within the config file.  Using our provided template, this can be found on lines 1-8 of li_metrics_agent.conf:
+If you are using the python files to install your agent, please read [README.md](https://github.com/loadimpact/loadimpact-server-metrics/blob/master/README.md). You will need to set the name and token within the config file. Using our provided template, this can be found on lines 1-8 of li_metrics_agent.conf:
 ```
 # Load Impact Server Metrics sample configuration file
 
@@ -89,7 +89,7 @@ Refer to: [Test Configuration]({{ site.baseurl }}/3.0/test-configuration/what-is
 
 ### Step 6: Review your Server Monitoring results
 
-Once your test has started, you will be able to see your Server Monitoring results in real time. Scroll down below the main graph and "Add Visualization Widget" -> Select your monitoring agent.  You can now plot your metrics on the main graph.
+Once your test has started, you will be able to see your Server Monitoring results in real time. Scroll down below the main graph and "Add Visualization Widget" -> Select your monitoring agent. You can now plot your metrics on the main graph.
 
 ***
 
@@ -100,9 +100,9 @@ Once your test has started, you will be able to see your Server Monitoring resul
 
 Load Impact servers never contact the server monitoring agents. It is the other way around - the agents contact Load Impact regularly. Since most firewalls allow outgoing HTTP connections, this generally ensures that the data can be sent to our servers. If you have outgoing firewall rules, please allow outgoing **port 443 against api.loadimpact.com** in your firewall.
 
-The agents contact Load Impact every few minutes. If our system sees you are logged in to your Load Impact account we will tell the agents to start contacting us a little more frequently.  This is to minimize the waiting time for tests to start with monitoring agents.
+The agents contact Load Impact every few minutes. If our system sees you are logged in to your Load Impact account we will tell the agents to start contacting us a little more frequently. This is to minimize the waiting time for tests to start with monitoring agents.
 
-When a test is started with an agent configured, we will wait for that agent to contact us as described above.  When it does - by sending us an HTTP request - we will respond to the agent to begin collecting data and sending it to us. This is considered active mode - collecting data and transmitting it to us continuously throughout the load test (using HTTP).  When the test is complete, we will tell the agent to stop collecting data. When you logout from loadimpact.com, we will also tell the agent to contact us less frequently.
+When a test is started with an agent configured, we will wait for that agent to contact us as described above. When it does - by sending us an HTTP request - we will respond to the agent to begin collecting data and sending it to us. This is considered active mode - collecting data and transmitting it to us continuously throughout the load test (using HTTP). When the test is complete, we will tell the agent to stop collecting data. When you logout from loadimpact.com, we will also tell the agent to contact us less frequently.
 
 **Note:** On Windows Server you must make sure that the proper Truested Root CA Certificate ("GeoTrust Global CA") is present in the Trusted Root Certificate Authorities. If you don't have this root CA certificate you'll see CERTIFICATE_VERIFY_FAILED errors in the Server Monitoring Agent log file. The needed root CA certificate can be downloaded from [GeoTrust](https://www.geotrust.com/resources/root_certificates/certificates/GeoTrust_Global_CA.pem)
 (from this page: https://www.geotrust.com/resources/root-certificates/), and installed by following these steps:
@@ -134,7 +134,7 @@ The default values reported back are as follows:
 If you would like to configure custom metrics with our Monitoring Agents, please see [this tutorial]({{ site.baseurl }}/3.0/monitoring-agents/configuring-custom-monitoring-agent-metrics/).
 
 
-You can report back on different things that may be interesting for you.  For example, packets/s for network performance or an individual CPU.  You can change the defaults by opening the `li_metrics_agent.conf` file in the install directory and making the necessary changes
+You can report back on different things that may be interesting for you. For example, packets/s for network performance or an individual CPU. You can change the defaults by opening the `li_metrics_agent.conf` file in the install directory and making the necessary changes
 
 #### My agent is not working! Help!
 

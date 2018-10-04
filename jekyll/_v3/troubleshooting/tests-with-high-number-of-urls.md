@@ -27,7 +27,7 @@ Also, if your site makes a lot of requests to various tracking or cross marketin
 
 If you don't necessarily care about those URLs, what you should do is **remove** them from the user scenario. In some cases you will also be in violation of the service's terms of service if you run a load test against them. This is reason enough for removing these requests.
 
-But, in the case that you need the requests and want to report results for the URLs you have two options.  Use [URL grouping]({{ site.baseurl }}/3.0/test-configuration/url-grouping/) to group similar URLs together, or:
+But, in the case that you need the requests and want to report results for the URLs you have two options. Use [URL grouping]({{ site.baseurl }}/3.0/test-configuration/url-grouping/) to group similar URLs together, or:
 turn off the default reporting of the URL by setting `report_results=false`.
 create a custom metric that will group the results of similar requests instead.
 {% highlight lua linenos %}

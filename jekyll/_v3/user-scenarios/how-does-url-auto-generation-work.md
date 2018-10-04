@@ -18,4 +18,4 @@ The **"Auto-generate"** feature utilizes the same Page analyzer at [loadimpact.c
 
 **Consider**:  JavaScript included in the page is not executed, so any resources loaded by JavaScript through AJAX calls will not be included in the script.
 
-**Having trouble with the URL Generator?** Certain pages are unable to be correctly analyzed for scenario creation.  When this occurs, we recommend using our [Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension) or [Proxy Recorder]({{ site.baseurl }}/3.0/user-scenarios/load-impact-proxy-recorder) to create your scenarios.
+**Having trouble with the URL Generator?** Certain pages are unable to be correctly analyzed for scenario creation. When this occurs, we recommend using our [Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension) or [Proxy Recorder]({{ site.baseurl }}/3.0/user-scenarios/load-impact-proxy-recorder) to create your scenarios.

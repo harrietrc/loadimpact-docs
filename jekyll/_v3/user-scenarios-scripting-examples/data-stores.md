@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Using Data Stores (Parameterized Data)
-description: Data stores allow you to parameterize data in your script.  User Logins, URLs and form data are just some examples.
+description: Data stores allow you to parameterize data in your script. User Logins, URLs and form data are just some examples.
 categories: [user-scenario-scripting-examples]
 order: 13
 redirect_from:
@@ -35,7 +35,7 @@ To upload the CSV file as a data store, go to the tab in the left side bar, titl
 
 
 
-This box will pop open and allow you to choose a local CSV file and preview column names before continuing.  This file should be a text file in the CSV format. It can be up to a maximum of 50 MB in size. In our example we select our small “login-details.csv” file that contains only five rows. Next, we will see this:
+This box will pop open and allow you to choose a local CSV file and preview column names before continuing. This file should be a text file in the CSV format. It can be up to a maximum of 50 MB in size. In our example we select our small “login-details.csv” file that contains only five rows. Next, we will see this:
 
 ![Upload Data Store]({{ site.baseurl }}/assets/img/v3/user-scenario-scripting-examples/data-stores/upload-data-store.png)
 

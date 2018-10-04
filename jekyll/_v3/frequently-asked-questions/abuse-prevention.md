@@ -18,7 +18,7 @@ Load Impact might be used by someone to run illegal load tests on a site, effect
 - Black listing
   - We continuously monitor the system for abusive behaviour, and if we see anyone testing a site excessively, we will black list the site being tested so noone can test it. We adopt a shoot-first-ask-questions-later policy when it comes to black listing. We will also black list email providers if we detect that people using that provider are registering multiple accounts with us just to gain free credits.
 - Disabling accounts
-  - In the event that abuse is reported, we disable the account which ran the test from running additional tests.  We then reach out to the account owner and open up a dialogue to determine if this was intentional, a misunderstanding or something else.  While abuse reports are extremely rare, nearly all cases are a result of a miscommunication between teams.
+  - In the event that abuse is reported, we disable the account which ran the test from running additional tests. We then reach out to the account owner and open up a dialogue to determine if this was intentional, a misunderstanding or something else. While abuse reports are extremely rare, nearly all cases are a result of a miscommunication between teams.
 
 
 We welcome people to contact us in case they notice any abusive behaviour, which will be swiftly dealt with.

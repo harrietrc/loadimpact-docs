@@ -26,5 +26,5 @@ Upon exiting a test run and logging out of your account, the unique Public URL w
 
 #### Team Members
 
-If your test result is sensitive and you do not want to share the result publicly, [Team Members]({{ site.baseurl }}/3.0/organizations-projects-team-management/adding-team-members/) can be added as read/write members of the project the test is a part of.  If these Team Members already have access or are Admins - you can simply share the URL with them directly.  It is in this format :
+If your test result is sensitive and you do not want to share the result publicly, [Team Members]({{ site.baseurl }}/3.0/organizations-projects-team-management/adding-team-members/) can be added as read/write members of the project the test is a part of. If these Team Members already have access or are Admins - you can simply share the URL with them directly. It is in this format :
 `https://app.loadimpact.com/tests/XXXXXXX/runs/X`

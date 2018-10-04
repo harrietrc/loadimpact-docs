@@ -7,7 +7,7 @@ order: 3
 redirect_from: /knowledgebase/articles/922467-adding-team-members
 ---
 
-Team members are other users within your [organization]({{ site.baseurl }}/3.0/organizations-projects-team-management/organizations/) that you would like to participate in your organization in Load Impact.  To add Team Members you must first invite them to the parent organization.  This is done through Organizations and Projects menu or the "+" menu in the upper right corner of the platform.
+Team members are other users within your [organization]({{ site.baseurl }}/3.0/organizations-projects-team-management/organizations/) that you would like to participate in your organization in Load Impact. To add Team Members you must first invite them to the parent organization. This is done through Organizations and Projects menu or the "+" menu in the upper right corner of the platform.
 
 Either use the Organizations and project menu
 

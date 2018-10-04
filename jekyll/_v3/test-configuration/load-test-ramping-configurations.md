@@ -18,14 +18,14 @@ Here are some examples of tests you may run. This isn't meant to be an all inclu
 
 #### Baseline test
 
-The first test you should run, almost always.  It is ssed to determine what performance is like under ideal conditions and sets a baseline to compare future tests against. After your initial testing you may want to run **Baseline Tests** on a very regular basis to monitor performance without impact your systems too much. You may increase VUs slightly in this case, based on your needs.
+The first test you should run, almost always. It is ssed to determine what performance is like under ideal conditions and sets a baseline to compare future tests against. After your initial testing you may want to run **Baseline Tests** on a very regular basis to monitor performance without impact your systems too much. You may increase VUs slightly in this case, based on your needs.
 
 ![Baseline Test]({{ site.baseurl }}/assets/img/v3/test-configuration/load-testing-ramping-configurations/baseline-test.png)
 
 
 #### Stress test
 
-This test is designed to help narrow down where performance starts to breakdown. The stability of Virtual Users after quick growth will help highlight if performance issues occur at that level.  It configures ramp ups that aren't too steep, which might cause servers to experience a **spike test**. It can be one step or several, just make sure you overreach and try for more than you expect your system can handle. In most cases, you should expect to iterate this test multiple times.
+This test is designed to help narrow down where performance starts to breakdown. The stability of Virtual Users after quick growth will help highlight if performance issues occur at that level. It configures ramp ups that aren't too steep, which might cause servers to experience a **spike test**. It can be one step or several, just make sure you overreach and try for more than you expect your system can handle. In most cases, you should expect to iterate this test multiple times.
 
 ![Stress Test]({{ site.baseurl }}/assets/img/v3/test-configuration/load-testing-ramping-configurations/stress-test.png)
 

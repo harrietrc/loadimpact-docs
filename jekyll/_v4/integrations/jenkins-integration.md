@@ -10,16 +10,16 @@ order: 2
 
 <h1>Purpose</h1>
 
-This guide and sample describes how to integrate Load Impact 4.0 with Jenkins v2 and above.   Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample.  Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-jenkins-example).
+This guide and sample describes how to integrate Load Impact 4.0 with Jenkins v2 and above. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-jenkins-example).
 
 - TOC
 {:toc}
 
 ## Background
 
-Load Impact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation plaform.  Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process.  This enables you to automatically run tests against your websites, APIs, microservices, webapps, or anything else you may want to monitor for performance regressions over time.
+Load Impact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation plaform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, webapps, or anything else you may want to monitor for performance regressions over time.
 
-It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test.  Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
+It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ It's highly advised to utilize thresholds in automated tests, so you can pass or
 
 ## Your test script
 
-Here is a sample test script to use in context of this example.  It tests our example site, `test.loadimpact.com`. If you are following along exactly, you don't need to save this anywhere.  This example will pull the script from out [GitHub repo.](https://github.com/loadimpact/k6-jenkins-example)
+Here is a sample test script to use in context of this example. It tests our example site, `test.loadimpact.com`. If you are following along exactly, you don't need to save this anywhere. This example will pull the script from out [GitHub repo.](https://github.com/loadimpact/k6-jenkins-example)
 
 {% highlight js linenos %}
 
@@ -78,9 +78,9 @@ Here is a description of what the script does:
 
 ## API Token
 
-Before you jump into Jenkins, you should acquire our API token. This token allows you to communicate with the Load Impact platform.  To get your token, go [here](https://app.loadimpact.com/integrations) and select User Token.
+Before you jump into Jenkins, you should acquire our API token. This token allows you to communicate with the Load Impact platform. To get your token, go [here](https://app.loadimpact.com/integrations) and select User Token.
 
-IMPORTANT:  Generating a new token will discard any previous token you may have.  You may reuse the same token for multiplie services.
+IMPORTANT:  Generating a new token will discard any previous token you may have. You may reuse the same token for multiplie services.
 
 Copy your API token and keep it handy, you will need for the next part, for inserting in your Groovy script.
 
@@ -98,7 +98,7 @@ Now, lets look at the configuration of the pipeline:
 
 ![Step 3, configuration of the pipeline]({{ site.baseurl }}/assets/img/v4/integrations/jenkins-integration/jenkins-pipelines-config-step-3.png)
 
-For purposes of this sample, we've set up a pipeline that only executes a load test.  You can include additional things, as required. This is done within the pipeline section:
+For purposes of this sample, we've set up a pipeline that only executes a load test. You can include additional things, as required. This is done within the pipeline section:
 
 ![Step 4, the Groovy script in our pipeline]({{ site.baseurl }}/assets/img/v4/integrations/jenkins-integration/jenkins-pipelines-script-step-4.png)
 
@@ -128,13 +128,13 @@ node {
 
 IMPORTANT: Before running, make sure k6 is installed in the executable PATH of your build node. Install instructions can be found in [here.]({{ site.baseurl }}/4.0/getting-started/hello-world/#download-and-install-k6)
 
-The code has three parts/stages.  "Build stuff", "test", and "Done".  If you are familiar with Jenkins pipelines, you are likely aware that the stages will be visible in Jenkins when you execute your pipeline. k6 will pick up the API key from the environment variable `K6CLOUD_TOKEN` when executed.
+The code has three parts/stages. "Build stuff", "test", and "Done". If you are familiar with Jenkins pipelines, you are likely aware that the stages will be visible in Jenkins when you execute your pipeline. k6 will pick up the API key from the environment variable `K6CLOUD_TOKEN` when executed.
 
-The first stage, "Build Stuff" is just a placeholder in this example.  The same is true for the last stage, "Done".  In your implementation you will likely have a number of stages where you do different tasks or run other tests.
+The first stage, "Build Stuff" is just a placeholder in this example. The same is true for the last stage, "Done". In your implementation you will likely have a number of stages where you do different tasks or run other tests.
 
-In this example, the load test is triggered in the "test" stage.  We first set our `K6K6CLOUD_TOKEN` as an environment variable, if you are following this example exactly, replace `INSERT_MY_API_TOKEN_HERE` with your actual token.  Next, we check if the build node the pipeline is being executed on is a windows or unix box.  We then execute the correct command based on the outcome of that.
+In this example, the load test is triggered in the "test" stage. We first set our `K6K6CLOUD_TOKEN` as an environment variable, if you are following this example exactly, replace `INSERT_MY_API_TOKEN_HERE` with your actual token. Next, we check if the build node the pipeline is being executed on is a windows or unix box. We then execute the correct command based on the outcome of that.
 
-Note: This test will execute k6 locally, and stream results to the Load Impact cloud service.  Alternatively, you can execute solely on the Load Impact cloud service by
+Note: This test will execute k6 locally, and stream results to the Load Impact cloud service. Alternatively, you can execute solely on the Load Impact cloud service by
 
 ## Execute
 
@@ -154,11 +154,11 @@ Once it moves into the running the state, it will look something like this
 
 ![Result of the running pipeline]({{ site.baseurl }}/assets/img/v4/integrations/jenkins-integration/jenkins-blue-ocean-pipeline-results.png)
 
-If the load test is succesful, our build will also be successful and the build will continue on.  If the test fails, it will return a non-zero exit code which will fail the build step.
+If the load test is succesful, our build will also be successful and the build will continue on. If the test fails, it will return a non-zero exit code which will fail the build step.
 
 ## Result analysis
 
-Passing builds aren't too interesting.  When builds fail, you will want to determine why.  When it comes to load tests, there is no exception to be made.  Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6.  Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
+Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
 
 ## See also
 - [GitHub repo for this example](https://github.com/loadimpact/k6-jenkins-example)

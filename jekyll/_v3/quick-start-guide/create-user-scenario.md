@@ -1,14 +1,14 @@
 ---
 layout: classic-docs
 title: Creating a User Scenario
-description: User scenarios are the journeys Virtual Users will take during a load test.  They are limited programming environments which allow you to do programmatic things.  They are expressed in Lua code.
+description: User scenarios are the journeys Virtual Users will take during a load test. They are limited programming environments which allow you to do programmatic things. They are expressed in Lua code.
 categories: [quick-start-guide]
 order: 2
 ---
 
 ***
 
-A [user scenario]({{ site.baseurl }}/3.0/user-scenarios/what-is-a-user-scenario/) is a script, defining the requests performed by the simulated users during a load test. A good user scenario will be based on real user behavior and will test systems, components, pages, or actions that are important to your organization. 
+A [user scenario]({{ site.baseurl }}/3.0/user-scenarios/what-is-a-user-scenario/) is a script, defining the requests performed by the simulated users during a load test. A good user scenario will be based on real user behavior and will test systems, components, pages, or actions that are important to your organization.
 
 You can create your load script from scratch, or use the following custom tools to auto-generate your script.
 - A [Google Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension/) **(Most popular!)**
@@ -32,7 +32,7 @@ Once your script has been created, it will be available at the user scenario men
 
 
 
-Then, if needed, you can [script your user scenario]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/scripting-introduction/) to include any specific customization, including sleep time and randomization of events to make the test as realistic as possible.  Some of the most popular scripting methods include:
+Then, if needed, you can [script your user scenario]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/scripting-introduction/) to include any specific customization, including sleep time and randomization of events to make the test as realistic as possible. Some of the most popular scripting methods include:
 
 - [Parameterization of data (i.e. logins)]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/data-stores/)
 - [Handling of dynamic authentication tokens]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/http-requests-with-csrf-viewstate-authentication-tokens)

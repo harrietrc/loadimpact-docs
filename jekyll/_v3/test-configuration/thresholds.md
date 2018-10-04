@@ -12,7 +12,7 @@ redirect_from: /knowledgebase/articles/918699-thresholds
 The threshold feature allows to set binary pass/fail criteria for a test.
 
 
-Tests that meet or exceed the set criteria would be "Failed by Threshold".  Individual Thresholds can also be set to automatically abort a running test.  Both options would return non zero exit codes - useful when automating tests in a CI Pipeline.
+Tests that meet or exceed the set criteria would be "Failed by Threshold". Individual Thresholds can also be set to automatically abort a running test. Both options would return non zero exit codes - useful when automating tests in a CI Pipeline.
 
 You can define Thresholds based on:
 

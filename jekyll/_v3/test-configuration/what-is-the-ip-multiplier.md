@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/174298-what-is-the-option-to-add-extra-ip
 
 ***
 
-The IP Multiplier allows you to increase the number of load generators and source IPs in a test. By default, the maximum number of VUs assigned to each load generator is 500.  For example, a test with 1000 VUs will have 2 load generators and IP addresses at minimum. It's possible to bring more load generators (and thus IPs) into a test by increasing the number of user scenarios and load zones or using an IP multiplier in your test configuration.
+The IP Multiplier allows you to increase the number of load generators and source IPs in a test. By default, the maximum number of VUs assigned to each load generator is 500. For example, a test with 1000 VUs will have 2 load generators and IP addresses at minimum. It's possible to bring more load generators (and thus IPs) into a test by increasing the number of user scenarios and load zones or using an IP multiplier in your test configuration.
 
 In the majority of cases, this is more than adequate for your load testing needs. However, there are some tests that would require more IP addresses in order to get a more accurate test. The main reasons for requiring more IP addresses include:
 
