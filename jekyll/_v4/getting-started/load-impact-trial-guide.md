@@ -115,6 +115,7 @@ Aside from where the load generates from and the results output, the script itse
 
 ***
 
+
 ### Downloading k6
 
 k6 is available directly from our GitHub repository. You may also utilize the following install methods:
@@ -208,10 +209,12 @@ Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or c
 The frequency in which you run tests varies from organization to organization. Our best practice recommendation is to _run tests with your nightly builds_.
 
 
+
+
 ***
 
 ### How can I get help?
-The Load Impact Support and Client Success teams are here to help should you have questions. You can utilize the icon in the lower right corner of this page to start a chat or email us at support [at] loadimpact.com
+The Load Impact Support and Client Success teams are here to help should you have questions. You can utilize the icon in the lower right corner of this page to start a chat or email us at support [at] loadimpact.com.
 
 ***
 
