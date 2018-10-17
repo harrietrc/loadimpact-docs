@@ -9,7 +9,6 @@ redirect_from: /knowledgebase/articles/174664-how-do-i-use-the-chrome-extension-
 
 ***
 
-<\video needed>
 
 Create a complex User Scenario with just a few clicks. Record all HTTP traffic and use those recordings to simulate real user traffic under realistic load.
 
