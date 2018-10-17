@@ -20,7 +20,7 @@ _**Consider this:** The Chrome extension will not record other tabs or pop up wi
 
 Here's how to start:
 
-1. Install the [Load Impact Chrome Extension through the Chrome Web Store ](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj)or by navigating to "User Scenarios" on loadimpact.com and select New user scenario.
+1. Install the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj) from the Chrome Web Store or by clicking on `Create New Test` then `Browser recording` from app.loadimpact.com
 2. Start recording your session by clicking "Start recording". At any point, you can choose to stop, pause or reset the recording
 3. Once you've started recording, begin to browse and behave as a typical user would. Click stop when you are done.
 4. As long as you are logged in, you will be brought into the platform and are able to give your script a name and assign it to the proper Project and Organization.
