@@ -11,7 +11,9 @@ redirect_from:
 
 ***
 
-If your site is using some kind of CSRF token and you do a recording using our session recorder, the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a VIEWSTATE.
+<h1>Background</h1>
+
+If your site is using some kind of CSRF token and you do a recording using our session recorder, the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a VIEWSTATE.  Other names for this type of token are form_key in Magento, wpnonce in woocommerce, and more.
 
 To fix this, you will need to do a little bit of scripting. The first thing you need to do is to save the body data when requesting the page with the form. By default Load Impact will not save any of the data from the requests, so you will need to specify the number of bytes you want to save. Once you have the body of the response, you can start look for the token. This is easiest to do with simple string matching. If you find the token, you can use it as one of the parameters in the following request, usually a POST.
 
@@ -45,4 +47,8 @@ else
     log.error("Failed to find token")
 end
 {% endhighlight %}
+
+*Consider:* The following characters `( ) . % + - * ? [ ^ $` are `Lua magic characters` and need to be escaped with a `%` if a part of your string being matched.  e.g. `csrf-token` would need to be escaped as `csrf$-token`.  Refer to this [document](https://www.lua.org/pil/20.2.html) for more information
+
+
 Note: You will probably want to check the token variable before using it, or you will risk Lua errors in case the page no longer returns the expected content.
