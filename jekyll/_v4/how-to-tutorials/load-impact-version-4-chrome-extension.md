@@ -20,12 +20,21 @@ _**Consider this:** The Chrome extension will not record other tabs or pop up wi
 
 Here's how to start:
 
-1. Install the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj) from the Chrome Web Store or by clicking on `Create New Test` then `Browser recording` from app.loadimpact.com
-2. Start recording your session by clicking "Start recording". At any point, you can choose to stop, pause or reset the recording
-3. Once you've started recording, begin to browse and behave as a typical user would. Click stop when you are done.
-4. As long as you are logged in, you will be brought into the platform and are able to give your script a name and assign it to the proper Project and Organization.
-5. You can now edit your script as necessary.  Load Impact's in app IDE will update in real time to alert you of any syntax errors.
+  1. Download and install the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj)
+  2. **Start a recording**
+    Open the extension by clicking the Load Impact logo, and press "Start recording" to begin recording the current browser tab. Now browse like a user would or how you want our Virtual Users to execute. We suggest basing this on _real user behavior_ - don't try to visit every single page on your site or app. Focus on common journeys.
+![Step 2]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/load-impact-version-4-chrome-extension/web-recorder-step-2.jpg)
+  3. **Stop recording**
+    When done, press "Stop recording", you'll be taken to the app to review the recorded test script
+![Step 3]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/load-impact-version-4-chrome-extension/web-recorder-step-3.jpg)
+  4. **Save your test scripts**
+    Save the recorded script in any of your projects.
+![Step 4]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/load-impact-version-4-chrome-extension/web-recorder-step-4.jpg)
+  5. **You can now edit your script as necessary.**  Load Impact's in app IDE will update in real time to alert you of any syntax errors. You may need to edit your script to deal with CSRF tokens, adding advanced business logic, creating custom metrics, etc.
+  6. **Once done, press run to start your test**
 
 
-
-Based on your needs, you may want to further edit the script to parameterize data, handle tokens, or add more advanced business logic.
+**Important things to note:**
+- The default configuration will be a 12 minute test that ramps to 10 Virtual Users over 1 minute, stays at 10 for 10 minutes, then ramps back to 0 over 1 minute. You can change this in the stages section of the script. Refer to [this article]({{ site.baseurl }}4.0/test-scripting/load-test-ramping-configurations/) for more information on ramping configurations. 
+- No load zone is specified and it will run out of Ashburn by default. You can specify different load zones by adding a `ext.loadimpact.distribution` option. See [this article]({{ site.baseurl }}/4.0/test-running/cloud-execution/#test-configuration-options) for more information
+- We have set `discardResponseBodies: true`.  This will discard all response bodies by default.
