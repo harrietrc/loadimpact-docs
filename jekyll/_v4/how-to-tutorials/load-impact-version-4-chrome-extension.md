@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Using the Load Impact Version 4.0 Chrome Extension
-description: "How do I use the Load Impact Chrome Extension to record user scenarios in version 4.0?"
+title: How to use the Load Impact Version 4.0 Chrome extension to create test scripts
+description: Instructions on how to use the Load Impact v4.0 Chrome extension to record real user behavior to aid in creation of  test scripts.
 categories: [how-to-tutorials]
 order: 1
 ---
@@ -10,15 +10,16 @@ order: 1
 
 <h1>Background</h1>
 
-The Load Impact Chrome Extension allows you to generate the bulk of your test scripts simply by browsing like a user would on your site or web app.  The script created gives you a foundation which you can further edit, as required.
+
+The Load Impact k6 Test Script Recorder Chrome extension allows you to generate the bulk of your test scripts simply by browsing like a user would on your site or web app.  The script created gives you a foundation which you can further edit, as required.
 
 The Load Impact Chrome extension will capture everything – every single HTTP(s) request being loaded into the browser as you click – including ads, images, documents, etc., so you get a far more accurate read of what’s going on. Just press “record”, start browsing and when complete, the script will automatically upload to your Load Impact account.
 
 _**Consider this:** The Chrome extension will not record other tabs or pop up windows. If you need to capture this information, you should check out [converting from a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)._
 
-*Note:* Before you begin, please be sure to force refresh the Load Impact app to ensure you are on the most recent version
+*Note:* Before you begin, please be sure to force refresh the Load Impact app to ensure you are on the most recent version of the Load Impact app.
 
-Here's how to start:
+_Here's how to start:_
 
   1. Download and install the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj)
   2. **Start a recording**
@@ -35,6 +36,6 @@ Here's how to start:
 
 
 **Important things to note:**
-- The default configuration will be a 12 minute test that ramps to 10 Virtual Users over 1 minute, stays at 10 for 10 minutes, then ramps back to 0 over 1 minute. You can change this in the stages section of the script. Refer to [this article]({{ site.baseurl }}4.0/test-scripting/load-test-ramping-configurations/) for more information on ramping configurations. 
+- The default configuration will be a 12 minute test that ramps to 10 Virtual Users over 1 minute, stays at 10 for 10 minutes, then ramps back to 0 over 1 minute. You can change this in the stages section of the script. Refer to [this article]({{ site.baseurl }}4.0/test-scripting/load-test-ramping-configurations/) for more information on ramping configurations.
 - No load zone is specified and it will run out of Ashburn by default. You can specify different load zones by adding a `ext.loadimpact.distribution` option. See [this article]({{ site.baseurl }}/4.0/test-running/cloud-execution/#test-configuration-options) for more information
 - We have set `discardResponseBodies: true`.  This will discard all response bodies by default.
