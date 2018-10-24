@@ -9,7 +9,7 @@ order: 9
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you go through your evaluation. Version 4.0 utilizes k6, an open source load testing tool that is freely available on GitHub. Version 4.0 can be used via the web GUI or from the command line locally, using k6. Both methods allow you to run tests on our cloud infrastructure, for larger load tests, and access our advanced result analysis features- Load Impact Insights. Note: Locally executed tests must triggered from k6 locally.
+The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you go through your evaluation. Version 4.0 utilizes k6, an open source load testing tool that is freely available on [GitHub](https://github.com/loadimpact/k6). Version 4.0 can be used via the web GUI or from the command line locally, using k6. Both methods allow you to run tests on our cloud infrastructure, for larger load tests, and access our advanced result analysis features - Load Impact Insights. **Note**: Locally executed tests must triggered from k6 locally.
 
 - TOC
 {:toc}
@@ -23,7 +23,7 @@ The simplest way to run your first load test is to run a URL test from the Load 
 When you click on **Create New Test** you’ll see this screen:
 
 ![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-new-test-choices.png)
-      
+
 
 _Figure 1: Test creation options_
 
@@ -83,7 +83,7 @@ Follow the steps as shown in the Load Impact UI to download the chrome extension
 
 A second way to create realistic tests is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
 
-**Also note: **k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
+**Also note:** k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
 
 Click on **Create New Test** and select **HAR file upload**, as shown in Figure 1 above.
 
@@ -235,3 +235,6 @@ The Load Impact Support and Client Success teams are here to help should you hav
 - [k6 docs](http://docs.k6.io/docs)
 - [k6 project page](https://k6.io/)
 - [GitHub Repo](https://github.com/loadimpact/k6)
+- [Load Impact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
+- [How to create a HAR recording]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-do-browser-recording/)
+-
