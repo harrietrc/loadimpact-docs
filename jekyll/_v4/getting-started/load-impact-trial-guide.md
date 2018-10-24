@@ -9,7 +9,7 @@ order: 9
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in the Load Impact 4.0. This cloud interface is complemented by our open source load testing tool, k6. Version 4.0 of Load Impact is built upon k6. k6 itself is freely available on GitHub. You can utilize the cloud functions of Load Impact through the web GUI or by using k6 locally.
+The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you go through your evaluation. Version 4.0 utilizes k6, an open source load testing tool that is freely available on GitHub. Version 4.0 can be used via the web GUI or from the command line locally, using k6. Both methods allow you to run tests on our cloud infrastructure, for larger load tests, and access our advanced result analysis features- Load Impact Insights. Note: Locally executed tests must triggered from k6 locally.
 
 - TOC
 {:toc}
@@ -22,7 +22,8 @@ The simplest way to run your first load test is to run a URL test from the Load 
 
 When you click on **Create New Test** you’ll see this screen:
 
-![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-test-options.png)
+![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-new-test-choices.png)
+      
 
 _Figure 1: Test creation options_
 
@@ -68,13 +69,23 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ***
 
+### Creating a test from Browser Activity (Using the Chrome Recorder)
+
+When running performance tests, you should make your test cases as realistic as possible. An easy way to do this is to record a browser session. Use the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj), available in the Chrome Web Store.
+
+Click on **Create New Test** and select **Browser recording**, as shown in Figure 1 above.
+
+Follow the steps as shown in the Load Impact UI to download the chrome extension, start a recording, stop recording, save the test script, and run the test. Then, check your test results.
+
+***
+
 ### Creating a test from Browser Activity (Converting a HAR file)
 
-When running performance tests, you should make your test cases as realistic as possible. One way to do this is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
+A second way to create realistic tests is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base.
 
 **Also note: **k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
 
-Click on **Create New Test** and select **Browser recording**, as shown in the middle of Figure 1 above.
+Click on **Create New Test** and select **HAR file upload**, as shown in Figure 1 above.
 
 
 ![Figure 4]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-har-file-test.png)
