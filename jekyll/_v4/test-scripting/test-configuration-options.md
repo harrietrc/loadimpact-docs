@@ -85,11 +85,6 @@ When running a cloud execution test you can configure from which load zones the 
 
 ## Sending results to a specific project
 
-<div class="callout callout-warning" role="alert">
-    <b>Note that your API token is scoped to a specific organization</b><br>
-    If you are part of more than one Load Impact organization you need to generate an API token for each organization as the API token is currently per-organization. You can do this by first switching to the specific organization using the organization/project switcher in the left sidebar and then clicking on "Integrations" in the left sidebar menu (ending up on <a href="https://app.loadimpact.com/account/token" class="alert-link">this page</a>).
-</div>
-
 By default tests and test runs will be created and run under your default project, in your default organization. To create and run tests under a different project, whether under your default organization or one you've been invited to, you have two options:
 
 1. You can specify the project ID in the script options:
