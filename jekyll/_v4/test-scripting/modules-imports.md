@@ -8,12 +8,18 @@ order: 2
 
 ***
 
-<h1>Purpose</h1>
-Explanation and code samples to explain how to import the included and external modules into your k6 script.
+<h1>Background</h1>
+Load Impact 4.0 and k6 come with a batteries included standard library.  They also support importing external libraries. This article provides an explanation and code samples on how to import the included or external modules into your k6 script.
+
+_**Best Practice Alert:**_ We recommend that you start building out you own custom library for common actions you find yourself doing in your test scripts.  This is especialy important to make your efforts scalable to the rest of your team.
+
+**Note:** External libraries are only available for import when using k6 locally to trigger tests.  When you execute your test using the `k6 cloud` command, k6 will automatically bundle up the dependencies into an archive and upload that to our cloud service.  You can rerun these tests through the web interface.
+
 
 - TOC
 {:toc}
 
+***
 
 ## Modules
 Load testing sophisticated applications requires advanced scripting capabilities, k6 supports powerful modules feature allowing you to:
@@ -26,7 +32,7 @@ k6 can load ES6 modules and ES5 libraries.
 Refer to k6 docs on [modules](https://docs.k6.io/docs/modules) for additional information.
 
 ### Builtin modules
-There are a number of builtin modules in k6 with performance testing related APIs. These are:
+There are a number of builtin modules in k6 with performance testing related APIs.  These are available both in the web based script editor and when using k6 locally.
 
 - [k6](https://docs.k6.io/docs/k6)
   - The k6 module contains k6-specific functionality.
@@ -55,7 +61,7 @@ Full documentation of these modules can be found within the [k6 docs](https://do
 
 ## Remote modules
 
-k6 can import modules that are hosted remotely.
+k6 can import modules that are hosted remotely.  This functionality is only available when using k6 locally to trigger tests.
 
 {% highlight js linenos %}
 import http from "k6/http";

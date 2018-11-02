@@ -8,12 +8,31 @@ order: 7
 
 ***
 
-<h1>Purpose</h1>
+<h1>Background</h1>
 This article explains Thresholds and how they are utilized within Load Impact Version 4.0 and k6.
 
 Thresholds are used to specify test pass/fail criteria. Thresholds can be set on all metrics including custom ones and you can limit the data point of a metric that are being included in the evaluation by scoping the threshold with tags.
 
 **Note**: When using Thresholds, you want to stay within the defined values. Thresholds that evaluate to `false` will result in a failed test.
+
+
+***
+
+
+<h4>Try It!</h4>
+
+Add the following sample to the options section of one of your scripts (or our _[in app sample](https://app.loadimpact.com/k6/tests/custom/editor)_). It will set a threshold at 500 ms for the 95th percentile of all requests. That is, the test will be marked as failed by threshold if the value is exceeded.
+
+
+{% highlight js linenos %}
+thresholds: {
+        "http_req_duration": ["p(95)<500"]
+},
+{% endhighlight %}
+
+
+***
+
 
 - TOC
 {:toc}

@@ -8,15 +8,24 @@ order: 10
 
 ***
 
-<h1>Purpose</h1>
-For situations where you want to track something that is not part of the standard metrics, you can utilize custom metrics functionality in k6.
+<h1>Background</h1>
+Custom Metrics allow you to track something that is not part of the standard metrics in Load Impact.
 
 The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All four can be used when creating custom metrics. Below we provide examples of each and how they could be utilized within a test.
 
 **Note:** In order to utilize custom metrics, you MUST `import { Counter, Gauge, Rate, Trend } from "k6/metrics";` within the init context of your script. You may remove any types you are not using in the specific test.
 
+***
+
+<h4>Try It!</h4>
+
+Add any of the following samples to one of your scripts (or our _[in app sample](https://app.loadimpact.com/k6/tests/custom/editor)_).
+
 - TOC
 {:toc}
+
+***
+
 
 ## Counter metrics
 
@@ -29,8 +38,8 @@ import { Counter } from "k6/metrics";
 let CounterErrors = new Counter("Errors");
 
 export default function() {
-    let res = http.get("https://loadimpact.com");
-    let contentOK = res.html("h1").text().includes("Load Impact");
+    let res = http.get("https://test.loadimpact.com");
+    let contentOK = res.html("h2").text().includes("Welcome to the LoadImpact.com demo site!");
     CounterErrors.add(!contentOK);
 };
 {% endhighlight %}
@@ -46,7 +55,7 @@ import { Gauge } from "k6/metrics";
 let GaugeContentSize = new Gauge("ContentSize");
 
 export default function() {
-    let res = http.get("https://loadimpact.com");
+    let res = http.get("https://test.loadimpact.com");
     GaugeContentSize.add(res.body.length);
 };
 {% endhighlight %}
@@ -62,8 +71,8 @@ import { Rate } from "k6/metrics";
 let RateContentOK = new Rate("Content OK");
 
 export default function() {
-    let res = http.get("https://loadimpact.com");
-    let contentOK = res.html("h1").text().includes("Load Impact");
+    let res = http.get("https://test.loadimpact.com");
+    let contentOK = res.html("h2").text().includes("Welcome to the LoadImpact.com demo site!");
     RateContentOK.add(contentOK);
 };
 {% endhighlight %}
@@ -79,7 +88,7 @@ import { Trend } from "k6/metrics";
 let TrendRTT = new Trend("RTT");
 
 export default function() {
-    let res = http.get("https://loadimpact.com");
+    let res = http.get("https://test.loadimpact.com");
     TrendRTT.add(res.timings.duration);
 };
 {% endhighlight %}

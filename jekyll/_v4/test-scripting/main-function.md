@@ -6,6 +6,14 @@ categories: [test-scripting]
 order: 4
 ---
 
+***
+
+<h1>Background</h1>
+
+There are 4 parts to a test script. This article describes the main function (default function), also known as VU code.  It's important to note that Virtual Users will iterate over this function as long as the test is running. Each iteration should be considered a new session.
+
+***
+
 The main test code (aka "VU code") is called after the "init code" and "setup code" has been run:
 
 {% highlight js linenos %}
