@@ -53,7 +53,7 @@ Here are some tips to consider when you start to write/record your first test sc
   - _If testing individual components, such as API endpoints, think in terms of requests per Second_
   - _If testing user journeys, such as users visiting page to page or taking multiple actions, think in terms of concurrent users._
 - What test patterns will I execute?
-  - _Different tests will tell you different things. Refer to this article for an explanation of the different patterns:_
+  - _Different tests will tell you different things. Refer to this article for an explanation of the different patterns:_ [Ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
   - _Generally, this order will work for most when establishing a testing process: Baseline test, stress test, load test, spike test (if applicable)_
 - What data do I need?
   - _Using the login example, testing the same user logging in will usually only test how well your system can cache responses. What data do you need to be parameterized to support your test executions?_
