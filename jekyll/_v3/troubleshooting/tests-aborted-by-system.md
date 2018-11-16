@@ -4,7 +4,10 @@ title: Tests Aborted by System
 description: The most common reasons why your test may be aborted by the system.
 categories: [troubleshooting]
 order: 2
-redirect_from: /knowledgebase/articles/802215-test-aborted-by-system
+redirect_from:
+  - /knowledgebase/articles/802215-test-aborted-by-system
+  - /knowledgebase/articles/802215
+
 ---
 
 ***
