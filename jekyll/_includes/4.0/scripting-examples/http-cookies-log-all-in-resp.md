@@ -3,10 +3,10 @@
 
 import http from "k6/http";
 
-function logCookie(c) {
+function logCookie(cookie) {
     // Here we log the name and value of the cookie along with additional attributes.
     // For full list of attributes see: https://docs.k6.io/docs/cookies#section-properties-of-a-response-cookie-object
-    console.log(`${c.name}: ${c.value}\n\tdomain: ${c.domain}\n\tpath: ${c.path}\n\texpires: ${c.expires}\n\thttpOnly: ${c.http_only}`);
+    console.log(`${cookie.name}: ${cookie.value}\n\tdomain: ${cookie.domain}\n\tpath: ${cookie.path}\n\texpires: ${cookie.expires}\n\thttpOnly: ${cookie.http_only}`);
 }
 
 export default function() {
