@@ -1,9 +1,12 @@
 ---
 layout: classic-docs
-title: Examples
+title: Scripting examples
 description: Example test scripts for k6 and Load Impact 4.0
 categories: [test-scripting]
 order: 13
+redirect_from:
+    - /4.0/test-scripting/handling-dynamic-tokens-in-k6-scripts/
+    - /4.0/test-scripting/http-authentication/
 ---
 
 ***
@@ -79,6 +82,8 @@ To set a cookie that should be sent with every request matching a particular dom
 
 ## Correlation
 In a load testing scenario, correlation means extracting one or more values from the response of one request and then reusing them in subsequent requests. Often times this could be getting a token or some sort of ID necessary to fulfill a sequence of steps in a user journey.
+
+The [browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}) will for example capture things like CSRF tokens, VIEWSTATES etc. from your session. This type of data is likely to no longer be valid when you run your test, meaning you'll need to handle the extraction of this data from the HTML/form to include it in subsequent requests. This issue is fairly common and can be handled with a little bit of scripting.
 
 ### Extracting values/tokens from JSON response
 {% include 4.0/scripting-examples/correlation-json-resp.md %}
