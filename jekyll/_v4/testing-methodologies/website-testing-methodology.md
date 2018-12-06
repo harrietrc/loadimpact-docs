@@ -122,7 +122,7 @@ The best results come when you run your tests in a systematic way, where you can
   * After you experience a stable stress test result, you should run a load test at your targets to confirm the system can handle your goals
 4. Other tests as required
   * You may have other traffic patterns you may want to test for. This may be from different load zones or different ramping profiles. Continue testing here as required.
-5. Cotinuous and Regression Testing
+5. Continuous and Regression Testing
    Many users start running tests as part of a CI pipeline to monitor for performance regressions. Since you've created your test scripts, most of the work is already done!
 
 ### Common questions related to test execution
