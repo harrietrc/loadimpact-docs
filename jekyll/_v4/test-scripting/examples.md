@@ -50,7 +50,7 @@ There are a few of steps to make this work:
 Here's an example script to list all the regions available in EC2. Note that the AWS access key and secret key needs to be provided through [environment variables]({{ site.baseurl}}{% link _v4/test-scripting/environment-variables.md %}).
 
 <div class="callout callout-warning" role="alert">
-    <b>Note that using this brwoserified Node.js library will be CPU and memory heavy</b><br>
+    <b>Note that using this browserified Node.js library will be CPU and memory heavy</b><br>
     As the browserified version of this Node.js library includes several Node.js APIs implemented in pure JS (including crypto APIs) it will be quite heavy on CPU and memory hungry when run with more than just a few VUs.
 </div>
 
