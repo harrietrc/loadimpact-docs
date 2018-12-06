@@ -19,7 +19,7 @@ Preparation is the most important step before any testing, here are things find 
 - What am I testing? Specifically, what are my users doing?
   - _You may already have a good idea on what your users do on a regular basis. You should look to you analytics tools to confirm your suspicions. You do not need to test every single page or action of your system, rather focus on the most used or critical ones._
 - Do I need to account for any dynamic data or complex actions?
-  - _If your users are just making GET requests to your site or app, you probably dont' need to do much here. Conversely, if users are able to login, submit form data, etc. then there are more things to think about_
+  - _If your users are just making GET requests to your site or app, you probably don't need to do much here. Conversely, if users are able to login, submit form data, etc. then there are more things to think about_
     - _If you are handling logins or forms, you will need to consider how much test data you need to create to feed the tests_
     - _You should also consider if any of this data can be reused. Virtual Users are concurrent, so they will create a large number of total sessions._
 - What environment am I testing?
@@ -113,17 +113,17 @@ By now, you have finished scripting and are ready to run your tests. The behavio
 The best results come when you run your tests in a systematic way, where you can compare data between test runs and a minimal amount of variables are changed between tests. For this reason, we recommend the following testing pattern:
 
 1. Baseline tests
-  1. A test with a small number of VUs meant to produce response times for a system experiencing favorable conditions
-  2. Typically run for 5-10 minutes and establishes a baseline for comparison
+  * A test with a small number of VUs meant to produce response times for a system experiencing favorable conditions
+  * Typically run for 5-10 minutes and establishes a baseline for comparison
 2. Stress tests
-  1. A test that steps through different levels of load and will highlight where performance problems happen
-  2. You should expect to iterate this test multiple times as you enter a test->analyze->make changes->repeat pattern
+  * A test that steps through different levels of load and will highlight where performance problems happen
+  * You should expect to iterate this test multiple times as you enter a test-> analyze-> make changes-> repeat pattern
 3. Load tests
-  1. After you experience a stable stress test result, you should run a load test at your targets to confirm the system can handle your goals
+  * After you experience a stable stress test result, you should run a load test at your targets to confirm the system can handle your goals
 4. Other tests as required
-  1. You may have other traffic patterns you may want to test for. This may be from different load zones or different ramping profiles. Continue testing here as required.
-5. Conitnuous and Regression Testing
-  1. Many users start running tests as part of a CI pipeline to monitor for performance regressions. Since you've created your test scripts, most of the work is already done!
+  * You may have other traffic patterns you may want to test for. This may be from different load zones or different ramping profiles. Continue testing here as required.
+5. Cotinuous and Regression Testing
+   Many users start running tests as part of a CI pipeline to monitor for performance regressions. Since you've created your test scripts, most of the work is already done!
 
 ### Common questions related to test execution
 
