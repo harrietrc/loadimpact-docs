@@ -30,7 +30,7 @@ Examples of various HTTP Authentication methods that can be used with k6. These,
 {% include 4.0/scripting-examples/http-auth-ntlm.md %}
 
 ### AWS Signature v4 authentication
-Requests to the AWS APIs requires a special type of auth, called AWS Signature Version 4. k6 doesn't support this authentication mechanims out of the box, so we'll have to resort to using a Node.js library called [awsv4.js](https://github.com/mhart/aws4) and [Browserify](http://browserify.org/) (to make it work in k6).
+Requests to the AWS APIs requires a special type of auth, called AWS Signature Version 4. k6 doesn't support this authentication mechanism out of the box, so we'll have to resort to using a Node.js library called [awsv4.js](https://github.com/mhart/aws4) and [Browserify](http://browserify.org/) (to make it work in k6).
 
 There are a few of steps to make this work:
 
