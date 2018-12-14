@@ -253,6 +253,43 @@ export let options = {
 
 ***
 
+## discardResponseBodies
+
+**What it is:** A boolean, `true` or `false`. When this option is set to `true`, all of the response bodies sent will be discarded. The response is still fully downloaded, however, it is not saved to memory.
+
+**How to set it:** `discardResponseBodies` in options or `--discard-response-bodies` as a command line flag, or `K6_DISCARD_RESPONSE_BODIES` as a environment variable
+
+**Default value:** false
+
+**Example:**
+
+{% highlight js linenos %}
+export let options = {
+  discardResponseBodies: true,
+};
+{% endhighlight %}
+
+For cases where you need to save a response from individual requests, you may save those by setting a `responseType` with the request.
+
+{% highlight js linenos %}
+import http from 'k6/http';
+export let options = {
+  discardResponseBodies: true,
+};
+export default function () {
+  let response = http.get("http://test.loadimpact.com", { responseType: "text" });
+  // ... do something with the response, but ignore the contents of static files:
+  http.batch([
+    "http://test.loadimpact.com/images/logo.png",
+    "http://test.loadimpact.com/style.css"
+  ]);
+};
+{% endhighlight %}
+
+Note: `responseType` may be set to `text` (default), `binary`, or `none`.  Alternatively, you can use `none` to discard the response body for individual requests.
+
+***
+
 ## noConnectionReuse
 
 **What it is:** A boolean, true or false, specifying whether k6 should disable keep-alive connections
