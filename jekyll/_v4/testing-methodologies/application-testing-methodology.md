@@ -11,7 +11,7 @@ order: 1
 
 <h1>Background</h1>
 
-As developers and testers we love to jump straight into the tools, but successful testing starts with successful planning. The intent of this document is to provide additional guidance to best prepare you for testing and to meet your testing goals. This methodology assumes that some intitial performance testing is being done before automating testing in a CI/CD pipeline. Testing can be broken down into the following phases:
+As developers and testers we love to jump straight into the tools, but successful testing starts with successful planning. The intent of this document is to provide additional guidance to best prepare you for testing and to meet your testing goals. This methodology assumes that some initial performance testing is being done before automating testing in a CI/CD pipeline. Testing can be broken down into the following phases:
 
 - TOC
 {:toc}
@@ -72,7 +72,7 @@ If you take the time to consider all your initial planning, the next steps becom
 
 ### Baseline testing
 
-It's not recommended to run your first test at full throttle and the maximum number of Virtual Users. When testing, it is critical to always be thinking comparitively. Your first test should then be a **baseline test.** A baseline test is a test at an ideal number of concurrent users/requests per second and run for a long enough duration to produce a clear stable result. This baseline test will give you intitial performance metrics for you to compare to future test runs. The ability to compare will help highlight performance issues more quickly.
+It's not recommended to run your first test at full throttle and the maximum number of Virtual Users. When testing, it is critical to always be thinking comparatively. Your first test should then be a **baseline test.** A baseline test is a test at an ideal number of concurrent users/requests per second and run for a long enough duration to produce a clear stable result. This baseline test will give you initial performance metrics for you to compare to future test runs. The ability to compare will help highlight performance issues more quickly.
 
 **Common question**  "What is ideal as it relates to baseline testing above?"
 **Answer:** A number of Virtual Users you know your system can handle well.  If you aren't sure, try 1 - 10 Virtual Users.

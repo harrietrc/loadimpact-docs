@@ -81,7 +81,7 @@ This section allows you to quickly:
 The analysis section is where you analyze selected metrics. The section allows you to:
 
 - Get a quick overview of some metrics: VUs, response time and check failure aggregation.
-- Visualise custom metrics.
+- Visualize custom metrics.
 - Add, compare, and analyze metrics from the breakdown section.
 
 ![Insights: analysis section]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-metrics-analysis.png)

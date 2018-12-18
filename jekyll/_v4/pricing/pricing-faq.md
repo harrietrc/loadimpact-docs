@@ -32,9 +32,9 @@ Yes - please contact sales or support to initiate the process
 
 Yes we offer discounts on our base subscriptions. Please contact [sales](mailto:sales@loadimpact.com?subject=Not-for-profit%2FStart-up%2FEducational%20Discount%20Inquiry) to confirm your eligibility and a custom quote
 
-### Do plans autorenew?
+### Do plans auto renew?
 
-Yes - our online plans will autorenew, however they can be canceled at any time in app, for any reason.
+Yes - our online plans will auto renew, however they can be canceled at any time in app, for any reason.
 
 ### Can I upgrade or downgrade my plan?
 
@@ -42,7 +42,7 @@ Yes - You can upgrade or downgrade.
 
 Upgrades result in a prorated amount being applied towards your new plan. For example, if you are 15 days into a month and upgrade, about 50% of your current subscription would be applied towards the new plan's cost.
 
-Downgrades are charged immediately but do not start unti the next billing cycle. You retain the ability to test with your current plan until the next billing cycle starts.
+Downgrades are charged immediately but do not start until the next billing cycle. You retain the ability to test with your current plan until the next billing cycle starts.
 
 ### Can I specify a billing contact to receive monthly receipts?
 
@@ -71,7 +71,7 @@ For other EU organizations - please be sure to enter your VAT number in the [bil
 
 ### Do you offer professional services or help with scripting?
 
-Yes - we have a professional services team that can be engaged to assist in your testing. This team can be utilized to just give a hand with scripting or execute entire projects based on your need. Please contact [sales](mailto:sales@loadimpact.com) for more information. Note: Projects need to be scoped and typically require a 1-2 week lead time, depending on availablity.
+Yes - we have a professional services team that can be engaged to assist in your testing. This team can be utilized to just give a hand with scripting or execute entire projects based on your need. Please contact [sales](mailto:sales@loadimpact.com) for more information. Note: Projects need to be scoped and typically require a 1-2 week lead time, depending on availability.
 
 ### But you can run tests without even registering an account, can’t you?
 

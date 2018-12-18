@@ -10,7 +10,7 @@ order: 6
 
 <h1>Background</h1>
 
-Load Impact's Performance Alerts are algorithms built into Load Impact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two catergories Test Health Performance Alerts and Smart Result Performance Alerts.
+Load Impact's Performance Alerts are algorithms built into Load Impact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
 
 - TOC
 {:toc}
@@ -51,7 +51,7 @@ Sample result: [Not enough training data](https://app.loadimpact.com/k6/anonymou
 
 ## Test Health Performance Alerts
 
-Test Health Performance Alerts are alerts that intend to highlight test or script related issues. These issues, if not addressed, can either skew your results or make result analysis harder to parse throuhg. These alerts are often quickly solved through changes in the test script. Some of these alerts can be considered more passive in nature
+Test Health Performance Alerts are alerts that intend to highlight test or script related issues. These issues, if not addressed, can either skew your results or make result analysis harder to parse through. These alerts are often quickly solved through changes in the test script. Some of these alerts can be considered more passive in nature
 
 ***
 
@@ -91,7 +91,7 @@ This alert is raised when we detect high utilization of the load generator CPU d
 - Large number of requests in a single request batch
   - Requests made in a request batch will be made in parallel up to the default or defined limits
 - Large amounts of data are returned in responses resulting in high memory utilization
-  - When the memory of hte load generator reaches near total consumption, the garbage collection efforts of the Load Generator can cause increase CPU utilization.
+  - When the memory of the load generator reaches near total consumption, the garbage collection efforts of the Load Generator can cause increase CPU utilization.
 - A JavaScript exception is being thrown early in VU execution. This results in an endless restart loop until all CPU cycles are consumed.
 
 Possible fixes:

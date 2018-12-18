@@ -17,7 +17,7 @@ This guide and sample describes how to integrate Load Impact 4.0 with CircleCI. 
 
 ## Background
 
-Load Impact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, webapps, or anything else you may want to monitor for performance regressions over time.
+Load Impact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
 It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
@@ -97,7 +97,7 @@ test:
 To describe the config in words:
 
 1. Download a k6 release archive and extract the binary to a directory that is cached between builds
-2. Run the k6 load test main.js located in the loadtests directory in the root of the repository
+2. Run the k6 load test main.js located in the `loadtests` directory in the root of the repository
 **Note:** The k6 command includes the `-o cloud` option which means the results will be streamed to Insights. Alternatively, you can use `k6 cloud` to execute the test from the Load Impact cloud service. For that to work we'll need to make sure k6 has access to our Load Impact API token in the environment variable K6_CLOUD_TOKEN.
 
 

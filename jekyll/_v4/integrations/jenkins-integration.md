@@ -17,7 +17,7 @@ This guide and sample describes how to integrate Load Impact 4.0 with Jenkins v2
 
 ## Background
 
-Load Impact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation plaform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, webapps, or anything else you may want to monitor for performance regressions over time.
+Load Impact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation platform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
 It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
@@ -80,7 +80,7 @@ Here is a description of what the script does:
 
 Before you jump into Jenkins, you should acquire our API token. This token allows you to communicate with the Load Impact platform. To get your token, go [here](https://app.loadimpact.com/integrations) and select User Token.
 
-IMPORTANT:  Generating a new token will discard any previous token you may have. You may reuse the same token for multiplie services.
+IMPORTANT:  Generating a new token will discard any previous token you may have. You may reuse the same token for multiple services.
 
 Copy your API token and keep it handy, you will need for the next part, for inserting in your Groovy script.
 
@@ -154,7 +154,7 @@ Once it moves into the running the state, it will look something like this
 
 ![Result of the running pipeline]({{ site.baseurl }}/assets/img/v4/integrations/jenkins-integration/jenkins-blue-ocean-pipeline-results.png)
 
-If the load test is succesful, our build will also be successful and the build will continue on. If the test fails, it will return a non-zero exit code which will fail the build step.
+If the load test is successful, our build will also be successful and the build will continue on. If the test fails, it will return a non-zero exit code which will fail the build step.
 
 ## Result analysis
 

@@ -36,7 +36,7 @@ The inverse of `--only`. This option allows you to specify some domains that you
 
 ### `--batch-threshold`
 
-When executing tests of websites or webapps, you want Virtual Users to make requests like a browser would. Browsers open connections in parallel and load those resources in parallel. By default, the converter looks for requests made within 500 ms of one another and includes them in the same batch request in your script.
+When executing tests of websites or web apps, you want Virtual Users to make requests like a browser would. Browsers open connections in parallel and load those resources in parallel. By default, the converter looks for requests made within 500 ms of one another and includes them in the same batch request in your script.
 
 This flag allows you to specify the maximum duration between requests. e.g. `--batch-threshold 1000` would change the setting to all requests made within 1 second of each other, are put in the same batch request in the outputted script. If there is a delay of longer than 1 second, a new batch request is created in the script.
 

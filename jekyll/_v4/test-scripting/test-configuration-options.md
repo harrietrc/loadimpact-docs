@@ -14,7 +14,7 @@ Options allow you to configure how k6 will behave during test execution. For mos
 
 - As part of your script code, so it is version controlled
 - As a command line flag
-- As a enviroment variable
+- As a environment variable
 - As part of a config file.
 
 There is an order of precedence when evaluating options, which is as follows: defaults < config file < exported script options < environment variables < command-line flags. Options from a greater level can be used to overwrite those from a lower level. CLI flags have the greatest priority.
@@ -163,7 +163,7 @@ You find the ID of a Load Impact project by selecting a k6 project in the UI and
 
 ## hosts
 
-**What it is:** An onject that overrides DNS resolution. This behaves similarly to what you can do with `/etc/hosts` on Linux/Unix or `C:\Windows\System32\drivers\etc\hosts` on Windows. In the example below, all requests to `test.loadimpact.com` will be routed to `1.2.3.4`. The HTTP `Host` header will still be set to `test.loadimpact.com`
+**What it is:** An object that overrides DNS resolution. This behaves similarly to what you can do with `/etc/hosts` on Linux/Unix or `C:\Windows\System32\drivers\etc\hosts` on Windows. In the example below, all requests to `test.loadimpact.com` will be routed to `1.2.3.4`. The HTTP `Host` header will still be set to `test.loadimpact.com`
 
 **How to set it:** `hosts`
 
@@ -237,7 +237,7 @@ export let options = {
 
 ## batchPerHost
 
-**What it is:** An integer, the maximum number of parallel connections per host that each Virtual User can make in a `http.batch()` call within a script. This option is similar to `batch`, except it restricts requests based on destinaion host.
+**What it is:** An integer, the maximum number of parallel connections per host that each Virtual User can make in a `http.batch()` call within a script. This option is similar to `batch`, except it restricts requests based on destination host.
 
 **How to set it:** `batchPerHost` in options or `--batch-per-host` as a command line flag, or `K6_BATCH_PER_HOST` as a environment variable
 
@@ -433,7 +433,7 @@ export let options = {
 
 ## blacklistIPs
 
-**What it is:** An object containg the ranges of IPs to blacklist from tests. Load Impact maintains it's own blacklist which contains local, loopback, Load Impact specific IPs, and other IPs
+**What it is:** An object containing the ranges of IPs to blacklist from tests. Load Impact maintains it's own blacklist which contains local, loopback, Load Impact specific IPs, and other IPs
 
 **How to set it:** `blacklistIPs` in options or `--blacklist-ip` as a command line flag, or `K6_BLACKLIST_IPS` as a environment variable
 
