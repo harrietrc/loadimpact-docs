@@ -42,7 +42,7 @@ Sample Result: [Too many HTTP failures](https://app.loadimpact.com/k6/anonymous/
 
 ### Not Enough Training Data
 
-This alert is raised Some of our performance alert algorithms need at least 100 complete VU iterations of training data plus an additional 15 seconds to produce meaningful output. Your test did not complete the 100 VU iterations necessary for the training data. We recommend increasing the test duration to get the full benefits of performance alerts
+This alert is raised because our Smart Results performance alert algorithms need at least 100 complete VU iterations of training data plus an additional 15 seconds to produce meaningful output. Your test did not complete the 100 VU iterations necessary for the training data. We recommend increasing the test duration to get the full benefits of performance alerts
 
 Sample result: [Not enough training data](https://app.loadimpact.com/k6/anonymous/1026ecd031c0481eaaed1bb4312f2509)
 ![Not enough training data example]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/not-enough-training-data.png)
