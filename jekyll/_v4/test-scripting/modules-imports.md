@@ -157,7 +157,7 @@ export function hello_world() {
 docker run -v /home/k6/example/src:/src -i loadimpact/k6 run /src/index.js
 {% endhighlight %}
 
-## Considerations and Limtations
+## Considerations and Limitations
 Each Virtual User will load the required modules into memory during text execution. RAM usage is directly correlated to the number of Virtual Users and the total size of your JS objects. Excessive use of RAM can negatively impact the machine performing the test and the test execution and results.
 
 
