@@ -4,7 +4,8 @@
     width: 75%;
 
 	@include media-breakpoint-down(sm) {
-		width: auto;
+        width: auto;
+        max-width: 100%;
 	}
 }
 
