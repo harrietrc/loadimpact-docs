@@ -15,7 +15,7 @@ There are two typical approaches to testing APIs:
  1. You can test APIs in the same way you test websites, by simulating users (or VUs). You want to use this method if you are interested in how many users your API can serve simultaneously.
  2. You can test API for number or requests per second (or RPS). You want to use this method, if your are interested in how many requests your API can handle per second.
 
-If you are testing one endpoint at a time, the RPS method may be more appropriate. If you are testing a scenario with multiple endpoints, the VU method is probably more meaningful.
+If you are testing one endpoint at a time, the RPS method is more meaningful. If you are a testing a real/logical user journey across multiple endpoints, the VU method is more meaningful.
 
 # Testing API scenarios, using VUs.
 
@@ -82,15 +82,15 @@ This means that the API under test is handling traffic well for specified number
 
 # Testing API endpoints for RPS
 
-By default, k6 operates in the "VU mode", but you can easily limit how many RPS each VU executes, so it's easy to simulate RPS!
+By default, k6 will operate in "VU mode". However, you can easily test in terms of RPS by limiting how many requests each VU is able to make per second.
 
-Let's jump to example, and talk details later.
+Example:
 
 {% highlight js linenos %}
 import { check, sleep } from "k6";
 import http from "k6/http";
 
-let desiredRPS = 200;
+let desiredRPS = 200; // total RPS for the test
 
 // maximum requests executed by one VU per second, determined by experimentation.
 // You can adjust this up/down depending on the performance of system you are testing.
@@ -150,8 +150,6 @@ In both cases you will see a link to Load Impact where you can view your results
 
 
 
-Note, if you are just getting started or don't want to mess with a terminal, you can also execute scripts directly from Load Impact's web editor, without the need of installing k6. Go to the
+Note, if you are just getting started or don't want to execute tests from the command line, you can also execute scripts directly from Load Impact's web editor, without the need of installing k6. Go to the
 [web editor](https://app.loadimpact.com/k6/tests/custom/editor) and try it out!
-
-
 
