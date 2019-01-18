@@ -79,6 +79,7 @@ You can view a sample test run of this script [here](https://app.loadimpact.com/
 
 Note, in this test run, the Request Rate closely follows VUs, while response time is relatively flat.
 This means that the API under test is handling traffic well for specified number or users.
+Aside from some fringe cases, the aforementioned pattern is a sign of good performance.
 
 # Testing API endpoints for RPS
 
