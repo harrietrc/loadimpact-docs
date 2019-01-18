@@ -134,14 +134,14 @@ You can view a sample test run of this script [here](https://app.loadimpact.com/
 
 ## Executing tests and viewing results
 
-If your API is publicly accessible on the internet, you can run this script from LoadImpact cloud by running this command:
+If your API is publicly accessible on the internet, you can run this script from Load Impact cloud by running this command:
 {% highlight console %}
 $ k6 cloud API_scenario_test.js
 {% endhighlight %}
 
 If your API is behind a firewall or running on your development machine, you can use local execution, running this command:
 {% highlight console %}
-$ k6 run -o API_scenario_test.js
+$ k6 run -o cloud API_scenario_test.js
 {% endhighlight %}
 
 In both cases you will see a link to Load Impact where you can view your results in real time. It will look similar to this:
@@ -150,7 +150,7 @@ In both cases you will see a link to Load Impact where you can view your results
 
 
 
-Note, if you are just getting started or don't want to mess with terminal, you can also execute scripts directly from Load Impact's web editor, without the need of installing k6. Go to the
+Note, if you are just getting started or don't want to mess with a terminal, you can also execute scripts directly from Load Impact's web editor, without the need of installing k6. Go to the
 [web editor](https://app.loadimpact.com/k6/tests/custom/editor) and try it out!
 
 
