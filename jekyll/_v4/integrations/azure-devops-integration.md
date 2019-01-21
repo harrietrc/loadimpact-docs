@@ -211,7 +211,7 @@ steps:
 **Important Note:** Notice the usage of token provided from Load Impact. You will need to get this before you commit your code.
 First, we need to get the Load Impact token and set Azure Pipelines secret variable.
 
-You can obtain your token from your account at [loadimpact.com](https://loadimpact.com). Go over to [_Integrations_ section]((https://app.loadimpact.com/integrations)) of the page and click [_Use your token_](https://app.loadimpact.com/account/token) link. Copy the provided token.
+You can obtain your token from your account at [loadimpact.com](https://loadimpact.com). Go over to [_Integrations_ section](https://app.loadimpact.com/integrations) of the page and click [_Use your token_](https://app.loadimpact.com/account/token) link. Copy the provided token.
 
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/09.png)
 
