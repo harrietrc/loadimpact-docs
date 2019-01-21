@@ -4,6 +4,9 @@ layout: classic-docs
 title: "4.0 Docs"
 description: "Landing page for Load Impact 4.0"
 permalink: /4.0/
+redirect_from:
+    - /knowledgebase/articles/174634-case-study-ushahidi
+    - /knowledgebase/articles/324716-case-study-rokkan
 ---
 Welcome to Load Impact 4.0 documentation! Here you'll find information on Load Impact's next generation load testing service.
 
