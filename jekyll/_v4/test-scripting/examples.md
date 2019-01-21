@@ -77,8 +77,8 @@ To set a cookie that should be sent with every request matching a particular dom
 
 **Relevant k6 APIs**:
 - [http.CookieJar](https://docs.k6.io/docs/cookiejar-k6http)
-    - [set(url, name, value, [additionalProps])](TODO)
-- [http.cookieJar()](https://docs.k6.io/docs/response-k6http-TODO)
+    - [set(url, name, value, [additionalProps])](https://docs.k6.io/docs/cookiejarsetname-value-options)
+- [http.cookieJar()](https://docs.k6.io/docs/cookiejar)
 
 ## Correlation
 In a load testing scenario, correlation means extracting one or more values from the response of one request and then reusing them in subsequent requests. Often times this could be getting a token or some sort of ID necessary to fulfill a sequence of steps in a user journey.
