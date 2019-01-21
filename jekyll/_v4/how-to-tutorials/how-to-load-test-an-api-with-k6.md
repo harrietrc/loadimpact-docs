@@ -4,6 +4,8 @@ title: How to Load Test an API
 description: Example scripts for load tesing APIs. Run your load test in 5 minutes.
 categories: [how-to-tutorials]
 order: 1
+redirect_from:
+    - /4.0/how-to-tutorials/how-to-load-test-a-restful-api/
 ---
 
 ***
