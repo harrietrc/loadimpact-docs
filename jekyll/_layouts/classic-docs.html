@@ -60,15 +60,46 @@
 			</form>
 
 			{% if page.collection == 'v3' %}
+				<!--Chrome Extension -->
 				{% if page.url == '/3.0/user-scenarios/load-impact-chrome-extension/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: Documentation for old version of the product</b><br>
-						To see the documentation for the equivalent feature in v4.0 of the product, <a href="{{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/">see here</a>.
+						<b>WARNING: This documentation is for v3.0 version of the Chrome extension</b><br>
+						You can find the documentation for the v4.0 version of our Chrome extension,<a href="{{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/"> here</a>.
 					</div>
+					<!-- How to Load test an API -->
+					{% elsif page.url == '/3.0/how-to-tutorials/how-to-load-test-an-api/' %}
+					<div class="callout callout-warning" role="alert">
+						<b>WARNING: This guide is for v3.0 version of Load Impact</b><br>
+						For documentation on testing APIs in Load Impact v4.0 with k6, please see the following articles:
+						<br>
+						 <ul>
+							 <li><a href="{{ site.baseurl }}/4.0/how-to-tutorials/how-to-load-test-an-api-with-k6/">Code sample on how to load test an API</a></li>
+						 	 <li><a href="{{ site.baseurl }}/4.0/how-to-tutorials/how-to-load-test-a-restful-api/">Guide on testing a RESTful API</a>.</li>
+						 </ul>
+					</div>
+					<!--Test configuration-->
+					{% elsif page.url == '/3.0/test-configuration/what-is-a-test-configuration/' %}
+					<div class="callout callout-warning" role="alert">
+						<b>WARNING: This guide is for v3.0 version of Load Impact</b><br>
+						In v4.0, test configuration is expressed as code. If you are a v4.0/k6 user please refer to
+						our documentation on <a href="{{ site.baseurl }}/4.0/test-scripting/test-configuration-options/">v4.0 test configuration options</a>
+					</div>
+					<!--Thresholds-->
+					{% elsif page.url == '/docs/3.0/test-configuration/thresholds/' %}
+					<div class="callout callout-warning" role="alert">
+						<b>WARNING: This guide is for v3.0 version of Load Impact</b><br>
+						In v4.0, thresholds received upgraded capabilities and are now expressed as JavaScript code. If you are a v4.0/k6 user please refer to
+						the v4.0 documentation on <a href="{{ site.baseurl }}/docs/4.0/test-scripting/thresholds/">Thresholds.</a>
+					</div>
+
+
 				{% else %}
 					<div class="callout callout-warning" role="alert">
 						<b>Attention! This article is about Load Impact v3.0</b><br>
-						You're viewing documentation for the old version of Load Impact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
+						You're viewing documentation for v3.0 of Load Impact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
+						We plan to deprecate v3.0 in the future and encourage users to check out v4.0 and start transitioning. Please
+						<a href="mailto:support@loadimpact.com?Subject=Questions%20about%20v3.0%20deprecation%20and%20v4.0%20transition&Body=I%20saw%20the%20alert%20in%20your%20knowledge%20base%20and%20had%20a%20question%20about..." target="_top">
+							Contact us </a>with any questions, comments, or concerns.
 					</div>
 				{% endif %}
 			{% endif %}

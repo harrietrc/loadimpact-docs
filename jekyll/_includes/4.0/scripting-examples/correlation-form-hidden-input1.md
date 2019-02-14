@@ -3,16 +3,21 @@ import http from "k6/http";
 import {sleep} from "k6";
 
 export default function() {
-    // Request page containing a form
-    let res = http.get("https://test.loadimpact.com/my_messages.php");
 
-    // Query the HTML for an input field named "redir"
+    // Request the page containing a form and save the response. This gives you access
+    //to the response object, `res`.
+    let res = http.get("https://test.loadimpact.com/my_messages.php", {"responseType": "text"});
+
+    // Query the HTML for an input field named "redir". We want the value or "redir"
     let elem = res.html().find('input[name=redir]');
 
-    // Get the value of the attribute "value"
+    // Get the value of the attribute "value" and save it to a variable
     let val = elem.attr('value');
 
-    // Now you can use this extracted value in subsequent requests...
+    // Now you can concatenate this extracted value in subsequent requests that require it.
+    ...
+    // console.log() works when executing k6 scripts locally and is handy for debugging purposes
+    console.log("The value of the hidden field redir is: " + val);
 
     sleep(1);
 }
