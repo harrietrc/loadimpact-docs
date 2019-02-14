@@ -58,6 +58,19 @@
 			<form id="site-search" class="doc-search" action="">
 				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'v3' %}3.0 {% elsif page.collection == 'v4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
 			</form>
+			{% if page.collection == 'v3' %}
+				{% if page.url == '/3.0/user-scenarios/load-impact-chrome-extension/' %}
+					<div class="callout callout-warning" role="alert">
+						<b>WARNING: Documentation for old version of the product</b><br>
+						To see the documentation for the equivalent feature in v4.0 of the product, <a href="{{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/">see here</a>.
+					</div>
+				{% else %}
+					<div class="callout callout-warning" role="alert">
+						<b>Load Impact v3.0 is soon to be deprecated</b><br>
+						You're viewing documentation for the old version of Load Impact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
+					</div>
+				{% endif %}
+			{% endif %}
 			{% if page.page-type == "index" %}<h2>{{ page.title }}</h2>{% endif %}
 			<article>
 				{% if page.page-type != "index" and page.page-type != "homepage" %}<h1>{{ page.title }}</h1>{% endif %}
