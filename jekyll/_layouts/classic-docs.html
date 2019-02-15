@@ -135,7 +135,8 @@
 						<a href="{{ site.baseurl }}/4.0/how-to-tutorials/how-to-interpret-performance-trending/">Custom Metrics.</a>
 					</div>
 					<!--Data Stores/Paramerization-->
-					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/random-data-from-data-store/' %}
+					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/random-data-from-data-store/'
+					or page.url == '/3.0/user-scenarios-scripting-examples/data-stores/' %}
 					<div class="callout callout-warning" role="alert">
 						<b>WARNING: This guide is for parameterizing data in v3.0 of Load Impact</b><br>
 						Parameterization of data is possible in v4.0, however the process is different than v3.0. Please refer to
@@ -164,7 +165,7 @@
 						refer to our
 						<a href="{{ site.baseurl }}/4.0/test-scripting/examples/#uploads">file upload code samples.</a>
 					</div>
-					<!-- title-->
+					<!-- Interpreting results-->
 					{% elsif page.url == '/3.0/test-results/how-do-i-interpret-results/' %}
 					<div class="callout callout-warning" role="alert">
 						<b>WARNING: This article discusses interpreting results in v3.0 of Load Impact</b><br>
@@ -180,7 +181,7 @@
 						You're viewing documentation for v3.0 of Load Impact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
 						We plan to deprecate v3.0 in the future and encourage users to check out v4.0 and start transitioning. Please
 						<a href="mailto:support@loadimpact.com?Subject=Questions%20about%20v3.0%20deprecation%20and%20v4.0%20transition&Body=I%20saw%20the%20alert%20in%20your%20knowledge%20base%20and%20had%20a%20question%20about..." target="_top">
-							Contact us </a>with any questions, comments, or concerns.
+							contact us </a>with any questions, comments, or concerns.
 					</div>
 				{% endif %}
 			{% endif %}
