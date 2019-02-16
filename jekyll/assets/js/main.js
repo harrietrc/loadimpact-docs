@@ -5,7 +5,7 @@ $(function () {
     PlatformGuides.init();
 
     $('h2,h3,h4,h5').each(function () {
-        $(this).html('<a class="anchor" href="#'+$(this).attr('id')+'"></a>' + $(this).text());
+        $(this).html('<a class="anchor" href="#'+$(this).attr('id')+'"></a>' + $(this).html());
     });
 });
 
