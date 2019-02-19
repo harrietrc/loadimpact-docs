@@ -4,12 +4,17 @@ title: Load Impact 4.0 Trial Guide
 description: Tutorial to utilize all the features within Load Impact 4.0, both in the cloud and locally with it's companion, k6.
 categories: [getting-started]
 order: 9
+redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load-impact
 ---
 
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you go through your evaluation. Version 4.0 utilizes k6, an open source load testing tool that is freely available on [GitHub](https://github.com/loadimpact/k6). Version 4.0 can be used via the web GUI or from the command line locally, using k6. Both methods allow you to run tests on our cloud infrastructure, for larger load tests, and access our advanced result analysis features - Load Impact Insights. **Note**: Locally executed tests must triggered from k6 locally.
+The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing. Load Impact 4.0 is built around an open source load generator and command line interface. This load generator is named k6. k6 itself is built in Go and allows you to express your test cases as real code, JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests.
+
+This guide will begin by covering the WebUI and what types of tests you can run using it. The WebUI is a good place to start, create tests with less complexity, or build your proof of concept. This guide then transitions into using k6 as a Command Line Interface(CLI) to the Load Impact platform covering running a test using your local machine and streaming result data to Load Impact Insights and triggering a cloud test on Load Impact’s infrastructure from the command line.
+
+This flexibility of enabling testing in the local environment is what the majority of our customers have sought out. This enables them to shift left, start testing earlier in the dev process, work in a familiar environment, use their IDE of choice, take advantage of existing version control systems, and more.
 
 - TOC
 {:toc}
