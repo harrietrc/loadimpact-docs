@@ -4,7 +4,7 @@ title: Load Impact 4.0 Trial Guide
 description: Tutorial to utilize all the features within Load Impact 4.0, both in the cloud and locally with it's companion, k6.
 categories: [getting-started]
 order: 9
-redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load-impact
+redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load-impactgit st
 ---
 
 ***
@@ -76,7 +76,7 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ### Creating a test from Browser Activity (Using the Chrome Recorder)
 
-When running performance tests, you should make your test cases as realistic as possible. An easy way to do this is to record a browser session. Use the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj), available in the Chrome Web Store.
+When running performance tests, you should make your test cases as realistic as possible. An easy way to do this is to record a browser session. Use the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj), available in the Chrome Web Store. The Chrome Recorder essentially generates a HAR file from browser activity and then uses the same converter built into k6 to generate a script. The result is a very thorough script with many details such as headers, cookies and of course, the requests being made.
 
 Click on **Create New Test** and select **Browser recording**, as shown in Figure 1 above.
 
