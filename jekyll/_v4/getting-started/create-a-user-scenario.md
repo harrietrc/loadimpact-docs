@@ -17,6 +17,8 @@ concept before opting to start using k6 locally to script and trigger their test
 
 As mentioned in [load test preparations]({{ site.baseurl }}/4.0/getting-started/load-test-preparations/), a key to good testing is understanding what your users are doing, what services are most critical to your service, and what things are most critical to your organization. Knowledge of these things will guide you to create tests that are realistic and meaningful. If you are new to testing, you may want to read our [Testing Methodologies]({{ site.baseurl}}/4.0/testing-methodologies/)
 
+We will not explicitly cover options within this article.  Options allow you to configure the ramping profile and other built in functionality. A default structure is provided for tests created from either the Chrome Extension or uploading a HAR file. For more information on options, refer to [this article]({{ site.baseurl}}/4.0/test-scripting/test-configuration-options/). To alter the test length or number of VUs, refer to the stages property within the test script.
+
 ## Creating your test scripts
 
 From within the Load Impact web interface, there are a few different ways to create your test scripts. The test script itself is where your entire test is defined. Every
@@ -50,3 +52,27 @@ The HAR file converter allows you to convert a HAR file into a test script.  Thi
 The final way to create your test would be to write it by hand.  When choosing one of the in app options, we will provide a sample script for you to follow.  Test scripts
 are written as JavaScript code, so feel free to do programmatic things as you build your proof of concept. Some of the most common scripting tasks are covered in our
 [Scripting Examples]({{ site.baseurl }}/4.0/test-scripting/examples/)
+
+
+## Next steps
+
+After your have recorded/written/edited your test script, go ahead and run it. The platform will read your test configurations and start launching the test on our
+infrastructure. Once the first results are returned, you will start seeing them within Insights Result Analysis. While the test is running our
+[Performance Alert]({{ site.baseurl }}/4.0/result-analysis/insights-smart-results/) algorithms will automatically detect patterns associated with performance problems.
+
+*Remember:* Testing is an iterative process.  You should expect to run your tests multiple times to identify/fix performance issues, debug your script, etc.
+
+
+## Common Questions
+
+**I need to parameterize data from a JSON or CSV file, how do I do that?**
+In order to include external files in your test script, you would need to trigger your test from the command line. For purposes of a proof of concept, many users
+will create a table with necessary data in their test script before moving on to that.  We have code samples of parameterization [here]({{ site.baseurl }}/4.0/test-scripting/examples/#data-filesparameterization).
+
+**I'm testing a site with form submissions and keep getting HTTP errors. Why isn't this working?**
+Assuming you've used one of the browser recording methods, you likely have captured a CSRF style token associated with your browser session.  You will need to write some
+JavaScript code to instruct the VUs how to retrieve and use this value to make it dynamic. We provide a code sample of correlating these types of values [here]({{ site.baseurl}}/4.0/test-scripting/examples/#correlation)
+
+**How are cookies handled? Do I need to do anything special?**
+Cookies are handled automatically.  The browser recorders are thorough in what they capture.  This means you may want to remove cookies from your script.  If
+you are handling any session tokens in cookies, this is an important step to consider. 
