@@ -62,6 +62,7 @@ infrastructure. Once the first results are returned, you will start seeing them 
 
 *Remember:* Testing is an iterative process.  You should expect to run your tests multiple times to identify/fix performance issues, debug your script, etc.
 
+Once your first test results are in, refer to our articles on [Result Analysis]({{ site.baseurl }}/4.0/result-analysis/)
 
 ## Common Questions
 
@@ -75,4 +76,4 @@ JavaScript code to instruct the VUs how to retrieve and use this value to make i
 
 **How are cookies handled? Do I need to do anything special?**
 Cookies are handled automatically.  The browser recorders are thorough in what they capture.  This means you may want to remove cookies from your script.  If
-you are handling any session tokens in cookies, this is an important step to consider. 
+you are handling any session tokens in cookies, this is an important step to consider.
