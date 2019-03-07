@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Quick start guide - Using k6 locally - "Hello world"
+title:  Running tests from the command line, using k6 locally - "Hello world"
 description: Getting started with k6 and Load Impact Version 4.0. A guide to walkthrough local execution and how it interacts with the Load Impact cloud service
 categories: [getting-started]
-order: 1
+order: 9
 ---
 
 ***

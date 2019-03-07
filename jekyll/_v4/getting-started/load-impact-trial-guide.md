@@ -3,7 +3,7 @@ layout: classic-docs
 title: Load Impact 4.0 Trial Guide
 description: Tutorial to utilize all the features within Load Impact 4.0, both in the cloud and locally with it's companion, k6.
 categories: [getting-started]
-order: 9
+order: 1
 redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load-impact
 ---
 
