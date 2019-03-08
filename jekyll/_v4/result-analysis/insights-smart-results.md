@@ -51,11 +51,13 @@ Sample result: [Not enough training data](https://app.loadimpact.com/k6/anonymou
 
 ## Test Health Performance Alerts
 
-Test Health Performance Alerts are alerts that intend to highlight test or script related issues. These issues, if not addressed, can either skew your results or make result analysis harder to parse through. These alerts are often quickly solved through changes in the test script. Some of these alerts can be considered more passive in nature
+Test Health Performance Alerts are alerts that intend to highlight test or script related issues. These issues, if not addressed, can either skew your results or make result analysis harder to parse through. These alerts are often quickly solved through changes in the test script or test configuration.
+
+**Important**: The `Third Party Content` and `Too Many URLs` alerts are more informational alerts. Depending on what you are testing, it may be appropriate to disregard these alerts. High CPU or Memory usage **should never** be ignored.
 
 ***
 
-### Third Party content
+### Third Party Content
 
 This alert is raised when we detect more than 3 different domains in a test. This is typically caused by your test script containing requests to 3rd party resources such as CDNs, social media scripts, analytic tools, etc. It's generally recommended to remove third party requests as it may violate the terms of service of that third party, that third party may throttle your requests skewing the percentiles of your results, or you may have no ability to impact performance of that third party.
 
@@ -63,6 +65,7 @@ This alert is raised when we detect more than 3 different domains in a test. Thi
 - You may have a valid reason to test your CDN. Most CDNs charge based on usage so your tests could result in additional costs from your CDN.
 - Your system under test may utilize multiple domains, in which case you can ignore this alert.
 Refer to: [Why should I filter domains?]({{ site.baseurl }}/4.0/frequently-asked-questions/why-should-i-filter-domains/) for more information.
+
 ***
 
 ### Too Many URLs
