@@ -10,51 +10,64 @@ redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in Load Impact 4.0 as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing. Load Impact 4.0 is built around an open source load generator and command line interface. This load generator is named k6. k6 itself is built in Go and allows you to express your test cases as real code, JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests.
+The purpose of this document is to aid you in exploring the primary features available in Load Impact as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing.  If you complete the guide, you will start with the simpliest test that requires only inputting a URL and end with triggering tests from the command line.
 
-This guide will begin by covering the WebUI and what types of tests you can run using it. The WebUI is a good place to start, create tests with less complexity, or build your proof of concept. This guide then transitions into using k6 as a Command Line Interface(CLI) to the Load Impact platform covering running a test using your local machine and streaming result data to Load Impact Insights and triggering a cloud test on Load Impact’s infrastructure from the command line.
+Load Impact is built around an open source load generator which also functions as a command line interface to communicate with our cloud platform. This load generator is named k6, it is built in Go and allows you to express your test cases as real code, JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests. **Every Load Impact test has a JavaScript file that will control it's configuration and it's execution.**
 
-This flexibility of enabling testing in the local environment is what the majority of our customers have sought out. This enables them to shift left, start testing earlier in the dev process, work in a familiar environment, use their IDE of choice, take advantage of existing version control systems, and more.
 
 - TOC
 {:toc}
 
 ***
 
-### URL Test
+## Creating tests
 
-The simplest way to run your first load test is to run a URL test from the Load Impact User Interface.
+There are multiple ways to create tests within Load Impact.  Depending on your need, you may want to choose one over the other. Some methods, such as `Enter Website URLs`, are focused on quickly running tests while other methods are focused on giving you fine control over test execution. Ideally, you should choose the method that meets the need for what you are testing at the moment and the data you are looking to get back.
 
-When you click on **Create New Test** you’ll see this screen:
+To create a new test, click **Create New Test** in the left side bar. You will be presented with the following options for API or website testing:
 
 ![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-new-test-choices.png)
 
 
-_Figure 1: Test creation options_
+
+### Enter Website URLs
+
+The simplest way to run your first load test is to use our interface to enter website URLs. This method **will only** make GET requests. Practically speaking, it is a good way to quickly put some load on a system you want to test or emulate users refreshing a series of pages for the full test duration.
+
+Behind the scenes, after you input URL(s) into the interface and click run we will first load those pages in a separate process, analyze what HTTP(s) requests are made to completely load the page and then generate a JavaScript file which will run on our load generators.  This all happens automatically and you will not need to edit any code.
+
+**Important**: Reiterating a point above, if you are testing APIs you should **NOT** use this method.
 
 
-**Select Test URLs**, you will then proceed to this screen:
 
-![Figure 2]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-url-test.png)
+Select **Enter Website URLs**, you will then proceed to this screen:
 
-_Figure 2, Test URL input screen_
+![Figure 2]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/enter-website-urls.png)
 
 
-**Input** the target URL for the site, endpoint or system you want to test.
+1. **Input** the target URL(s) for the pages you want to test.
+2. **Set** the number of Virtual Users and duration of your test.
+3. **Select** a ramping pattern you want the Virtual Users to follow.
+4. **Pick** which Load Zones you want traffic to originate from.
+5. **Whitelist** the domains you are testing so we ignore third party resources.
+6. **Save and run** to execute your test and view results in real time.
 
-Upon run/save and run, our URL analyzer visits the URL entered. We analyze the requests being made to completely load the page, including external requests. We create a script from this analysis and use that to run your test. This test is similar to a user visiting that URL, loading all the contents, then closing the tab.
+**Note**: We recommend that you use the option to whitelist domains. This allows you to specify which domains you **want to be included** when we generate the underlying JavaScript file. Generally speaking, you should not test third party resources nor should you test sites you don't have permission to test. For example, trackers, analytic tools, advertising pixels, etc. Content Delivery Networks (CDN) are sometimes an exception to this note.  If you are specifically testing how well your CDN works for you or to compare CDNs, then those are good reasons to keep them included.
 
-It’s advised that you use the option to filter domains. This allows you to specify which domains you **want to be included** when generating the script. Generally speaking, you should not test third party resources. For example, trackers, analytic tools, advertising pixels, etc. Depending on your need, you may or may not want to include any Content Delivery Network (CDN) resources.
+**Domain filtering example**: if you are testing test.loadimpact.com, you would use loadimpact.com as the domain whitelist.
 
-**Domain filtering example**: if you are testing test.loadimpact.com, you would use loadimpact.com as the domain filter.
+_**Reasons you should not test third party resources**_
+1. It may violate TOS you have with that resource.
+2. If they throttle you or their requests perform poorly, it will skew you test data.
+3. You typically won't have the ability to correct a performance issue with the resource.
+4. Some third parties charge based on usage, thus it could increase your costs
+5. External resources do not impact the performance of your System Under Test(SUT).
 
-Enter your URLs and test parameters then click the **SAVE AND RUN** button to start your test.
 
 Next, take a look at your **test results**:
 
 ![Figure 3]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/test-result-overview.png)
 
-_Figure 3, The performance status section provides a high level overview of the performance of your test. You should consider the following when analyzing your results._
 
 - This test ramps to 50 Virtual Users over 1 minute, stays at 50 Virtual Users for 1 minute, ramps down to 0 Virtual Users over 1 minute.
 - If Thresholds were configured, the number of passed `Thresholds / Total Thresholds`
@@ -74,60 +87,100 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ***
 
-### Creating a test from Browser Activity (Using the Chrome Recorder)
+## Creating tests from Browser Recordings
 
-When running performance tests, you should make your test cases as realistic as possible. An easy way to do this is to record a browser session. Use the [Load Impact k6 Test Script Recorder](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj), available in the Chrome Web Store. The Chrome Recorder essentially generates a HAR file from browser activity and then uses the same converter built into k6 to generate a script. The result is a very thorough script with many details such as headers, cookies and of course, the requests being made.
+When testing web apps or websites, you often want to emulate real user behavior as they make their journey through your app or site.  Load Impact has two methods that can be used to generate scripts from browser activity.  A Chrome Extension and a HAR file converter. Both allow you to record a journey you take in a local session and convert that to a JavaScript file to be used for your tests.
 
-Click on **Create New Test** and select **Browser recording**, as shown in Figure 1 above.
-
-Follow the steps as shown in the Load Impact UI to download the chrome extension, start a recording, stop recording, save the test script, and run the test. Then, check your test results.
+These methods can save an enormous amount of time, by letting you focus on fine tuning and adding programmtic logic to your test(if applicable!) rather than hand writing each request.
 
 ***
 
-### Creating a test from Browser Activity (Converting a HAR file)
+### Using the Load Impact Chrome Extension to create a test
 
-A second way to create realistic tests is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base. The script created from converting a HAR file and generated by the Chrome Recorder should be nearly identical.  The HAR file converter is preferred when needing to record HTTP requests outside of Chrome.
+The Load Impact [Chrome Extension](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj) allows you to very quickly generate a test by browsing like a user would on your web app or website.
 
-**Also note:** k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally.
+Once you have downloaded the Chrome Extension, using it is extremely simple:
 
-Click on **Create New Test** and select **HAR file upload**, as shown in Figure 1 above.
+1. **In a new tab**, navigate to the page you wish to start on.
+2. **From the extension menu**, click `Start Recording`.
+3. **Refresh** the current page you are on.
+4. **Browse** and follow a journey a user would take / that you want to test.
+5. **Once Finished**, click `Stop Recording` in the extension menu.
+6. **Automatically**, we will launch a new tab and begin to convert the recording into JavaScript.
+7. **Select** a project and organization to save your test script and give it a meaningful name.
+8. **Edit** your script as necessary. You can write real JavaScript code in our Web IDE to do programmatic things
 
 
-![Figure 4]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-har-file-test.png)
+**Common Questions**
 
-_Figure 4, Browser recording input_
+_What programmatic things might I want to do with my script?_
 
-The **HAR file upload** allows you to take a recorded browser session, where you emulated real user behavior, and convert that into a k6 script. The requests made in this session will be identical to the ones you made - so if you logged into a system, that will also be attempted. If your system uses any tokens to prevent CSRF attacks, it’s likely that you will see some 400 level responses (since the token has since expired).
+- Forms, logins, and other means of submitting data are the most common. Submitting the same information (or using the same login) on every script iteration typically isn't realistic and in many cases will just test your systems caching capabilities. For proof of concept purposes, we recommend creating a JavaScript object to iterate over in the Web IDE. To use external sources, please refer to this [code sample on parameterization]({{ site.baseurl }}/4.0/test-scripting/examples/#data-filesparameterization).
+- Logins and form submissions often contain hidden fields to prevent CSRF style attacks. The chrome extension would have captured the value from your session, which will likely be expired when you run your test. To solve this you must [correlate the token]({{ site.baseurl }}/4.0/test-scripting/examples/#correlation) from the response body
 
-Similar to the URL analyzer, you can also filter domains. We advise you to take the same care as mentioned above to limit the test to domains you are able to and want to test.
+_The script is long, do I really need all this detail?_
 
-Simply **upload your HAR file**, set your test parameters and then click **SAVE AND RUN.**
+The Chrome Extension purposely records exact details of the requests including Headers and Cookies. You may need to access some data from either source, so knowing what is present can be helpful if you plan to add programmatic logic to your script. As we will handle cookies automatically, it's actually recommended that you remove them from your script (especially if session IDs are handled).  You may also want to remove third party requests for the same reasons mentioned earlier.
 
-Check your test results, as before.
+**Under the Hood Note**: The Chrome Extension is creating a HAR file and then using the same conversion operation that is available with `k6 convert` locally to generate a JavaScript test.
 
 ***
 
-### Creating a Test Script in Javascript
+### Converting a HAR file to create a test
+
+A second way to create realistic tests is to capture activity in your browser and save it as a HAR file. Here is a list of [tools that can output HAR files]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/#tools-that-can-output-har-files) from another document in this knowledge base. The HAR file converter is preferred when needing to record HTTP requests outside of Chrome.
+
+To use the HAR file conversion method, click on **[Create New Test](https://app.loadimpact.com/k6/tests/new)**, select **[Browser Recording](https://app.loadimpact.com/k6/tests/browser-recording)**, then **[HAR File Upload](https://app.loadimpact.com/k6/tests/custom/config)**.
+
+The HAR file conversion tool presents options similar to **Entering Website URLs** for you to specify your test configuration.
+
+![Figure 4]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/har-file-upload.png)
+
+1. **Upload** the your HAR file.
+2. **Set** the number of Virtual Users and duration of your test.
+3. **Select** a ramping pattern you want the Virtual Users to follow.
+4. **Pick** which Load Zones you want traffic to originate from.
+5. **Whitelist** the domains you are testing so we ignore third party resources.
+6. **Save and run** to execute your test and view results in real time.
+
+**Under the Hood Note:** k6 has a built-in HAR converter that will read HAR files and convert them to k6 test scripts that can then be executed. Refer to [this document]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/) on converting HAR files locally. The conversion done in app is the same process as `k6 convert`.
+
+***
+
+## Using the Web IDE to create a Test Script in Javascript
 
 One of the powerful features of Load Impact 4.0 is the ability to create test scripts directly in JavaScript. There’s an in-app editor (IDE) where you can create, edit, and run your test scripts right in the Load Impact SaaS platform. This means you don’t need to download and install k6 to create or run your initial tests as you evaluate our platform.
 
-Click on **Create New Test** and select **Scripting** as shown on the right side of Figure 1 above. You will see that **the in-app script editor is pre-populated with a sample test script**. You can edit this script to meet your needs.
+To get started with scripting using the Web IDE, click on **[Create New Test](https://app.loadimpact.com/k6/tests/new)** and select **Scripting for APIs** or **Scripting** under the Website/App Testing heading. Both options are **pre-populated with example scripts** that you can edit as required.
 
-![Figure 5]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-javascript-scripted-test.png)
-_Figure 5, In app scripting_
+![Figure 5]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/in-app-scripting.png)
 
 
-Take note of the script here; it defines your test configuration as well as the requests made. It is exactly what our platform reads and executes for your test. Within the options section, you can define things such as ramping patterns or load zone distribution. The default function serves as the main entry point for Virtual Users. That is, Virtual Users will iterate over this function until they ramp down or the test ends. You can change the GET request to your domain if you would like. Finally, this is a JavaScript environment, so you can express complex behaviors and actions as code. Make any edits you would like then click **SAVE AND RUN** to start your test. The Virtual Users will follow the ramping configuration specified.
+Previously, we mentioned that at the heart of every test is a JavaScript file.  If you have followed this guide this may be your first look at a script.  Take note of the **Options** section, which defines the test configuration and the **Default Function** where the requests the Virtual Users will make are. As long a test is running, Virtual Users will iterate over the default function. For all intents and purposes the code you write in that function is the program controlling Virtual Users in your test.
+
 
 ***
 
-### Using k6 locally with the Load Impact Cloud
+## Using k6 locally with the Load Impact Cloud
 
-To realize the full value out of Load Impact 4.0, download and install k6 on your local machine. This enables you to run tests that are local behind your firewall, local with result streaming into our cloud service, or on the Load Impact cloud service with results in the cloud all by using the command line.
+The Load Impact web interface we have explored thus far has plenty of functionality to serve as a web based Load Testing tool and many users use it just for that purpose.  While the local execution mode isn't appropraite for everyone, many users enjoy the power they gain from it.
 
-By working locally, you can use your favorite IDE to write your scripts, create custom modules or libraries to share with your team, and utilize any version control you already have in place. This knowledge base contains sample scripts and code snippets to help you get started.
 
-Aside from where the load generates from and the results output, the script itself remains unchanged between execution modes. This allows you to shift testing left to be available in the development cycle.
+_What do I gain by using k6 locally compared to the Web IDE/Interface?_
+
+While not an all inclusive list, there are a few things that become noticeably more flexible when working locally:
+
+- You can modularize your test script and/or include existing external libraries for use in your test.
+- When parameterizing data you can open files, such as a CSV or JSON to be your source for data.
+- You can utilize your local version control systems with your scripts.
+- You can utilize "local execution" mode to debug your test.
+- You can run tests locally and stream results into Load Impact Insights for analysis.
+- k6, being a command line tool, easily integrates into CI/CD pipelines
+- and more...
+
+Aside from where the load generates from and the results output, the script itself remains unchanged between execution modes. This allows you to shift testing left to be available in the development cycle. The following section will cover the different execution options available.
+
+**Note**: When running a cloud test from the command line, k6 will automatically archive all dependencies for your test and upload it to the Load Impact cloud for execution.
 
 ***
 
@@ -205,7 +258,7 @@ k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
 
 ***
 
-### Results analysis
+## Results analysis
 Refer to the following resources for more information on result analysis:
 - Take an [in-app tour](https://app.loadimpact.com/k6/anonymous/9b480b664bee46c3bf1a9d1ffb57328d)
 - [Load Impact insights]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
@@ -213,7 +266,7 @@ Refer to the following resources for more information on result analysis:
 
 ***
 
-### Next Steps/Automating testing
+## Next Steps/Automating testing
 
 As a best practice, building automation into your development cycle for testing provides a multitude of benefits, such as:
 - Deploying higher quality code, faster
@@ -229,12 +282,12 @@ The frequency in which you run tests varies from organization to organization. O
 
 ***
 
-### How can I get help?
+## How can I get help?
 The Load Impact Support and Client Success teams are here to help should you have questions. You can utilize the icon in the lower right corner of this page to start a chat or email us at support [at] loadimpact.com.
 
 ***
 
-### Additional resources
+## Additional resources
 
 - [This Knowledge Base]({{ site.baseurl }}/4.0/)
 - [k6 docs](http://docs.k6.io/docs)
@@ -242,4 +295,3 @@ The Load Impact Support and Client Success teams are here to help should you hav
 - [GitHub Repo](https://github.com/loadimpact/k6)
 - [Load Impact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [How to create a HAR recording]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-do-browser-recording/)
--
