@@ -1,17 +1,17 @@
 ---
 layout: classic-docs
-title: Creating a k6 test script
-description: Guide to create a test script for k6
+title: Creating tests in Load Impact
+description: Guide to create a test within Load Impact's web interface
 categories: [getting-started]
 order: 4
+redirect_from: /4.0/getting-started/create-a-user-scenario/
 ---
 
 ***
 
 ## Purpose
 
-Explanation of the different ways to create your test scripts within the Load Impact web interface.  Advanced users may want to use the web interface to build a proof of
-concept before opting to start using k6 locally to script and trigger their tests.
+At the heart of every test in Load Impact is a JavaScript file(we call it a test script).  This file controls the test configuation as well as the requests being made.  There are multiple ways you can generate this script through our web interface.  You can also write it by hand completely.
 
 ## Things to consider
 
@@ -21,9 +21,7 @@ We will not explicitly cover options within this article.  Options allow you to 
 
 ## Creating your test scripts
 
-From within the Load Impact web interface, there are a few different ways to create your test scripts. The test script itself is where your entire test is defined. Every
-test in Load Impact is driven from a JavaScript file.  Since test scripts are expressed as code, this gives you flexiblity and fine tune control over how they execute.
-You can start creating your tests in app, [here](https://app.loadimpact.com/k6/tests/new).
+From within the Load Impact web interface, there are a few different ways to create your test scripts. The test script itself is where your entire test is defined. Every test in Load Impact is driven from a JavaScript file.  Since test scripts are expressed as code, this gives you flexiblity and fine tune control over how they execute. You can start creating your tests in app, [here](https://app.loadimpact.com/k6/tests/new).
 
 ### Entering Website URLs (URL Generator)
 

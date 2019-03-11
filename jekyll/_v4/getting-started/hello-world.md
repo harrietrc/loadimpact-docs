@@ -7,8 +7,12 @@ order: 9
 ---
 
 ***
+<div class="callout callout-warning" role="alert">
+  Attention! This article is intended for a more advanced Load Impact User. If you are familiar with using command line tools and prefer to use your IDE of choice, please proceed forward!
+</div>
 
-<h1> Purpose</h1>
+
+<h1>Purpose</h1>
 
 In this document, we will focus on running a very simple test from the command line with k6. This is so you can understand the various parts of k6 and how they relate to one another. We will be making a single request to `https://test.loadimpact.com`, but feel free to change that to a URL, or API endpoint, that you _are allowed to test_.
 
