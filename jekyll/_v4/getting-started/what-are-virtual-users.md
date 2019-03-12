@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/174260-what-are-virtual-users-vus
 
 Virtual Users(VUs) are the entities in Load Impact that execute your test script and make HTTP(s) or websocket requests. VUs are concurrent and will continously iterate through the default function until they ramp down or the test ends.  Any number of VUs will create a number of sessions a factor larger than their total count, depending on test and script length.
 
-For example, if you ran a test for 10 VUs for 10 minutes and the default function took each VU 30 seconds to complete, you would see roughly 200 completions/total sessions generated from this test. This is approximate and will vary based on your ramping configuration.
+For example, if you ran a test with 10 VUs for 10 minutes and the default function took each VU 30 seconds to complete, you would see roughly 200 completions/total sessions generated from this test. This is approximate and will vary based on your ramping configuration.
 
 ## When testing Web apps or Websites
 
@@ -20,7 +20,7 @@ Virtual Users are designed to act and behave like real users/browsers would. Tha
 When using our [Chrome Extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or [converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/), all requests made within 500 ms of one another will be placed into a `http.batch()`.
 
 ## When testing APIs
-When testing individual API endpoints, you can take advantage of each VU making multiple requests each to produce RPS a factor higher than your VU count.  e.g. Your test may be stable with each VU making 10 rps each. If you wanted to reach 1000 RPS, you may only need 100 VUs in that case. This will vary based on what you are testing and the amount of data returned. For more information on testing APIs, please refer to our article [How to Load Test an API]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-load-test-an-api-with-k6/)
+When testing individual API endpoints, you can take advantage of each VU making multiple requests each to produce requests per second(rps) a factor higher than your VU count.  e.g. Your test may be stable with each VU making 10 rps each. If you wanted to reach 1000 RPS, you may only need 100 VUs in that case. This will vary based on what you are testing and the amount of data returned. For more information on testing APIs, please refer to our article [How to Load Test an API]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-load-test-an-api-with-k6/)
 
 ***
 
