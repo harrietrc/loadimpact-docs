@@ -10,7 +10,8 @@ order: 8
 
 # Purpose
 
-The below sample script is provided as a guide to the overall structure and features available.
+The sample test script provided in this article is intended to be an example to the overall structure of a script, features available, and examples of how to implement those features.
+
 Feel free to edit the script, as needed, or use it unedited to test Load Impact's test system.
 
 

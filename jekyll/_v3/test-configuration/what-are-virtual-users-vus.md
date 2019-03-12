@@ -4,7 +4,6 @@ title: What are VUs (Virtual Users)?
 description: Definition of Load Impact's Virtual Users. Complex simulated users capable of making multiple concurrent network connections.
 categories: [test-configuration]
 order: 2
-redirect_from: /knowledgebase/articles/174260-what-are-virtual-users-vus
 ---
 
 ***
