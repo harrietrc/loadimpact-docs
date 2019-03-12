@@ -3,7 +3,7 @@ layout: classic-docs
 title: What are VUs (Virtual Users)?
 description: Definition of what Virtual Users are in context of Load Impact.
 categories: [getting-started]
-order: 8
+order: 3
 redirect_from: /knowledgebase/articles/174260-what-are-virtual-users-vus
 ---
 
