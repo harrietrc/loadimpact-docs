@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Scheduling tests within the Load Impact Web UI
+title: Scheduling tests within the LoadImpact Web UI
 description: How to schedule your v4.0 tests to run at a set interval or at a later time
 categories: [test-running]
 order: 3
@@ -10,7 +10,7 @@ order: 3
 
 <h1>Background</h1>
 
-It's not always feasible to be able to trigger a test to run when you need it.  The scheduling option in Load Impact allows you to configure a test to execute at a particular time, and on a regular interval, if needed.
+It's not always feasible to be able to trigger a test to run when you need it.  The scheduling option in LoadImpact allows you to configure a test to execute at a particular time, and on a regular interval, if needed.
 
 Some reasons include, but are not limited to:
 - You need to test a production system and want to do it during hours with minimal usage
@@ -19,7 +19,7 @@ Some reasons include, but are not limited to:
 
 ## Scheduling
 
-You have the ability to schedule any tests that currently exists in your Load Impact account that has been executed on our cloud service (you can not schedule a locally run test through the web UI). You may also schedule tests that you create within the web UI after saving your configuration.
+You have the ability to schedule any tests that currently exists in your LoadImpact account that has been executed on our cloud service (you can not schedule a locally run test through the web UI). You may also schedule tests that you create within the web UI after saving your configuration.
 
 For scheduling a new test configuration, the option will appear after you click save.
 
@@ -36,3 +36,6 @@ In both cases, after clicking "Schedule" you are presented with the following op
 ![]({{ site.baseurl }}/assets/img/v4/test-running/test-scheduling/schedule-options.png)
 
 Finally - we do recommend setting up notifications to complete an automated loop.  Schedule your test to run, and get notified of the results/completion of your test. 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwMzI5OTE2OTldfQ==
+-->
