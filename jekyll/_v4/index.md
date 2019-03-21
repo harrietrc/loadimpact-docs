@@ -19,11 +19,11 @@ Important links:
 - [k6 scripting API](http://docs.k6.io/docs)
 - [k6 project page](https://k6.io/)
 - [k6 GitHub repo](https://github.com/loadimpact/k6)
-- [What IP addresses are used by Load Impact?]({{ site.baseurl }}/4.0/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/)
+- [What IP addresses are used by LoadImpact?]({{ site.baseurl }}/4.0/frequently-asked-questions/what-ip-addresses-are-used-by-load-impact/)
 - [Definitions of our support levels](https://loadimpact.com/premium-support/).
 
 
 Please be sure to whitelist `@loadimpact.com` within your email settings/spam filter to ensure you receive responses to anything you send in.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTY4MzExNV19
+eyJoaXN0b3J5IjpbLTE1NDExNDkwNDNdfQ==
 -->
