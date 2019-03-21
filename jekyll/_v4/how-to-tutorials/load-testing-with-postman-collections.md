@@ -14,11 +14,11 @@ order: 4
 
 [Postman](https://getpostman.com/) is one of the best-in-market tools for functional testing of APIs. As a Postman user, you organize your API tests into collections of requests. While this is great for functional testing, it's also important to understand how API endpoints perform under load.
 
-The presented information covers how to use the Portman to LoadImpact converter with version 4.0 of Load Impact. Version 4.0 is based on the open source load generator, k6.
+The presented information covers how to use the Portman to LoadImpact converter with version 4.0 of LoadImpact. Version 4.0 is based on the open source load generator, k6.
 
-## How to use the Postman to Load Impact converter
+## How to use the Postman to LoadImpact converter
 
-Load Impact provides a [CLI tool for converting Postman collections to k6 tests](https://github.com/loadimpact/postman-to-k6).
+LoadImpact provides a [CLI tool for converting Postman collections to k6 tests](https://github.com/loadimpact/postman-to-k6).
 
 ## Installation and usage
 
@@ -44,14 +44,14 @@ The following section describes the steps to convert your Postman collections to
     Create [custom metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
     Define [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
 
-5. Utilize your script with your Load Impact account
+5. Utilize your script with your LoadImpact account
     `k6 run k6-script.js` will execute your script locally with local output
-    `k6 run k6-script.js -o cloud` will execute locally with cloud output to the Load Impact platform
-    `k6 cloud k6-script.js` will package up the script and any dependencies for execution on Load Impact's infrastructure
+    `k6 run k6-script.js -o cloud` will execute locally with cloud output to the LoadImpact platform
+    `k6 cloud k6-script.js` will package up the script and any dependencies for execution on LoadImpact's infrastructure
 
 **See also**:
 - [How to do a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %})
 - [How to convert HAR files to k6 tests]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-convert-har-to-k6-test.md %})
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMzg1MTg1XX0=
+eyJoaXN0b3J5IjpbLTg0MTkwMDkzMV19
 -->
