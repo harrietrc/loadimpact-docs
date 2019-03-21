@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Cloud execution
-description: An overview running k6 tests with Load Impact Cloud Execution
+description: An overview running k6 tests with LoadImpact Cloud Execution
 categories: [test-running]
 order: 2
 ---
@@ -10,7 +10,7 @@ order: 2
 
 # Purpose
 
-Explanation of Load Impact's cloud service and how to utilize it with your k6 test scripts.
+Explanation of LoadImpact's cloud service and how to utilize it with your k6 test scripts.
 
 Cloud execution is a convenient extension to the [local/on-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %}) capability of k6. Great when you need to run larger tests or distribute traffic generation across several geographic locations (aka "load zones").
 
@@ -20,20 +20,20 @@ When you want to run a k6 test from the cloud you simple change the k6 command u
 
 `k6 cloud script.js`
 
-### Authenticating with Load Impact cloud service
+### Authenticating with LoadImpact cloud service
 
-Before you can execute `k6 cloud ...` you'll need to authenticate with the Load Impact cloud service. You can login with your Load Impact credentials by entering the following command into your terminal:
+Before you can execute `k6 cloud ...` you'll need to authenticate with the LoadImpact cloud service. You can login with your LoadImpact credentials by entering the following command into your terminal:
 
 `k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>
-    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a Load Impact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
+    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a LoadImpact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
 </div>
 
 <div class="callout callout-warning" role="alert">
     <b>Docker Users</b><br>
-    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the Load Impact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
+    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the LoadImpact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
 </div>
 
 ### GUI based approach
@@ -113,12 +113,12 @@ To use environment variables when running a cloud executed test you use one or m
 
 <div class="callout callout-warning" role="alert">
     <b>Use the CLI flags to set environment variables</b><br>
-    With cloud execution you must use the CLI flags (<code>-e/--env</code>) to set <a href="{{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}" class="alert-link">environment variables</a>. Environment variables set in the local terminal before executing k6 won't be forwarded to the Load Impact cloud service, and thus won't be available to your script when executing in the cloud.
+    With cloud execution you must use the CLI flags (<code>-e/--env</code>) to set <a href="{{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}" class="alert-link">environment variables</a>. Environment variables set in the local terminal before executing k6 won't be forwarded to the LoadImpact cloud service, and thus won't be available to your script when executing in the cloud.
 </div>
 
-### Load Impact environment variables
+### LoadImpact environment variables
 
-When running a cloud executed test with Load Impact the following environment variables will always be set:
+When running a cloud executed test with LoadImpact the following environment variables will always be set:
 
 Name|	Value|	Description
 -|-|-
@@ -179,3 +179,6 @@ export function frontpageScenario() {
 
 ## See also
 - [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwMTUyODk1Ml19
+-->
