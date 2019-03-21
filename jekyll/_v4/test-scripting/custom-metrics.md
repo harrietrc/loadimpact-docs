@@ -9,7 +9,7 @@ order: 10
 ***
 
 <h1>Background</h1>
-Custom Metrics allow you to track something that is not part of the standard metrics in Load Impact.
+Custom Metrics allow you to track something that is not part of the standard metrics in LoadImpact.
 
 The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All four can be used when creating custom metrics. Below we provide examples of each and how they could be utilized within a test.
 
@@ -96,3 +96,6 @@ export default function() {
 Refer to k6 docs on [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) for additional information.
 
 **Next**: [Ramping configurations]({{ site.baseurl }}{% link _v4/test-scripting/load-test-ramping-configurations.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkwMTQ4Njc5OV19
+-->
