@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Authenticating with cloud service from k6
-description: An overview of authenticating with Load Impact cloud service from k6
+description: An overview of authenticating with LoadImpact cloud service from k6
 categories: [test-running]
 order: 0
 ---
@@ -10,7 +10,7 @@ order: 0
 
 # Purpose
 
-Explanation of the different ways that you can log into Load Impact's cloud service from k6 for the purpose of [running tests locally and streaming results to Insights]({{ site.baseurl }}/4.0/test-running/local-on-premise-execution/#streaming-results-to-insights) or [running cloud executed tests]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %}).
+Explanation of the different ways that you can log into LoadImpact's cloud service from k6 for the purpose of [running tests locally and streaming results to Insights]({{ site.baseurl }}/4.0/test-running/local-on-premise-execution/#streaming-results-to-insights) or [running cloud executed tests]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %}).
 
 ## Authenticating using email/password
 
@@ -88,3 +88,6 @@ When your Load Impact API authentication token has been added to the config file
 ## See also
 - [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
 - [Cloud execution]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTgyMzczNjc4XX0=
+-->
