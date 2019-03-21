@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact 4.0 Trial Guide
+title: LoadImpact 4.0 Trial Guide
 description: Tutorial to utilize all the features within Load Impact 4.0, both in the cloud and locally with it's companion, k6.
 categories: [getting-started]
 order: 1
@@ -10,9 +10,9 @@ redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load
 ***
 
 <h1>Purpose</h1>
-The purpose of this document is to aid you in exploring the primary features available in Load Impact as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing.  If you complete the guide, you will start with the simpliest test that requires only inputting a URL and end with triggering tests from the command line.
+The purpose of this document is to aid you in exploring the primary features available in LoadImpact as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing.  If you complete the guide, you will start with the simpliest test that requires only inputting a URL and end with triggering tests from the command line.
 
-Load Impact is built around an open source load generator which also functions as a command line interface to communicate with our cloud platform. This load generator is named k6, it is built in Go and allows you to express your test cases as real code, JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests. **Every Load Impact test has a JavaScript file that will control it's configuration and it's execution.**
+LoadImpact is built around an open source load generator which also functions as a command line interface to communicate with our cloud platform. This load generator is named k6, it is built in Go and allows you to express your test cases as real code, JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests. **Every Load Impact test has a JavaScript file that will control it's configuration and it's execution.**
 
 
 - TOC
@@ -295,3 +295,6 @@ The Load Impact Support and Client Success teams are here to help should you hav
 - [GitHub Repo](https://github.com/loadimpact/k6)
 - [Load Impact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [How to create a HAR recording]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-do-browser-recording/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NzY0NjE4MjFdfQ==
+-->
