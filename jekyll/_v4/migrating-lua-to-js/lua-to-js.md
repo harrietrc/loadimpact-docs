@@ -6,7 +6,7 @@ categories: [migrating-lua-to-js]
 order: 1
 ---
 
-Lua and JS share most of the fundamental logical constructs and control flow mechanisms that are commonly found in general purpose programming languages. Same goes for the load testing oriented APIs that we've added in each respective product. This section will look at how to convert Lua APIs into the JS equivalent.
+Lua and JavaScript (JS) share most of the fundamental logical constructs and control flow mechanisms that are commonly found in general purpose programming languages. Same goes for the load testing oriented APIs that we've added in each respective product. This section will look at how to convert Lua APIs into the JS equivalent.
 
 ## High-level differences
 
@@ -22,7 +22,7 @@ http.get("https://test.loadimpact.com/")
 client.sleep(3)
 {% endhighlight %}
 
-#### JavaScript (JS)
+#### JS
 In JS you need to explicitly import the builtin modules and APIs that you want to use:
 
 {% highlight js linenos %}
@@ -245,5 +245,5 @@ export default function() {
 
 For more information, see the [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) k6 docs (there `Counter`, `Gauge` and `Rate` metric types beyond the `Trend` one used above).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTYwNDY0M119
+eyJoaXN0b3J5IjpbNDIwNTEyODY5XX0=
 -->
