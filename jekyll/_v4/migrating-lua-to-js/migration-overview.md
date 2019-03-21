@@ -17,11 +17,11 @@ When looking more closely though there are some differences in how you accomplis
 
 A big difference is in the workflow that you can accomplish with each respective product.
 
-The 3.0 product is completely cloud based, user scenarios and test configuration are created/edited and stored in the Load Impact cloud service, and running tests is also done exclusively from the cloud. This also means the target system that is being tested needs to be accessible from the public Internet.
+The 3.0 product is completely cloud based, user scenarios and test configuration are created/edited and stored in the LoadImpact cloud service, and running tests is also done exclusively from the cloud. This also means the target system that is being tested needs to be accessible from the public Internet.
 
-With the 4.0 product we've opened up the platform in two important ways. First, the core load testing software, [k6](https://github.com/loadimpact/k6), is now an open source tool, and secondly it can be used both [on-premise]({{ site.baseurl }}/4.0/test-running/local-on-premise-execution/) as well as from the Load Impact service via our [cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/) functionality. The user scenarios and test configuration has been merged into one, it's now all just JavaScript code, so very version control friendly.
+With the 4.0 product we've opened up the platform in two important ways. First, the core load testing software, [k6](https://github.com/loadimpact/k6), is now an open source tool, and secondly it can be used both [on-premise]({{ site.baseurl }}/4.0/test-running/local-on-premise-execution/) as well as from the LoadImpact service via our [cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/) functionality. The user scenarios and test configuration has been merged into one, it's now all just JavaScript code, so very version control friendly.
 
-This brings us to an important difference, in the 4.0 product you're responsible for storing and version controlling your tests (the JavaScript combining user scenario and test configuration), and the Load Impact cloud service can provide you with result storage, visualization and trending, as well as geographically distributed cloud execution of tests.
+This brings us to an important difference, in the 4.0 product you're responsible for storing and version controlling your tests (the JavaScript combining user scenario and test configuration), and the LoadImpact cloud service can provide you with result storage, visualization and trending, as well as geographically distributed cloud execution of tests.
 
 ### User scenario
 In the 3.0 product user scenarios described using Lua code. You can end up with the Lua code in various ways, by using one of the recorder options, the Postman converter or hand coding it, but at the end of the day the output of all these various ways is a piece of Lua code.
@@ -31,7 +31,7 @@ In the 4.0 product user scenarios are described using JavaScript, the ES6 versio
 See the [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/migrating-lua-to-js/lua-to-js.md %}) for more information on how to migrate your Lua user scenarios to JS.
 
 ### Test configuration
-In the 3.0 product you compose one or more user scenarios into a separate entity known as a "Test" (aka "Test configuration"), and then add additional configuration like traffic simulation profile and thresholds. This is done through the Load Impact WebApp UI.
+In the 3.0 product you compose one or more user scenarios into a separate entity known as a "Test" (aka "Test configuration"), and then add additional configuration like traffic simulation profile and thresholds. This is done through the LoadImpact WebApp UI.
 
 In the 4.0 product the equivalent configuration options are specified in the script itself:
 
@@ -66,5 +66,5 @@ For more information, see [configuration options]({{ site.baseurl }}{% link _v4/
 
 Next: [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/migrating-lua-to-js/lua-to-js.md %})
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTM3ODE1OV19
+eyJoaXN0b3J5IjpbLTE5NDU3OTE4MV19
 -->
