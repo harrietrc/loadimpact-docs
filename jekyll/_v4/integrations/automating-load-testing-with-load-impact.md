@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to automate load tests with Load Impact/k6
-description: How to automate your load tests with Load Impact and k6
+title: How to automate load tests with LoadImpact/k6
+description: How to automate your load tests with LoadImpact and k6
 categories: [integrations]
 order: 1
 hide: true
@@ -21,3 +21,6 @@ Before you start with either method below, you should have a test that you want 
 - What's an acceptable failure rate?
 - Are any failures acceptable?
 - What are my most critical requests?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwOTgwNTQ4ODldfQ==
+-->
