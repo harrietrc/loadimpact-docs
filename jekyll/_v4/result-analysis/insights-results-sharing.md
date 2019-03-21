@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: How do I share v4.0 results?
+title: How do I share tests results with others?
 description: Different ways to share your Load Impact v4.0 results with others on your team
 categories: [results-analysis]
 order: 7
