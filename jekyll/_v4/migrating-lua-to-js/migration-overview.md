@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Migration overview
-description: Overview of differences between Load Impact 3.0 (Lua) and Load Impact Next Gen (JS/k6) products
+description: Overview of differences between LoadImpact 3.0 (Lua) and LoadImpact Next Gen (JS/k6) products
 categories: [migrating-lua-to-js]
 order: 0
 ---
@@ -65,3 +65,6 @@ export let options = {
 For more information, see [configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %}).
 
 Next: [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/migrating-lua-to-js/lua-to-js.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA2NTM3ODE1OV19
+-->
