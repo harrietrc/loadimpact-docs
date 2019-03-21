@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Migrating from Lua to JS (k6)
-description: Migration from Load Impact 3.0 (Lua) to Load Impact Next Gen (JS/k6)
+description: Migration from LoadImpact 3.0 (Lua) to LoadImpact Next Gen (JS/k6)
 categories: [migrating-lua-to-js]
 order: 1
 ---
@@ -22,7 +22,7 @@ http.get("https://test.loadimpact.com/")
 client.sleep(3)
 {% endhighlight %}
 
-#### JS
+#### JavaScript (JS)
 In JS you need to explicitly import the builtin modules and APIs that you want to use:
 
 {% highlight js linenos %}
@@ -244,3 +244,6 @@ export default function() {
 {% endhighlight %}
 
 For more information, see the [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) k6 docs (there `Counter`, `Gauge` and `Rate` metric types beyond the `Trend` one used above).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjEzMTYwNDY0M119
+-->
