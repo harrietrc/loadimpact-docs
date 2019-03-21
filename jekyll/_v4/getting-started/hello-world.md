@@ -27,7 +27,7 @@ To get started with LoadImpact 4.0 you'll need to complete a few steps:
 
 1. Download and install k6 for your platform of choice: Linux, Mac or Windows
 2. Run your first k6 test
-3. Login to your Load Impact account and stream your results to Load Impact Insights
+3. Login to your LoadImpact account and stream your results to LoadImpact Insights
 
 ## Download and install k6
 
@@ -147,11 +147,11 @@ We were presented with a progress bar for the 3m duration of the test before bei
 
 Read more about [VU ramping configurations]({{ site.baseurl}}{% link _v4/test-scripting/load-test-ramping-configurations.md %}) in the test scripting section.
 
-## Stream results to Load Impact Insights
+## Stream results to LoadImpact Insights
 
-So far we've only used one component (k6) of Load Impact 4.0. Let's have a look at the centerpiece of the cloud offering, Load Impact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just log in to your Load Impact account and add `-o cloud`:
+So far we've only used one component (k6) of LoadImpact 4.0. Let's have a look at the centerpiece of the cloud offering, LoadImpact Insights. Insights is used for storing, analyzing, sharing, and trending k6 test results. It's easy to use, you just log in to your LoadImpact account and add `-o cloud`:
 
-**Login to your Load Impact account**:
+**Login to your LoadImpact account**:
 
 `k6 login cloud`
 
@@ -161,21 +161,21 @@ So far we've only used one component (k6) of Load Impact 4.0. Let's have a look 
 
 ![Streaming to Insights]({{ site.baseurl }}/assets/img/v4/getting-started/hello-world-streaming-k6-exec.png)
 
-The interesting in the terminal this time around is the `output: cloud (https://app.loadimpact.com/k6/runs/12696)` line which tells us that we can go look at the test results in Load Impact Insights by opening the provided URL. Let's do that:
+The interesting in the terminal this time around is the `output: cloud (https://app.loadimpact.com/k6/runs/12696)` line which tells us that we can go look at the test results in LoadImpact Insights by opening the provided URL. Let's do that:
 
 ![Test results in Insights]({{ site.baseurl }}/assets/img/v4/getting-started/hello-world-streaming-exec-insights.png)
 
 Learn more about Insights in the [result analysis]({{ site.baseurl}}{% link _v4/result-analysis/insights-overview.md %}) section.
 
-## Running a test with Load Impact Cloud Execution
+## Running a test with LoadImpact Cloud Execution
 
-The last step of this intro guide is to try the last component of Load Impact 4.0, Load Impact Cloud Execution.
+The last step of this intro guide is to try the last component of LoadImpact 4.0, LoadImpact Cloud Execution.
 
 The only change we need to make is that we'll need to change the k6 command used from `run` to `cloud`:
 
 `k6 cloud script.js`
 
-Same as when we streamed our results to Insights, we'll now get a link to Insights to view the test results of this Load Impact Cloud Executed test.
+Same as when we streamed our results to Insights, we'll now get a link to Insights to view the test results of this LoadImpact Cloud Executed test.
 
 Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _v4/test-running/cloud-execution.md %}) section.
 
@@ -185,5 +185,5 @@ Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link 
 
 Now that you've successfully run your first batch of k6 tests, consider the following [load test preparations]({{ site.baseurl}}{% link _v4/getting-started/load-test-preparations.md %}) to assist on your journey or performance testing mastery.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjM0Mzk2XX0=
+eyJoaXN0b3J5IjpbLTU1OTQyMjU4XX0=
 -->
