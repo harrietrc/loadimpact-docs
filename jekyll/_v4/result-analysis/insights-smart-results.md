@@ -10,7 +10,7 @@ order: 6
 
 <h1>Background</h1>
 
-LoadImpact's Performance Alerts are algorithms built into Load Impact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
+LoadImpact's Performance Alerts are algorithms built into LoadImpact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
 
 - TOC
 {:toc}
@@ -119,5 +119,5 @@ See also:
 - [Results Analysis]({{ site.baseurl }}/4.0/result-analysis/)
 - [Why should I filter domains?]({{ site.baseurl }}/4.0/frequently-asked-questions/why-should-i-filter-domains/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTM5ODMyNl19
+eyJoaXN0b3J5IjpbLTk0Njg0ODc4XX0=
 -->
