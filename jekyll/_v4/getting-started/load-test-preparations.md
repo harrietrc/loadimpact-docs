@@ -10,7 +10,7 @@ order: 2
 
 ## Purpose
 
-By now you should have an understanding of the basic parts of k6 and testing with Load Impact. If you haven't completed our [`Hello World`]({{ site.baseurl }}/4.0/getting-started/hello-world/), we suggest going back and doing so.
+By now you should have an understanding of the basic parts of k6 and testing with LoadImpact. If you haven't completed our [`Hello World`]({{ site.baseurl }}/4.0/getting-started/hello-world/), we suggest going back and doing so.
 
 This next section is intended to walk through the suggested steps that will help you get started and running your first test, faster. The best tests are the ones that simulate the most realistic conditions and user behavior. However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
 
@@ -39,7 +39,7 @@ This depends on what you are testing, and there is a good chance you want to thi
 When testing anything that is "User journey" related, webapps, websites, or API endpoints in a specific order you should think in terms of Virtual Users. It's important to also note that Virtual Users are concurrent, unless specified otherwise, they will continue to iterate through their script until the test is complete. A small number of Virtual Users can create a number of sessions magnitudes higher than their count. _This is a very common point of overestimation we see._
 
 #### Requests per second
-When testing individual API endpoints it makes more sense to think in terms of request per second. As mentioned above, Load Impact's virtual users are complex and can make multiple requests per second each. For example, if you wanted to test an endpoint with 100 rps you wouldn't need 100 virtual users in nearly all cases.
+When testing individual API endpoints it makes more sense to think in terms of request per second. As mentioned above, LoadImpact's virtual users are complex and can make multiple requests per second each. For example, if you wanted to test an endpoint with 100 rps you wouldn't need 100 virtual users in nearly all cases.
 
 ### Calculating Virtual Users
 
@@ -80,3 +80,6 @@ You should plan to run the following tests:
   - Most commonly integrated as part of automation, such as a CI pipeline
 
 Next step: [Create a user scenario]({{ site.baseurl }}/4.0/getting-started/create-a-user-scenario/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQ2MTgzNjgyOV19
+-->
