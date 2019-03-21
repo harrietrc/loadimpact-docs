@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Insights overview
-description: An overview of Load Impact Insights and how to utilize it to get actionable data from your load tests
+description: An overview of LoadImpact Insights and how to utilize it to get actionable data from your load tests
 categories: [result-analysis]
 order: 0
 redirect_from: /knowledgebase/articles/1172458-k6-insights-overview
@@ -105,3 +105,6 @@ See more:
 - [Insights: breakdown tree view]({{ site.baseurl }}{% link _v4/result-analysis/insights-break-down-tree.md %})
 - [Insights: analysis view]({{ site.baseurl }}{% link _v4/result-analysis/insights-analysis-view.md %})
 - [Insights: URL table]({{ site.baseurl }}{% link _v4/result-analysis/insights-url-table.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY0MDQyODczXX0=
+-->
