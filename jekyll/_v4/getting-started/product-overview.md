@@ -16,7 +16,7 @@ As illustrated below LoadImpact 4.0 is composed of 3 major components:
 
 - **[LoadImpact Cloud Execution]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-cloud-execution)** - A Load Impact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by Load Impact. We provide on-demand support for larger tests and geographically distributed tests.
 
-![Load Impact 4.0 product overview]({{ site.baseurl }}/assets/img/v4/getting-started/v4-product-overview.svg)
+![LoadImpact 4.0 product overview]({{ site.baseurl }}/assets/img/v4/getting-started/v4-product-overview.svg)
 
 ## k6
 
@@ -32,5 +32,5 @@ There are many different use cases for running load tests. In some, running test
 
 Now, let's get you set up so you can [run your very first test]({{ site.baseurl}}{% link _v4/getting-started/hello-world.md %})
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTc0MDkxM119
+eyJoaXN0b3J5IjpbLTE0OTc3NTI1NjVdfQ==
 -->
