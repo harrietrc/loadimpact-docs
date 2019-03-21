@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to integrate Load Impact with Jenkins
-description: Guide to integrate Load Impact 4.0 into your Jenkins pipeline
+title: How to integrate LoadImpact with Jenkins
+description: Guide to integrate LoadImpact 4.0 into your Jenkins pipeline
 categories: [integrations]
 order: 2
 ---
@@ -10,22 +10,22 @@ order: 2
 
 <h1>Purpose</h1>
 
-This guide and sample describes how to integrate Load Impact 4.0 with Jenkins v2 and above. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-jenkins-example).
+This guide and sample describes how to integrate LoadImpact 4.0 with Jenkins v2 and above. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-jenkins-example).
 
 - TOC
 {:toc}
 
 ## Background
 
-Load Impact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation platform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
+LoadImpact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation platform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
 It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
 ## Prerequisites
 
-- A Load Impact account
+- A LoadImpact account
   - Trial or paid plan
-- Load Impact API key
+- LoadImpact API key
 - Test scripts for what you want to test
   - You may utilize our script in lieu of one of yours
 - Familiarity with Jenkins
@@ -78,7 +78,7 @@ Here is a description of what the script does:
 
 ## API Token
 
-Before you jump into Jenkins, you should acquire our API token. This token allows you to communicate with the Load Impact platform. To get your token, go [here](https://app.loadimpact.com/integrations) and select User Token.
+Before you jump into Jenkins, you should acquire our API token. This token allows you to communicate with the LoadImpact platform. To get your token, go [here](https://app.loadimpact.com/integrations) and select User Token.
 
 IMPORTANT:  Generating a new token will discard any previous token you may have. You may reuse the same token for multiple services.
 
@@ -134,7 +134,7 @@ The first stage, "Build Stuff" is just a placeholder in this example. The same i
 
 In this example, the load test is triggered in the "test" stage. We first set our `K6K6CLOUD_TOKEN` as an environment variable, if you are following this example exactly, replace `INSERT_MY_API_TOKEN_HERE` with your actual token. Next, we check if the build node the pipeline is being executed on is a windows or unix box. We then execute the correct command based on the outcome of that.
 
-Note: This test will execute k6 locally, and stream results to the Load Impact cloud service. Alternatively, you can execute solely on the Load Impact cloud service by
+Note: This test will execute k6 locally, and stream results to the LoadImpact cloud service. Alternatively, you can execute solely on the LoadImpact cloud service by
 
 ## Execute
 
@@ -158,7 +158,7 @@ If the load test is successful, our build will also be successful and the build 
 
 ## Result analysis
 
-Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
+Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the LoadImpact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
 
 ## See also
 - [GitHub repo for this example](https://github.com/loadimpact/k6-jenkins-example)
@@ -167,3 +167,6 @@ Passing builds aren't too interesting. When builds fail, you will want to determ
 - [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
 - [Insights Overview]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
 - [Checks]({{ site.baseurl }}/4.0/test-scripting/checks/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc1MTk1MTcwMV19
+-->
