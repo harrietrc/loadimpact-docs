@@ -1,4 +1,4 @@
-Thank you for your interest in the Load Impact documentation
+Thank you for your interest in the LoadImpact documentation
 
 
 ## Issues
@@ -6,7 +6,7 @@ Thank you for your interest in the Load Impact documentation
 Issues should be used to suggest new documentation, provide feedback on existing documentation,
 or give us feedback about the documentation in general.
 
-If you have a question related to the Load Impact tool, you should instead engage
+If you have a question related to the LoadImpact tool, you should instead engage
 with the support team by utilizing the live chat within the documentation at
 support.loadimpact.com, or by email support@loadimpact.com.
 
@@ -20,3 +20,6 @@ For small changes, such as typos or formatting, please utilize the
 "Suggest an edit" at the bottom of the specific document. You will be able to
 make your change and submit an edit directly in GitHub.
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NjYwMTk1NjFdfQ==
+-->
