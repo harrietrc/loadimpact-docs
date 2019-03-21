@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Scripting examples
-description: Example test scripts for k6 and Load Impact 4.0
+description: Example test scripts for k6 and LoadImpact 4.0
 categories: [test-scripting]
 order: 13
 redirect_from:
@@ -66,7 +66,7 @@ As HTTP is a stateless protocol, cookies are used by server-side applications to
 <div class="callout callout-warning" role="alert">
     <b>Note that this only works when using k6 locally</b><br>
     The <code>console.log()</code> family of APIs are currently only useful when running k6 locally.
-    When running k6 tests with Load Impact Cloud Execution the logs will be discarded.
+    When running k6 tests with LoadImpact Cloud Execution the logs will be discarded.
 </div>
 
 {% include 4.0/scripting-examples/http-cookies-log-all-in-resp.md %}
@@ -140,7 +140,7 @@ There are a few of steps to make this work:
 
     `import papaparse from "./papaparse.js"`
 
-Here's an example using Papa Parse to parse a CSV file of username/password pairs and using that data to login to the Load Impact test site:
+Here's an example using Papa Parse to parse a CSV file of username/password pairs and using that data to login to the LoadImpact test site:
 
 {% include 4.0/scripting-examples/data-parameterization-csv.md %}
 
@@ -217,3 +217,6 @@ Here's an example generating a v1 and v4 UUID:
 
 ### Testing a WebSocket API
 {% include 4.0/scripting-examples/websocket-echo-api.md %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODI0MjA0ODcyXX0=
+-->
