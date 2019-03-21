@@ -22,7 +22,7 @@ LoadImpact is built around an open source load generator which also functions as
 
 ## Creating tests
 
-There are multiple ways to create tests within Load Impact.  Depending on your need, you may want to choose one over the other. Some methods, such as `Enter Website URLs`, are focused on quickly running tests while other methods are focused on giving you fine control over test execution. Ideally, you should choose the method that meets the need for what you are testing at the moment and the data you are looking to get back.
+There are multiple ways to create tests within LoadImpact.  Depending on your need, you may want to choose one over the other. Some methods, such as `Enter Website URLs`, are focused on quickly running tests while other methods are focused on giving you fine control over test execution. Ideally, you should choose the method that meets the need for what you are testing at the moment and the data you are looking to get back.
 
 To create a new test, click **Create New Test** in the left side bar. You will be presented with the following options for API or website testing:
 
@@ -89,15 +89,15 @@ Additional resources can be found in the [Results Analysis](#results-analysis) s
 
 ## Creating tests from Browser Recordings
 
-When testing web apps or websites, you often want to emulate real user behavior as they make their journey through your app or site.  Load Impact has two methods that can be used to generate scripts from browser activity.  A Chrome Extension and a HAR file converter. Both allow you to record a journey you take in a local session and convert that to a JavaScript file to be used for your tests.
+When testing web apps or websites, you often want to emulate real user behavior as they make their journey through your app or site.  LoadImpact has two methods that can be used to generate scripts from browser activity.  A Chrome Extension and a HAR file converter. Both allow you to record a journey you take in a local session and convert that to a JavaScript file to be used for your tests.
 
 These methods can save an enormous amount of time, by letting you focus on fine tuning and adding programmtic logic to your test(if applicable!) rather than hand writing each request.
 
 ***
 
-### Using the Load Impact Chrome Extension to create a test
+### Using the LoadImpact Chrome Extension to create a test
 
-The Load Impact [Chrome Extension](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj) allows you to very quickly generate a test by browsing like a user would on your web app or website.
+The LoadImpact [Chrome Extension](https://chrome.google.com/webstore/detail/load-impact-k6-test-scrip/docmmckkhiefiadappjepjllcoemijpj) allows you to very quickly generate a test by browsing like a user would on your web app or website.
 
 Once you have downloaded the Chrome Extension, using it is extremely simple:
 
@@ -149,7 +149,7 @@ The HAR file conversion tool presents options similar to **Entering Website URLs
 
 ## Using the Web IDE to create a Test Script in Javascript
 
-One of the powerful features of Load Impact 4.0 is the ability to create test scripts directly in JavaScript. There’s an in-app editor (IDE) where you can create, edit, and run your test scripts right in the Load Impact SaaS platform. This means you don’t need to download and install k6 to create or run your initial tests as you evaluate our platform.
+One of the powerful features of LoadImpact 4.0 is the ability to create test scripts directly in JavaScript. There’s an in-app editor (IDE) where you can create, edit, and run your test scripts right in the LoadImpact SaaS platform. This means you don’t need to download and install k6 to create or run your initial tests as you evaluate our platform.
 
 To get started with scripting using the Web IDE, click on **[Create New Test](https://app.loadimpact.com/k6/tests/new)** and select **Scripting for APIs** or **Scripting** under the Website/App Testing heading. Both options are **pre-populated with example scripts** that you can edit as required.
 
@@ -161,9 +161,9 @@ Previously, we mentioned that at the heart of every test is a JavaScript file.  
 
 ***
 
-## Using k6 locally with the Load Impact Cloud
+## Using k6 locally with the LoadImpact Cloud
 
-The Load Impact web interface we have explored thus far has plenty of functionality to serve as a web based Load Testing tool and many users use it just for that purpose.  While the local execution mode isn't appropraite for everyone, many users enjoy the power they gain from it.
+The LoadImpact web interface we have explored thus far has plenty of functionality to serve as a web based Load Testing tool and many users use it just for that purpose.  While the local execution mode isn't appropraite for everyone, many users enjoy the power they gain from it.
 
 
 _What do I gain by using k6 locally compared to the Web IDE/Interface?_
@@ -174,13 +174,13 @@ While not an all inclusive list, there are a few things that become noticeably m
 - When parameterizing data you can open files, such as a CSV or JSON to be your source for data.
 - You can utilize your local version control systems with your scripts.
 - You can utilize "local execution" mode to debug your test.
-- You can run tests locally and stream results into Load Impact Insights for analysis.
+- You can run tests locally and stream results into LoadImpact Insights for analysis.
 - k6, being a command line tool, easily integrates into CI/CD pipelines
 - and more...
 
 Aside from where the load generates from and the results output, the script itself remains unchanged between execution modes. This allows you to shift testing left to be available in the development cycle. The following section will cover the different execution options available.
 
-**Note**: When running a cloud test from the command line, k6 will automatically archive all dependencies for your test and upload it to the Load Impact cloud for execution.
+**Note**: When running a cloud test from the command line, k6 will automatically archive all dependencies for your test and upload it to the LoadImpact cloud for execution.
 
 ***
 
@@ -242,7 +242,7 @@ k6 run -u 1 -d 10s github.com/loadimpact/k6/samples/http_get.js
 {% endhighlight %}
 
 ##### Local Execution with cloud streaming output
-This mode is useful for testing behind the firewall. Cloud output enables you to analyze your results within Load Impact's cloud platform. In stdout, you are given a link to the test result to watch in real-time.
+This mode is useful for testing behind the firewall. Cloud output enables you to analyze your results within LoadImpact's cloud platform. In stdout, you are given a link to the test result to watch in real-time.
 {% highlight shell %}
 k6 login cloud
 k6 run -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js -o cloud
@@ -250,7 +250,7 @@ k6 run -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js -o cloud
 
 ##### Cloud Execution triggered from local command line
 
-This mode allows you to scale to a large number of Virtual Users on demand, utilizing Load Impact's cloud infrastructure. Your script and it's dependencies (if applicable) are uploading to our cloud service and then executed. In stdout, you are given a link to the test result to watch in real-time.
+This mode allows you to scale to a large number of Virtual Users on demand, utilizing LoadImpact's cloud infrastructure. Your script and it's dependencies (if applicable) are uploading to our cloud service and then executed. In stdout, you are given a link to the test result to watch in real-time.
 {% highlight shell %}
 k6 login cloud
 k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
@@ -261,7 +261,7 @@ k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
 ## Results analysis
 Refer to the following resources for more information on result analysis:
 - Take an [in-app tour](https://app.loadimpact.com/k6/anonymous/9b480b664bee46c3bf1a9d1ffb57328d)
-- [Load Impact insights]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
+- [LoadImpact insights]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
 - [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
 
 ***
@@ -296,5 +296,5 @@ The Load Impact Support and Client Success teams are here to help should you hav
 - [Load Impact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [How to create a HAR recording]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-do-browser-recording/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjA2ODQ3OV19
+eyJoaXN0b3J5IjpbNzAyODkwMDk5XX0=
 -->
