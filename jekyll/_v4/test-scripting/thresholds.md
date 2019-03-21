@@ -9,7 +9,7 @@ order: 7
 ***
 
 <h1>Background</h1>
-This article explains Thresholds and how they are utilized within Load Impact Version 4.0 and k6.
+This article explains Thresholds and how they are utilized within LoadImpact Version 4.0 and k6.
 
 Thresholds are used to specify test pass/fail criteria. Thresholds can be set on all metrics including custom ones and you can limit the data point of a metric that are being included in the evaluation by scoping the threshold with tags.
 
@@ -126,7 +126,7 @@ export let options = {
 
 export default function() {
     let res = http.get("https://loadimpact.com");
-    let contentOK = res.html("h1").text().includes("Load Impact");
+    let contentOK = res.html("h1").text().includes("LoadImpact");
     CounterErrors.add(!contentOK);
 };
 {% endhighlight %}
@@ -179,7 +179,7 @@ export let options = {
 
 export default function() {
     let res = http.get("https://loadimpact.com");
-    let contentOK = res.html("h1").text().includes("Load Impact");
+    let contentOK = res.html("h1").text().includes("LoadImpact");
     RateContentOK.add(contentOK);
 };
 {% endhighlight %}
@@ -258,3 +258,6 @@ export let options = {
 See the k6 docs on [thresholds](https://docs.k6.io/docs/thresholds) for more information.
 
 **Next**: [Tags]({{ site.baseurl }}{% link _v4/test-scripting/tags.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzQyMTE1MjEyXX0=
+-->
