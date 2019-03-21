@@ -1,5 +1,5 @@
 $(function () {
-    if (top.frames.length != 0) {
+    if (self !== top) {
         setupForEmbedding();
     }
     PlatformGuides.init();
