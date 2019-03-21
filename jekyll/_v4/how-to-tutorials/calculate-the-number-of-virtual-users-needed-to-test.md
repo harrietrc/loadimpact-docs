@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: How to Calculate the number of Virtual Users you need from Google Analytics
-description: How to use data from Google Analytics to calculate the number of Virtual Users required for your Load Impact test
+description: How to use data from Google Analytics to calculate the number of Virtual Users required for your LoadImpact test
 categories: [how-to-tutorials]
 order: 9
 redirect_from:
@@ -76,7 +76,10 @@ No matter the size of your company or the amount of traffic you typically handle
 
 See also:
 - [Virtual Users]({{ site.baseurl }}/4.0/getting-started/what-are-virtual-users/)
-- [Creating tests in Load Impact]({{ site.baseurl }}/4.0/getting-started/create-a-load-impact-test/)
+- [Creating tests in LoadImpact]({{ site.baseurl }}/4.0/getting-started/create-a-load-impact-test/)
 - [Code Samples and Scripting Examples]({{ site.baseurl }}/4.0/test-scripting/examples/)
 - [Test configuration options]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/)
 - [Test ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1MzU2NDg2OTRdfQ==
+-->
