@@ -20,7 +20,7 @@ This guide will speak from a high level on topics related to Load and Performanc
 
 ## Phase 0 - It's a new tool, go explore!
 
-If you are like us here at Load Impact.  You will probably want to spend some time clicking around, trying things without any guidance, and seeing what happens when you click that button (yes, that one).  Go ahead and do that, think of questions you may have about the tool, they may get answered here.  If not, you can always ask us.
+If you are like us here at LoadImpact.  You will probably want to spend some time clicking around, trying things without any guidance, and seeing what happens when you click that button (yes, that one).  Go ahead and do that, think of questions you may have about the tool, they may get answered here.  If not, you can always ask us.
 
 
 ## Phase 1 - Planning, Test Configuration, and Validation
@@ -94,3 +94,6 @@ If, like most users, you started by writing small simple test cases, now is the 
 ## Phase 3 - Ongoing performance Testing
 
 The final step in our methodology is one that is long term. Up until now you have spent a good deal of time and effort creating your test cases, executing your tests, fixing various issues, and improving performance. You can continue to receive returns on the time investment made by including performance testing into your Continuous integration pipelines or just by running tests on a regular basis manually.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIwNjAzNzY0ODhdfQ==
+-->
