@@ -14,7 +14,7 @@ Once a new test has started to run it is immediately possible to share the test 
 ![Sharing results]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-results-sharing/ShareResults20190321.png)
 
 
-This unique generated Public URL will allow access to this specific test only and will be active and accessible at any future date.
+This unique generated Public URL will allow access to this specific test only and will be active and accessible at any future date, as long as test result is not delted.
 
 
 Public URL is contained in this format :
@@ -27,5 +27,5 @@ Public URL is contained in this format :
 If your test result is sensitive and you do not want to share the result publicly, [Team Members]({{ site.baseurl }}/4.0/team-project-management/adding-team-members/) can be added as read/write members of the project the test is a part of. If these Team Members already have access or are Admins - you can simply share the URL with them directly. It is in this format :
 `https://app.loadimpact.com/k6/tests/xxxxxx`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDI4MjMwOTBdfQ==
+eyJoaXN0b3J5IjpbLTkyMjE3ODc4NCwtMTcwMjgyMzA5MF19
 -->
