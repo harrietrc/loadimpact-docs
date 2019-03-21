@@ -27,8 +27,7 @@ Public URL is contained in this format :
 If your test result is sensitive and you do not want to share the result publicly, [Team Members]({{ site.baseurl }}/4.0/team-project-management/adding-team-members/) can be added as read/write members of the project the test is a part of. If these Team Members already have access or are Admins - you can simply share the URL with them directly. It is in this format :
 `https://app.loadimpact.com/k6/tests/xxxxxx`
 
-If you want to read more about how to add team members. Follow this link to the article for how to that: [https://support.loadimpact.com/4.0/team-project-management/adding-team-members/](https://support.loadimpact.com/4.0/team-project-management/adding-team-members/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTc4OTM5MCwtOTIyMTc4Nzg0LC0xNz
-AyODIzMDkwXX0=
+eyJoaXN0b3J5IjpbNTgzMDM3MjYyLC05MjIxNzg3ODQsLTE3MD
+I4MjMwOTBdfQ==
 -->
