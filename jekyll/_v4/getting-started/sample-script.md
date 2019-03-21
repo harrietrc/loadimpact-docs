@@ -12,7 +12,7 @@ order: 8
 
 The sample test script provided in this article is intended to be an example to the overall structure of a script, features available, and examples of how to implement those features.
 
-Feel free to edit the script, as needed, or use it unedited to test Load Impact's test system.
+Feel free to edit the script, as needed, or use it unedited to test LoadImpact's test system.
 
 
 ## Script
@@ -27,7 +27,7 @@ import { Counter, Rate, Trend } from "k6/metrics";
 Global options for your script
 stages - Ramping pattern
 thresholds - pass/fail criteria for the test
-ext - Options used by Load Impact cloud service test name and distribution
+ext - Options used by LoadImpact cloud service test name and distribution
 */
 export let options = {
     stages: [
@@ -154,3 +154,6 @@ export default function() {
 - [Tags]({{ site.baseurl }}/4.0/test-scripting/tags/)
 - [Environment Variables]({{ site.baseurl }}/4.0/test-scripting/environment-variables/)
 - [Custom Metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTM0MzA1NTU1Ml19
+-->
