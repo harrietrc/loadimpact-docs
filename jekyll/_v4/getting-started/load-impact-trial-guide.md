@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: LoadImpact 4.0 Trial Guide
-description: Tutorial to utilize all the features within Load Impact 4.0, both in the cloud and locally with it's companion, k6.
+description: Tutorial to utilize all the features within LoadImpact 4.0, both in the cloud and locally with it's companion, k6.
 categories: [getting-started]
 order: 1
 redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load-impact
@@ -273,7 +273,7 @@ As a best practice, building automation into your development cycle for testing 
 - Improving efficiencies
 - Detecting performance issues, before they become problems in production
 
-Load Impact 4.0 and k6 are designed to fit nicely into automation pipelines or custom processes you've already created. The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls. This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
+LoadImpact 4.0 and k6 are designed to fit nicely into automation pipelines or custom processes you've already created. The most popular CI tools, such as Circle CI, GitLab, Jenkins, Team City, etc. support making command line calls. This allows k6 to fit nicely into these workflows and build processes. Enabling you to run tests as part of the build process, and halt those builds, should a failing result be returned.
 
 The frequency in which you run tests varies from organization to organization. Our best practice recommendation is to _run tests with your nightly builds_.
 
@@ -283,7 +283,7 @@ The frequency in which you run tests varies from organization to organization. O
 ***
 
 ## How can I get help?
-The Load Impact Support and Client Success teams are here to help should you have questions. You can utilize the icon in the lower right corner of this page to start a chat or email us at support [at] loadimpact.com.
+The LoadImpact Support and Client Success teams are here to help should you have questions. You can utilize the icon in the lower right corner of this page to start a chat or email us at support [at] loadimpact.com.
 
 ***
 
@@ -293,8 +293,8 @@ The Load Impact Support and Client Success teams are here to help should you hav
 - [k6 docs](http://docs.k6.io/docs)
 - [k6 project page](https://k6.io/)
 - [GitHub Repo](https://github.com/loadimpact/k6)
-- [Load Impact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
+- [LoadImpact v4.0 Chrome Extension ]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [How to create a HAR recording]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-do-browser-recording/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyODkwMDk5XX0=
+eyJoaXN0b3J5IjpbLTIwMjc5MzU0OTddfQ==
 -->
