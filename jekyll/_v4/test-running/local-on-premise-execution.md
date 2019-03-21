@@ -29,7 +29,7 @@ You do this by first making sure you're logged in to your LoadImpact account:
 
 <div class="callout callout-warning" role="alert">
     <b>Docker Users</b><br>
-    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the Load Impact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
+    If you're running k6 in a Docker container you'll need to make sure that the k6 config file where the LoadImpact API authentication information (an API authentication token) will be stored to is persisted via a Docker volume to the host machine using the <code>-c/--config PATH/TO/CONFIG_FILE</code> CLI flag, e.g. <code>docker run -i -v /path/on-host:/path/in-container/ loadimpact/k6 login cloud -c /path/in-container/config.json</code>.
 </div>
 
 and then adding the `-o cloud` CLI flag:
@@ -46,5 +46,5 @@ Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. 
 
 **See also**: [Cloud execution]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %})
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTU3OTM2NzNdfQ==
+eyJoaXN0b3J5IjpbMjEwNjk1NjY2OV19
 -->
