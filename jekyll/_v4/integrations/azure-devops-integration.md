@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to integrate Azure DevOps/Pipelines with Load Impact/k6
-description: Guide on how to integrate Azure DevOps/Pipelines with Load Impact 4.0/k6
+title: How to integrate Azure DevOps/Pipelines with LoadImpact/k6
+description: Guide on how to integrate Azure DevOps/Pipelines with LoadImpact 4.0/k6
 categories: [integrations]
 order: 4
 ---
@@ -99,7 +99,7 @@ k6 uses JavaScript as it's scripting language making it very flexible to write a
 
 In this example, we will be testing a single webpage. We are ramping up for 10s from 1 to 15 virtual users, stay at that number of virtual users for 20 seconds, and then ramp the test down to 0 virtual users. The duration of your test and number of virtual users used will depend on your needs.
 
-We have named this test `local.js` since it is being run locally straight from Azure Pipelines agent.  Local execution is helpful for script validation or even testing behind the firewall.  **Note:** Locally executed tests can stream results into Load Impact's cloud service for analysis.  You are able to do this by setting the flag `-o cloud`
+We have named this test `local.js` since it is being run locally straight from Azure Pipelines agent.  Local execution is helpful for script validation or even testing behind the firewall.  **Note:** Locally executed tests can stream results into LoadImpact's cloud service for analysis.  You are able to do this by setting the flag `-o cloud`
 
 Since we are planning to have multiple test scenarios, create a separate directory `loadtest` in the root of the repo and place `local.js` file within it.
 
@@ -150,11 +150,11 @@ Once again: commit and push.
 
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/08.png)
 
-If you see the above screen, congrats! You now know how to set up a GitHub project CI build to run on Azure Pipelines and use Load Impact for load testing!
+If you see the above screen, congrats! You now know how to set up a GitHub project CI build to run on Azure Pipelines and use LoadImpact for load testing!
 
 ## k6 cloud run
 
-k6 can also be used to execute tests directly on the Load Impact's cloud service.  This enables you to geographically distribute the origin of your load and not worry about maintaining any load generators.
+k6 can also be used to execute tests directly on the LoadImpact's cloud service.  This enables you to geographically distribute the origin of your load and not worry about maintaining any load generators.
 
 Our test script is nearly identical to the one presented above, with a small change to our options section. We have now defined to run our load test from two datacenters (Ashburn and Dublin). For a list of all available Load Zones from which a load test can be run refer to [this article]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-zones).
 
@@ -208,8 +208,8 @@ steps:
   displayName: Run k6 cloud load test within Azure Pipelines
 {% endhighlight %}
 
-**Important Note:** Notice the usage of token provided from Load Impact. You will need to get this before you commit your code.
-First, we need to get the Load Impact token and set Azure Pipelines secret variable.
+**Important Note:** Notice the usage of token provided from LoadImpact. You will need to get this before you commit your code.
+First, we need to get the LoadImpact token and set Azure Pipelines secret variable.
 
 You can obtain your token from your account at [loadimpact.com](https://loadimpact.com). Go over to [_Integrations_ section](https://app.loadimpact.com/integrations) of the page and click [_Use your token_](https://app.loadimpact.com/account/token) link. Copy the provided token.
 
@@ -226,7 +226,7 @@ Once you enter the options for your project switch to _Variables_ tab within the
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/11.png)
 
 Click _Add_ to add a new variable.
-Under name enter `k6cloud.token` and for its value paste Load Impact's token.
+Under name enter `k6cloud.token` and for its value paste LoadImpact's token.
 Don't forget to set the variable as secret so that it's not visible as plain text in your pipelines output.
 
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/12a.png)
@@ -236,13 +236,16 @@ After entering the values click _Save & queue_ button above and into field _Save
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/12b.png)
 
 Now, you can push your new `loadtests/cloud.js` script alongside new Pipelines script task to trigger a new build.
-You can see some basic output from k6 in Azure Pipelines web UI, but for a more in-depth view and analysis of your test go to [Load Impact's web UI](https://app.loadimpact.com).
+You can see some basic output from k6 in Azure Pipelines web UI, but for a more in-depth view and analysis of your test go to [LoadImpact's web UI](https://app.loadimpact.com).
 
 ![]({{ site.baseurl }}/assets/img/v4/integrations/azure-devops-integration/13.png)
 
 ## See also/Reference
 
  - [All code used in this article is available in a public GitHub repo](https://github.com/loadimpact/k6-azure-pipelines-example).
- - [Your Load Impact token](https://app.loadimpact.com/account/token)
+ - [Your LoadImpact token](https://app.loadimpact.com/account/token)
  - [Load Zones available for Cloud Execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-zones)
  - [Create an account or Login to Azure DevOps](https://dev.azure.com/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMzEzOTQwNDhdfQ==
+-->
