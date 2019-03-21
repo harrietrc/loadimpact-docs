@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Web app and Website Testing Methodology
-description: A testing methodology to help you get started with testing your website or web app with Load Impact
+description: A testing methodology to help you get started with testing your website or web app with LoadImpact
 categories: [testing-methodologies]
 order: 2
 ---
@@ -38,7 +38,7 @@ Preparation is the most important step before any testing. Here are some things 
 ***
 
 ## Recording your initial script
-Load Impact offers a few ways for you to speed up your test scripting by allowing you to record a user journey by browsing like a user would. You can do this by using our [Chrome extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or by generating a HAR file and converting that to a test script using our in app interface or k6. If you have done the preparations above, this should be very straight forward to complete and will give you a head start on scripting.
+LoadImpact offers a few ways for you to speed up your test scripting by allowing you to record a user journey by browsing like a user would. You can do this by using our [Chrome extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or by generating a HAR file and converting that to a test script using our in app interface or k6. If you have done the preparations above, this should be very straight forward to complete and will give you a head start on scripting.
 
 **Do**:
 
@@ -161,3 +161,6 @@ The best results come when you run your tests in a systematic way, where you can
 - [Converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)
 - [Module Imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
 - [Ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA4MDM0MTYzM119
+-->
