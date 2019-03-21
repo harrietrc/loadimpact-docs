@@ -1,7 +1,14 @@
+---
+layout: classic-docs
+title: Why LoadImpact?
+description: What would LoadImpact.com help you accomplish
+categories: [overview]
+order: 0
+hide: false
+---
 
 
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTgzMzc5ODYzMl19
 -->
