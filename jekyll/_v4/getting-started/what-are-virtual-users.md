@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: What are VUs (Virtual Users)?
-description: Definition of what Virtual Users are in context of Load Impact.
+description: Definition of what Virtual Users are in context of LoadImpact.
 categories: [getting-started]
 order: 3
 redirect_from:
@@ -11,7 +11,7 @@ redirect_from:
 
 ***
 
-Virtual Users(VUs) are the entities in Load Impact that execute your test script and make HTTP(s) or websocket requests. VUs are concurrent and will continously iterate through the default function until they ramp down or the test ends.  Any number of VUs will create a number of sessions a factor larger than their total count, depending on test and script length.
+Virtual Users(VUs) are the entities in LoadImpact that execute your test script and make HTTP(s) or websocket requests. VUs are concurrent and will continously iterate through the default function until they ramp down or the test ends.  Any number of VUs will create a number of sessions a factor larger than their total count, depending on test and script length.
 
 For example, if you ran a test with 10 VUs for 10 minutes and the default function took each VU 30 seconds to complete, you would see roughly 200 completions/total sessions generated from this test. This is approximate and will vary based on your ramping configuration.
 
@@ -46,3 +46,6 @@ Further, We wrote this [blog post](http://blog.loadimpact.com/blog/monthly-visit
 - [Chrome Extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [Converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)
 - [Test configuration options]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTg0NDg5MDM1XX0=
+-->
