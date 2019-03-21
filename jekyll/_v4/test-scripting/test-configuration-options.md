@@ -109,7 +109,7 @@ export let options = {
 
 ## ext
 
-**What it is:** An object used to set configuration options for the Load Impact cloud service
+**What it is:** An object used to set configuration options for the LoadImpact cloud service
 
 ### distribution
 
@@ -118,7 +118,7 @@ When running a cloud execution test you can configure from which load zones the 
 
 ### Name
 
-**What it is:** A string specifying the name of your test in the Load Impact cloud.
+**What it is:** A string specifying the name of your test in the LoadImpact cloud.
 
 **How to set it:** In your test script
 
@@ -157,7 +157,7 @@ export let options = {
 Oct 31st 2018: A bug has been identified in all recent versions of k6 that prevents the <code>K6_CLOUD_PROJECT_ID</code> environment variable from being properly applied. The only way to use this environment variable properly is to build k6 from source or use the <code>loadimpact/k6:latest</code> Docker image. Alternatively you can use option 1) and specifying the project ID in the script as shown above.
 </div>
 
-You find the ID of a Load Impact project by selecting a k6 project in the UI and looking in the URL bar of your browser, the `12345` in `https://app.loadimpact.com/projects/12345/dashboard` is the project ID.
+You find the ID of a LoadImpact project by selecting a k6 project in the UI and looking in the URL bar of your browser, the `12345` in `https://app.loadimpact.com/projects/12345/dashboard` is the project ID.
 
 ***
 
@@ -433,7 +433,7 @@ export let options = {
 
 ## blacklistIPs
 
-**What it is:** An object containing the ranges of IPs to blacklist from tests. Load Impact maintains it's own blacklist which contains local, loopback, Load Impact specific IPs, and other IPs
+**What it is:** An object containing the ranges of IPs to blacklist from tests. LoadImpact maintains it's own blacklist which contains local, loopback, LoadImpact specific IPs, and other IPs
 
 **How to set it:** `blacklistIPs` in options or `--blacklist-ip` as a command line flag, or `K6_BLACKLIST_IPS` as a environment variable
 
@@ -482,8 +482,10 @@ export let options = {
     tlsAuth: [
         { domains: ["example.com"],
           cert: open("mycert.pem"),
-          key: open("mycert-key.pem") } 
-    ] 
+          key: open("mycert-key.pem") }
+
+    ]
+
 };
 {% endhighlight %}
 
@@ -541,7 +543,7 @@ export let options = {
 
 ## userAgent
 
-**What it is:** String specifying the user-agent string to use in `User-Agent` headers when making HTTP requests. Custom user-agent strings are often used as a way to [whitelist traffic from the Load Impact cloud infrastructure](/4.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/#opening-up-your-firewall-to-all-ips-potentially-used-in-the-test)
+**What it is:** String specifying the user-agent string to use in `User-Agent` headers when making HTTP requests. Custom user-agent strings are often used as a way to [whitelist traffic from the LoadImpact cloud infrastructure](/4.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/#opening-up-your-firewall-to-all-ips-potentially-used-in-the-test)
 
 **How to set it:** `userAgent` in options or `--user-agent` as a command line flag, or `K6_USER_AGENT` as a environment variable
 
@@ -613,7 +615,7 @@ export let options = {
 
 ## systemTags
 
-**What it is:** Specify the [system tags](https://docs.k6.io/docs/tags-and-groups#section-system-tags) to be collected in metrics. The Load Impact cloud requires certain system tags to be used.
+**What it is:** Specify the [system tags](https://docs.k6.io/docs/tags-and-groups#section-system-tags) to be collected in metrics. The LoadImpact cloud requires certain system tags to be used.
 
 **How to set it:** `systemTags` in options or `--system-tags` as a command line flag, or `K6_SYSTEM_TAGS` as a environment variable
 
@@ -672,3 +674,6 @@ See also:
 - k6 docs on [options](https://docs.k6.io/docs/options) for additional options available in local execution modes.
 
 **Next**: [Main function]({{ site.baseurl }}{% link _v4/test-scripting/main-function.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI0MTIwNTEwMF19
+-->
