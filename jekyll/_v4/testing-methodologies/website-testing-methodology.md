@@ -69,7 +69,7 @@ Based on what you discovered during the preparation phase, you may need to deal 
 All of these issues are easily solved (with token handling being the trickiest for most users).
 
 <div class="callout callout-warning" role="alert">
-When parameterizing data, you MUST trigger your test using k6 from the command line. The Load Impact Web GUI does not support parameterization from external files. For more information on using k6 refer to <a href="/4.0/getting-started/hello-world/" class="alert-link">this article.</a> If, for purposes of evaluating Load Impact, you want to stick with the web interface, we recommend creating arrays containing the necessary data in your script. This will allow you to build the necessary proof of concept within the Web GUI.
+When parameterizing data, you MUST trigger your test using k6 from the command line. The LoadImpact Web GUI does not support parameterization from external files. For more information on using k6 refer to <a href="/4.0/getting-started/hello-world/" class="alert-link">this article.</a> If, for purposes of evaluating LoadImpact, you want to stick with the web interface, we recommend creating arrays containing the necessary data in your script. This will allow you to build the necessary proof of concept within the Web GUI.
 </div>
 
 - For login, you'll probably want to include a CSV or JSON file containing usernames or passwords.
@@ -162,5 +162,5 @@ The best results come when you run your tests in a systematic way, where you can
 - [Module Imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
 - [Ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDM0MTYzM119
+eyJoaXN0b3J5IjpbLTM0NzUxODgyN119
 -->
