@@ -1,20 +1,20 @@
 ---
 layout: classic-docs
 title: Product overview
-description: A brief overview of the Load Impact 4.0 product offering
+description: A brief overview of the LoadImpact 4.0 product offering
 categories: [getting-started]
 order: 0
 ---
 
 ***
 
-As illustrated below Load Impact 4.0 is composed of 3 major components:
+As illustrated below LoadImpact 4.0 is composed of 3 major components:
 
-- **[k6]({{ site.baseurl }}/4.0/getting-started/product-overview/#k6)** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by us, Load Impact.
+- **[k6]({{ site.baseurl }}/4.0/getting-started/product-overview/#k6)** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by LoadImpact.
 
-- **[Load Impact Insights]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-insights)** - A Load Impact cloud service offering. Insights enables you to store, analyze, plot trending graphs, and share your k6 test results with your team.
+- **[LoadImpact Insights]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-insights)** - A LoadImpact cloud service offering. Insights enables you to store, analyze, plot trending graphs, and share your k6 test results with your team.
 
-- **[Load Impact Cloud Execution]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-cloud-execution)** - A Load Impact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by Load Impact. We provide on-demand support for larger tests and geographically distributed tests.
+- **[LoadImpact Cloud Execution]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-cloud-execution)** - A Load Impact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by Load Impact. We provide on-demand support for larger tests and geographically distributed tests.
 
 ![Load Impact 4.0 product overview]({{ site.baseurl }}/assets/img/v4/getting-started/v4-product-overview.svg)
 
@@ -31,3 +31,6 @@ As k6 tests can run from anywhere, local/on-premise or in the cloud (on your own
 There are many different use cases for running load tests. In some, running tests locally (on-premise/behind the firewall) is the only solution. In others, you want the convenience of a cloud service or need the geographic distribution and scale that it offers. That's when Cloud Execution is a good fit. Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _v4/test-running/cloud-execution.md %}) section.
 
 Now, let's get you set up so you can [run your very first test]({{ site.baseurl}}{% link _v4/getting-started/hello-world.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjgxMTUwODFdfQ==
+-->
