@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Insights Performance Alerts
-description: Explanation of the different Performance Alerts available in Load Impact Insights. This includes alerts related to test health and ones based on our Smart Result algorithms.
+description: Explanation of the different Performance Alerts available in LoadImpact Insights. This includes alerts related to test health and ones based on our Smart Result algorithms.
 categories: [result-analysis]
 order: 6
 ---
@@ -10,7 +10,7 @@ order: 6
 
 <h1>Background</h1>
 
-Load Impact's Performance Alerts are algorithms built into Load Impact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
+LoadImpact's Performance Alerts are algorithms built into Load Impact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
 
 - TOC
 {:toc}
@@ -118,3 +118,6 @@ See also:
 - [k6 Docs](https://docs.k6.io/docs)
 - [Results Analysis]({{ site.baseurl }}/4.0/result-analysis/)
 - [Why should I filter domains?]({{ site.baseurl }}/4.0/frequently-asked-questions/why-should-i-filter-domains/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc0MTM5ODMyNl19
+-->
