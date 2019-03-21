@@ -9,7 +9,7 @@ order: 2
 ***
 
 <h1>Background</h1>
-Load Impact 4.0 and k6 come with a batteries included standard library.  They also support importing external libraries. This article provides an explanation and code samples on how to import the included or external modules into your k6 script.
+LoadImpact 4.0 and k6 come with a batteries included standard library.  They also support importing external libraries. This article provides an explanation and code samples on how to import the included or external modules into your k6 script.
 
 _**Best Practice Alert:**_ We recommend that you start building out you own custom library for common actions you find yourself doing in your test scripts.  This is especialy important to make your efforts scalable to the rest of your team.
 
@@ -162,3 +162,6 @@ Each Virtual User will load the required modules into memory during text executi
 
 
 **Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg0Mzc5ODA1N119
+-->
