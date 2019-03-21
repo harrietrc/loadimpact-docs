@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: How do I share tests results with others?
-description: Different ways to share your Load Impact v4.0 results with others on your team
+description: Different ways to share your LoadImpact v4.0 results with others on your team
 categories: [results-analysis]
 order: 7
 ---
@@ -28,6 +28,6 @@ If your test result is sensitive and you do not want to share the result publicl
 `https://app.loadimpact.com/k6/tests/xxxxxx`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgzMDM3MjYyLC05MjIxNzg3ODQsLTE3MD
-I4MjMwOTBdfQ==
+eyJoaXN0b3J5IjpbLTgyMjA5MDUwNCw1ODMwMzcyNjIsLTkyMj
+E3ODc4NCwtMTcwMjgyMzA5MF19
 -->
