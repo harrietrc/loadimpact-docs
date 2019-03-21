@@ -1,18 +1,18 @@
 ---
 layout: classic-docs
-title: How to open your firewall to Load Impact only with a k6 cloud executed test
-description: Methods to open your firewall to Load Impact k6 cloud execution traffic for testing
+title: How to open your firewall to LoadImpact only with a k6 cloud executed test
+description: Methods to open your firewall to LoadImpact k6 cloud execution traffic for testing
 categories: [how-to-tutorials]
 order: 6
 ---
 
 ***
 
-If you are running a `k6 cloud` test, you will be utilizing Load Impact's infrastructure. These are dynamically allocated from our cloud providers and we do not know the source IP until the test is running.
+If you are running a `k6 cloud` test, you will be utilizing LoadImpact's infrastructure. These are dynamically allocated from our cloud providers and we do not know the source IP until the test is running.
 
 **If you are streaming results to Insights utilizing `k6 run -o cloud myscript.js` you SHOULD NOT need to whitelist anything.**
 
-To open your firewall to Load Impact traffic, you have multiple options. Depending on your business needs, one may be a better fit than another.
+To open your firewall to LoadImpact traffic, you have multiple options. Depending on your business needs, one may be a better fit than another.
 
 
 1. Open up your firewall to the whole range of AWS IP addresses used by the load zones where you want to run your load test from. To use AWS to generate traffic, you will have to open up your firewall to a large IP range.
@@ -58,7 +58,7 @@ export default function() {
 }
 {% endhighlight %}
 
-Another option could be to request content from a certain hostname that is not in the DNS, but your site would of course need to be configured to respond to requests for that hostname. This is how you do it on the Load Impact side:
+Another option could be to request content from a certain hostname that is not in the DNS, but your site would of course need to be configured to respond to requests for that hostname. This is how you do it on the LoadImpact side:
 
 {% highlight js linenos %}
 // In your options, map your a unique/unused/secret hostname to the IP of the server.
@@ -73,3 +73,6 @@ export default function() {
 }
 {% endhighlight %}
 Of course, this last solution requires that your firewall terminates SSL traffic, otherwise it will not see the Host header in unencrypted form. You could also use unencrypted HTTP, but get a bit less security.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTYyMDgyNzc2XX0=
+-->
