@@ -16,15 +16,15 @@ To execute a test where the traffic is generated from the local machine you exec
 
 ## Streaming results to Insights
 
-By default when running a local test, k6 will output a summary of the results to the terminal. The results are not persisted by default. If you want to store the results, graphically analyze them, share them with your team mates and trend the performance of your system over time, you can opt to send your test results to Load Impact Insights.
+By default when running a local test, k6 will output a summary of the results to the terminal. The results are not persisted by default. If you want to store the results, graphically analyze them, share them with your team mates and trend the performance of your system over time, you can opt to send your test results to LoadImpact Insights.
 
-You do this by first making sure you're logged in to your Load Impact account:
+You do this by first making sure you're logged in to your LoadImpact account:
 
 `k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>
-    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a Load Impact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
+    For Single-Sign On (SSO) users logging in with <code>k6 login cloud</code> won't work as it requires a LoadImpact account email and password. You'll instead need to <a href="https://app.loadimpact.com/account/token">get your API authentication token from the app</a> and supply that explicitly: <code>k6 login cloud --token YOUR_API_AUTH_TOKEN</code>.
 </div>
 
 <div class="callout callout-warning" role="alert">
@@ -45,3 +45,6 @@ Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. 
 </div>
 
 **See also**: [Cloud execution]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNTU3OTM2NzNdfQ==
+-->
