@@ -1,12 +1,12 @@
 ---
 layout: classic-docs
-title: Why LoadImpact?
-description: What would LoadImpact.com help you accomplish
+title: Things that make LoadImpact.com unique
+description: This page describes how Loadimpact.com differ from others
 categories: [overview]
-order: 0
+order: 1
 hide: false
 ---
-This is work in progress, testing out the tool
+This is work in progress, testing out the tool, this page should detail the differentiation that
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NjY2NDA2Ml19
+eyJoaXN0b3J5IjpbMTk4MDkzMzU1NF19
 -->
