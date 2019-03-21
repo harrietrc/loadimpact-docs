@@ -14,7 +14,7 @@ order: 4
 
 [Postman](https://getpostman.com/) is one of the best-in-market tools for functional testing of APIs. As a Postman user, you organize your API tests into collections of requests. While this is great for functional testing, it's also important to understand how API endpoints perform under load.
 
-The presented information covers how to use the Portman to Load Impact converter with version 4.0 of Load Impact. Version 4.0 is based on the open source load generator, k6.
+The presented information covers how to use the Portman to LoadImpact converter with version 4.0 of Load Impact. Version 4.0 is based on the open source load generator, k6.
 
 ## How to use the Postman to Load Impact converter
 
@@ -52,3 +52,6 @@ The following section describes the steps to convert your Postman collections to
 **See also**:
 - [How to do a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %})
 - [How to convert HAR files to k6 tests]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-convert-har-to-k6-test.md %})
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkwMzg1MTg1XX0=
+-->
