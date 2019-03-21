@@ -2,15 +2,15 @@
 page-type: index
 layout: classic-docs
 title: "4.0 Docs"
-description: "Landing page for Load Impact 4.0"
+description: "Landing page for LoadImpact 4.0"
 permalink: /4.0/
 redirect_from:
     - /knowledgebase/articles/174634-case-study-ushahidi
     - /knowledgebase/articles/324716-case-study-rokkan
 ---
-Welcome to Load Impact 4.0 documentation! Here you'll find information on Load Impact's next generation load testing service.
+Welcome to LoadImpact 4.0 documentation! Here you'll find information on LoadImpact's next generation load testing service.
 
-These articles will help you improve your load testing skills and understanding of Load and Performance testing with Load Impact. You're welcome to contact us if you have other questions, comments or suggestions.
+These articles will help you improve your load testing skills and understanding of Load and Performance testing with LoadImpact. You're welcome to contact us if you have other questions, comments or suggestions.
 
 **We welcome your feedback**. If you wish to make a contribution or share a comment on this documentation, we've open sourced it on [GitHub](https://github.com/loadimpact/loadimpact-docs). So please create a pull request or issue!
 
@@ -24,3 +24,6 @@ Important links:
 
 
 Please be sure to whitelist `@loadimpact.com` within your email settings/spam filter to ensure you receive responses to anything you send in.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI0NTY4MzExNV19
+-->
