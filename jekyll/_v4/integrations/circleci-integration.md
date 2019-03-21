@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to integrate CircleCI with Load Impact/k6
-description: Guide on how to integrate CircleCI with Load Impact 4.0/k6
+title: How to integrate CircleCI with LoadImpact/k6
+description: Guide on how to integrate CircleCI with LoadImpact 4.0/k6
 categories: [integrations]
 order: 3
 ---
@@ -10,22 +10,22 @@ order: 3
 
 <h1>Purpose</h1>
 
-This guide and sample describes how to integrate Load Impact 4.0 with CircleCI. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and Load Impact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
+This guide and sample describes how to integrate LoadImpact 4.0 with CircleCI. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and LoadImpact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
 
 - TOC
 {:toc}
 
 ## Background
 
-Load Impact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
+LoadImpact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
 It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
 
 ## Prerequisites
 
-- A Load Impact account
+- A LoadImpact account
   - Trial or paid plan
-- Load Impact API key
+- LoadImpact API key
 - Test scripts for what you want to test
   - You may utilize our script in lieu of one of yours
 - Familiarity with CircleCI
@@ -98,12 +98,12 @@ To describe the config in words:
 
 1. Download a k6 release archive and extract the binary to a directory that is cached between builds
 2. Run the k6 load test main.js located in the `loadtests` directory in the root of the repository
-**Note:** The k6 command includes the `-o cloud` option which means the results will be streamed to Insights. Alternatively, you can use `k6 cloud` to execute the test from the Load Impact cloud service. For that to work we'll need to make sure k6 has access to our Load Impact API token in the environment variable K6_CLOUD_TOKEN.
+**Note:** The k6 command includes the `-o cloud` option which means the results will be streamed to Insights. Alternatively, you can use `k6 cloud` to execute the test from the LoadImpact cloud service. For that to work we'll need to make sure k6 has access to our LoadImpact API token in the environment variable K6_CLOUD_TOKEN.
 
 
 ## Environment variables
 
-To have the results of our load tests streamed to Insights or executed in the Load Impact cloud, we need to add the K6_CLOUD_TOKEN environment variable.
+To have the results of our load tests streamed to Insights or executed in the LoadImpact cloud, we need to add the K6_CLOUD_TOKEN environment variable.
 1. Navigate to your project's settings in CircleCI
 2. Find the "Environment variables" section under "Build settings" in the menu to the left.
 3. Add a new environment variable with name K6_CLOUD_TOKEN
@@ -131,7 +131,7 @@ In this example, lowering the threshold to 100ms results in a failed build step 
 
 ## Result analysis
 
-Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the Load Impact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
+Passing builds aren't too interesting. When builds fail, you will want to determine why. When it comes to load tests, there is no exception to be made. Insights, our result analysis tool in the LoadImpact cloud is built to be the perfect companion to k6. Insights is designed to be error driven, this helps you to quickly find the cause of the failed load test. Refer to [this article]({{ site.baseurl }}/4.0/result-analysis/insights-overview/) for more information on result analysis.
 
 ## See also
 - [GitHub repo for this example](https://github.com/loadimpact/k6-circleci-example)
@@ -141,3 +141,6 @@ Passing builds aren't too interesting. When builds fail, you will want to determ
 - [Insights Overview]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
 - [Checks]({{ site.baseurl }}/4.0/test-scripting/checks/)
 - [Slack's Incoming Webhooks](https://api.slack.com/incoming-webhooks)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM3MzI3NDY4MF19
+-->
