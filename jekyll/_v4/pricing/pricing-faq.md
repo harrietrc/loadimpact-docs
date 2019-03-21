@@ -22,7 +22,7 @@ No - There is no concept of VU hours for our plans. You can run all your tests u
 
 ### What tests count against my monthly limit?
 
-Only tests executed on the LoadImpact cloud or streamed to the Load Impact cloud will count against your total number of tests. Specifically tests run with the `cloud` command or `-o cloud` flag. e.g. `k6 cloud myScript.js` or `k6 run myScript.js -o cloud`
+Only tests executed on the LoadImpact cloud or streamed to the LoadImpact cloud will count against your total number of tests. Specifically tests run with the `cloud` command or `-o cloud` flag. e.g. `k6 cloud myScript.js` or `k6 run myScript.js -o cloud`
 
 ### Can I pay with a PO or Wire transfer?
 
@@ -77,5 +77,5 @@ Yes - we have a professional services team that can be engaged to assist in your
 
 Yes, when you are not logged on, you can always run anonymous tests from the loadimpact.com start page. However, results from anonymous tests are indexed by search engines and publicly displayed for all to see. As they are fully automatic, they can also not be configured in any way – you can’t decide exactly what pages will be loaded during the test or what load levels will be used.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExODA3OTFdfQ==
+eyJoaXN0b3J5IjpbMzEzMjI5NzczXX0=
 -->
