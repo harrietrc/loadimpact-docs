@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: How to Load Test a RESTful API with Load Impact version 4.0 and k6
+title: How to Load Test a RESTful API with LoadImpact version 4.0 and k6
 description: Guide on how to load test RESTful APIs with Load Impact and k6 using Django and Django REST framework as an example
 categories: [how-to-tutorials]
 order: 1
@@ -292,3 +292,6 @@ Finally, you should also consider integrating these tests into your CI pipeline.
 - [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
 - [Module Imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
 - [integrations]({{ site.baseurl }}/4.0/integrations/)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY5ODI4MDQ3MV19
+-->
