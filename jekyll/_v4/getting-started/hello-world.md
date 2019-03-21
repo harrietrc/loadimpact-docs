@@ -1,14 +1,14 @@
 ---
 layout: classic-docs
 title:  Running tests from the command line, using k6 locally - "Hello world"
-description: Getting started with k6 and Load Impact Version 4.0. A guide to walkthrough local execution and how it interacts with the Load Impact cloud service
+description: Getting started with k6 and LoadImpact Version 4.0. A guide to walkthrough local execution and how it interacts with the LoadImpact cloud service
 categories: [getting-started]
 order: 9
 ---
 
 ***
 <div class="callout callout-warning" role="alert">
-  Attention! This article is intended for a more advanced Load Impact User. If you are familiar with using command line tools and prefer to use your IDE of choice, please proceed forward!
+  Attention! This article is intended for a more advanced LoadImpact User. If you are familiar with using command line tools and prefer to use your IDE of choice, please proceed forward!
 </div>
 
 
@@ -23,7 +23,7 @@ _Note:_ This test and script is one of the most basic ones you could have. In ou
 - TOC
 {:toc}
 
-To get started with Load Impact 4.0 you'll need to complete a few steps:
+To get started with LoadImpact 4.0 you'll need to complete a few steps:
 
 1. Download and install k6 for your platform of choice: Linux, Mac or Windows
 2. Run your first k6 test
@@ -184,3 +184,6 @@ Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link 
 ## Next Steps
 
 Now that you've successfully run your first batch of k6 tests, consider the following [load test preparations]({{ site.baseurl}}{% link _v4/getting-started/load-test-preparations.md %}) to assist on your journey or performance testing mastery.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTQyMjM0Mzk2XX0=
+-->
