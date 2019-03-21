@@ -107,7 +107,7 @@ export default function() {
 
   const title = $('head title').text();
   check(title, {
-    "has correct title": () => title == 'Performance testing for DevOps | Load Impact'
+    "has correct title": () => title == 'Performance testing for DevOps | LoadImpact'
   });
 
 
@@ -163,5 +163,5 @@ Each Virtual User will load the required modules into memory during text executi
 
 **Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %})
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Mzc5ODA1N119
+eyJoaXN0b3J5IjpbNDQwMjk1NTQ3XX0=
 -->
