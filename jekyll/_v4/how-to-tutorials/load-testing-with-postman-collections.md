@@ -10,6 +10,14 @@ order: 4
 
 ## Background
 
+<div class="callout callout-warning" role="alert">
+  <b>New Postman converter available in Beta release!</b><br>
+  A new and improved Postman to Load Impact converter has recently been released.
+  In order to use the new converter, please clone the repository <a href="https://github.com/bookmoons/postman-to-k6/tree/bookmoons/improve">here</a>, install dependencies with `npm install` then use `node bin / postman-to-k6 collection.json -o k6-script.js`, where the collection JSON is your collection and the JavaScript is the output.  If you wish to use the existing version, please read below.
+</div>
+
+
+
 <p style="text-align: center;"><img src="{{ site.baseurl }}/assets/img/v4/how-to-tutorials/postman-logo.png" alt="Postman" width="300"/></p>
 
 [Postman](https://getpostman.com/) is one of the best-in-market tools for functional testing of APIs. As a Postman user, you organize your API tests into collections of requests. While this is great for functional testing, it's also important to understand how API endpoints perform under load.
