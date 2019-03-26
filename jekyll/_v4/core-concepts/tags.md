@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
 title: Tags
-description: An overview of using tags
+description: Tags are used to specify requests or metrics interesting to you. Built in tags allow you to filter on existing meta data of a test.
 categories: [core-concepts]
-order: 8
+order: 7
 ---
 
 Tags can be a powerful tool from a few different perspectives:
