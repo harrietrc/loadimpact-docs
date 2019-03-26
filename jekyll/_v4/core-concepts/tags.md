@@ -2,7 +2,7 @@
 layout: classic-docs
 title: Tags
 description: An overview of using tags
-categories: [test-scripting]
+categories: [core-concepts]
 order: 8
 ---
 

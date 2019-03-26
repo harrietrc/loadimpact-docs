@@ -1,9 +1,12 @@
 ---
 layout: classic-docs
-title: Ramping configurations
-description: Common load test ramping configuration examples and what you can learn from using them
-categories: [test-scripting]
-order: 11
+title: Types of Load and Performance Tests
+description: Definitions and examples of different types of load and performance tests and what information you can learn from them
+categories: [core-concepts]
+order: 1
+redirect_from:
+  - /4.0/test-scripting/load-test-ramping-configurations/
+  - /4.0/core-concepts/load-test-ramping-configurations/
 ---
 
 ***

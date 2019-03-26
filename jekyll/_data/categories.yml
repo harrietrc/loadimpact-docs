@@ -61,34 +61,38 @@
   name: Pricing
 
 # Load Impact Next Gen Docs
-- section: v4
-  slug: getting-started
-  name: Getting Started
 
+# remove migration, move to FAQ
 - section: v4
   slug: migrating-lua-to-js
   name: Migrating from 3.0 (Lua)
 
+# remove test scripting and move to guides/core concepts
 - section: v4
   slug: test-scripting
   name: Test scripting
 
+# remove and and move to guides
 - section: v4
   slug: test-running
   name: Test running
 
+# Remove and move?
 - section: v4
   slug: testing-methodologies
   name: Testing Methodologies
 
+# remove and move to guides
 - section: v4
   slug: result-analysis
   name: Result analysis
 
+# remove and move to guides
 - section: v4
   slug: how-to-tutorials
   name: How to/Tutorials
 
+# remove and move to guides
 - section: v4
   slug: team-project-management
   name: Team and Project Management
@@ -97,17 +101,53 @@
 #  slug: on-premise-testing
 #  name: Onpremise testing
 
+# Remove integrations in update
 - section: v4
   slug: integrations
   name: Integrations
 
+# merge pricing into FAQ
 - section: v4
   slug: pricing
   name: Pricing
 
+# New category
+
+- section: v4
+  slug: overview
+  name: Overview
+
+# Keep getting started and merge new articles in
+- section: v4
+  slug: getting-started
+  name: Getting Started
+
+# New categories
+
+- section: v4
+  slug: core-concepts
+  name: Core Concepts
+
+- section: v4
+  slug: guides
+  name: Guides
+
+- section: v4
+  slug: examples
+  name: Examples
+
+- section: v4
+  slug: reference
+  name: Reference
+
+# Existing, keep.
+
 - section: v4
   slug: frequently-asked-questions
   name: FAQ
+
+
+
 
 # Load Impact API Docs
 - section: api

@@ -2,8 +2,9 @@
 layout: classic-docs
 title: Thresholds
 description: An overview of using thresholds
-categories: [test-scripting]
-order: 7
+categories: [core-concepts]
+order: 4
+redirect_from: /4.0/test-scripting/thresholds/
 ---
 
 ***
@@ -102,7 +103,7 @@ export default function() {
 
 ## Custom metrics
 
-Thresholds can also be set on [custom metrics]({{ site.baseurl }}{% link _v4/test-scripting/custom-metrics.md %}). The variable referred to in the threshold expression varies between the different custom metrics as you'll see below.
+Thresholds can also be set on [custom metrics]({{ site.baseurl }}/4.0/core-concepts/custom-metrics/). The variable referred to in the threshold expression varies between the different custom metrics as you'll see below.
 
 ### Counter metric
 
@@ -257,7 +258,7 @@ export let options = {
 
 See the k6 docs on [thresholds](https://docs.k6.io/docs/thresholds) for more information.
 
-**Next**: [Tags]({{ site.baseurl }}{% link _v4/test-scripting/tags.md %})
+**Next**: [Tags]({{ site.baseurl }}/4.0/core-concepts/tags/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNzQyMTE1MjEyXX0=
 -->

@@ -2,8 +2,9 @@
 layout: classic-docs
 title: Checks
 description: An overview of using checks
-categories: [test-scripting]
-order: 6
+categories: [core-concepts]
+order: 3
+redirect_from: /4.0/test-scripting/checks/
 ---
 
 ***
