@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Product overview
-description: A brief overview of the LoadImpact 4.0 product offering
-categories: [getting-started]
-order: 0
+title: LoadImpact product overview
+description: Am overview of the LoadImpact's product offering and related components
+categories: [overview]
+order: 2
 ---
 
 ***

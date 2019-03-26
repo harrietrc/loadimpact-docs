@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title:  Running tests from the command line, using k6 locally - "Hello world"
-description: Getting started with k6 and LoadImpact Version 4.0. A guide to walkthrough local execution and how it interacts with the LoadImpact cloud service
+title:  Local test execution - "Hello world"
+description: A guide on how to trigger your first tests from the command line. Intended for more advanced users.
 categories: [getting-started]
-order: 9
+order: 5
+redirect_from: /4.0/getting-started/hello-world/
 ---
 
 ***
@@ -145,7 +146,7 @@ Now you should see something like this in the terminal:
 
 We were presented with a progress bar for the 3m duration of the test before being presented with the results.
 
-Read more about [VU ramping configurations]({{ site.baseurl}}{% link _v4/test-scripting/load-test-ramping-configurations.md %}) in the test scripting section.
+Read more about [Types of Load and Performance Tests]({{ site.baseurl}}/4.0/core-concepts/types-of-load-performance-tests/) in the test scripting section.
 
 ## Stream results to LoadImpact Insights
 
@@ -183,7 +184,7 @@ Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link 
 
 ## Next Steps
 
-Now that you've successfully run your first batch of k6 tests, consider the following [load test preparations]({{ site.baseurl}}{% link _v4/getting-started/load-test-preparations.md %}) to assist on your journey or performance testing mastery.
+Now that you've successfully run your first batch of k6 tests, consider the reading our [Basic Load Testing Methodology]({{ site.baseurl}}/4.0/getting-started/basic-load-testing-methodology) to assist on your journey or performance testing mastery.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTU1OTQyMjU4XX0=
 -->

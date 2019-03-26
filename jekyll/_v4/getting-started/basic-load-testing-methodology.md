@@ -1,18 +1,18 @@
 ---
 layout: classic-docs
-title: Before you begin
-description: Things to consider before your first test.
+title: Basic Load Testing Methodology
+description: A simple methodology to help you start testing
 categories: [getting-started]
-order: 2
+order: 4
+redirect_from: /4.0/getting-started/load-test-preparations/
 ---
 
 ***
 
 ## Purpose
 
-By now you should have an understanding of the basic parts of k6 and testing with LoadImpact. If you haven't completed our [`Hello World`]({{ site.baseurl }}/4.0/getting-started/hello-world/), we suggest going back and doing so.
 
-This next section is intended to walk through the suggested steps that will help you get started and running your first test, faster. The best tests are the ones that simulate the most realistic conditions and user behavior. However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
+This methodology is intended to walk through the high level steps that will help you get started and running more meaningful tests, faster. The best tests are the ones that simulate the most realistic conditions and user behavior. However, simple testing is better than no testing. It's easy to become overwhelmed if you attempt to do everything all at once. Treat testing like you would development, _start small and iterate, iterate, iterate._
 
 ## What am I testing?
 

@@ -1,10 +1,12 @@
 ---
 layout: classic-docs
 title: Creating tests in LoadImpact
-description: Guide to create a test within LoadImpact's web interface
+description: How to create a test within LoadImpact's web interface using the different methods avaiable
 categories: [getting-started]
-order: 4
-redirect_from: /4.0/getting-started/create-a-user-scenario/
+order: 1
+redirect_from:
+  - /4.0/getting-started/create-a-user-scenario/
+  - /4.0/getting-started/create-a-load-impact-test/
 ---
 
 ***

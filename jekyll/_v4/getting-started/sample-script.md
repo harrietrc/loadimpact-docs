@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Sample test script
-description: A sample k6 test script with comments to explain the different parts. Feel free to take this and adapt to your need
+title:  Test Script Example
+description: An example LoadImpact test script with comments to explain the different features and functionality. Feel free to take this and adapt to your need
 categories: [getting-started]
-order: 8
+order: 6
 ---
 
 ***
