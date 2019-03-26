@@ -1,9 +1,12 @@
 ---
 layout: classic-docs
-title: Getting Started Methodology
-description: A testing methodology to help you strategize and get started.
-categories: [testing-methodologies]
-order: 1
+title: General Methodology
+description: A general load testing methodology to help you strategize and get started.
+categories: [guides]
+order: 0
+redirect_from:
+  - /4.0/testing-methodologies/application-testing-methodology/
+  - /4.0/testing-methodologies/
 ---
 
 ***

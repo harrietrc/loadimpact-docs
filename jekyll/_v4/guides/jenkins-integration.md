@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to integrate LoadImpact with Jenkins
-description: Guide to integrate LoadImpact 4.0 into your Jenkins pipeline
-categories: [integrations]
+title: How to Integrate LoadImpact With Jenkins
+description: Guide to integrate LoadImpact and k6 into your Jenkins pipeline. Shift left and automate your load testing in CI/CD.
+categories: [guides]
 order: 2
+redirect_from: /4.0/integrations/jenkins-integration/
 ---
 
 ***

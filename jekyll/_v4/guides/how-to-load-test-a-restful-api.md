@@ -2,8 +2,9 @@
 layout: classic-docs
 title: How to Load Test a RESTful API with LoadImpact version 4.0 and k6
 description: Guide on how to load test RESTful APIs with LoadImpact and k6 using Django and Django REST framework as an example
-categories: [how-to-tutorials]
-order: 1
+categories: [guides]
+order: 0
+redirect_from: /4.0/how-to-tutorials/how-to-load-test-a-restful-api/
 ---
 
 ***

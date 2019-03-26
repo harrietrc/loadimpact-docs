@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to open your firewall to LoadImpact only with a k6 cloud executed test
-description: Methods to open your firewall to LoadImpact k6 cloud execution traffic for testing
-categories: [how-to-tutorials]
+title: How to Open Your Firewall to LoadImpact For Cloud Executed Tests
+description: A guide with different methods to open your firewall to LoadImpact k6 cloud execution traffic for load testing
+categories: [guides]
 order: 6
+redirect_from: /4.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/
 ---
 
 ***

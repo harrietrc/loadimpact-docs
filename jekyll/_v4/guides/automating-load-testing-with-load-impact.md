@@ -2,7 +2,7 @@
 layout: classic-docs
 title: How to automate load tests with LoadImpact/k6
 description: How to automate your load tests with LoadImpact and k6
-categories: [integrations]
+categories: [guides]
 order: 1
 hide: true
 ---

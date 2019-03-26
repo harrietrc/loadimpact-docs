@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to convert HAR to k6 test
-description: A tutorial on how to convert a HAR file to a k6 test
-categories: [how-to-tutorials]
+title: Converting HAR Files to Test Scripts
+description: Guide on converting HAR files on the command line using k6 to create load testing scripts
+categories: [guides]
 order: 4
+redirect_from: /4.0/how-to-tutorials/how-to-convert-har-to-k6-test/
 ---
 
 ***
@@ -56,6 +57,6 @@ The built-in HAR converter is very useful because HAR is a format supported by m
 - [pcap2har](https://github.com/andrewf/pcap2har) (Converts sniffer - e.g. Wireshark - pcap files to HAR)
 
 **See also**:
-- [How to do a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %})
-- [How to load test with Postman collections]({{ site.baseurl }}{% link _v4/how-to-tutorials/load-testing-with-postman-collections.md %})
+- [How to do a browser recording]({{ site.baseurl }}/4.0/guides/how-to-do-browser-recording)
+- [How to load test with Postman collections]({{ site.baseurl }}/4.0/guides/load-testing-with-postman-collections)
 - [Session recording/HAR support](https://docs.k6.io/docs/session-recording-har-support)

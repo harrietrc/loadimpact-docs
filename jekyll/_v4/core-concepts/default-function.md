@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Test main function
-description: Overview of the test main function, aka the VU code
-categories: [test-scripting]
-order: 4
+title: Default Function
+description: Overview of the default function, the code all Virtual Users will execute during a test
+categories: [core-concepts]
+order: 9
+redirect_from: /4.0/test-scripting/main-function/
 ---
 
 ***
@@ -35,7 +36,7 @@ export function teardown(data) {
 The "VU code" is put inside the `export default function` (aka "main") function.
 
 <div class="callout callout-warning" role="alert">
-    Note that the <code>setup()</code> and <code>teardown()</code> functions are optional <a href="{{ site.baseurl }}{% link _v4/test-scripting/test-setup-teardown-life-cycle.md %}" class="alert-link">life-cycle hooks</a>. If they're not used no <code>data</code> will be passed to the <code>export default function</code>.
+    Note that the <code>setup()</code> and <code>teardown()</code> functions are optional <a href="{{ site.baseurl }}{% link _v4/core-concepts/test-setup-teardown-life-cycle.md %}" class="alert-link">life-cycle hooks</a>. If they're not used no <code>data</code> will be passed to the <code>export default function</code>.
 </div>
 
 It's in the "main" function you'll be spending most of your time. The most important thing to grasp before writing your test code is how a VU executes the main function.
@@ -49,5 +50,3 @@ As part of this "restart" process, the VU is reset. Cookies are cleared and TCP 
 <div class="callout callout-warning" role="alert">
     Make sure to use <code>sleep()</code> statements to pace your VUs properly. An appropriate amount of sleep/think time at the end of the main function is often needed to properly simulate a user reading content on a page. If you don't have a <code>sleep()</code> statement at the end of the main function your VU might be "aggressive" than you've planned.
 </div>
-
-**Next**: [Test setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _v4/test-scripting/test-setup-teardown-life-cycle.md %})

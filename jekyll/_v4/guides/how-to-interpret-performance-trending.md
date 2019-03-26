@@ -1,10 +1,12 @@
 ---
 layout: classic-docs
-title: How to interpret the performance trending graph
-description: How to Interpret the performance trending graph for your load tests
-categories: [how-to-tutorials]
+title: Interpreting the Performance Trending Graph
+description: Guide on how to interpret the LoadImpact performance trending graphs for your load tests
+categories: [guides]
 order: 8
-redirect_from: /knowledgebase/articles/617088-how-do-i-interpret-the-performance-trend-analysis
+redirect_from:
+  - /knowledgebase/articles/617088-how-do-i-interpret-the-performance-trend-analysis
+  - /4.0/how-to-tutorials/how-to-interpret-performance-trending/
 ---
 
 ***

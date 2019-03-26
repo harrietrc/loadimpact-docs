@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: LoadImpact Notifications
-description: Notifications allow you to send updates to be aware of tests starting and finishing. You can view these notifications in Slack or via webhook.
-categories: [integrations]
+title: Configuring Notifications
+description: A guide on setting up Notifications to alert you about your load tests. Get these notifications in Slack or via webhook.
+categories: [guides]
 order: 5
+redirect_from: /4.0/integrations/notifications/
 ---
 
 ***
@@ -12,7 +13,7 @@ Notifications allow you to subscribe to events happening in your organizations/p
 - A test has started.
   - With option to notify on "manual" or "scheduled" tests.
 - A test has completed
-  - With option to notify based on specific result statuses, eg. only on test failure (like a [threshold]({{ site.baseurl }}{% link _v4/test-scripting/thresholds.md %}) failing).
+  - With option to notify based on specific result statuses, eg. only on test failure (like a [threshold]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) failing).
 
 You will likely want to use notifications when you schedule your performance tests and/or configure them into your Continuous Integration pipeline.
 

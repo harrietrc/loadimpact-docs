@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
 title: Local and On-premise execution
-description: An overview running k6 tests locally and on-premise
-categories: [test-running]
-order: 1
+description: A guide explaining how to execute load tests locally, behind the firewall, with results in LoadImpact Insights.  
+categories: [guides]
+order: 10
+redirect_from: /4.0/test-running/local-on-premise-execution/
 ---
 
 Running load tests from your laptop or an on-premise machine is one of the ways you can use k6.
@@ -20,7 +21,7 @@ By default when running a local test, k6 will output a summary of the results to
 
 You do this by first making sure you're logged in to your LoadImpact account:
 
-`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
+`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/guides/logging-into-cloud-service-from-k6.md %}))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>
@@ -44,7 +45,7 @@ Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. 
     Note that you can change under which project your tests and results are stored by adding a project ID to your <a href="{{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %}#sending-results to-a-specific-project" class="alert-link">test configuration options</a>.
 </div>
 
-**See also**: [Cloud execution]({{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %})
+**See also**: [Cloud execution]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjEwNjk1NjY2OV19
 -->

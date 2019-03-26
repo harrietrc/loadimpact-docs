@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Load testing with Postman collections
-description: A tutorial on how to convert Postman collections to k6 test scripts
-categories: [how-to-tutorials]
+title: Load Testing Postman Collections
+description: How to load test your Postman collections and convert them to k6 test scripts to use in LoadImpact
+categories: [guides]
 order: 4
+redirect_from: /4.0/how-to-tutorials/load-testing-with-postman-collections/
 ---
 
 ***
@@ -58,8 +59,8 @@ The following section describes the steps to convert your Postman collections to
     `k6 cloud k6-script.js` will package up the script and any dependencies for execution on LoadImpact's infrastructure
 
 **See also**:
-- [How to do a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %})
-- [How to convert HAR files to k6 tests]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-convert-har-to-k6-test.md %})
+- [How to do a browser recording]({{ site.baseurl }}{% link _v4/guides/how-to-do-browser-recording.md %})
+- [How to convert HAR files to k6 tests]({{ site.baseurl }}{% link _v4/guides/how-to-convert-har-to-k6-test.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg0MTkwMDkzMV19
 -->

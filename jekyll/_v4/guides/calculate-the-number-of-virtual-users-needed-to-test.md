@@ -1,13 +1,14 @@
 ---
 layout: classic-docs
-title: How to Calculate the number of Virtual Users you need from Google Analytics
-description: How to use data from Google Analytics to calculate the number of Virtual Users required for your LoadImpact test
-categories: [how-to-tutorials]
+title: Calculating Virtual Uses with Google Analytics
+description: A guide on how to use data from Google Analytics to calculate the number of Virtual Users required for load and performance testing with LoadImpact.
+categories: [guides]
 order: 9
 redirect_from:
   - /knowledgebase/articles/265461-calculating-the-number-of-virtual-users-concurren
   - /knowledgebase/articles/265461-calculating-the-number-of-concurrent-users-to-test
   - /3.0/test-configuration/calculating-the-number-of-virtual-users-to-test/
+  - /4.0/how-to-tutorials/calculate-the-number-of-virtual-users-needed-to-test/
 ---
 
 ***

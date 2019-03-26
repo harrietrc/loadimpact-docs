@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to integrate Azure DevOps/Pipelines with LoadImpact/k6
-description: Guide on how to integrate Azure DevOps/Pipelines with LoadImpact 4.0/k6
-categories: [integrations]
+title: How to Integrate Azure DevOps/Pipelines With LoadImpact/k6
+description: Guide on how to integrate your Azure DevOps Pipelines with LoadImpact and k6.  Shift left and automate your load testing in CI/CD.
+categories: [guides]
 order: 4
+redirect_from: /4.0/integrations/azure-devops-integration/
 ---
 
 ***

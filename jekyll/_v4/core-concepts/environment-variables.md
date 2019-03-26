@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Environment variables
-description: Overview on how to use environment variables
-categories: [test-scripting]
-order: 9
+title: Environment Variables
+description: Environment variables allow you to change various things about a test without changing the code itself.  Environment variables are only available when executing tests from the command line
+categories: [core-concepts]
+order: 12
+redirect_from: /4.0/test-scripting/environment-variables/
 ---
 
 ***
@@ -57,7 +58,7 @@ you would set the environment variable `MY_HOSTNAME` and execute k6 like this:
 ### Reading from system environment
 
 <div class="callout callout-warning" role="alert">
-    Note that this way of setting environment variables is only supported when running Locally Executed tests, it will not work with <a href="{{ site.baseurl }}{% link _v4/test-running/cloud-execution.md %}" class="alert-link">Cloud Execution</a>.
+    Note that this way of setting environment variables is only supported when running Locally Executed tests, it will not work with <a href="{{ site.baseurl }}/4.0/guides/cloud-execution" class="alert-link">Cloud Execution</a>.
 </div>
 
 Using the same the same test script as above:
@@ -111,5 +112,3 @@ c:\k6> k6 run script.js</code></pre>
 </div>
 
 See the k6 docs on [environment variables](https://docs.k6.io/docs/environment-variables) for more information.
-
-**Next**: [Custom metrics]({{ site.baseurl }}{% link _v4/test-scripting/custom-metrics.md %})

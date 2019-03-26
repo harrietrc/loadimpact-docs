@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Scheduling tests within the LoadImpact Web UI
-description: How to schedule your v4.0 tests to run at a set interval or at a later time
-categories: [test-running]
+title: Scheduling Load Tests with LoadImpact
+description: A guide on how to schedule your load tests to run in the future or on a schedule within the LoadImpact Web UI.
+categories: [guides]
 order: 3
+redirect_from: /4.0/test-running/test-scheduling/
 ---
 
 ***
@@ -35,7 +36,7 @@ In both cases, after clicking "Schedule" you are presented with the following op
 
 ![]({{ site.baseurl }}/assets/img/v4/test-running/test-scheduling/schedule-options.png)
 
-Finally - we do recommend setting up notifications to complete an automated loop.  Schedule your test to run, and get notified of the results/completion of your test. 
+Finally - we do recommend setting up notifications to complete an automated loop.  Schedule your test to run, and get notified of the results/completion of your test.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwMzI5OTE2OTldfQ==
 -->

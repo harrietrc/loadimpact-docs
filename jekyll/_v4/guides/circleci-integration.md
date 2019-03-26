@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to integrate CircleCI with LoadImpact/k6
-description: Guide on how to integrate CircleCI with LoadImpact 4.0/k6
-categories: [integrations]
+title: How to Integrate CircleCI With LoadImpact and k6
+description: Guide on how to integrate CircleCI with LoadImpact and k6. Shift left and automate your load testing in CI/CD.
+categories: [guides]
 order: 3
+redirect_from: /4.0/integrations/circleci-integration/
 ---
 
 ***

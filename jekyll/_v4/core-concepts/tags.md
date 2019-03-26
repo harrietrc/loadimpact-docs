@@ -4,6 +4,7 @@ title: Tags
 description: Tags are used to specify requests or metrics interesting to you. Built in tags allow you to filter on existing meta data of a test.
 categories: [core-concepts]
 order: 7
+hide: true
 ---
 
 Tags can be a powerful tool from a few different perspectives:
@@ -21,4 +22,4 @@ TODO
 
 See the k6 docs on [tags](https://docs.k6.io/docs/tags-and-groups) for more information.
 
-**Next**: [Environment variables]({{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %})
+**Next**: [Environment variables]({{ site.baseurl }}{% link _v4/core-concepts/environment-variables.md %})

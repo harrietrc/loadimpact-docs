@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Cloud execution
-description: An overview running k6 tests with LoadImpact Cloud Execution
-categories: [test-running]
+title: How to Run Cloud Tests From the Command Line
+description: A guide on how to trigger k6 tests on the command line to run within the LoadImpact Cloud
+categories: [guides]
 order: 2
+redirect_from: /4.0/test-running/cloud-execution/
 ---
 
 ***
@@ -12,7 +13,7 @@ order: 2
 
 Explanation of LoadImpact's cloud service and how to utilize it with your k6 test scripts.
 
-Cloud execution is a convenient extension to the [local/on-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %}) capability of k6. Great when you need to run larger tests or distribute traffic generation across several geographic locations (aka "load zones").
+Cloud execution is a convenient extension to the [local/on-premise execution]({{ site.baseurl }}/4.0/guides/local-on-premise-execution) capability of k6. Great when you need to run larger tests or distribute traffic generation across several geographic locations (aka "load zones").
 
 ## Executing a cloud test
 
@@ -24,7 +25,7 @@ When you want to run a k6 test from the cloud you simple change the k6 command u
 
 Before you can execute `k6 cloud ...` you'll need to authenticate with the LoadImpact cloud service. You can login with your LoadImpact credentials by entering the following command into your terminal:
 
-`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}{% link _v4/test-running/logging-into-cloud-service-from-k6.md %}))
+`k6 login cloud` (for more authentication options, [see here]({{ site.baseurl }}/4.0/guides/logging-into-cloud-service-from-k6))
 
 <div class="callout callout-warning" role="alert">
     <b>Google/Github Single-Sign On Users</b><br>
@@ -47,7 +48,7 @@ If you want a simpler approach to creating and running tests, cloud tests in par
 3. Select which load zones you want the traffic to be generated from.
 4. Optionally add domain filters that will filter out potentially unwanted URLs from the script (think third-party content like JS trackers, Facebook and Twitter widgets etc.).
 
-See also the second option, [uploading a HAR file from a browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}), for creating tests without doing any scripting.
+See also the second option, [uploading a HAR file from a browser recording]({{ site.baseurl }}/4.0/guides/how-to-do-browser-recording), for creating tests without doing any scripting.
 
 ## Test configuration options
 
@@ -67,7 +68,7 @@ export let options = {
 };
 {% endhighlight %}
 
-Each entry, or scenario, in the `distribution` object specifies an arbitrary label (aka "distribution label") as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as an [environment variable]({{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}) (`__ENV["LI_DISTRIBUTION"]`) into the k6 processes running in the corresponding load zone ([see below]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-impact-environment-variables) for more details).
+Each entry, or scenario, in the `distribution` object specifies an arbitrary label (aka "distribution label") as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as an [environment variable]({{ site.baseurl }}/4.0/test-scripting/environment-variables) (`__ENV["LI_DISTRIBUTION"]`) into the k6 processes running in the corresponding load zone ([see below]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-impact-environment-variables) for more details).
 
 The `percent` specifies how VUs should be distributed across the different scenarios, and the `loadZone` the origin of the traffic for the scenario.
 
@@ -95,7 +96,7 @@ Tokyo, Japan                    | amazon:jp:tokyo
 
 ## Tags
 
-When running a k6 test in the cloud two [tags]({{ site.baseurl }}{% link _v4/test-scripting/tags.md %}) are added to all metrics:
+When running a k6 test in the cloud two [tags]({{ site.baseurl }}/4.0/core-concepts/tags/) are added to all metrics:
 
 
 Tag name|	Type|	Description
@@ -113,7 +114,7 @@ To use environment variables when running a cloud executed test you use one or m
 
 <div class="callout callout-warning" role="alert">
     <b>Use the CLI flags to set environment variables</b><br>
-    With cloud execution you must use the CLI flags (<code>-e/--env</code>) to set <a href="{{ site.baseurl }}{% link _v4/test-scripting/environment-variables.md %}" class="alert-link">environment variables</a>. Environment variables set in the local terminal before executing k6 won't be forwarded to the LoadImpact cloud service, and thus won't be available to your script when executing in the cloud.
+    With cloud execution you must use the CLI flags (<code>-e/--env</code>) to set <a href="{{ site.baseurl }}/4.0/core-concepts/environment-variables" class="alert-link">environment variables</a>. Environment variables set in the local terminal before executing k6 won't be forwarded to the LoadImpact cloud service, and thus won't be available to your script when executing in the cloud.
 </div>
 
 ### LoadImpact environment variables
@@ -132,7 +133,7 @@ See below for an example on how the `LI_DISTRIBUTION` environment variable can b
 
 ## Multi scenario load tests
 
-As described above the distribution of traffic across load zones is specifed by first assigning an arbitrary label to each entry. This label can be viewed upon as a "scenario label", and you can use it, together with [modules]({{ site.baseurl }}{% link _v4/test-scripting/modules-imports.md %}) to setup a test with several different scenarios:
+As described above the distribution of traffic across load zones is specifed by first assigning an arbitrary label to each entry. This label can be viewed upon as a "scenario label", and you can use it, together with [modules]({{ site.baseurl }}/4.0/core-concepts/modules-imports) to setup a test with several different scenarios:
 
 {% highlight js linenos %}
 import { frontpageScenario } from "./scenarios/frontpage.js"
@@ -178,7 +179,7 @@ export function frontpageScenario() {
 {% endhighlight %}
 
 ## See also
-- [Local and On-premise execution]({{ site.baseurl }}{% link _v4/test-running/local-on-premise-execution.md %})
+- [Local and On-premise execution]({{ site.baseurl }}/4.0/guides/local-on-premise-execution)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwMTUyODk1Ml19
 -->

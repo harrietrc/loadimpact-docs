@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
 title: Web app and Website Testing Methodology
-description: A testing methodology to help you get started with testing your website or web app with LoadImpact
-categories: [testing-methodologies]
-order: 2
+description: Load testing methodology to help you get started with testing your website or web app with LoadImpact
+categories: [guides]
+order: 1
+redirect_from: /4.0/testing-methodologies/website-testing-methodology/
 ---
 
 ***

@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: How to use the LoadImpact Version 4.0 Chrome extension to create test scripts
-description: Instructions on how to use the LoadImpact v4.0 Chrome extension to record real user behavior to aid in creation of  test scripts.
-categories: [how-to-tutorials]
+title: Creating Test Scripts With the LoadImpact Chrome Extension
+description: A guide on how to use the LoadImpact Chrome extension to record user behavior to quickly create load test scripts.
+categories: [guides]
 order: 1
+redirect_from: /4.0/how-to-tutorials/load-impact-version-4-chrome-extension/
 ---
 
 ***

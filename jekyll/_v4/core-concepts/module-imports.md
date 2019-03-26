@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
 title: Module imports
-description: An overview of using modules to modularize and reuse test logic across tests and team members
-categories: [test-scripting]
-order: 2
+description: Modularizing code makes it easier to understand and refactor. LoadImpact supports modulararity of load test scripts.
+categories: [core-concepts]
+order: 11
+redirect_from: /4.0/test-scripting/modules-imports/
 ---
 
 ***

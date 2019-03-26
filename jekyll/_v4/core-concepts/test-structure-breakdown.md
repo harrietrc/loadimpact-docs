@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Breakdown of a k6 test
-description: A breakdown of the anatomy of a k6 test script
-categories: [test-scripting]
-order: 1
+title: Structure of a Test Script
+description: "A breakdown of the different parts of a test script: itialization, setup, virtual user, and teardown code."
+categories: [core-concepts]
+order: 8
+redirect_from: /4.0/test-scripting/test-structure-breakdown/
 ---
 
 A k6 test script can be broken down into four distinct life-cycle stages.
@@ -23,7 +24,7 @@ export default function(data) {
 export function teardown(data) {
     // 4. teardown code
 }
-{% endhighlight %} 
+{% endhighlight %}
 
 It can also be visualized like this:
 
@@ -37,10 +38,10 @@ See the k6 docs on [init code](https://docs.k6.io/docs/test-life-cycle#section-i
 
 ### VU code
 
-The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}{% link _v4/test-scripting/main-function.md %})
+The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}/4.0/core-concepts/main-function)
 
 ### Setup/teardown life-cycle hooks
 
-The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}{% link _v4/test-scripting/test-setup-teardown-life-cycle.md %}) for more details.
+The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}/4.0/test-scripting/test-setup-teardown-life-cycle) for more details.
 
-**Next**: [Modules and imports]({{ site.baseurl }}{% link _v4/test-scripting/modules-imports.md %})
+**Next**: [Modules and imports]({{ site.baseurl }}/4.0/core-concepts/modules-imports)
