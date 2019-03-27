@@ -1,12 +1,13 @@
 ---
 layout: classic-docs
-title: Scripting examples
+title: Scripting Examples
 description: Example test scripts for k6 and LoadImpact 4.0
-categories: [test-scripting]
-order: 13
+categories: [examples]
+order: 1
 redirect_from:
     - /4.0/test-scripting/handling-dynamic-tokens-in-k6-scripts/
     - /4.0/test-scripting/http-authentication/
+    - /4.0/test-scripting/examples/
 ---
 
 ***
@@ -47,7 +48,7 @@ There are a few of steps to make this work:
 
     `import aws4 from "./aws4.js"`
 
-Here's an example script to list all the regions available in EC2. Note that the AWS access key and secret key needs to be provided through [environment variables]({{ site.baseurl}}{% link _v4/test-scripting/environment-variables.md %}).
+Here's an example script to list all the regions available in EC2. Note that the AWS access key and secret key needs to be provided through [environment variables]({{ site.baseurl}}{% link _v4/core-concepts/environment-variables.md %}).
 
 <div class="callout callout-warning" role="alert">
     <b>Note that using this browserified Node.js library will be CPU and memory heavy</b><br>
@@ -83,7 +84,7 @@ To set a cookie that should be sent with every request matching a particular dom
 ## Correlation
 In a load testing scenario, correlation means extracting one or more values from the response of one request and then reusing them in subsequent requests. Often times this could be getting a token or some sort of ID necessary to fulfill a sequence of steps in a user journey.
 
-The [browser recording]({{ site.baseurl }}{% link _v4/how-to-tutorials/how-to-do-browser-recording.md %}) will for example capture things like CSRF tokens, VIEWSTATES, nonce, etc. from your session. This type of data is likely to no longer be valid when you run your test, meaning you'll need to handle the extraction of this data from the HTML/form to include it in subsequent requests. This issue is fairly common with any site that has forms and can be handled with a little bit of scripting.
+The [browser recording]({{ site.baseurl }}{% link _v4/guides/how-to-do-browser-recording.md %}) will for example capture things like CSRF tokens, VIEWSTATES, nonce, etc. from your session. This type of data is likely to no longer be valid when you run your test, meaning you'll need to handle the extraction of this data from the HTML/form to include it in subsequent requests. This issue is fairly common with any site that has forms and can be handled with a little bit of scripting.
 
 ### Extracting values/tokens from JSON response
 {% include 4.0/scripting-examples/correlation-json-resp.md %}

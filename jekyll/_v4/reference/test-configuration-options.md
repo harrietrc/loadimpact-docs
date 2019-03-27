@@ -1,14 +1,18 @@
 ---
 layout: classic-docs
-title: Test configuration options
-description: The available test configuration options
-categories: [test-scripting]
-order: 3
+title: Test Configuration Options
+description: List of available test configuration options and different ways to use them for your tests
+categories: [reference]
+order: 0
 ---
 
 ***
 
 <h1>Background</h1>
+
+The below reference is a partial list of the configuation options.  Options only available locally are omitted.  To see a full list, please refer to the [k6 documentation](https://docs.k6.io/docs/options).
+
+***
 
 Options allow you to configure how k6 will behave during test execution. For most options, you can specify the specific option in four different ways:
 
@@ -672,8 +676,6 @@ For example in Linux/BSDs, it will look for `config.json` inside ``${HOME}/.conf
 
 See also:
 - k6 docs on [options](https://docs.k6.io/docs/options) for additional options available in local execution modes.
-
-**Next**: [Main function]({{ site.baseurl }}{% link _v4/test-scripting/main-function.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI0MTIwNTEwMF19
 -->

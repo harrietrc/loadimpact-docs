@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Migrating from Lua to JS (k6)
-description: Migration from LoadImpact 3.0 (Lua) to LoadImpact Next Gen (JS/k6)
-categories: [migrating-lua-to-js]
-order: 1
+title: Migrating From LoadImpact Lua to JavaScript (k6)
+description: Tips on how to migrate from LoadImpact 3.0 (Lua) to LoadImpact 4.0 (JS/k6)
+categories: [guides]
+order: 30
 ---
 
 Lua and JavaScript (JS) share most of the fundamental logical constructs and control flow mechanisms that are commonly found in general purpose programming languages. Same goes for the load testing oriented APIs that we've added in each respective product. This section will look at how to convert Lua APIs into the JS equivalent.
@@ -243,7 +243,7 @@ export default function() {
 }
 {% endhighlight %}
 
-For more information, see the [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) k6 docs (there `Counter`, `Gauge` and `Rate` metric types beyond the `Trend` one used above).
+For more information, see our docs on [custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %}) (Additional metrics for `Counter`, `Gauge` and `Rate` are available beyond the `Trend` one used above).
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDIwNTEyODY5XX0=
 -->

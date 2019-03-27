@@ -63,24 +63,24 @@
 # Load Impact Next Gen Docs
 
 # remove migration, move to FAQ
-- section: v4
-  slug: migrating-lua-to-js
-  name: Migrating from 3.0 (Lua)
+#- section: v4
+#  slug: migrating-lua-to-js
+#  name: Migrating from 3.0 (Lua)
 
 # remove test scripting and move to guides/core concepts
-- section: v4
-  slug: test-scripting
-  name: Test scripting
+#- section: v4
+#  slug: test-scripting
+#  name: Test scripting
 
 # remove and and move to guides
-- section: v4
-  slug: test-running
-  name: Test running
+#- section: v4
+#  slug: test-running
+#  name: Test running
 
 # Remove and move?
-- section: v4
-  slug: testing-methodologies
-  name: Testing Methodologies
+#- section: v4
+#  slug: testing-methodologies
+#  name: Testing Methodologies
 
 # remove and move to guides
 - section: v4
@@ -88,9 +88,9 @@
   name: Result analysis
 
 # remove and move to guides
-- section: v4
-  slug: how-to-tutorials
-  name: How to/Tutorials
+#- section: v4
+#  slug: how-to-tutorials
+#  name: How to/Tutorials
 
 # remove and move to guides
 - section: v4
@@ -102,9 +102,9 @@
 #  name: Onpremise testing
 
 # Remove integrations in update
-- section: v4
-  slug: integrations
-  name: Integrations
+#- section: v4
+#  slug: integrations
+#  name: Integrations
 
 # merge pricing into FAQ
 - section: v4

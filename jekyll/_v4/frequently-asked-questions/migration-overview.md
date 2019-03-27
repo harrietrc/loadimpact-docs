@@ -1,10 +1,18 @@
 ---
 layout: classic-docs
-title: Migration overview
-description: Overview of differences between LoadImpact 3.0 (Lua) and LoadImpact Next Gen (JS/k6) products
-categories: [migrating-lua-to-js]
-order: 0
+title: What's the Difference Between LoadImpacts Version 3.0 (Lua) and 4.0(JavaScript)
+description: A brief overview of differences between LoadImpact 3.0 (Lua) and LoadImpact 4.0 (JS/k6) products
+categories: [frequently-asked-questions]
+order: 3
 ---
+
+***
+
+<h1>Purpose</h1>
+
+An overview of some key differences between Load Impact 3.0 and 4.0.
+
+***
 
 From a general performance testing perspective the 3.0 and 4.0 products are more or less the same:
 
@@ -28,7 +36,7 @@ In the 3.0 product user scenarios described using Lua code. You can end up with 
 
 In the 4.0 product user scenarios are described using JavaScript, the ES6 version of JS to be precise. This means it's not only a more familiar language to most developers/testers but it also introduces a nice addition compared to the 3.0 product: support for modules, allowing code to be modularized and reused across tests and teams.
 
-See the [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/migrating-lua-to-js/lua-to-js.md %}) for more information on how to migrate your Lua user scenarios to JS.
+See the [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/guides/lua-to-js.md %}) for more information on how to migrate your Lua user scenarios to JS.
 
 ### Test configuration
 In the 3.0 product you compose one or more user scenarios into a separate entity known as a "Test" (aka "Test configuration"), and then add additional configuration like traffic simulation profile and thresholds. This is done through the LoadImpact WebApp UI.
@@ -62,9 +70,11 @@ export let options = {
 };
 {% endhighlight %}
 
-For more information, see [configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %}).
+***
 
-Next: [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/migrating-lua-to-js/lua-to-js.md %})
+## See Also
+- [Lua to JS migration guide]({{ site.baseurl }}{% link _v4/guides/lua-to-js.md %})
+- [Configuration options]({{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NDU3OTE4MV19
 -->
