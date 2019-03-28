@@ -62,6 +62,44 @@
 
 # Load Impact Next Gen Docs
 
+# New category
+
+- section: v4
+  slug: overview
+  name: Overview
+
+# Keep getting started and merge new articles in
+- section: v4
+  slug: getting-started
+  name: Getting Started
+
+# New categories
+
+- section: v4
+  slug: core-concepts
+  name: Core Concepts
+
+- section: v4
+  slug: guides
+  name: Guides
+
+- section: v4
+  slug: examples
+  name: Examples
+
+- section: v4
+  slug: reference
+  name: Reference
+
+# Existing, keep.
+
+- section: v4
+  slug: frequently-asked-questions
+  name: FAQ
+
+
+
+
 # remove migration, move to FAQ
 #- section: v4
 #  slug: migrating-lua-to-js
@@ -107,46 +145,9 @@
 #  name: Integrations
 
 # merge pricing into FAQ
-- section: v4
-  slug: pricing
-  name: Pricing
-
-# New category
-
-- section: v4
-  slug: overview
-  name: Overview
-
-# Keep getting started and merge new articles in
-- section: v4
-  slug: getting-started
-  name: Getting Started
-
-# New categories
-
-- section: v4
-  slug: core-concepts
-  name: Core Concepts
-
-- section: v4
-  slug: guides
-  name: Guides
-
-- section: v4
-  slug: examples
-  name: Examples
-
-- section: v4
-  slug: reference
-  name: Reference
-
-# Existing, keep.
-
-- section: v4
-  slug: frequently-asked-questions
-  name: FAQ
-
-
+#- section: v4
+#  slug: pricing
+#  name: Pricing
 
 
 # Load Impact API Docs

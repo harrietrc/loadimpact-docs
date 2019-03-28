@@ -2,11 +2,12 @@
 layout: classic-docs
 title: Pricing FAQ
 description: FAQ for LoadImpact pricing related questions
-categories: [pricing]
-order: 1
+categories: [frequently-asked-questions]
+order: 0
 redirect_from:
   - /knowledgebase/topics/29137-pricing
   - /knowledgebase/articles/173835-how-can-i-get-an-invoice-for-the-purchase
+  - /4.0/pricing/pricing-faq/
 ---
 
 ***

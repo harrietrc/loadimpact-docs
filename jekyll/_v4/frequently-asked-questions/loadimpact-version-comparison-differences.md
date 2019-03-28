@@ -1,9 +1,11 @@
 ---
 layout: classic-docs
-title: What's the Difference Between LoadImpacts Version 3.0 (Lua) and 4.0(JavaScript)
-description: A brief overview of differences between LoadImpact 3.0 (Lua) and LoadImpact 4.0 (JS/k6) products
+title: What's the Difference Between LoadImpact's Version 3.0 (Lua) and 4.0(JavaScript)
+description: A brief overview of the differences between LoadImpact 3.0 (Lua) and LoadImpact 4.0 (JS/k6) products
 categories: [frequently-asked-questions]
 order: 3
+redirect_from:
+  - /4.0/migrating-lua-to-js/migration-overview/
 ---
 
 ***
