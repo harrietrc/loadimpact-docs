@@ -3,12 +3,14 @@ layout: classic-docs
 title: Scripting Examples
 description: Example test scripts for k6 and LoadImpact 4.0
 categories: [examples]
-order: 1
 redirect_from:
     - /4.0/test-scripting/handling-dynamic-tokens-in-k6-scripts/
     - /4.0/test-scripting/http-authentication/
     - /4.0/test-scripting/examples/
+hide: true
 ---
+
+<!--temp saving for reference. -->
 
 ***
 
