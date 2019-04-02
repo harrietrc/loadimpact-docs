@@ -30,7 +30,7 @@ As k6 tests can run from anywhere, local/on-premise or in the cloud (on your own
 
 There are many different use cases for running load tests. In some, running tests locally (on-premise/behind the firewall) is the only solution. In others, you want the convenience of a cloud service or need the geographic distribution and scale that it offers. That's when Cloud Execution is a good fit. Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _v4/guides/cloud-execution.md %}) section.
 
-Now, let's get you set up so you can [run your very first test]({{ site.baseurl}}{% link _v4/getting-started/hello-world.md %})
+Now, let's get you set up so you can [run your very first test]({{ site.baseurl}}{% link _v4/getting-started/local-test-execution-hello-world.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI1OTYyNTI3MSwtMTQ5Nzc1MjU2NV19
 -->
