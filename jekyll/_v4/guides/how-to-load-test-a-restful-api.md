@@ -287,8 +287,8 @@ Finally, you should also consider integrating these tests into your CI pipeline.
 
 ## See also
 - [Getting Started with Performance Testing](http://blog.loadimpact.com/getting-started-with-performance-testing-for-developers)
-- [Cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/)
-- [Authenticating with LoadImpact cloud]({{ site.baseurl }}/4.0/test-running/logging-into-cloud-service-from-k6/)
+- [Cloud execution]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %})
+- [Authenticating with LoadImpact cloud]({{ site.baseurl }}{% link _v4/guides/logging-into-cloud-service-from-k6.md %})
 - [Custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %})
 - [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
 - [Module Imports]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %})

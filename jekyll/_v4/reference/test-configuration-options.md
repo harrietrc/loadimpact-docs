@@ -117,7 +117,7 @@ export let options = {
 
 ### distribution
 
-When running a cloud execution test you can configure from which load zones the traffic should be generated. See the [cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/) article for more information.
+When running a cloud execution test you can configure from which load zones the traffic should be generated. See the [cloud execution]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}) article for more information.
 
 
 ### Name

@@ -157,7 +157,7 @@ If you see the above screen, congrats! You now know how to set up a GitHub proje
 
 k6 can also be used to execute tests directly on the LoadImpact's cloud service.  This enables you to geographically distribute the origin of your load and not worry about maintaining any load generators.
 
-Our test script is nearly identical to the one presented above, with a small change to our options section. We have now defined to run our load test from two datacenters (Ashburn and Dublin). For a list of all available Load Zones from which a load test can be run refer to [this article]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-zones).
+Our test script is nearly identical to the one presented above, with a small change to our options section. We have now defined to run our load test from two datacenters (Ashburn and Dublin). For a list of all available Load Zones from which a load test can be run refer to [this article]({{ site.baseurl }}/4.0/guides/cloud-execution/#load-zones).
 
 Let's create a new file in our `loadtests` dir named `cloud.js`.
 
@@ -245,7 +245,7 @@ You can see some basic output from k6 in Azure Pipelines web UI, but for a more 
 
  - [All code used in this article is available in a public GitHub repo](https://github.com/loadimpact/k6-azure-pipelines-example).
  - [Your LoadImpact token](https://app.loadimpact.com/account/token)
- - [Load Zones available for Cloud Execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-zones)
+ - [Load Zones available for Cloud Execution]({{ site.baseurl }}/4.0/guides/cloud-execution/#load-zones)
  - [Create an account or Login to Azure DevOps](https://dev.azure.com/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEzMzEzOTQwNDhdfQ==

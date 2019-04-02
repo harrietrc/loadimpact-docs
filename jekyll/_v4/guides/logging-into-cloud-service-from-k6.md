@@ -11,7 +11,7 @@ redirect_from: /4.0/test-running/logging-into-cloud-service-from-k6/
 
 # Purpose
 
-Explanation of the different ways that you can log into LoadImpact's cloud service from k6 for the purpose of [running tests locally and streaming results to Insights]({{ site.baseurl }}/4.0/test-running/local-on-premise-execution/#streaming-results-to-insights) or [running cloud executed tests]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}).
+Explanation of the different ways that you can log into LoadImpact's cloud service from k6 for the purpose of [running tests locally and streaming results to Insights]({{ site.baseurl }}/4.0/guides/local-on-premise-execution/#streaming-results-to-insights) or [running cloud executed tests]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}).
 
 ## Authenticating using email/password
 
