@@ -20,7 +20,7 @@ As illustrated below LoadImpact 4.0 is composed of 3 major components:
 
 ## k6
 
-An open source load testing tool where you script your tests in ES6 JavaScript. To learn more about k6 head over to the [k6 repo on Github](https://github.com/loadimpact/k6). To learn more about k6 test scripting head on over to the [test scripting]({{ site.baseurl}}{% link _v4/test-scripting/intro.md %}) section.
+An open source load testing tool where you script your tests in ES6 JavaScript. To learn more about k6 head over to the [k6 repo on Github](https://github.com/loadimpact/k6). To learn more about k6 test scripting head on over to the [test scripting examples]({{ site.baseurl}}/4.0/examples/) section.
 
 ## LoadImpact Insights
 

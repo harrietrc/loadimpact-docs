@@ -20,7 +20,7 @@ This guide and sample describes how to integrate LoadImpact 4.0 with CircleCI. Y
 
 LoadImpact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
-It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for more information on thresholds.
+It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/core-concepts/thresholds/) for more information on thresholds.
 
 ## Prerequisites
 
@@ -71,8 +71,8 @@ export default function() {
 To describe the load test script in words:
 
 1. The test will ramp up from 0 to 10 users over 60s, stay flat at 10 users for another 60s, before ramping down to 0 users again over 60s
-2. We've set a goal that the 95th percentile response time should be below 500ms. **This step, k6 [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/), is essential, it's how we define our goals which is the basis for the pass/fail mechanism to work that is built into k6**. If a threshold fails, k6 will end with a non-zero exit code, which in turn indicates a failed build step to CircleCI (and other CI tools).
-3. In the load test "main" function we define a group `Front page` inside which, we make a request, [check]({{ site.baseurl }}/4.0/test-scripting/checks/) the response status code and sleep for 10s, before letting the user loop from the top of the function
+2. We've set a goal that the 95th percentile response time should be below 500ms. **This step, k6 [thresholds]({{ site.baseurl }}/4.0/core-concepts/thresholds/), is essential, it's how we define our goals which is the basis for the pass/fail mechanism to work that is built into k6**. If a threshold fails, k6 will end with a non-zero exit code, which in turn indicates a failed build step to CircleCI (and other CI tools).
+3. In the load test "main" function we define a group `Front page` inside which, we make a request, [check]({{ site.baseurl }}/4.0/core-concepts/checks/) the response status code and sleep for 10s, before letting the user loop from the top of the function
 
 ## Configuration
 
@@ -138,9 +138,9 @@ Passing builds aren't too interesting. When builds fail, you will want to determ
 - [GitHub repo for this example](https://github.com/loadimpact/k6-circleci-example)
 - [Installing k6]({{ site.baseurl }}/4.0/getting-started/hello-world/#download-and-install-k6)
 - [Your API token](https://app.loadimpact.com/integrations)
-- [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
+- [Thresholds]({{ site.baseurl }}/4.0/core-concepts/thresholds/)
 - [Insights Overview]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
-- [Checks]({{ site.baseurl }}/4.0/test-scripting/checks/)
+- [Checks]({{ site.baseurl }}/4.0/core-concepts/checks/)
 - [Slack's Incoming Webhooks](https://api.slack.com/incoming-webhooks)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTM3MzI3NDY4MF19

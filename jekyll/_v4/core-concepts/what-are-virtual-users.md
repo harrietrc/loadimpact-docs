@@ -18,7 +18,7 @@ For example, if you ran a test with 10 VUs for 10 minutes and the default functi
 
 ## When testing Web apps or Websites
 
-Virtual Users are designed to act and behave like real users/browsers would. That is, they are capable of making multiple network connnections in parallel, just like a real user in a browser would. When using a `http.batch()` request, HTTP requests are sent in parallel.  Further, you can even control the specifics of this behavior through the [batch]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/#batch) and [batchPerHost]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/#batchPerHost) options. The default is 10 connections in parallel and per host.
+Virtual Users are designed to act and behave like real users/browsers would. That is, they are capable of making multiple network connnections in parallel, just like a real user in a browser would. When using a `http.batch()` request, HTTP requests are sent in parallel.  Further, you can even control the specifics of this behavior through the [batch]({{ site.baseurl }}/4.0/reference/test-configuration-options/#batch) and [batchPerHost]({{ site.baseurl }}/4.0/reference/test-configuration-options/#batchPerHost) options. The default is 10 connections in parallel and per host.
 
 When using our [Chrome Extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or [converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/), all requests made within 500 ms of one another will be placed into a `http.batch()`.
 
@@ -46,7 +46,7 @@ Further, We wrote this [blog post](http://blog.loadimpact.com/blog/monthly-visit
 - [Batch requests](https://docs.k6.io/docs/batch-requests)
 - [Chrome Extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/)
 - [Converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)
-- [Test configuration options]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/)
+- [Test configuration options]({{ site.baseurl }}/4.0/reference/test-configuration-options/)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTg0NDg5MDM1XX0=
 -->

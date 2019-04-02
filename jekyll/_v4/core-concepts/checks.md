@@ -36,7 +36,7 @@ export default function() {
 ***
 
 ## Best Practice Example: Failing a test using thresholds
-Checks on their own can' t fail a test, you need to combine them with [custom metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/) and [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/) to specify failure criteria.
+Checks on their own can' t fail a test, you need to combine them with [custom metrics]({{ site.baseurl }}/4.0/core-concepts/custom-metrics/) and [thresholds]({{ site.baseurl }}/4.0/core-concepts/thresholds/) to specify failure criteria.
 
 <div class="callout callout-warning" role="alert">
     A failed test for Locally Executed tests means the exit code of the k6 process will be non-zero, and in the case of a <a href="/4.0/test-running/cloud-execution/" class="alert-link">Cloud Executed</a> test it means that the test will get a `Failed by thresholds` status.
@@ -69,5 +69,5 @@ export default function() {
 
 See also:
 - [k6 docs on checks](https://docs.k6.io/docs/checks)
-- [Custom Metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
-- [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
+- [Custom Metrics]({{ site.baseurl }}/4.0/core-concepts/custom-metrics/)
+- [Thresholds]({{ site.baseurl }}/4.0/core-concepts/thresholds/)

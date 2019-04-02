@@ -11,7 +11,7 @@ redirect_from: /4.0/testing-methodologies/website-testing-methodology/
 
 <h1>Background</h1>
 
-If you have already read our [Getting Started Methodology]({{ site.baseurl }}/4.0/testing-methodologies/application-testing-methodology/) similar concepts are repeated here. This document will touch on some more specific aspects to help you start testing a real user journey of a website or web app. Testing of these systems generally involves simulating real user behavior and complex actions in some logical flow or journey. For this reason we have combined this into a single document. As you start your testing we recommend that you _start small and iterate, iterate, iterate._
+If you have already read our [Getting Started Methodology]({{ site.baseurl }}{% link _v4/getting-started/basic-load-testing-methodology.md %}) similar concepts are repeated here. This document will touch on some more specific aspects to help you start testing a real user journey of a website or web app. Testing of these systems generally involves simulating real user behavior and complex actions in some logical flow or journey. For this reason we have combined this into a single document. As you start your testing we recommend that you _start small and iterate, iterate, iterate._
 
 
 ## Preparations
@@ -74,9 +74,9 @@ When parameterizing data, you MUST trigger your test using k6 from the command l
 </div>
 
 - For login, you'll probably want to include a CSV or JSON file containing usernames or passwords.
-  - Examples here: [Parameterizing from a JSON or CSV file]({{ site.baseurl}}/4.0/test-scripting/examples/#data-filesparameterization)
+  - Examples here: [Parameterizing from a JSON or CSV file]({{ site.baseurl}}{% link _v4/examples/parameterizing-data.md %})
 - For CSRF tokens, you will need to: Identify the page where the token is created, save the response body of that page, find the token through the DOM or a regex match, save that to a variable, and concatenate the variable in future requests
-  - Examples here: [Data Correlation in your test script]({{ site.baseurl }}/4.0/test-scripting/examples/#correlation)
+  - Examples here: [Data Correlation in your test script]({{ site.baseurl }}{% link _v4/examples/correlating-tokens-dynamic-data-load-test.md %})
 - For other forms, such as a search or name fields, you can pull the data from an external source like you did with the login. You may prefer to generate the data inline if it doesn't matter what is submitted.  There are some good implementations of this on [stackoverflow](https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript) that you may want to utilize.
 
 ### Other scripting considerations
@@ -98,7 +98,7 @@ Since test cases are expressed as real code, you can do programmatic things. Thi
 #### Modularization
 Depending on how you want to organize your test scripts, you may find it convenient to organize your test and scripts into smaller parts. For example, if every single user is required to log into your app, you may want to dedicate a short script just to handle your login process. Since modularization of scripts is supported in k6, you simply would need to import the file in your script and then call the appropraite functionality to complete that action.
 
-For more information on modularizing your test scripts, please refer to [this article]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
+For more information on modularizing your test scripts, please refer to [this article]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %})
 
 Once you are done with scripting related items, you are finished with the most tedious parts of testing. Do note that maintenance of your scripts is a normal necessity. As you continue to develop your site or app, be sure to keep code changes in mind and how they may impact your test scripts. This is especially important if testing is part of any automation or CI pipeline.
 
@@ -116,7 +116,7 @@ The best results come when you run your tests in a systematic way, where you can
 1. Baseline tests
   * A test with a small number of VUs meant to produce response times for a system experiencing favorable conditions
   * Typically run for 5-10 minutes and establishes a baseline for comparison
-  * Data from this test can often be used to create [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/) in your future tests
+  * Data from this test can often be used to create [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) in your future tests
 2. Stress tests
   * A test that steps through different levels of load and will highlight where performance problems start to happen
   * You should expect to iterate this test multiple times as you enter a test-> analyze-> make changes-> repeat pattern
@@ -133,7 +133,7 @@ The best results come when you run your tests in a systematic way, where you can
   - _You should run your test long enough for all VUs to complete 2-5 complete iterations of your test script. If your user journey takes 5 minutes to complete, 10+ minutes would be a reasonable test length._
 - How many VUs should I use?
   - _You should base this off your normal and peak traffic levels. Use the formula: `VUs = (Peak Hourly Sessions * Average Session Duration in Seconds) / 3600`_
-  - _**This will vary based on your test, needs, and what you are trying to learn.** You should refer to our article on [ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/) for more examples of the different patterns._
+  - _**This will vary based on your test, needs, and what you are trying to learn.** You should refer to our article on [ramping configurations]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %}) for more examples of the different patterns._
   - _For a baseline test, you want a low enough number not to cause any stress on your system. For most, probably less than 100._
   - _For the other tests, you should use data on how many users you have normally and any business goals you may have for concurrency._
 
@@ -156,12 +156,12 @@ The best results come when you run your tests in a systematic way, where you can
 ***
 
 ## See Also:
-- [Getting Started Methodology]({{ site.baseurl }}/4.0/testing-methodologies/application-testing-methodology/)
-- [Parameterizing from a JSON or CSV file]({{ site.baseurl}}/4.0/test-scripting/examples/#data-filesparameterization)
-- [Data Correlation in your test script]({{ site.baseurl }}/4.0/test-scripting/examples/#correlation)
-- [Converting a HAR file]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)
-- [Module Imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
-- [Ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
+- [Getting Started Methodology]({{ site.baseurl }}{% link _v4/guides/website-testing-methodology.md %})
+- [Parameterizing from a JSON or CSV file]({{ site.baseurl}}{% link _v4/examples/parameterizing-data.md %})
+- [Data Correlation in your test script]({{ site.baseurl }}{% link _v4/examples/correlating-tokens-dynamic-data-load-test.md %})
+- [Converting a HAR file]({{ site.baseurl }}{% link _v4/guides/how-to-convert-har-to-k6-test.md %})
+- [Module Imports]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %})
+- [Ramping configurations]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTM0NzUxODgyN119
 -->

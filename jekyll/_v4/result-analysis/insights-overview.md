@@ -24,7 +24,7 @@ The top of the page provides a breadcrumb menu and an overview of details about 
 
 The breadcrumb menu allows to quickly navigate between the latest runs of the test, the test page or all the tests in the current project.
 
-The test overview shows the test length, number of maximum VUs, and the status of the test. If the test is running; live metrics such as the current number of active VUs and time will be displayed and the chart updated in real time. When the test is complete, the status will be updated based on the results of any [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/) that you defined.
+The test overview shows the test length, number of maximum VUs, and the status of the test. If the test is running; live metrics such as the current number of active VUs and time will be displayed and the chart updated in real time. When the test is complete, the status will be updated based on the results of any [thresholds]({{ site.baseurl }}/4.0/core-concepts/thresholds/) that you defined.
 
 ![Test run navigation]({{ site.baseurl }}/assets/img/v4/result-analysis/test-run-navigation.png)
 

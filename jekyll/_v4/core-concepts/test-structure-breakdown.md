@@ -42,6 +42,6 @@ The VU code is the code that contains the actual testing logic. This code is exe
 
 ### Setup/teardown life-cycle hooks
 
-The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}/4.0/test-scripting/test-setup-teardown-life-cycle) for more details.
+The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}/4.0/core-concepts/test-setup-teardown-life-cycle) for more details.
 
 **Next**: [Modules and imports]({{ site.baseurl }}/4.0/core-concepts/modules-imports)

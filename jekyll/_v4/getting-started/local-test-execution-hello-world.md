@@ -90,7 +90,7 @@ export default function() {
 }
 {% endhighlight %}
 
-We import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3 seconds. The [main function]({{ site.baseurl}}{% link _v4/test-scripting/main-function.md %}) is essentially a while true loop. As long as the test as time left on it and an iteration limit has not been met, Virtual Users will continue to iterate over it.
+We import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3 seconds. The [main function]({{ site.baseurl}}{% link _v4/core-concepts/default-function.md %}) is essentially a while true loop. As long as the test as time left on it and an iteration limit has not been met, Virtual Users will continue to iterate over it.
 
 Let's run this test script with k6. Save it in a file on your computer (we'll assume it's saved to a file called `script.js` below). In a terminal, in the same working directory where you saved the file, execute the following command:
 
@@ -108,7 +108,7 @@ This executed the test with k6's default settings in terms of number of concurre
 
 To run a meaningful load test, we will need more than 1 Virtual User :)
 
-We can specify the Virtual User ramping that we want by extending out test script with some [test configuration options]({{ site.baseurl}}{% link _v4/test-scripting/test-configuration-options.md %}). These options are global in scope and are configured in the section `export let options` on lines 4-16 below:
+We can specify the Virtual User ramping that we want by extending out test script with some [test configuration options]({{ site.baseurl}}{% link _v4/reference/test-configuration-options.md %}). These options are global in scope and are configured in the section `export let options` on lines 4-16 below:
 
 {% highlight js linenos %}
 import { sleep } from "k6";
@@ -178,7 +178,7 @@ The only change we need to make is that we'll need to change the k6 command used
 
 Same as when we streamed our results to Insights, we'll now get a link to Insights to view the test results of this LoadImpact Cloud Executed test.
 
-Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _v4/test-running/cloud-execution.md %}) section.
+Learn more about Cloud Execution in the [test running]({{ site.baseurl}}{% link _v4/guides/cloud-execution.md %}) section.
 
 **Congratulations!  You've run a smoke test, a locally executed test and a cloud executed test!**
 

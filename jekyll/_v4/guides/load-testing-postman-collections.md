@@ -49,9 +49,9 @@ The following section describes the steps to convert your Postman collections to
     `k6-script.js` will be the outputted script name in the specified path of your output.
 4. Make any edits to your script necessary
 
-    You may wish to change [configuration options]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/)
-    Create [custom metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
-    Define [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
+    You may wish to change [configuration options]({{ site.baseurl }}{ % link _v4/reference/test-configuration-options.md %})
+    Create [custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %})
+    Define [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
 
 5. Utilize your script with your LoadImpact account
     `k6 run k6-script.js` will execute your script locally with local output

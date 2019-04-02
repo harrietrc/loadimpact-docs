@@ -115,8 +115,8 @@ Once you have downloaded the Chrome Extension, using it is extremely simple:
 
 _What programmatic things might I want to do with my script?_
 
-- Forms, logins, and other means of submitting data are the most common. Submitting the same information (or using the same login) on every script iteration typically isn't realistic and in many cases will just test your systems caching capabilities. For proof of concept purposes, we recommend creating a JavaScript object to iterate over in the Web IDE. To use external sources, please refer to this [code sample on parameterization]({{ site.baseurl }}/4.0/test-scripting/examples/#data-filesparameterization).
-- Logins and form submissions often contain hidden fields to prevent CSRF style attacks. The chrome extension would have captured the value from your session, which will likely be expired when you run your test. To solve this you must [correlate the token]({{ site.baseurl }}/4.0/test-scripting/examples/#correlation) from the response body
+- Forms, logins, and other means of submitting data are the most common. Submitting the same information (or using the same login) on every script iteration typically isn't realistic and in many cases will just test your systems caching capabilities. For proof of concept purposes, we recommend creating a JavaScript object to iterate over in the Web IDE. To use external sources, please refer to this [code sample on parameterization]({{ site.baseurl }}/4.0/examples/parameterizing-data).
+- Logins and form submissions often contain hidden fields to prevent CSRF style attacks. The chrome extension would have captured the value from your session, which will likely be expired when you run your test. To solve this you must [correlate the token]({{ site.baseurl }}/4.0/examples/correlating-tokens-dynamic-data-load-test/) from the response body
 
 _The script is long, do I really need all this detail?_
 
@@ -262,7 +262,7 @@ k6 cloud -u 25 -d 5m github.com/loadimpact/k6/samples/http_get.js
 Refer to the following resources for more information on result analysis:
 - Take an [in-app tour](https://app.loadimpact.com/k6/anonymous/9b480b664bee46c3bf1a9d1ffb57328d)
 - [LoadImpact insights]({{ site.baseurl }}/4.0/result-analysis/insights-overview/)
-- [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
+- [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
 
 ***
 

@@ -22,7 +22,7 @@ This guide will demonstrate how to utilize [k6](https://k6.io/) to test your API
 
 
 ## Assumptions, first steps, and caveats
-For this guide, the target system (with the API) will run locally in a modest and very restricted environment. The various parameters and result values are going to be significantly lower than those one would anticipate from a real, production-like, environment. To maintain focus on creating test cases for APIs, we will not be outputting our results to Insights nor will be executing on the LoadImpact [Cloud infrastructure]({{ site.baseurl }}/4.0/test-running/cloud-execution/). For the purposes of this guide, this will work fine. The general steps will remain the same. As you start testing production-like environments, you will likely need to make use of the data analysis provided by Insights and cloud execution on the LoadImpact infrastructure.
+For this guide, the target system (with the API) will run locally in a modest and very restricted environment. The various parameters and result values are going to be significantly lower than those one would anticipate from a real, production-like, environment. To maintain focus on creating test cases for APIs, we will not be outputting our results to Insights nor will be executing on the LoadImpact [Cloud infrastructure]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}). For the purposes of this guide, this will work fine. The general steps will remain the same. As you start testing production-like environments, you will likely need to make use of the data analysis provided by Insights and cloud execution on the LoadImpact infrastructure.
 
 Our stack consists of [Django](https://www.djangoproject.com/) and [Django Rest Framework](https://www.django-rest-framework.org/) and a [PostgreSQL](https://www.postgresql.org/) 9.6 database. To avoid skewing our results, there is no caching involved whatsoever. Our test system requires Token-based authentication, so we'll assume we have already equipped ourselves with a valid token.
 
@@ -62,11 +62,11 @@ export default function() {
 
 ```
 
-In plain english, the above script [imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/) the k6 library resources and uses them to check that every response to that endpoint returns a status code of 200. Additionally, we record any failed requests so that we will get the percentage of the successful operations in the final output.
+In plain english, the above script [imports]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %}) the k6 library resources and uses them to check that every response to that endpoint returns a status code of 200. Additionally, we record any failed requests so that we will get the percentage of the successful operations in the final output.
 
 We recommend that you should start with modest expectations (2-5 Virtual Users). This allows you to get a grasp on the system's baseline performance and work upwards from that. But let's suppose we are new at this and we also feel a bit optimistic, so we start a load test of the above script with 30 Virtual Users(VUs) for the duration of 30 seconds.
 
-**Note:** In this example, we pass command line flags to adjust our VUs and duration. Refer to this [article]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/#stages) for additional methods to set the number of concurrent users and length of test.
+**Note:** In this example, we pass command line flags to adjust our VUs and duration. Refer to this [article]({{ site.baseurl }}/4.0/reference/test-configuration-options/#stages) for additional methods to set the number of concurrent users and length of test.
 
 We execute the `k6` with the following parameters:
 ```shell
@@ -140,7 +140,7 @@ Some things we notice from the above output:
 * 95% of our users got served a response in under `283.43ms`
 * In the duration of 30 seconds we served 539 responses, at a rate of ~18 requests per second.
 
-So now we have some more realistic expectations with regards to the capabilities of this endpoint while responding to `GET` requests, in our particular environment. We can utilize this information to scale up to larger on demand tests using LoadImpact [Cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/).  For example:
+So now we have some more realistic expectations with regards to the capabilities of this endpoint while responding to `GET` requests, in our particular environment. We can utilize this information to scale up to larger on demand tests using LoadImpact [Cloud execution]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}).  For example:
 
 ```shell
 $ k6 cloud -d 300s -u 200 ./script.js
@@ -195,7 +195,7 @@ This produces the following results:
 We notice from the results above that we managed to serve all requests successfully. We also notice there was an increase in the duration of our responses and a decrease in the total amount of requests we could handle under a 30 second duration. This is to be expected though, as writing to a DB will always be a slower operation than reading from it.
 
 ### Putting it all together
-Now we have enough data to create a script that tests both endpoints while at the same time providing some individual [thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/) for them.
+Now we have enough data to create a script that tests both endpoints while at the same time providing some individual [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) for them.
 
 ```javascript
 import http from "k6/http";
@@ -262,7 +262,7 @@ export default function() {
 
 ```
 In the above example take note of the following:
-1. We created separate rates and trends [custom metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/) for each endpoint.
+1. We created separate rates and trends [custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %}) for each endpoint.
 2. We defined custom thresholds via the `options` variable. We increased our thresholds because we don't want to be too close to our system's limit.
 3. We introduce the [batch()](https://docs.k6.io/docs/batch-requests) call, that helps us perform multiple types of requests simultaneously.
 
@@ -279,7 +279,7 @@ threshold status. More specifically, the first succeeded but the other one faile
 
 Logically we should take action about the failed threshold. Should we increase the threshold value, or should we try to make our code more efficient? In any case, we now at least have all the necessary tools and knowledge to make adjustments and verify if they were impactful or not.
 
-If you have been running these small tests locally to produce some working scripts and baseline results, like we did this guide, you should run larger tests on the LoadImpact [Cloud infrastructure]({{ site.baseurl }}/4.0/test-running/cloud-execution/).  You can simply change `k6 run` to `k6 cloud`.  That will tell k6 to archive and upload the necessary scripts to our cloud service and automatically start execution. No need to worry about managing load generators and other resources.
+If you have been running these small tests locally to produce some working scripts and baseline results, like we did this guide, you should run larger tests on the LoadImpact [Cloud infrastructure]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}).  You can simply change `k6 run` to `k6 cloud`.  That will tell k6 to archive and upload the necessary scripts to our cloud service and automatically start execution. No need to worry about managing load generators and other resources.
 
 Finally, you should also consider integrating these tests into your CI pipeline. We have some guides with some of the popular CI tools [here]({{ site.baseurl }}/4.0/integrations/).
 
@@ -289,10 +289,10 @@ Finally, you should also consider integrating these tests into your CI pipeline.
 - [Getting Started with Performance Testing](http://blog.loadimpact.com/getting-started-with-performance-testing-for-developers)
 - [Cloud execution]({{ site.baseurl }}/4.0/test-running/cloud-execution/)
 - [Authenticating with LoadImpact cloud]({{ site.baseurl }}/4.0/test-running/logging-into-cloud-service-from-k6/)
-- [Custom metrics]({{ site.baseurl }}/4.0/test-scripting/custom-metrics/)
-- [Thresholds]({{ site.baseurl }}/4.0/test-scripting/thresholds/)
-- [Module Imports]({{ site.baseurl }}/4.0/test-scripting/modules-imports/)
-- [integrations]({{ site.baseurl }}/4.0/integrations/)
+- [Custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %})
+- [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
+- [Module Imports]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %})
+<!-- - [integrations]({{ site.baseurl }}/4.0/integrations/) -->
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NTM3MDIwNzldfQ==
 -->

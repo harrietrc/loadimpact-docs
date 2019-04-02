@@ -37,7 +37,7 @@ _Here's how to start:_
 
 
 **Important things to note:**
-- The default configuration will be a 12 minute test that ramps to 10 Virtual Users over 1 minute, stays at 10 for 10 minutes, then ramps back to 0 over 1 minute. You can change this in the stages section of the script. Refer to [this article]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/) for more information on ramping configurations.
+- The default configuration will be a 12 minute test that ramps to 10 Virtual Users over 1 minute, stays at 10 for 10 minutes, then ramps back to 0 over 1 minute. You can change this in the stages section of the script. Refer to [this article]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %}) for more information on ramping configurations.
 - No load zone is specified and it will run out of Ashburn by default. You can specify different load zones by adding a `ext.loadimpact.distribution` option. See [this article]({{ site.baseurl }}/4.0/test-running/cloud-execution/#test-configuration-options) for more information
 - We have set `discardResponseBodies: true`.  This will discard all response bodies by default.
 <!--stackedit_data:

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Local and On-premise execution
-description: A guide explaining how to execute load tests locally, behind the firewall, with results in LoadImpact Insights.  
+description: A guide explaining how to execute load tests locally, behind the firewall, with results in LoadImpact Insights.
 categories: [guides]
 order: 10
 redirect_from: /4.0/test-running/local-on-premise-execution/
@@ -42,7 +42,7 @@ You should now see something like this in your terminal:
 Note the URL in the `output: cloud (https://app.loadimpact.com/k6/runs/12696)`. That URLs is where you go to see the test results as they come streaming in from the test execution.
 
 <div class="callout callout-warning" role="alert">
-    Note that you can change under which project your tests and results are stored by adding a project ID to your <a href="{{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %}#sending-results to-a-specific-project" class="alert-link">test configuration options</a>.
+    Note that you can change under which project your tests and results are stored by adding a project ID to your <a href="{{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %}#sending-results to-a-specific-project" class="alert-link">test configuration options</a>.
 </div>
 
 **See also**: [Cloud execution]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %})

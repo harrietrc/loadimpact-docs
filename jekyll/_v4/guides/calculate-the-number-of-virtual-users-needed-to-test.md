@@ -44,7 +44,7 @@ And that’s it! As you can see, Google made this data pretty easy to find.
 
 ### How to design your load test
 
-One good way of determining what traffic to subject your site to during a load test is to check your peak hours of traffic in Google Analytics, figure out how many sessions you faced then, and perform a test that generates a similar kind of load in a similar [pattern]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/). You probably want to add some margin to it also — to ensure that you can handle higher traffic levels than your latest peak.
+One good way of determining what traffic to subject your site to during a load test is to check your peak hours of traffic in Google Analytics, figure out how many sessions you faced then, and perform a test that generates a similar kind of load in a similar [pattern]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %}). You probably want to add some margin to it also — to ensure that you can handle higher traffic levels than your latest peak.
 
 The reason we want to find the traffic peak and not just use the average level for the whole month is that, in most cases, average traffic will be quite low. It’s quite common for sites to have regular, recurring peak periods where they experience maybe 2-3x the average traffic levels, so it is important to test for that level of traffic, at the very least.
 
@@ -77,10 +77,10 @@ No matter the size of your company or the amount of traffic you typically handle
 
 See also:
 - [Virtual Users]({{ site.baseurl }}/4.0/getting-started/what-are-virtual-users/)
-- [Creating tests in LoadImpact]({{ site.baseurl }}/4.0/getting-started/create-a-load-impact-test/)
-- [Code Samples and Scripting Examples]({{ site.baseurl }}/4.0/test-scripting/examples/)
-- [Test configuration options]({{ site.baseurl }}/4.0/test-scripting/test-configuration-options/)
-- [Test ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
+- [Creating tests in LoadImpact]({{ site.baseurl }}{% link _v4/getting-started/create-first-test.md %})
+- [Code Samples and Scripting Examples]({{ site.baseurl }}/4.0/examples/)
+- [Test configuration options]({{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %})
+- [Test ramping configurations]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1MzU2NDg2OTRdfQ==
 -->

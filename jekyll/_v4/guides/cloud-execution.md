@@ -68,7 +68,7 @@ export let options = {
 };
 {% endhighlight %}
 
-Each entry, or scenario, in the `distribution` object specifies an arbitrary label (aka "distribution label") as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as an [environment variable]({{ site.baseurl }}/4.0/test-scripting/environment-variables) (`__ENV["LI_DISTRIBUTION"]`) into the k6 processes running in the corresponding load zone ([see below]({{ site.baseurl }}/4.0/test-running/cloud-execution/#load-impact-environment-variables) for more details).
+Each entry, or scenario, in the `distribution` object specifies an arbitrary label (aka "distribution label") as the key and an object with keys `loadZone` and `percent` as the value. The label ("scenarioLabel1" and "scenarioLabel2" above) will be injected as an [environment variable]({{ site.baseurl }}/4.0/core-concepts/environment-variables) (`__ENV["LI_DISTRIBUTION"]`) into the k6 processes running in the corresponding load zone ([see below]({{ site.baseurl }}/4.0/guides/cloud-execution/#load-impact-environment-variables) for more details).
 
 The `percent` specifies how VUs should be distributed across the different scenarios, and the `loadZone` the origin of the traffic for the scenario.
 

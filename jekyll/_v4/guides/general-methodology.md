@@ -56,12 +56,12 @@ Here are some tips to consider when you start to write/record your first test sc
   - _If testing individual components, such as API endpoints, think in terms of requests per Second_
   - _If testing user journeys, such as users visiting page to page or taking multiple actions, think in terms of concurrent users._
 - What test patterns will I execute?
-  - _Different tests will tell you different things. Refer to this article for an explanation of the different patterns:_ [Ramping configurations]({{ site.baseurl }}/4.0/test-scripting/load-test-ramping-configurations/)
+  - _Different tests will tell you different things. Refer to this article for an explanation of the different patterns:_ [Ramping configurations]({{ site.baseurl }}{% link _v4/core-concepts/types-of-load-performance-tests.md %})
   - _Generally, this order will work for most when establishing a testing process: Baseline test, stress test, load test, spike test (if applicable)_
 - What data do I need?
   - _Using the login example, testing the same user logging in will usually only test how well your system can cache responses. What data do you need to be parameterized to support your test executions?_
 
-Keeping the above tips in mind, you should now start writing your scripts by hand or by using our [Chrome extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or the built in [HAR file converter]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)to create a test script. **It's best to start small and then expand your test coverage. Treat writing your test scripts as you would code you are writing for your application by breaking it down into smaller, more manageable pieces.** A lot of value can be found in simple tests against the most important components.
+Keeping the above tips in mind, you should now start writing your scripts by hand or by using our [Chrome extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or the built in [HAR file converter]({{ site.baseurl }}{% link _v4/guides/how-to-convert-har-to-k6-test.md %})to create a test script. **It's best to start small and then expand your test coverage. Treat writing your test scripts as you would code you are writing for your application by breaking it down into smaller, more manageable pieces.** A lot of value can be found in simple tests against the most important components.
 
 **Best Practice Alert:** k6 supports modularization. The script you write to perform a login function with a random user, can later become it's own module in your load testing library. This can be shared with your team through version control or other means.
 
