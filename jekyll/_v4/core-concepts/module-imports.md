@@ -162,7 +162,7 @@ docker run -v /home/k6/example/src:/src -i loadimpact/k6 run /src/index.js
 Each Virtual User will load the required modules into memory during text execution. RAM usage is directly correlated to the number of Virtual Users and the total size of your JS objects. Excessive use of RAM can negatively impact the machine performing the test and the test execution and results.
 
 
-**Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/test-scripting/test-configuration-options.md %})
+**Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %})
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDQwMjk1NTQ3XX0=
 -->
