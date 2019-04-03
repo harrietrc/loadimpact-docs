@@ -1,9 +1,9 @@
 ---
 layout: classic-docs
-title: Analyzing your k6 results with Insights
-description: Guide on analyzing your first set of k6 results in Insights
+title: Analyzing your first test results
+description: Guide on how to start analyzing your results in LoadImpact Insights
 categories: [getting-started]
-order: 6
+order: 2
 hide: true
 ---
 
