@@ -6,7 +6,7 @@ categories: [result-analysis]
 order: 7
 ---
 
-Sometimes there's a need for extra processing of the result data. Could be to generate a report to hand to a manager or execute, or it could be to display data in a BI tool or dashboard for your team's consumption. This guide aims to give you the information you need to effectively work with the CSV result data that you can export from a test run.
+Sometimes there's a need for extra processing of the result data. Could be to generate a report to hand to a manager or execute, or it could be to display data in a BI tool or dashboard for your team's consumption. It could also be to attach the results to a Jira issue or Trello card. This guide aims to give you the information you need to effectively work with the CSV result data that you can export from a test run.
 
 ## How to export the CSV data
 
