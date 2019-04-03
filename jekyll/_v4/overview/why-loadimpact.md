@@ -4,7 +4,7 @@ title: Why LoadImpact?
 description: What would LoadImpact.com help you accomplish
 categories: [overview]
 order: 0
-hide: false
+hide: true
 ---
 This is work in progress, testing out the tool
 
