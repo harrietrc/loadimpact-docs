@@ -20,7 +20,7 @@ This guide and sample describes how to integrate LoadImpact 4.0 with Jenkins v2 
 
 LoadImpact and the open source load generator, k6, integrate nicely with Jenkins, a leading continuous delivery and integration automation platform. Utilizing the robust and extensible k6 load generator you can integrate testing into your automated Jenkins pipeline, build, and test process. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
-It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}{$ link _v4/core-concepts/thresholds.md %}) for more information on thresholds.
+It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) for more information on thresholds.
 
 ## Prerequisites
 

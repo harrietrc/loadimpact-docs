@@ -133,7 +133,7 @@ See below for an example on how the `LI_DISTRIBUTION` environment variable can b
 
 ## Multi scenario load tests
 
-As described above the distribution of traffic across load zones is specifed by first assigning an arbitrary label to each entry. This label can be viewed upon as a "scenario label", and you can use it, together with [modules]({{ site.baseurl }}/4.0/core-concepts/modules-imports) to setup a test with several different scenarios:
+As described above the distribution of traffic across load zones is specifed by first assigning an arbitrary label to each entry. This label can be viewed upon as a "scenario label", and you can use it, together with [modules]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %}) to setup a test with several different scenarios:
 
 {% highlight js linenos %}
 import { frontpageScenario } from "./scenarios/frontpage.js"

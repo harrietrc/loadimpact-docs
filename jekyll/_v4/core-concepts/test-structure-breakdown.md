@@ -38,7 +38,7 @@ See the k6 docs on [init code](https://docs.k6.io/docs/test-life-cycle#section-i
 
 ### VU code
 
-The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}/4.0/core-concepts/main-function)
+The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}{ % link _v4/core-concepts/default-function %})
 
 ### Setup/teardown life-cycle hooks
 

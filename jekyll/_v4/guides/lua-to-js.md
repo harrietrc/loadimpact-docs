@@ -4,6 +4,7 @@ title: Migrating From LoadImpact Lua to JavaScript (k6)
 description: Tips on how to migrate from LoadImpact 3.0 (Lua) to LoadImpact 4.0 (JS/k6)
 categories: [guides]
 order: 30
+redirect_from: /4.0/migrating-lua-to-js/lua-to-js/
 ---
 
 Lua and JavaScript (JS) share most of the fundamental logical constructs and control flow mechanisms that are commonly found in general purpose programming languages. Same goes for the load testing oriented APIs that we've added in each respective product. This section will look at how to convert Lua APIs into the JS equivalent.

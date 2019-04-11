@@ -8,6 +8,7 @@ redirect_from:
   - /knowledgebase/topics/29137-pricing
   - /knowledgebase/articles/173835-how-can-i-get-an-invoice-for-the-purchase
   - /4.0/pricing/pricing-faq/
+  - /4.0/pricing/
 ---
 
 ***

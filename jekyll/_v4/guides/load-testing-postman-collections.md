@@ -4,7 +4,9 @@ title: Load Testing Postman Collections
 description: How to load test your Postman collections and convert them to k6 test scripts to use in LoadImpact
 categories: [guides]
 order: 4
-redirect_from: /4.0/how-to-tutorials/load-testing-with-postman-collections/
+redirect_from:
+  - /4.0/how-to-tutorials/load-testing-with-postman-collections/
+  - /4.0/guides/load-testing-with-postman-collections/
 ---
 
 ***
@@ -49,7 +51,7 @@ The following section describes the steps to convert your Postman collections to
     `k6-script.js` will be the outputted script name in the specified path of your output.
 4. Make any edits to your script necessary
 
-    You may wish to change [configuration options]({{ site.baseurl }}{ % link _v4/reference/test-configuration-options.md %})
+    You may wish to change [configuration options]({{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %})
     Create [custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %})
     Define [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
 

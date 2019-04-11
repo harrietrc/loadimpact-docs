@@ -4,6 +4,7 @@ title: Test Configuration Options
 description: List of available test configuration options and different ways to use them for your tests
 categories: [reference]
 order: 0
+redirect_from: /4.0/test-scripting/test-configuration-options/
 ---
 
 ***
