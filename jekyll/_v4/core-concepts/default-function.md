@@ -4,7 +4,9 @@ title: Default Function
 description: Overview of the default function, the code all Virtual Users will execute during a test
 categories: [core-concepts]
 order: 9
-redirect_from: /4.0/test-scripting/main-function/
+redirect_from:
+  - /4.0/test-scripting/main-function/
+  - /4.0/core-concepts/main-function
 ---
 
 ***

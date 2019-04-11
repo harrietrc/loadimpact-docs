@@ -1,14 +1,20 @@
 ---
 page-type: index
 layout: classic-docs
-title: "4.0 Docs"
+title: "LoadImpact 4.0 Documentation"
 description: "Landing page for LoadImpact 4.0"
 permalink: /4.0/
 redirect_from:
     - /knowledgebase/articles/174634-case-study-ushahidi
     - /knowledgebase/articles/324716-case-study-rokkan
 ---
-Welcome to LoadImpact 4.0 documentation! Here you'll find information on LoadImpact's next generation load testing service.
+
+***
+
+<h1>Background</h1>
+
+Welcome to LoadImpact's documentation! The documentation provided in this section of our knowledge base is for v4.0 of our product.  This version of LoadImpact was released in Summer 2018.  It allows you to write your test cases in real JavaScript code. The load generation aspect of v4.0 is based on an open source load generator, k6.  k6 also functions as the command line interface to communicate with the web interface.  This means you can write your test scripts locally and trigger them from the command line.
+
 
 These articles will help you improve your load testing skills and understanding of Load and Performance testing with LoadImpact. You're welcome to contact us if you have other questions, comments or suggestions.
 

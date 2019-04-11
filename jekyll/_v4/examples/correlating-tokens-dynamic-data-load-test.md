@@ -4,6 +4,7 @@ title: Correlating Tokens and Dynamic Data
 description: Code samples on how to correlate tokens and other dynamic data. These methods work for hidden fields such as CSRF, Nonce, VIEWSTATES, etc.
 categories: [examples]
 order: 3
+redirect_from: /4.0/test-scripting/handling-dynamic-tokens-in-k6-scripts/
 ---
 
 ***

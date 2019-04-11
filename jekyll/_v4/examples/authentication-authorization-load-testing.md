@@ -4,6 +4,7 @@ title: HTTP Authentication and Authorization
 description: Code samples of different HTTP Authentication and Authorization methods to be used in your load test
 categories: [examples]
 order: 1
+redirect_from: /4.0/test-scripting/http-authentication/
 ---
 
 ***
