@@ -1,12 +1,12 @@
 ---
 layout: classic-docs
 title: Why LoadImpact?
-description: What would LoadImpact.com help you accomplish
+description: What LoadImpact.com helps you accomplish and how you can use LoadImpact for your testing needs
 categories: [overview]
 order: 0
-hide: false
+hide: true
 ---
-This is work in progress, testing out the tool
+This is work in progress
 
 
 <!--stackedit_data:

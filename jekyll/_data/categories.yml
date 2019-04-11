@@ -61,34 +61,76 @@
   name: Pricing
 
 # Load Impact Next Gen Docs
+
+# New category
+
+- section: v4
+  slug: overview
+  name: Overview
+
+# Keep getting started and merge new articles in
 - section: v4
   slug: getting-started
   name: Getting Started
 
-- section: v4
-  slug: migrating-lua-to-js
-  name: Migrating from 3.0 (Lua)
+# New categories
 
 - section: v4
-  slug: test-scripting
-  name: Test scripting
+  slug: core-concepts
+  name: Core Concepts
 
 - section: v4
-  slug: test-running
-  name: Test running
+  slug: guides
+  name: Guides
 
 - section: v4
-  slug: testing-methodologies
-  name: Testing Methodologies
+  slug: examples
+  name: Examples
 
+- section: v4
+  slug: reference
+  name: Reference
+
+# Existing, keep.
+
+- section: v4
+  slug: frequently-asked-questions
+  name: FAQ
+
+
+
+
+# remove migration, move to FAQ
+#- section: v4
+#  slug: migrating-lua-to-js
+#  name: Migrating from 3.0 (Lua)
+
+# remove test scripting and move to guides/core concepts
+#- section: v4
+#  slug: test-scripting
+#  name: Test scripting
+
+# remove and and move to guides
+#- section: v4
+#  slug: test-running
+#  name: Test running
+
+# Remove and move?
+#- section: v4
+#  slug: testing-methodologies
+#  name: Testing Methodologies
+
+# remove and move to guides
 - section: v4
   slug: result-analysis
   name: Result analysis
 
-- section: v4
-  slug: how-to-tutorials
-  name: How to/Tutorials
+# remove and move to guides
+#- section: v4
+#  slug: how-to-tutorials
+#  name: How to/Tutorials
 
+# remove and move to guides
 - section: v4
   slug: team-project-management
   name: Team and Project Management
@@ -97,17 +139,16 @@
 #  slug: on-premise-testing
 #  name: Onpremise testing
 
-- section: v4
-  slug: integrations
-  name: Integrations
+# Remove integrations in update
+#- section: v4
+#  slug: integrations
+#  name: Integrations
 
-- section: v4
-  slug: pricing
-  name: Pricing
+# merge pricing into FAQ
+#- section: v4
+#  slug: pricing
+#  name: Pricing
 
-- section: v4
-  slug: frequently-asked-questions
-  name: FAQ
 
 # Load Impact API Docs
 - section: api
