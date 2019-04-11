@@ -1,11 +1,7 @@
 ---
 layout: classic-docs
 title: Custom metrics
-<<<<<<< HEAD:jekyll/_v4/core-concepts/custom-metrics.md
-description: Custom metrics allow you to calculate and track non standard metrics in LoadImpact. 
-=======
 description: Custom metrics allow you to calculate and track non standard metrics in LoadImpact.
->>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/custom-metrics.md
 categories: [core-concepts]
 order: 2
 redirect_from: /4.0/test-scripting/custom-metrics/
