@@ -6,7 +6,7 @@ categories: [overview]
 order: 0
 hide: true
 ---
-This is work in progress, testing out the tool
+This is work in progress
 
 
 <!--stackedit_data:

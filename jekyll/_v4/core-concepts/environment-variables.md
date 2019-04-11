@@ -111,4 +111,5 @@ c:\k6> k6 run script.js</code></pre>
     </div>
 </div>
 
-See the k6 docs on [environment variables](https://docs.k6.io/docs/environment-variables) for more information.
+See Also:
+- k6 docs on [environment variables](https://docs.k6.io/docs/environment-variables) for more information.

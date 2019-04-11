@@ -1,7 +1,11 @@
 ---
 layout: classic-docs
 title: Custom metrics
+<<<<<<< HEAD:jekyll/_v4/core-concepts/custom-metrics.md
 description: Custom metrics allow you to calculate and track non standard metrics in LoadImpact. 
+=======
+description: Custom metrics allow you to calculate and track non standard metrics in LoadImpact.
+>>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/custom-metrics.md
 categories: [core-concepts]
 order: 2
 redirect_from: /4.0/test-scripting/custom-metrics/
@@ -94,9 +98,13 @@ export default function() {
 };
 {% endhighlight %}
 
-Refer to k6 docs on [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) for additional information.
+See Also:
+- k6 docs on [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) for additional information.
 
+<<<<<<< HEAD:jekyll/_v4/core-concepts/custom-metrics.md
 **Next**: [Ramping configurations]({{ site.baseurl }}/4.0/core-concepts/load-test-ramping-configurations/)
+=======
+>>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/custom-metrics.md
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTkwMTQ4Njc5OV19
 -->

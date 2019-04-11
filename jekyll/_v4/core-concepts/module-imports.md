@@ -162,7 +162,13 @@ docker run -v /home/k6/example/src:/src -i loadimpact/k6 run /src/index.js
 Each Virtual User will load the required modules into memory during text execution. RAM usage is directly correlated to the number of Virtual Users and the total size of your JS objects. Excessive use of RAM can negatively impact the machine performing the test and the test execution and results.
 
 
+<<<<<<< HEAD:jekyll/_v4/core-concepts/module-imports.md
 **Next**: [Test configuration options]({{ site.baseurl }}{% link _v4/reference/test-configuration-options.md %})
+=======
+
+See Also:
+- k6 docs on [module imports](https://docs.k6.io/docs/modules) for additional information.
+>>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/module-imports.md
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDQwMjk1NTQ3XX0=
 -->

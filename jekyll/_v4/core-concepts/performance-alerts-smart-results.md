@@ -1,9 +1,10 @@
 ---
 layout: classic-docs
-title: Insights Performance Alerts
+title: Performance Alerts
 description: Explanation of the different Performance Alerts available in LoadImpact Insights. This includes alerts related to test health and ones based on our Smart Result algorithms.
-categories: [result-analysis]
-order: 6
+categories: [core-concepts]
+order: 13
+redirect_from: /4.0/result-analysis/insights-smart-results/
 ---
 
 ***

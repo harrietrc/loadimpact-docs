@@ -97,14 +97,8 @@ The URL-table section is where you can get a raw overview of the URLs in your te
 
 ![Insights: URL table]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-url-table.png)
 
-### Test Script
 
-See more:
-- [Insights: performance overview]({{ site.baseurl }}{% link _v4/result-analysis/insights-performance-overview.md %})
-- [Insights: filters]({{ site.baseurl }}{% link _v4/result-analysis/insights-filters.md %})
-- [Insights: breakdown tree view]({{ site.baseurl }}{% link _v4/result-analysis/insights-break-down-tree.md %})
-- [Insights: analysis view]({{ site.baseurl }}{% link _v4/result-analysis/insights-analysis-view.md %})
-- [Insights: URL table]({{ site.baseurl }}{% link _v4/result-analysis/insights-url-table.md %})
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY0MDQyODczXX0=
 -->

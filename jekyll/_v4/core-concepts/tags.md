@@ -89,4 +89,5 @@ With Cloud Execution all metrics data points are automatically tagged with the l
 
 ![Insights results by load zone]({{ site.baseurl }}/assets/img/v4/test-scripting/v4-insights-tagging-load-zones.png)
 
-See the k6 docs on [tags](https://docs.k6.io/docs/tags-and-groups) for more information.
+See also:
+- k6 docs on [tags](https://docs.k6.io/docs/tags-and-groups) for more information.

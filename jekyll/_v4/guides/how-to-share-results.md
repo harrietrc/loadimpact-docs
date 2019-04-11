@@ -2,8 +2,9 @@
 layout: classic-docs
 title: How do I share tests results with others?
 description: Different ways to share your LoadImpact v4.0 results with others on your team
-categories: [results-analysis]
-order: 7
+categories: [guides]
+order: 11
+redirect_from: /4.0/result-analysis/insights-results-sharing
 ---
 
 ***
