@@ -13,7 +13,7 @@ redirect_from:
 
 ## Purpose
 
-At the heart of every test in LoadImpact is a JavaScript file(we call it a test script).  This file controls the test configuation as well as the requests being made.  There are multiple ways you can generate this script through our web interface.  You can also write it by hand completely.
+At the heart of every test in LoadImpact is a JavaScript file(we call it a test script).  This file controls the test configuration as well as the requests being made.  There are multiple ways you can generate this script through our web interface.  You can also write it by hand completely.
 
 ## Things to consider
 
