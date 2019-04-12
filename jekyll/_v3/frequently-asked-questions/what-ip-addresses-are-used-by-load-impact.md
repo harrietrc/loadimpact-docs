@@ -12,7 +12,7 @@ redirect_from:
 ***
 This article contains the information regarding the various IP addresses Load Impact will use during a test, validation or script creation.
 
-If you are looking to run tests behind a firewall completely, you may want to consider our new open source load generator, k6. k6 allows you to run tests locally and stream those results into Load Impact Insights, for analysis. To get started with k6, please refer to our [Quick Start Guide]({{ site.baseurl }}/4.0/getting-started/hello-world/)
+If you are looking to run tests behind a firewall completely, you may want to consider our new open source load generator, k6. k6 allows you to run tests locally and stream those results into Load Impact Insights, for analysis. To get started with k6, please refer to our [Quick Start Guide]({{ site.baseurl }}{% link _v4/getting-started/local-test-execution-hello-world.md %})
 
 
 If you are unable to whitelist a large ranges of IPs, you may want to consider another method, such as header or query parameter whitelisting, as described in [this article]({{ site.baseurl }}/3.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/)
